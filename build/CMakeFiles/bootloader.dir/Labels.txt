@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/CMakeFiles/bootloader
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/CMakeFiles/bootloader.rule
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/CMakeFiles/bootloader-complete.rule
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

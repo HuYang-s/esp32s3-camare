@@ -1,0 +1,2 @@
+source /Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader/gdbinit/symbols
+source /Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader/gdbinit/connect
