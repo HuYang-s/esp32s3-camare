@@ -13,8 +13,8 @@ end
 
 # Load bootloader symbols
 set confirm off
-    add-symbol-file /Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader/bootloader.elf
+    add-symbol-file /Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader/bootloader.elf
 set confirm on
 
 # Load application symbols
-file /Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/esp32s3_camera_web.elf
+file /Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/esp32s3_camera_web.elf

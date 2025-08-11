@@ -1,4 +1,4 @@
-# Install script for directory: /Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web
+# Install script for directory: /Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/esp-idf/cmake_install.cmake")
+  include("/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/esp-idf/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/install_local_manifest.txt"
+  file(WRITE "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

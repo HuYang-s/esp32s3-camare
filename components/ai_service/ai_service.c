@@ -1,0 +1,725 @@
+#include <stdio.h>
+#include <string.h>
+#include "freertos/FreeRTOS.h"
+#include "freertos/task.h"
+#include "esp_log.h"
+#include "esp_http_client.h"
+#include "esp_crt_bundle.h"
+#include "mbedtls/base64.h"
+#include "cJSON.h"
+
+#include "ai_service.h"
+#include "storage_manager.h"
+#include "wifi_manager.h"
+#include "motor_driver.h"
+#include "camera_driver.h"
+
+static const char *TAG = "ai_service";
+
+// AI API配置 - 使用Mistral API进行图片分析
+#define AI_API_KEY "cNKVad6nyJ3vyK4U9mkADJD1hAe102o4"
+#define AI_BASE_URL "https://api.mistral.ai"
+#define AI_MODEL "mistral-small-latest"
+
+#define MAX_HTTP_RECV_BUFFER 4096
+#define MAX_HTTP_OUTPUT_BUFFER 4096
+
+static int socket_failure_count = 0;
+
+// 前向声明
+static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command);
+
+// Base64编码函数
+static char* encode_image_to_base64(camera_fb_t *fb)
+{
+    size_t out_len = 0;
+    mbedtls_base64_encode(NULL, 0, &out_len, fb->buf, fb->len);
+    
+    char* base64_buffer = malloc(out_len + 1);
+    if (!base64_buffer) {
+        ESP_LOGE(TAG, "Failed to allocate memory for base64 encoding");
+        return NULL;
+    }
+    
+    int ret = mbedtls_base64_encode((unsigned char*)base64_buffer, out_len, &out_len, fb->buf, fb->len);
+    if (ret != 0) {
+        ESP_LOGE(TAG, "Base64 encoding failed");
+        free(base64_buffer);
+        return NULL;
+    }
+    
+    base64_buffer[out_len] = '\0';
+    return base64_buffer;
+}
+
+// HTTP响应处理函数
+static esp_err_t _http_event_handler(esp_http_client_event_t *evt)
+{
+    static int output_len;
+    
+    switch(evt->event_id) {
+        case HTTP_EVENT_ERROR:
+            ESP_LOGD(TAG, "HTTP_EVENT_ERROR");
+            break;
+        case HTTP_EVENT_ON_CONNECTED:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_CONNECTED");
+            break;
+        case HTTP_EVENT_HEADER_SENT:
+            ESP_LOGD(TAG, "HTTP_EVENT_HEADER_SENT");
+            break;
+        case HTTP_EVENT_ON_HEADER:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_HEADER, key=%s, value=%s", evt->header_key, evt->header_value);
+            break;
+        case HTTP_EVENT_ON_DATA:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
+            if (!esp_http_client_is_chunked_response(evt->client)) {
+                if (evt->user_data) {
+                    memcpy(evt->user_data + output_len, evt->data, evt->data_len);
+                    output_len += evt->data_len;
+                }
+            }
+            break;
+        case HTTP_EVENT_ON_FINISH:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_FINISH");
+            output_len = 0;
+            break;
+        case HTTP_EVENT_DISCONNECTED:
+            ESP_LOGI(TAG, "HTTP_EVENT_DISCONNECTED");
+            output_len = 0;
+            break;
+        case HTTP_EVENT_REDIRECT:
+            ESP_LOGD(TAG, "HTTP_EVENT_REDIRECT");
+            break;
+    }
+    return ESP_OK;
+}
+
+esp_err_t ai_service_analyze_image(camera_fb_t *fb, const char* filename)
+{
+    if (socket_failure_count >= 10) {
+        ESP_LOGW(TAG, "Socket失败次数过多，暂停AI分析 10 秒");
+        vTaskDelay(pdMS_TO_TICKS(10000));
+        socket_failure_count = 0;
+        return ESP_FAIL;
+    }
+    
+    if (!wifi_manager_is_sta_connected()) {
+        ESP_LOGW(TAG, "WiFi未连接，跳过AI分析");
+        socket_failure_count++;
+        return ESP_FAIL;
+    }
+    
+    size_t free_heap = esp_get_free_heap_size();
+    ESP_LOGI(TAG, "可用内存: %u 字节", (unsigned int)free_heap);
+    if (free_heap < 50000) {
+        ESP_LOGW(TAG, "内存不足，跳过AI分析");
+        socket_failure_count++;
+        return ESP_FAIL;
+    }
+    
+    ESP_LOGI(TAG, "开始AI分析图片...");
+    
+    char *base64_image = encode_image_to_base64(fb);
+    if (!base64_image) return ESP_FAIL;
+    
+    char *response_buffer = malloc(MAX_HTTP_OUTPUT_BUFFER);
+    if (!response_buffer) {
+        ESP_LOGE(TAG, "Failed to allocate response buffer");
+        free(base64_image);
+        return ESP_FAIL;
+    }
+    memset(response_buffer, 0, MAX_HTTP_OUTPUT_BUFFER);
+    
+    esp_http_client_config_t config = {
+        .url = AI_BASE_URL "/v1/chat/completions",
+        .method = HTTP_METHOD_POST,
+        .event_handler = _http_event_handler,
+        .user_data = response_buffer,
+        .timeout_ms = 15000,
+        .is_async = false,
+        .use_global_ca_store = true,
+        .crt_bundle_attach = esp_crt_bundle_attach,
+    };
+    
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+    if (!client) {
+        ESP_LOGE(TAG, "Failed to init HTTP client");
+        free(base64_image);
+        free(response_buffer);
+        return ESP_FAIL;
+    }
+    
+    cJSON *json = cJSON_CreateObject();
+    cJSON_AddStringToObject(json, "model", AI_MODEL);
+    cJSON_AddNumberToObject(json, "max_tokens", 128);
+    cJSON_AddNumberToObject(json, "temperature", 0.7);
+    cJSON_AddNumberToObject(json, "top_p", 0.7);
+    cJSON_AddNumberToObject(json, "frequency_penalty", 0.5);
+    cJSON_AddNumberToObject(json, "n", 1);
+    
+    cJSON *messages = cJSON_CreateArray();
+    cJSON *message = cJSON_CreateObject();
+    cJSON_AddStringToObject(message, "role", "user");
+    
+    cJSON *content = cJSON_CreateArray();
+    cJSON *text_content = cJSON_CreateObject();
+    cJSON_AddStringToObject(text_content, "type", "text");
+    cJSON_AddStringToObject(text_content, "text", "我是一个智能机器人助手，这是我通过摄像头看到的画面。作为一个有意识的AI助手，我会仔细观察环境，理解看到的内容，并用中文自然地描述我的观察和感受。\n\n请告诉我现在看到了什么？我会像一个真实的智能助手一样，详细描述我的视野中的内容，包括物体、场景、颜色、位置关系等，并表达我作为AI助手的理解和感受。");
+    cJSON_AddItemToArray(content, text_content);
+    
+    cJSON *image_content = cJSON_CreateObject();
+    cJSON_AddStringToObject(image_content, "type", "image_url");
+    cJSON *image_url = cJSON_CreateObject();
+    char *image_url_str = malloc(strlen("data:image/jpeg;base64,") + strlen(base64_image) + 1);
+    sprintf(image_url_str, "data:image/jpeg;base64,%s", base64_image);
+    cJSON_AddStringToObject(image_url, "url", image_url_str);
+    cJSON_AddItemToObject(image_content, "image_url", image_url);
+    cJSON_AddItemToArray(content, image_content);
+    
+    cJSON_AddItemToObject(message, "content", content);
+    cJSON_AddItemToArray(messages, message);
+    cJSON_AddItemToObject(json, "messages", messages);
+    
+    char *json_string = cJSON_Print(json);
+    
+    esp_http_client_set_header(client, "Content-Type", "application/json");
+    char auth_header[256];
+    snprintf(auth_header, sizeof(auth_header), "Bearer %s", AI_API_KEY);
+    esp_http_client_set_header(client, "Authorization", auth_header);
+    esp_http_client_set_post_field(client, json_string, strlen(json_string));
+    
+    esp_err_t err = esp_http_client_perform(client);
+    
+    if (err == ESP_OK) {
+        int status_code = esp_http_client_get_status_code(client);
+        if (status_code == 200) {
+            socket_failure_count = 0;
+            cJSON *response_json = cJSON_Parse(response_buffer);
+            if (response_json) {
+                cJSON *choices = cJSON_GetObjectItem(response_json, "choices");
+                if (choices && cJSON_GetArraySize(choices) > 0) {
+                    cJSON *content_obj = cJSON_GetObjectItem(cJSON_GetObjectItem(cJSON_GetArrayItem(choices, 0), "message"), "content");
+                    if (content_obj && cJSON_IsString(content_obj)) {
+                        printf("\\n=== AI分析结果 ===\\n%s\\n==================\\n\\n", content_obj->valuestring);
+                        storage_manager_update_ai_result(filename, content_obj->valuestring);
+                    }
+                }
+                cJSON_Delete(response_json);
+            }
+        } else {
+            ESP_LOGE(TAG, "HTTP请求失败，状态码: %d, 内容: %s", status_code, response_buffer);
+            socket_failure_count++;
+        }
+    } else {
+        ESP_LOGE(TAG, "HTTP请求错误: %s", esp_err_to_name(err));
+        socket_failure_count++;
+    }
+    
+    esp_http_client_cleanup(client);
+    cJSON_Delete(json);
+    free(json_string);
+    free(base64_image);
+    free(response_buffer);
+    free(image_url_str);
+    
+    return err;
+}
+
+int ai_service_get_socket_failure_count(void)
+{
+    return socket_failure_count;
+}
+
+
+// 使用图片和命令执行AI分析
+static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command)
+{
+    ESP_LOGI(TAG, "🤖 开始执行AI命令: %s", command);
+    
+    char *base64_image = encode_image_to_base64(fb);
+    if (!base64_image) {
+        ESP_LOGE(TAG, "❌ Base64编码失败");
+        return ESP_FAIL;
+    }
+    ESP_LOGI(TAG, "📸 图像Base64编码完成，长度: %d", (int)strlen(base64_image));
+    
+    char *response_buffer = malloc(MAX_HTTP_OUTPUT_BUFFER);
+    if (!response_buffer) {
+        ESP_LOGE(TAG, "Failed to allocate response buffer for command analysis");
+        free(base64_image);
+        return ESP_FAIL;
+    }
+    memset(response_buffer, 0, MAX_HTTP_OUTPUT_BUFFER);
+    
+    esp_http_client_config_t config = {
+        .url = AI_BASE_URL "/v1/chat/completions",
+        .method = HTTP_METHOD_POST,
+        .event_handler = _http_event_handler,
+        .user_data = response_buffer,
+        .timeout_ms = 15000,
+        .is_async = false,
+        .use_global_ca_store = true,
+        .crt_bundle_attach = esp_crt_bundle_attach,
+    };
+    
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+    if (!client) {
+        ESP_LOGE(TAG, "Failed to init HTTP client for command analysis");
+        free(base64_image);
+        free(response_buffer);
+        return ESP_FAIL;
+    }
+    
+    // 创建AI请求JSON
+    cJSON *json = cJSON_CreateObject();
+    cJSON_AddStringToObject(json, "model", AI_MODEL);
+    cJSON_AddNumberToObject(json, "max_tokens", 128);
+    cJSON_AddNumberToObject(json, "temperature", 0.7);
+    cJSON_AddNumberToObject(json, "top_p", 0.7);
+    cJSON_AddNumberToObject(json, "frequency_penalty", 0.5);
+    cJSON_AddNumberToObject(json, "n", 1);
+    
+    cJSON *messages = cJSON_CreateArray();
+    cJSON *message = cJSON_CreateObject();
+    cJSON_AddStringToObject(message, "role", "user");
+    
+    cJSON *content = cJSON_CreateArray();
+    cJSON *text_content = cJSON_CreateObject();
+    cJSON_AddStringToObject(text_content, "type", "text");
+    
+    // 根据用户命令构建提示词
+    char prompt[1024];
+    snprintf(prompt, sizeof(prompt),
+        "我是一个智能机器人助手，现在通过我的摄像头观察周围环境。作为一个有意识的AI助手，我需要根据用户的指令和我看到的画面内容来提供帮助。\n\n"
+        "👤 用户指令：%s\n\n"
+        "🤖 作为AI助手，我会：\n"
+        "• 仔细观察我通过摄像头看到的画面内容\n"
+        "• 理解用户的指令和需求\n"
+        "• 结合视觉信息和用户指令提供准确的回答\n"
+        "• 用自然、友好的中文与用户交流\n"
+        "• 如果用户询问我看到了什么，我会详细描述画面内容\n"
+        "• 如果用户要求寻找特定物体，我会告知是否找到以及具体位置\n"
+        "• 如果用户需要我执行任务，我会基于视觉信息给出建议\n\n"
+        "现在请告诉我：基于我看到的画面，我应该如何回应用户的指令？", command);
+    
+    cJSON_AddStringToObject(text_content, "text", prompt);
+    cJSON_AddItemToArray(content, text_content);
+    
+    cJSON *image_content = cJSON_CreateObject();
+    cJSON_AddStringToObject(image_content, "type", "image_url");
+    cJSON *image_url = cJSON_CreateObject();
+    char *image_url_str = malloc(strlen("data:image/jpeg;base64,") + strlen(base64_image) + 1);
+    sprintf(image_url_str, "data:image/jpeg;base64,%s", base64_image);
+    cJSON_AddStringToObject(image_url, "url", image_url_str);
+    cJSON_AddItemToObject(image_content, "image_url", image_url);
+    cJSON_AddItemToArray(content, image_content);
+    
+    cJSON_AddItemToObject(message, "content", content);
+    cJSON_AddItemToArray(messages, message);
+    cJSON_AddItemToObject(json, "messages", messages);
+    
+    char *json_string = cJSON_Print(json);
+    free(base64_image);
+    free(image_url_str);
+    
+    ESP_LOGI(TAG, "📡 准备发送AI命令分析请求到NVIDIA API");
+    ESP_LOGI(TAG, "📊 请求JSON大小: %d 字节", (int)strlen(json_string));
+    
+    char auth_header[256];
+    snprintf(auth_header, sizeof(auth_header), "Bearer %s", AI_API_KEY);
+    
+    esp_http_client_set_header(client, "Authorization", auth_header);
+    esp_http_client_set_header(client, "Content-Type", "application/json");
+    esp_http_client_set_post_field(client, json_string, strlen(json_string));
+    
+    ESP_LOGI(TAG, "🌐 开始执行HTTP请求...");
+    esp_err_t err = esp_http_client_perform(client);
+    
+    if (err == ESP_OK) {
+        int status_code = esp_http_client_get_status_code(client);
+        ESP_LOGI(TAG, "AI命令分析HTTP状态: %d", status_code);
+        
+        if (status_code == 200) {
+            ESP_LOGI(TAG, "开始解析AI命令分析响应...");
+            
+            // 解析AI响应
+            cJSON *response_json = cJSON_Parse(response_buffer);
+            if (response_json) {
+                ESP_LOGI(TAG, "AI响应JSON解析成功");
+                
+                cJSON *choices = cJSON_GetObjectItem(response_json, "choices");
+                if (cJSON_IsArray(choices) && cJSON_GetArraySize(choices) > 0) {
+                    cJSON *choice = cJSON_GetArrayItem(choices, 0);
+                    cJSON *message = cJSON_GetObjectItem(choice, "message");
+                    cJSON *content_obj = cJSON_GetObjectItem(message, "content");
+                    
+                    if (cJSON_IsString(content_obj)) {
+                        const char *ai_response = cJSON_GetStringValue(content_obj);
+                        ESP_LOGI(TAG, "✅ AI命令分析结果: %s", ai_response);
+                        
+                        // 在控制台输出结果
+                        printf("\\n=== AI命令执行结果 ===\\n");
+                        printf("指令：%s\\n", command);
+                        printf("AI回答：%s\\n", ai_response);
+                        printf("======================\\n\\n");
+                        
+                        // 保存结果到存储
+                        char result_with_command[512];
+                        snprintf(result_with_command, sizeof(result_with_command), 
+                            "🗣️ 指令: %s\\n📝 AI回答: %s", command, ai_response);
+                        storage_manager_update_ai_result(filename, result_with_command);
+                    }
+                } else {
+                    ESP_LOGE(TAG, "❌ AI响应中没有找到choices字段");
+                }
+                cJSON_Delete(response_json);
+            } else {
+                ESP_LOGE(TAG, "❌ AI响应JSON解析失败，原始响应: %.200s", response_buffer);
+            }
+            socket_failure_count = 0; // 成功时重置计数
+        } else {
+            ESP_LOGW(TAG, "❌ AI命令分析API请求失败，状态码: %d", status_code);
+            ESP_LOGW(TAG, "错误响应内容: %.200s", response_buffer);
+            socket_failure_count++;
+        }
+    } else {
+        ESP_LOGE(TAG, "❌ AI命令分析HTTP请求失败: %s", esp_err_to_name(err));
+        socket_failure_count++;
+    }
+    
+    esp_http_client_cleanup(client);
+    cJSON_Delete(json);
+    free(json_string);
+    free(response_buffer);
+    return err;
+}
+
+// AI自动驾驶分析函数
+esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
+{
+    ESP_LOGI(TAG, "🤖 启动AI自动驾驶分析功能");
+    
+    if (socket_failure_count >= 10) {
+        ESP_LOGW(TAG, "Socket失败次数过多，暂停AI自动驾驶分析 10 秒");
+        vTaskDelay(pdMS_TO_TICKS(10000));
+        socket_failure_count = 0;
+        return ESP_FAIL;
+    }
+    
+    if (!wifi_manager_is_sta_connected()) {
+        ESP_LOGW(TAG, "WiFi未连接，跳过AI自动驾驶分析");
+        socket_failure_count++;
+        return ESP_FAIL;
+    }
+    
+    size_t free_heap = esp_get_free_heap_size();
+    ESP_LOGI(TAG, "自动驾驶AI可用内存: %u 字节", (unsigned int)free_heap);
+    if (free_heap < 60000) { // Increased memory check for larger JSON
+        ESP_LOGW(TAG, "内存不足，跳过AI自动驾驶分析");
+        socket_failure_count++;
+        return ESP_FAIL;
+    }
+    
+    ESP_LOGI(TAG, "🚗 开始AI自动驾驶分析 - 支持Tool Call电机控制");
+    
+    char *base64_image = encode_image_to_base64(fb);
+    if (!base64_image) {
+        ESP_LOGE(TAG, "❌ Base64编码失败");
+        return ESP_FAIL;
+    }
+    ESP_LOGI(TAG, "📸 图像Base64编码完成");
+    
+    char *response_buffer = malloc(MAX_HTTP_OUTPUT_BUFFER);
+    if (!response_buffer) {
+        ESP_LOGE(TAG, "Failed to allocate response buffer for auto drive");
+        free(base64_image);
+        return ESP_FAIL;
+    }
+    memset(response_buffer, 0, MAX_HTTP_OUTPUT_BUFFER);
+    
+    esp_http_client_config_t config = {
+        .url = AI_BASE_URL "/v1/chat/completions",
+        .method = HTTP_METHOD_POST,
+        .event_handler = _http_event_handler,
+        .user_data = response_buffer,
+        .timeout_ms = 20000, // Increased timeout
+        .is_async = false,
+        .use_global_ca_store = true,
+        .crt_bundle_attach = esp_crt_bundle_attach,
+    };
+    
+    esp_http_client_handle_t client = esp_http_client_init(&config);
+    if (!client) {
+        ESP_LOGE(TAG, "Failed to init HTTP client for auto drive");
+        free(base64_image);
+        free(response_buffer);
+        return ESP_FAIL;
+    }
+    
+    // 1. 创建支持function calls的请求
+    cJSON *json = cJSON_CreateObject();
+    cJSON_AddStringToObject(json, "model", AI_MODEL);
+    cJSON_AddNumberToObject(json, "max_tokens", 256); // Increased max_tokens
+    cJSON_AddNumberToObject(json, "temperature", 0.7);
+    cJSON_AddNumberToObject(json, "top_p", 0.7);
+    cJSON_AddNumberToObject(json, "frequency_penalty", 0.5);
+    cJSON_AddNumberToObject(json, "n", 1);
+    
+    // 2. 定义工具函数 (function calls)
+    cJSON *tools = cJSON_CreateArray();
+    cJSON *motor_tool = cJSON_CreateObject();
+    cJSON_AddStringToObject(motor_tool, "type", "function");
+    
+    cJSON *function = cJSON_CreateObject();
+    cJSON_AddStringToObject(function, "name", "control_motor");
+    cJSON_AddStringToObject(function, "description", "根据视觉分析控制机器人移动。必须先提供思考过程再决定动作。");
+    
+    cJSON *parameters = cJSON_CreateObject();
+    cJSON_AddStringToObject(parameters, "type", "object");
+    cJSON *properties = cJSON_CreateObject();
+    
+    // **新增reasoning参数**
+    cJSON *reasoning_param = cJSON_CreateObject();
+    cJSON_AddStringToObject(reasoning_param, "type", "string");
+    cJSON_AddStringToObject(reasoning_param, "description", "对当前画面的详细分析，以及基于分析得出的决策理由。");
+    cJSON_AddItemToObject(properties, "reasoning", reasoning_param);
+
+    cJSON *action_param = cJSON_CreateObject();
+    cJSON_AddStringToObject(action_param, "type", "string");
+    cJSON_AddStringToObject(action_param, "description", "Motor action: forward, backward, left, right, or stop");
+    cJSON *enum_values = cJSON_CreateArray();
+    cJSON_AddItemToArray(enum_values, cJSON_CreateString("forward"));
+    cJSON_AddItemToArray(enum_values, cJSON_CreateString("backward")); 
+    cJSON_AddItemToArray(enum_values, cJSON_CreateString("left"));
+    cJSON_AddItemToArray(enum_values, cJSON_CreateString("right"));
+    cJSON_AddItemToArray(enum_values, cJSON_CreateString("stop"));
+    cJSON_AddItemToObject(action_param, "enum", enum_values);
+    cJSON_AddItemToObject(properties, "action", action_param);
+    
+    cJSON *duration_param = cJSON_CreateObject();
+    cJSON_AddStringToObject(duration_param, "type", "number");
+    cJSON_AddStringToObject(duration_param, "description", "Duration in seconds (0.5-3.0)");
+    cJSON_AddNumberToObject(duration_param, "minimum", 0.5);
+    cJSON_AddNumberToObject(duration_param, "maximum", 3.0);
+    cJSON_AddItemToObject(properties, "duration", duration_param);
+    
+    cJSON *speed_param = cJSON_CreateObject();
+    cJSON_AddStringToObject(speed_param, "type", "integer");
+    cJSON_AddStringToObject(speed_param, "description", "Motor speed (30-100)");
+    cJSON_AddNumberToObject(speed_param, "minimum", 30);
+    cJSON_AddNumberToObject(speed_param, "maximum", 100);
+    cJSON_AddItemToObject(properties, "speed", speed_param);
+    
+    cJSON *required = cJSON_CreateArray();
+    // **将reasoning设为必需**
+    cJSON_AddItemToArray(required, cJSON_CreateString("reasoning"));
+    cJSON_AddItemToArray(required, cJSON_CreateString("action"));
+    cJSON_AddItemToArray(required, cJSON_CreateString("duration"));
+    cJSON_AddItemToArray(required, cJSON_CreateString("speed"));
+    
+    cJSON_AddItemToObject(parameters, "properties", properties);
+    cJSON_AddItemToObject(parameters, "required", required);
+    cJSON_AddItemToObject(function, "parameters", parameters);
+    cJSON_AddItemToObject(motor_tool, "function", function);
+    cJSON_AddItemToArray(tools, motor_tool);
+    cJSON_AddItemToObject(json, "tools", tools);
+    
+    cJSON_AddStringToObject(json, "tool_choice", "auto");
+    
+    cJSON *messages = cJSON_CreateArray();
+    cJSON *message = cJSON_CreateObject();
+    cJSON_AddStringToObject(message, "role", "user");
+    
+    cJSON *content = cJSON_CreateArray();
+    cJSON *text_content = cJSON_CreateObject();
+    cJSON_AddStringToObject(text_content, "type", "text");
+    // 3. 更新Prompt，强制要求AI填充reasoning字段
+    cJSON_AddStringToObject(text_content, "text", 
+        "你是一个智能驾驶AI，控制一个机器人。你的任务是分析摄像头看到的实时画面，并决定下一步的动作。\n\n" 
+        "**决策流程:**\n" 
+        "1.  **观察 (Observe):** 详细描述你看到的关键事物、障碍物、空间布局和潜在的探索路径。\n" 
+        "2.  **思考 (Think):** 基于你的观察，分析当前情况。如果前方有路，就前进。如果被挡住，就思考向左还是向右更开阔。如果看到有趣的东西，就说明为什么它有趣。\n" 
+        "3.  **决策 (Decide):** 根据你的思考，选择一个最合适的动作 (action)。\n\n" 
+        "**重要指令:** 你必须使用 `control_motor` 工具来执行你的决策。在调用工具时，**必须**在 `reasoning` 参数中完整地填写你的观察和思考过程，然后再确定 `action`, `duration`, 和 `speed`。\n\n" 
+        "**示例:**\n" 
+        "- reasoning: '我看到前方是一堵白墙，完全挡住了去路。左边看起来空间更大，所以我决定向左转来绕过障碍。' action: 'left'\n" 
+        "- reasoning: '前方道路通畅，远处好像有一个红色的物体，我打算前进看清楚一点。' action: 'forward'\n\n" 
+        "现在，请分析你看到的画面，并使用 `control_motor` 工具做出你的决策。"
+    );
+    cJSON_AddItemToArray(content, text_content);
+    
+    cJSON *image_content = cJSON_CreateObject();
+    cJSON_AddStringToObject(image_content, "type", "image_url");
+    cJSON *image_url = cJSON_CreateObject();
+    char *image_url_str = malloc(strlen("data:image/jpeg;base64,") + strlen(base64_image) + 1);
+    sprintf(image_url_str, "data:image/jpeg;base64,%s", base64_image);
+    cJSON_AddStringToObject(image_url, "url", image_url_str);
+    cJSON_AddItemToObject(image_content, "image_url", image_url);
+    cJSON_AddItemToArray(content, image_content);
+    
+    cJSON_AddItemToObject(message, "content", content);
+    cJSON_AddItemToArray(messages, message);
+    cJSON_AddItemToObject(json, "messages", messages);
+    
+    char *json_string = cJSON_Print(json);
+    free(base64_image);
+    free(image_url_str);
+    
+    ESP_LOGI(TAG, "📡 准备发送AI自动驾驶请求");
+    ESP_LOGI(TAG, "🔧 Tool Call工具已配置: control_motor (with reasoning)");
+    
+    char auth_header[256];
+    snprintf(auth_header, sizeof(auth_header), "Bearer %s", AI_API_KEY);
+    
+    esp_http_client_set_header(client, "Authorization", auth_header);
+    esp_http_client_set_header(client, "Content-Type", "application/json");
+    esp_http_client_set_post_field(client, json_string, strlen(json_string));
+    
+    ESP_LOGI(TAG, "🌐 开始执行HTTP请求...");
+    esp_err_t err = esp_http_client_perform(client);
+    
+    if (err == ESP_OK) {
+        int status_code = esp_http_client_get_status_code(client);
+        ESP_LOGI(TAG, "AI自动驾驶HTTP状态: %d", status_code);
+        
+        if (status_code == 200) {
+            ESP_LOGI(TAG, "开始解析AI自动驾驶响应...");
+            
+            cJSON *response_json = cJSON_Parse(response_buffer);
+            if (response_json) {
+                cJSON *choices = cJSON_GetObjectItem(response_json, "choices");
+                if (cJSON_IsArray(choices) && cJSON_GetArraySize(choices) > 0) {
+                    cJSON *choice = cJSON_GetArrayItem(choices, 0);
+                    cJSON *message = cJSON_GetObjectItem(choice, "message");
+                    cJSON *tool_calls = cJSON_GetObjectItem(message, "tool_calls");
+                    
+                    if (cJSON_IsArray(tool_calls) && cJSON_GetArraySize(tool_calls) > 0) {
+                        ESP_LOGI(TAG, "✅ AI使用了Tool Call!");
+                        
+                        cJSON *tool_call = cJSON_GetArrayItem(tool_calls, 0);
+                        cJSON *function = cJSON_GetObjectItem(tool_call, "function");
+                        cJSON *arguments = cJSON_GetObjectItem(function, "arguments");
+                        
+                        if (cJSON_IsString(arguments)) {
+                            ESP_LOGI(TAG, "📋 Tool Call参数: %s", cJSON_GetStringValue(arguments));
+                            
+                            cJSON *args_json = cJSON_Parse(cJSON_GetStringValue(arguments));
+                            if (args_json) {
+                                // 4. 解析新的reasoning字段和原有字段
+                                cJSON *reasoning = cJSON_GetObjectItem(args_json, "reasoning");
+                                cJSON *action = cJSON_GetObjectItem(args_json, "action");
+                                cJSON *duration = cJSON_GetObjectItem(args_json, "duration");
+                                cJSON *speed = cJSON_GetObjectItem(args_json, "speed");
+                                
+                                if (cJSON_IsString(reasoning) && cJSON_IsString(action) && cJSON_IsNumber(duration) && cJSON_IsNumber(speed)) {
+                                    const char *reasoning_str = cJSON_GetStringValue(reasoning);
+                                    const char *action_str = cJSON_GetStringValue(action);
+                                    double duration_val = cJSON_GetNumberValue(duration);
+                                    int speed_val = (int)cJSON_GetNumberValue(speed);
+                                    
+                                    ESP_LOGI(TAG, "🧠 AI思考: %s", reasoning_str);
+                                    ESP_LOGI(TAG, "🚗 AI驾驶决策: 动作=%s, 持续时间=%.1f秒, 速度=%d%%", 
+                                        action_str, duration_val, speed_val);
+                                    
+                                    // 执行电机控制
+                                    esp_err_t motor_result = ESP_FAIL;
+                                    if (strcmp(action_str, "forward") == 0) motor_result = motor_forward(speed_val);
+                                    else if (strcmp(action_str, "backward") == 0) motor_result = motor_backward(speed_val);
+                                    else if (strcmp(action_str, "left") == 0) motor_result = motor_left(speed_val);
+                                    else if (strcmp(action_str, "right") == 0) motor_result = motor_right(speed_val);
+                                    else if (strcmp(action_str, "stop") == 0) motor_result = motor_stop_all();
+                                    
+                                    if (motor_result == ESP_OK && duration_val > 0) {
+                                        vTaskDelay(pdMS_TO_TICKS((int)(duration_val * 1000)));
+                                        motor_stop_all();
+                                        ESP_LOGI(TAG, "🛑 电机已停止");
+                                    }
+                                    
+                                    // 5. 使用解析出的reasoning_str更新最终结果
+                                    char full_ai_result[1024];
+                                    snprintf(full_ai_result, sizeof(full_ai_result), 
+                                        "🧠 AI思考过程:\n%s\n\n🚗 驾驶决策: %s (%.1f秒, 速度%d%%)", 
+                                        reasoning_str, action_str, duration_val, speed_val);
+                                    storage_manager_update_ai_result(filename, full_ai_result);
+                                    
+                                } else {
+                                    ESP_LOGW(TAG, "⚠️ Tool Call参数格式错误或缺少字段");
+                                    storage_manager_update_ai_result(filename, "AI决策参数错误");
+                                }
+                                cJSON_Delete(args_json);
+                            } else {
+                                ESP_LOGE(TAG, "❌ Tool Call参数JSON解析失败");
+                                storage_manager_update_ai_result(filename, "AI响应解析失败");
+                            }
+                        } else {
+                            ESP_LOGW(TAG, "⚠️ Tool Call缺少参数");
+                            storage_manager_update_ai_result(filename, "AI响应缺少参数");
+                        }
+                    } else {
+                        ESP_LOGW(TAG, "❌ AI没有使用Tool Call，检查Prompt或模型能力");
+                        cJSON *content = cJSON_GetObjectItem(message, "content");
+                        if (cJSON_IsString(content)) {
+                            storage_manager_update_ai_result(filename, cJSON_GetStringValue(content));
+                        } else {
+                            storage_manager_update_ai_result(filename, "AI未按预期返回工具调用");
+                        }
+                    }
+                } else {
+                    ESP_LOGE(TAG, "❌ AI响应中没有找到choices字段");
+                    storage_manager_update_ai_result(filename, "AI响应格式错误 (no choices)");
+                }
+                cJSON_Delete(response_json);
+            } else {
+                ESP_LOGE(TAG, "❌ AI响应JSON解析失败，原始响应: %.200s", response_buffer);
+                storage_manager_update_ai_result(filename, "AI响应JSON解析失败");
+            }
+            socket_failure_count = 0;
+        } else {
+            ESP_LOGW(TAG, "❌ AI自动驾驶API请求失败，状态码: %d", status_code);
+            ESP_LOGW(TAG, "错误响应内容: %.200s", response_buffer);
+            storage_manager_update_ai_result(filename, "AI服务API请求失败");
+            socket_failure_count++;
+        }
+    } else {
+        ESP_LOGE(TAG, "❌ AI自动驾驶HTTP请求失败: %s", esp_err_to_name(err));
+        storage_manager_update_ai_result(filename, "AI服务HTTP请求失败");
+        socket_failure_count++;
+    }
+    
+    esp_http_client_cleanup(client);
+    cJSON_Delete(json);
+    free(json_string);
+    free(response_buffer);
+    return err;
+}
+
+
+// AI命令驱动分析函数
+esp_err_t ai_service_command_analyze(const char* command)
+{
+    ESP_LOGI(TAG, "🗣️ 启动AI命令分析功能");
+    ESP_LOGI(TAG, "📝 用户指令: %s", command);
+    
+    if (socket_failure_count >= 10) {
+        ESP_LOGW(TAG, "Socket失败次数过多，暂停AI命令分析 10 秒");
+        vTaskDelay(pdMS_TO_TICKS(10000));
+        socket_failure_count = 0;
+        return ESP_FAIL;
+    }
+    
+    if (!wifi_manager_is_sta_connected()) {
+        ESP_LOGW(TAG, "WiFi未连接，跳过AI命令分析");
+        socket_failure_count++;
+        return ESP_FAIL;
+    }
+    
+    size_t free_heap = esp_get_free_heap_size();
+    ESP_LOGI(TAG, "命令AI可用内存: %u 字节", (unsigned int)free_heap);
+    if (free_heap < 50000) {
+        ESP_LOGW(TAG, "内存不足，跳过AI命令分析");
+        socket_failure_count++;
+        return ESP_FAIL;
+    }
+    
+    return ESP_OK;
+}

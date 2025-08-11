@@ -1,0 +1,793 @@
+#include <string.h>
+#include <sys/stat.h>
+#include <sys/param.h>
+#include "esp_http_server.h"
+#include "esp_log.h"
+#include "cJSON.h"
+
+#include "web_server.h"
+#include "wifi_manager.h"
+#include "time_service.h"
+#include "storage_manager.h"
+#include "motor_driver.h"
+#include "camera_driver.h"
+#include "ai_service.h"
+
+static const char *TAG = "web_server";
+
+// AI自动驾驶状态
+static bool ai_auto_drive_enabled = false;
+
+// WiFi凭证，仅用于在网页上显示SSID
+#define WIFI_SSID "bed_room_2.4G"
+#define AP_SSID "ESP32-S3-Camera"
+#define AP_MAX_CONN 4
+
+// --- HTTP Handlers ---
+
+static esp_err_t network_api_handler(httpd_req_t *req)
+{
+    cJSON *root = cJSON_CreateObject();
+    
+    // STA模式信息
+    cJSON *sta_info = cJSON_CreateObject();
+    bool sta_connected = wifi_manager_is_sta_connected();
+    char sta_ip[16];
+    wifi_manager_get_sta_ip(sta_ip, sizeof(sta_ip));
+    cJSON_AddBoolToObject(sta_info, "connected", sta_connected);
+    cJSON_AddStringToObject(sta_info, "ssid", WIFI_SSID);
+    cJSON_AddStringToObject(sta_info, "ip", sta_ip);
+    cJSON_AddItemToObject(root, "sta", sta_info);
+    
+    // AP模式信息
+    cJSON *ap_info = cJSON_CreateObject();
+    bool ap_started = wifi_manager_is_ap_started();
+    char ap_ip[16];
+    wifi_manager_get_ap_ip(ap_ip, sizeof(ap_ip));
+    cJSON_AddBoolToObject(ap_info, "started", ap_started);
+    cJSON_AddStringToObject(ap_info, "ssid", AP_SSID);
+    cJSON_AddStringToObject(ap_info, "ip", ap_ip);
+    cJSON_AddNumberToObject(ap_info, "max_connections", AP_MAX_CONN);
+    cJSON_AddItemToObject(root, "ap", ap_info);
+    
+    char *json_string = cJSON_Print(root);
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    httpd_resp_send(req, json_string, strlen(json_string));
+    
+    free(json_string);
+    cJSON_Delete(root);
+    return ESP_OK;
+}
+
+static esp_err_t time_api_handler(httpd_req_t *req)
+{
+    char time_str[64];
+    time_service_get_beijing_time_string(time_str, sizeof(time_str));
+    
+    time_t now;
+    time(&now);
+    
+    cJSON *root = cJSON_CreateObject();
+    cJSON_AddStringToObject(root, "time", time_str);
+    cJSON_AddNumberToObject(root, "timestamp", (double)now);
+    cJSON_AddBoolToObject(root, "synchronized", time_service_is_time_synchronized());
+    
+    char *json_string = cJSON_Print(root);
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    httpd_resp_send(req, json_string, strlen(json_string));
+    
+    free(json_string);
+    cJSON_Delete(root);
+    return ESP_OK;
+}
+
+static esp_err_t history_api_handler(httpd_req_t *req)
+{
+    image_info_t history_buffer[MAX_HISTORY_IMAGES];
+    int image_count = storage_manager_get_history(history_buffer, MAX_HISTORY_IMAGES);
+
+    cJSON *root = cJSON_CreateObject();
+    cJSON *images = cJSON_CreateArray();
+
+    for (int i = 0; i < image_count; i++) {
+        cJSON *image = cJSON_CreateObject();
+        
+        const char* filename_only = strrchr(history_buffer[i].filename, '/');
+        filename_only = filename_only ? filename_only + 1 : history_buffer[i].filename;
+        
+        cJSON_AddStringToObject(image, "filename", filename_only);
+        cJSON_AddNumberToObject(image, "timestamp", (double)history_buffer[i].capture_time);
+        cJSON_AddBoolToObject(image, "has_ai_result", history_buffer[i].has_ai_result);
+        cJSON_AddStringToObject(image, "ai_description", history_buffer[i].ai_description);
+        cJSON_AddItemToArray(images, image);
+    }
+
+    cJSON_AddItemToObject(root, "images", images);
+    cJSON_AddNumberToObject(root, "total", image_count);
+
+    char *json_string = cJSON_Print(root);
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    httpd_resp_send(req, json_string, strlen(json_string));
+
+    free(json_string);
+    cJSON_Delete(root);
+    return ESP_OK;
+}
+
+static esp_err_t image_handler(httpd_req_t *req)
+{
+    char filename[64];
+    if (httpd_req_get_url_query_str(req, filename, sizeof(filename)) != ESP_OK) {
+        httpd_resp_send_404(req);
+        return ESP_FAIL;
+    }
+    
+    char *file_param = strstr(filename, "file=");
+    if (file_param == NULL) {
+        httpd_resp_send_404(req);
+        return ESP_FAIL;
+    }
+    
+    char *actual_filename = file_param + 5; // Skip "file="
+    
+    char *end = strchr(actual_filename, '&');
+    if (end) *end = '\0';
+    
+    char filepath[128];
+    snprintf(filepath, sizeof(filepath), "/spiffs/%s", actual_filename);
+    
+    struct stat file_stat;
+    if (stat(filepath, &file_stat) == -1) {
+        ESP_LOGE(TAG, "File not found: %s", filepath);
+        httpd_resp_send_404(req);
+        return ESP_FAIL;
+    }
+    
+    FILE *file = fopen(filepath, "rb");
+    if (file == NULL) {
+        ESP_LOGE(TAG, "Failed to open file: %s", filepath);
+        httpd_resp_send_404(req);
+        return ESP_FAIL;
+    }
+    
+    httpd_resp_set_type(req, "image/jpeg");
+    
+    char buffer[1024];
+    size_t bytes_read;
+    while ((bytes_read = fread(buffer, 1, sizeof(buffer), file)) > 0) {
+        if (httpd_resp_send_chunk(req, buffer, bytes_read) != ESP_OK) {
+            fclose(file);
+            return ESP_FAIL;
+        }
+    }
+    
+    fclose(file);
+    httpd_resp_send_chunk(req, NULL, 0);
+    return ESP_OK;
+}
+
+static esp_err_t motor_control_handler(httpd_req_t *req)
+{
+    ESP_LOGI(TAG, "收到电机控制API请求");
+    char content[128];
+    size_t recv_size = MIN(req->content_len, sizeof(content) - 1);
+    
+    int ret = httpd_req_recv(req, content, recv_size);
+    if (ret <= 0) {
+        ESP_LOGE(TAG, "接收HTTP请求数据失败");
+        httpd_resp_send_500(req);
+        return ESP_FAIL;
+    }
+    content[ret] = '\0';
+    ESP_LOGI(TAG, "接收到的JSON数据: %s", content);
+    
+    cJSON *json = cJSON_Parse(content);
+    if (json == NULL) {
+        ESP_LOGE(TAG, "JSON解析失败");
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid JSON");
+        return ESP_FAIL;
+    }
+    
+    cJSON *action = cJSON_GetObjectItem(json, "action");
+    cJSON *speed = cJSON_GetObjectItem(json, "speed");
+    
+    if (!cJSON_IsString(action)) {
+        ESP_LOGE(TAG, "action字段不是字符串或不存在");
+        cJSON_Delete(json);
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid JSON");
+        return ESP_FAIL;
+    }
+    
+    int motor_speed = 50; // 默认速度
+    if (cJSON_IsNumber(speed)) {
+        motor_speed = (int)cJSON_GetNumberValue(speed);
+        if (motor_speed < 0) motor_speed = 0;
+        if (motor_speed > 100) motor_speed = 100;
+    }
+    
+    esp_err_t result = ESP_FAIL;
+    const char *action_str = cJSON_GetStringValue(action);
+    
+    // 复制action字符串，避免在删除JSON对象后使用悬空指针
+    char action_copy[32];
+    strncpy(action_copy, action_str, sizeof(action_copy) - 1);
+    action_copy[sizeof(action_copy) - 1] = '\0';
+    
+    ESP_LOGI(TAG, "电机控制命令: %s, 速度: %d", action_copy, motor_speed);
+    
+    if (strcmp(action_copy, "forward") == 0) {
+        ESP_LOGI(TAG, "调用motor_forward函数");
+        result = motor_forward(motor_speed);
+        ESP_LOGI(TAG, "motor_forward返回结果: %s", result == ESP_OK ? "成功" : "失败");
+    } else if (strcmp(action_copy, "backward") == 0) {
+        result = motor_backward(motor_speed);
+    } else if (strcmp(action_copy, "left") == 0) {
+        result = motor_left(motor_speed);
+    } else if (strcmp(action_copy, "right") == 0) {
+        result = motor_right(motor_speed);
+    } else if (strcmp(action_copy, "stop") == 0) {
+        result = motor_stop_all();
+    }
+    
+    cJSON_Delete(json);
+    
+    cJSON *response = cJSON_CreateObject();
+    cJSON_AddBoolToObject(response, "success", result == ESP_OK);
+    cJSON_AddStringToObject(response, "action", action_copy);
+    cJSON_AddNumberToObject(response, "speed", motor_speed);
+    
+    char *json_string = cJSON_Print(response);
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    httpd_resp_send(req, json_string, strlen(json_string));
+    
+    free(json_string);
+    cJSON_Delete(response);
+    
+    return result == ESP_OK ? ESP_OK : ESP_FAIL;
+}
+
+// AI自动驾驶状态API处理函数
+static esp_err_t auto_drive_api_handler(httpd_req_t *req)
+{
+    if (req->method == HTTP_GET) {
+        // 获取AI自动驾驶状态
+        cJSON *response = cJSON_CreateObject();
+        cJSON_AddBoolToObject(response, "enabled", ai_auto_drive_enabled);
+        
+        char *json_string = cJSON_Print(response);
+        httpd_resp_set_type(req, "application/json");
+        httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+        httpd_resp_send(req, json_string, strlen(json_string));
+        
+        free(json_string);
+        cJSON_Delete(response);
+        return ESP_OK;
+    }
+    else if (req->method == HTTP_POST) {
+        // 设置AI自动驾驶状态
+        char content[128];
+        size_t recv_size = MIN(req->content_len, sizeof(content) - 1);
+        
+        int ret = httpd_req_recv(req, content, recv_size);
+        if (ret <= 0) {
+            httpd_resp_send_500(req);
+            return ESP_FAIL;
+        }
+        content[ret] = '\0';
+        
+        cJSON *json = cJSON_Parse(content);
+        if (json == NULL) {
+            httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid JSON");
+            return ESP_FAIL;
+        }
+        
+        cJSON *enabled = cJSON_GetObjectItem(json, "enabled");
+        if (!cJSON_IsBool(enabled)) {
+            cJSON_Delete(json);
+            httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid JSON");
+            return ESP_FAIL;
+        }
+        
+        ai_auto_drive_enabled = cJSON_IsTrue(enabled);
+        ESP_LOGI(TAG, "AI自动驾驶状态: %s", ai_auto_drive_enabled ? "开启" : "关闭");
+        
+        cJSON *response = cJSON_CreateObject();
+        cJSON_AddBoolToObject(response, "success", true);
+        cJSON_AddBoolToObject(response, "enabled", ai_auto_drive_enabled);
+        
+        char *json_string = cJSON_Print(response);
+        httpd_resp_set_type(req, "application/json");
+        httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+        httpd_resp_send(req, json_string, strlen(json_string));
+        
+        free(json_string);
+        cJSON_Delete(response);
+        cJSON_Delete(json);
+        return ESP_OK;
+    }
+    
+    httpd_resp_send_404(req);
+    return ESP_FAIL;
+}
+
+// AI命令处理API函数
+static esp_err_t ai_command_handler(httpd_req_t *req)
+{
+    ESP_LOGI(TAG, "收到AI命令API请求");
+    
+    // 获取请求内容
+    char content[512];
+    size_t recv_size = MIN(req->content_len, sizeof(content) - 1);
+    
+    int ret = httpd_req_recv(req, content, recv_size);
+    if (ret <= 0) {
+        ESP_LOGE(TAG, "接收AI命令HTTP请求数据失败");
+        httpd_resp_send_500(req);
+        return ESP_FAIL;
+    }
+    content[ret] = '\0';
+    ESP_LOGI(TAG, "接收到的AI命令JSON: %s", content);
+    
+    // 解析JSON
+    cJSON *json = cJSON_Parse(content);
+    if (json == NULL) {
+        ESP_LOGE(TAG, "AI命令JSON解析失败");
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid JSON");
+        return ESP_FAIL;
+    }
+    
+    cJSON *command_obj = cJSON_GetObjectItem(json, "command");
+    if (!cJSON_IsString(command_obj)) {
+        ESP_LOGE(TAG, "command字段不是字符串或不存在");
+        cJSON_Delete(json);
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Missing command field");
+        return ESP_FAIL;
+    }
+    
+    const char *command = cJSON_GetStringValue(command_obj);
+    ESP_LOGI(TAG, "🗣️ 接收到AI命令: %s", command);
+    
+    // 触发AI命令分析
+    esp_err_t ai_result = ai_service_command_analyze(command);
+    
+    // 返回响应
+    cJSON *response = cJSON_CreateObject();
+    if (ai_result == ESP_OK) {
+        cJSON_AddBoolToObject(response, "success", true);
+        cJSON_AddStringToObject(response, "response", "AI正在分析当前图像并执行您的指令...");
+        ESP_LOGI(TAG, "✅ AI命令执行成功");
+    } else {
+        cJSON_AddBoolToObject(response, "success", false);
+        cJSON_AddStringToObject(response, "error", "AI命令处理失败，请检查网络连接");
+        ESP_LOGI(TAG, "❌ AI命令执行失败");
+    }
+    
+    char *response_str = cJSON_Print(response);
+    httpd_resp_set_type(req, "application/json");
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    httpd_resp_send(req, response_str, strlen(response_str));
+    
+    free(response_str);
+    cJSON_Delete(response);
+    cJSON_Delete(json);
+    
+    return ESP_OK;
+}
+
+static esp_err_t index_handler(httpd_req_t *req)
+{
+    const char* html = "<!DOCTYPE html>"
+        "<html><head>"
+        "<title>ESP32-S3摄像头AI分析系统</title>"
+        "<meta charset='UTF-8'>"
+        "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
+        "<style>"
+        "body{font-family:Arial,sans-serif;margin:8px;background-color:#f5f5f5;font-size:13px}"
+        ".container{max-width:1400px;margin:0 auto;background-color:white;padding:10px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.1)}"
+        ".header{text-align:center;margin-bottom:15px}"
+        ".status{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin:10px 0}"
+        ".status-item{background:#f8f9fa;padding:5px 8px;border-radius:4px;font-size:11px;text-align:center}"
+        ".controls{text-align:center;margin:8px 0}"
+        ".btn{background:#007bff;color:white;border:none;padding:5px 10px;border-radius:4px;cursor:pointer;margin:3px;font-size:11px}"
+        ".btn:hover{background:#0056b3}"
+        ".btn:disabled{background:#ccc;cursor:not-allowed}"
+        ".motor-controls{background:#f8f9fa;padding:10px;border-radius:6px;margin:10px 0;text-align:center;max-width:280px;margin-left:auto;margin-right:auto}"
+        ".motor-btn{background:#28a745;color:white;border:none;padding:6px;border-radius:4px;cursor:pointer;font-size:11px;font-weight:bold;width:50px;height:30px;transition:all 0.2s}"
+        ".motor-btn:hover{background:#218838}"
+        ".motor-btn:active{background:#1e7e34;transform:translateY(1px)}"
+        ".motor-btn.stop{background:#dc3545;width:50px;grid-column:2;grid-row:2}"
+        ".motor-btn.stop:hover{background:#c82333}"
+        ".speed-control{margin:8px 0}"
+        ".speed-slider{width:120px;margin:0 5px}"
+        ".motor-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:5px;max-width:180px;margin:0 auto}"
+        ".motor-btn.forward{grid-column:2;grid-row:1}"
+        ".motor-btn.left{grid-column:1;grid-row:2}"
+        ".motor-btn.right{grid-column:3;grid-row:2}"
+        ".motor-btn.backward{grid-column:2;grid-row:3}"
+        ".grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;margin-top:10px}"
+        ".card{border:1px solid #ddd;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.1)}"
+        ".card img{width:100%;height:140px;object-fit:cover}"
+        ".card-content{padding:8px}"
+        ".timestamp{color:#666;font-size:10px;margin-bottom:5px}"
+        ".ai-result{background:#e3f2fd;padding:5px;border-radius:3px;margin:3px 0;font-size:11px;line-height:1.3;white-space:pre-wrap}"
+        ".ai-motor-control{background:#fff3cd;padding:8px;border-radius:3px;margin:3px 0;font-size:11px;line-height:1.4;border-left:3px solid #f0ad4e;white-space:pre-wrap}"
+        ".ai-thinking{background:#f8f9fa;border-left:3px solid #6f42c1;padding:6px;margin:2px 0;font-size:10px;line-height:1.3;color:#5a5a5a;white-space:pre-wrap}"
+        ".ai-decision{background:#d1ecf1;border-left:3px solid #17a2b8;padding:5px;margin:2px 0;font-size:11px;line-height:1.3;font-weight:bold}"
+        ".loading{text-align:center;padding:15px;color:#666;font-size:12px}"
+        ".error{color:red;text-align:center;padding:15px;font-size:12px}"
+        ".sync-status{display:inline-block;margin-left:10px;font-size:10px}"
+        ".sync-ok{color:green}.sync-error{color:red}"
+        ".motor-status{margin:5px 0;font-size:10px;color:#666;text-align:center;min-height:12px}"
+        ".main-content{display:grid;grid-template-columns:300px 1fr;gap:15px;margin:10px 0}"
+        ".sidebar{display:flex;flex-direction:column;gap:10px}"
+        ".images-section{min-height:300px}"
+        "h1{font-size:18px;margin:5px 0}"
+        "h3{font-size:14px;margin:5px 0}"
+        ".ai-auto-drive{background:#e8f5e8;padding:10px;border-radius:6px;margin-top:10px}"
+        ".auto-drive-toggle{display:flex;align-items:center;cursor:pointer;font-size:11px;margin:5px 0}"
+        ".auto-drive-toggle input[type=checkbox]{display:none}"
+        ".toggle-slider{width:30px;height:15px;background:#ccc;border-radius:15px;position:relative;transition:0.3s;margin-right:8px}"
+        ".toggle-slider:before{content:'';position:absolute;width:11px;height:11px;border-radius:50%;background:white;top:2px;left:2px;transition:0.3s}"
+        ".auto-drive-toggle input:checked + .toggle-slider{background:#4CAF50}"
+        ".auto-drive-toggle input:checked + .toggle-slider:before{transform:translateX(15px)}"
+        ".auto-drive-status{font-size:10px;color:#666;margin:3px 0;font-weight:bold}"
+        ".auto-drive-info{font-size:9px;color:#888;margin-top:5px;line-height:1.3}"
+        ".ai-command-control{background:#f0f8ff;padding:10px;border-radius:6px;margin-top:10px}"
+        ".command-input-area{margin:8px 0}"
+        ".command-textarea{width:100%;min-height:80px;padding:6px;border:1px solid #ccc;border-radius:4px;font-size:11px;resize:vertical;font-family:Arial,sans-serif}"
+        ".command-controls{display:flex;gap:5px;margin-top:5px;justify-content:center}"
+        ".command-btn{background:#17a2b8;padding:4px 8px;font-size:10px}"
+        ".command-btn:hover{background:#138496}"
+        ".command-status{font-size:10px;color:#666;margin:5px 0;text-align:center;font-weight:bold}"
+        ".command-response{background:#ffffff;border:1px solid #e0e0e0;border-radius:4px;padding:8px;margin:5px 0;font-size:11px;line-height:1.4;min-height:20px;max-height:150px;overflow-y:auto}"
+        ".command-response.loading{color:#666;font-style:italic}"
+        ".command-response.success{border-left:3px solid #28a745}"
+        ".command-response.error{border-left:3px solid #dc3545;color:#721c24}"
+        "@media (max-width:900px){.main-content{grid-template-columns:1fr;gap:10px}.motor-controls{max-width:280px;margin:0 auto}}"
+        "@media (max-width:600px){.status{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.motor-grid{max-width:160px}.motor-btn{width:45px;height:25px;font-size:10px}}"
+        "</style>"
+        "</head><body>"
+        "<div class='container'>"
+        "<div class='header'>"
+        "<h1>ESP32-S3摄像头AI分析系统</h1>"
+        "<div>当前时间: <span id='current-time'>加载中...</span><span id='sync-status' class='sync-status'></span></div>"
+        "</div>"
+        "<div class='status' id='status'>加载中...</div>"
+        "<div class='controls'>"
+        "<button class='btn' onclick='loadImages()'>刷新图片</button>"
+        "<button class='btn' onclick='updateTime()'>更新时间</button>"
+        "<label><input type='checkbox' id='auto-refresh' checked> 自动刷新 <span id='refresh-interval'>(6秒)</span></label>"
+        "</div>"
+        "<div class='main-content'>"
+        "<div class='sidebar'>"
+        "<div class='motor-controls'>"
+        "<h3>🚗 L298N电机控制</h3>"
+        "<div class='motor-grid'>"
+        "<button class='motor-btn forward' onmousedown='startMotor(\"forward\")' onmouseup='stopMotor()' ontouchstart='startMotor(\"forward\")' ontouchend='stopMotor()'>▲<br>前进</button>"
+        "<button class='motor-btn left' onmousedown='startMotor(\"left\")' onmouseup='stopMotor()' ontouchstart='startMotor(\"left\")' ontouchend='stopMotor()'>◄<br>左转</button>"
+        "<button class='motor-btn stop' onclick='stopMotor()'>⏹<br>停止</button>"
+        "<button class='motor-btn right' onmousedown='startMotor(\"right\")' onmouseup='stopMotor()' ontouchstart='startMotor(\"right\")' ontouchend='stopMotor()'>►<br>右转</button>"
+        "<button class='motor-btn backward' onmousedown='startMotor(\"backward\")' onmouseup='stopMotor()' ontouchstart='startMotor(\"backward\")' ontouchend='stopMotor()'>▼<br>后退</button>"
+        "</div>"
+        "<div class='speed-control'>"
+        "<label>速度: <input type='range' id='speed-slider' class='speed-slider' min='30' max='100' value='50' oninput='updateSpeedDisplay()'> <span id='speed-value'>50</span>%</label>"
+        "</div>"
+        "<div class='motor-status' id='motor-status'>电机状态: 停止</div>"
+        "</div>"
+        "<div class='ai-auto-drive'>"
+        "<h3>🤖 AI自动驾驶</h3>"
+        "<label class='auto-drive-toggle'>"
+        "<input type='checkbox' id='ai-auto-drive' onchange='toggleAutoDrive()'>"
+        "<span class='toggle-slider'></span>"
+        "启用AI自动驾驶"
+        "</label>"
+        "<div class='auto-drive-status' id='auto-drive-status'>AI自动驾驶: 关闭</div>"
+        "<div class='auto-drive-info'>AI将根据摄像头图像自动控制电机移动</div>"
+        "</div>"
+        "<div class='ai-command-control'>"
+        "<h3>🗣️ AI命令控制</h3>"
+        "<div class='command-input-area'>"
+        "<textarea id='command-input' class='command-textarea' placeholder='输入AI任务指令，例如：\\n- 找到房间里的瓶子\\n- 告诉我你看到了什么\\n- 寻找红色的物体\\n- 检查前方是否有障碍物'></textarea>"
+        "<div class='command-controls'>"
+        "<button class='btn command-btn' onclick='sendAICommand()'>🚀 发送指令</button>"
+        "<button class='btn command-btn' onclick='clearCommand()'>🗑️ 清空</button>"
+        "</div>"
+        "</div>"
+        "<div class='command-status' id='command-status'>等待指令...</div>"
+        "<div class='command-response' id='command-response'></div>"
+        "</div>"
+        "</div>"
+        "<div class='images-section'>"
+        "<h3>📸 图片历史</h3>"
+        "<div id='images' class='grid'>加载中...</div>"
+        "</div>"
+        "</div>"
+        "</div>"
+        "<script>"
+        "let refreshInterval;let isPageVisible=true;let autoRefreshEnabled=true;let currentMotorAction='';"
+        "document.addEventListener('visibilitychange',()=>{"
+        "isPageVisible=!document.hidden;"
+        "if(autoRefreshEnabled){updateRefreshInterval()}"
+        "});"
+        "function updateSpeedDisplay(){"
+        "const slider=document.getElementById('speed-slider');"
+        "document.getElementById('speed-value').textContent=slider.value"
+        "}"
+        "function controlMotor(action,speed){"
+        "console.log('controlMotor被调用，action:', action, 'speed:', speed);"
+        "fetch('/api/motor',{"
+        "method:'POST',"
+        "headers:{'Content-Type':'application/json'},"
+        "body:JSON.stringify({action:action,speed:speed})"
+        "}).then(r=>{"
+        "console.log('收到响应，状态:', r.status);"
+        "return r.json();"
+        "}).then(data=>{"
+        "console.log('响应数据:', data);"
+        "if(data.success){"
+        "if(action==='stop'){"
+        "document.getElementById('motor-status').textContent='电机状态: 停止'"
+        "}else{"
+        "document.getElementById('motor-status').textContent=`电机状态: ${getActionName(action)} (速度: ${data.speed}%)`"
+        "}"
+        "}else{"
+        "console.log('电机控制失败');"
+        "document.getElementById('motor-status').textContent='电机状态: 控制失败'"
+        "}"
+        "}).catch(e=>{"
+        "console.log('Motor control error:',e);"
+        "document.getElementById('motor-status').textContent='电机状态: 网络错误'"
+        "})"
+        "}"
+        "function formatMotorControlResult(description){"
+        "if(!description) return '<div class=\"ai-motor-control\">AI分析中...</div>';"
+        "let html='';"
+        "const sections=description.split('\\n\\n');"
+        "for(let section of sections){"
+        "section=section.trim();"
+        "if(!section) continue;"
+        "if(section.startsWith('🧠 AI思考过程:')){"
+        "const thinkingContent=section.substring('🧠 AI思考过程:'.length).trim();"
+        "html+=`<div class='ai-thinking'><strong>🧠 AI思考过程:</strong><br>${thinkingContent.replace(/\\n/g,'<br>')}</div>`;"
+        "}else if(section.startsWith('🚗 驾驶决策:')||section.startsWith('🚗 AI自动驾驶决策:')){"
+        "const cleanSection=section.replace(/^🚗\\s*(AI自动)?驾驶决策:\\s*/,'');"
+        "html+=`<div class='ai-decision'><strong>🚗 AI驾驶决策:</strong><br>${cleanSection.replace(/\\n/g,'<br>')}</div>`;"
+        "}else{"
+        "html+=`<div class='ai-motor-control'>${section.replace(/\\n/g,'<br>')}</div>`;"
+        "}"
+        "}"
+        "return html||`<div class='ai-motor-control'>${description.replace(/\\n/g,'<br>')}</div>`;"
+        "}"
+        "function getActionName(action){"
+        "const names={'forward':'前进','backward':'后退','left':'左转','right':'右转','stop':'停止'};"
+        "return names[action]||action"
+        "}"
+        "function startMotor(action){"
+        "console.log('startMotor被调用，action:', action);"
+        "const speed=parseInt(document.getElementById('speed-slider').value);"
+        "console.log('当前速度值:', speed);"
+        "currentMotorAction=action;"
+        "controlMotor(action,speed)"
+        "}"
+        "function stopMotor(){"
+        "console.log('stopMotor被调用');"
+        "currentMotorAction='';"
+        "controlMotor('stop',0)"
+        "}"
+        "function toggleAutoDrive(){"
+        "const checkbox=document.getElementById('ai-auto-drive');"
+        "const status=document.getElementById('auto-drive-status');"
+        "fetch('/api/auto-drive',{"
+        "method:'POST',"
+        "headers:{'Content-Type':'application/json'},"
+        "body:JSON.stringify({enabled:checkbox.checked})"
+        "}).then(r=>r.json()).then(data=>{"
+        "if(data.success){"
+        "if(data.enabled){"
+        "status.textContent='AI自动驾驶: 开启';"
+        "status.style.color='#4CAF50';"
+        "console.log('AI自动驾驶已开启');"
+        "}else{"
+        "status.textContent='AI自动驾驶: 关闭';"
+        "status.style.color='#666';"
+        "console.log('AI自动驾驶已关闭');"
+        "}"
+        "}else{"
+        "console.log('AI自动驾驶状态更新失败');"
+        "checkbox.checked=!checkbox.checked;"
+        "}"
+        "}).catch(e=>{"
+        "console.log('AI自动驾驶API错误:',e);"
+        "checkbox.checked=!checkbox.checked;"
+        "})"
+        "}"
+        "function sendAICommand(){"
+        "const commandInput=document.getElementById('command-input');"
+        "const command=commandInput.value.trim();"
+        "if(!command){"
+        "alert('请输入AI指令');"
+        "return"
+        "}"
+        "const statusDiv=document.getElementById('command-status');"
+        "const responseDiv=document.getElementById('command-response');"
+        "statusDiv.textContent='🔄 AI正在执行指令...';"
+        "statusDiv.style.color='#007bff';"
+        "responseDiv.textContent='处理中，请稍候...';"
+        "responseDiv.className='command-response loading';"
+        "fetch('/api/ai-command',{"
+        "method:'POST',"
+        "headers:{'Content-Type':'application/json'},"
+        "body:JSON.stringify({command:command})"
+        "}).then(r=>r.json()).then(data=>{"
+        "if(data.success){"
+        "statusDiv.textContent='✅ 指令执行完成';"
+        "statusDiv.style.color='#28a745';"
+        "responseDiv.textContent=data.response||'AI执行成功';"
+        "responseDiv.className='command-response success';"
+        "loadImages();"
+        "}else{"
+        "statusDiv.textContent='❌ 指令执行失败';"
+        "statusDiv.style.color='#dc3545';"
+        "responseDiv.textContent=data.error||'未知错误';"
+        "responseDiv.className='command-response error';"
+        "}"
+        "}).catch(e=>{"
+        "console.error('AI命令API错误:',e);"
+        "statusDiv.textContent='❌ 网络错误';"
+        "statusDiv.style.color='#dc3545';"
+        "responseDiv.textContent='网络连接失败，请检查ESP32连接状态';"
+        "responseDiv.className='command-response error';"
+        "})"
+        "}"
+        "function clearCommand(){"
+        "document.getElementById('command-input').value='';"
+        "document.getElementById('command-status').textContent='等待指令...';"
+        "document.getElementById('command-status').style.color='#666';"
+        "document.getElementById('command-response').textContent='';"
+        "document.getElementById('command-response').className='command-response';"
+        "}"
+        "document.addEventListener('keydown',(e)=>{"
+        "if(document.activeElement.tagName==='INPUT')return;"
+        "const speed=parseInt(document.getElementById('speed-slider').value);"
+        "switch(e.key){"
+        "case 'ArrowUp':case 'w':case 'W':e.preventDefault();if(currentMotorAction!=='forward'){startMotor('forward')};break;"
+        "case 'ArrowDown':case 's':case 'S':e.preventDefault();if(currentMotorAction!=='backward'){startMotor('backward')};break;"
+        "case 'ArrowLeft':case 'a':case 'A':e.preventDefault();if(currentMotorAction!=='left'){startMotor('left')};break;"
+        "case 'ArrowRight':case 'd':case 'D':e.preventDefault();if(currentMotorAction!=='right'){startMotor('right')};break;"
+        "case ' ':e.preventDefault();stopMotor();break"
+        "}"
+        "});"
+        "document.addEventListener('keyup',(e)=>{"
+        "if(['ArrowUp','ArrowDown','ArrowLeft','ArrowRight','w','W','s','S','a','A','d','D'].includes(e.key)){"
+        "stopMotor()"
+        "}"
+        "});"
+        "if(autoRefreshEnabled){updateRefreshInterval()}"
+        "function updateRefreshInterval(){"
+        "clearInterval(refreshInterval);"
+        "if(autoRefreshEnabled){"
+        "const interval=isPageVisible?6000:15000;"
+        "document.getElementById('refresh-interval').textContent=`(${interval/1000}秒)`;"
+        "refreshInterval=setInterval(()=>{loadImages();updateTime()},interval)"
+        "}"
+        "}"
+        "document.getElementById('auto-refresh').addEventListener('change',(e)=>{"
+        "autoRefreshEnabled=e.target.checked;"
+        "if(autoRefreshEnabled){updateRefreshInterval()}else{clearInterval(refreshInterval);document.getElementById('refresh-interval').textContent=''}"
+        "});"
+        "function updateTime(){"
+        "fetch('/api/time').then(r=>r.json()).then(data=>{"
+        "document.getElementById('current-time').textContent=data.time;"
+        "const syncStatus=document.getElementById('sync-status');"
+        "if(data.synchronized){"
+        "syncStatus.textContent='✓ 已同步';syncStatus.className='sync-status sync-ok'"
+        "}else{"
+        "syncStatus.textContent='⚠ 未同步';syncStatus.className='sync-status sync-error'"
+        "}"
+        "}).catch(e=>console.log('Time update error:',e))"
+        "}"
+        "function updateNetworkStatus(){"
+        "fetch('/api/network').then(r=>r.json()).then(data=>{"
+        "const statusDiv=document.getElementById('status');"
+        "statusDiv.innerHTML=`"
+        "<div class='status-item'><strong>STA模式</strong><br>状态: ${data.sta.connected?'已连接':'未连接'}<br>SSID: ${data.sta.ssid}<br>IP: ${data.sta.ip}</div>"
+        "<div class='status-item'><strong>AP模式</strong><br>状态: ${data.ap.started?'已启动':'未启动'}<br>SSID: ${data.ap.ssid}<br>IP: ${data.ap.ip}</div>`"
+        "}).catch(e=>document.getElementById('status').innerHTML='<div class=\"error\">网络状态获取失败</div>')"
+        "}"
+        "function loadImages(){"
+        "const imagesDiv=document.getElementById('images');"
+        "imagesDiv.innerHTML='<div class=\"loading\">加载中...</div>';"
+        "fetch('/api/history').then(r=>r.json()).then(data=>{"
+        "if(data.images&&data.images.length>0){"
+        "imagesDiv.innerHTML=data.images.map(img=>{"
+        "const date=new Date(img.timestamp*1000);"
+        "const timeStr=date.toLocaleString('zh-CN');"
+        "const isMotorControl=img.ai_description&&(img.ai_description.includes('🧠 AI思考过程:')||img.ai_description.includes('🚗 驾驶决策:')||img.ai_description.includes('🚗 AI自动驾驶决策:'));"
+        "let aiResultHtml='';"
+        "if(img.has_ai_result){"
+        "if(isMotorControl){"
+        "aiResultHtml=formatMotorControlResult(img.ai_description);"
+        "}else{"
+        "aiResultHtml=`<div class='ai-result'><strong>AI观察:</strong><br>${img.ai_description}</div>`;"
+        "}"
+        "}else{"
+        "aiResultHtml='<div class=\"ai-result\">AI分析中...</div>';"
+        "}"
+        "return `<div class='card'>"
+        "<img src='/image?file=${img.filename}' alt='${img.filename}' loading='lazy'>"
+        "<div class='card-content'>"
+        "<div class='timestamp'>拍摄时间: ${timeStr}</div>"
+        "<div class='timestamp'>文件名: ${img.filename}</div>"
+        "${aiResultHtml}"
+        "</div></div>`"
+        "}).join('')"
+        "}else{"
+        "imagesDiv.innerHTML='<div class=\"loading\">暂无图片</div>'"
+        "}"
+        "}).catch(e=>imagesDiv.innerHTML='<div class=\"error\">图片加载失败</div>')"
+        "}"
+        "updateTime();updateNetworkStatus();loadImages();updateRefreshInterval();"
+        "</script>"
+        "</body></html>";
+    
+    httpd_resp_set_type(req, "text/html");
+    httpd_resp_set_hdr(req, "Content-Encoding", "identity");
+    return httpd_resp_send(req, html, strlen(html));
+}
+
+// --- Public Functions ---
+
+esp_err_t web_server_start(void)
+{
+    httpd_handle_t server = NULL;
+    httpd_config_t config = HTTPD_DEFAULT_CONFIG();
+    config.server_port = 80;
+    config.max_uri_handlers = 10;
+    config.stack_size = 4096;
+
+    ESP_LOGI(TAG, "Starting server on port: '%d'", config.server_port);
+    if (httpd_start(&server, &config) == ESP_OK) {
+        ESP_LOGI(TAG, "Registering URI handlers");
+        
+        httpd_uri_t index_uri = { .uri = "/", .method = HTTP_GET, .handler = index_handler };
+        httpd_register_uri_handler(server, &index_uri);
+
+        httpd_uri_t history_api_uri = { .uri = "/api/history", .method = HTTP_GET, .handler = history_api_handler };
+        httpd_register_uri_handler(server, &history_api_uri);
+
+        httpd_uri_t time_api_uri = { .uri = "/api/time", .method = HTTP_GET, .handler = time_api_handler };
+        httpd_register_uri_handler(server, &time_api_uri);
+
+        httpd_uri_t network_api_uri = { .uri = "/api/network", .method = HTTP_GET, .handler = network_api_handler };
+        httpd_register_uri_handler(server, &network_api_uri);
+
+        httpd_uri_t image_uri = { .uri = "/image", .method = HTTP_GET, .handler = image_handler };
+        httpd_register_uri_handler(server, &image_uri);
+
+        httpd_uri_t motor_api_uri = { .uri = "/api/motor", .method = HTTP_POST, .handler = motor_control_handler };
+        httpd_register_uri_handler(server, &motor_api_uri);
+
+        httpd_uri_t auto_drive_get_uri = { .uri = "/api/auto-drive", .method = HTTP_GET, .handler = auto_drive_api_handler };
+        httpd_register_uri_handler(server, &auto_drive_get_uri);
+        
+        httpd_uri_t auto_drive_post_uri = { .uri = "/api/auto-drive", .method = HTTP_POST, .handler = auto_drive_api_handler };
+        httpd_register_uri_handler(server, &auto_drive_post_uri);
+
+        httpd_uri_t ai_command_uri = { .uri = "/api/ai-command", .method = HTTP_POST, .handler = ai_command_handler };
+        httpd_register_uri_handler(server, &ai_command_uri);
+
+        return ESP_OK;
+    }
+
+    ESP_LOGE(TAG, "Error starting server!");
+    return ESP_FAIL;
+}
+
+bool web_server_get_auto_drive_status(void)
+{
+    return ai_auto_drive_enabled;
+}

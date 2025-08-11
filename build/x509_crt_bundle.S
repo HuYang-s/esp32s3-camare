@@ -1,4 +1,4 @@
-/* * Data converted from /Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 #if !defined (__APPLE__) && !defined (__linux__)

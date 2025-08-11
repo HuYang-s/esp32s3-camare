@@ -1,5 +1,6 @@
 #include "camera_driver.h"
 #include "esp_log.h"
+#include "esp_system.h"
 
 static const char* TAG = "camera_driver";
 
@@ -24,6 +25,15 @@ static const char* TAG = "camera_driver";
 
 esp_err_t camera_init(void)
 {
+    // Check available memory before camera initialization
+    size_t free_heap = esp_get_free_heap_size();
+    ESP_LOGI(TAG, "Free heap before camera init: %u bytes", (unsigned int)free_heap);
+    
+    if (free_heap < 100000) {  // Require at least 100KB free memory
+        ESP_LOGE(TAG, "Insufficient memory for camera initialization");
+        return ESP_ERR_NO_MEM;
+    }
+    
     camera_config_t config = {
         .pin_pwdn = PWDN_GPIO_NUM,
         .pin_reset = RESET_GPIO_NUM,
@@ -50,7 +60,7 @@ esp_err_t camera_init(void)
         .pixel_format = PIXFORMAT_JPEG,
         .frame_size = FRAMESIZE_QVGA,
 
-        .jpeg_quality = 15,
+        .jpeg_quality = 12,
         .fb_count = 1,
         .fb_location = CAMERA_FB_IN_DRAM,
         .grab_mode = CAMERA_GRAB_WHEN_EMPTY,

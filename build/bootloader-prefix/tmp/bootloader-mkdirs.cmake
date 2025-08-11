@@ -10,18 +10,18 @@ if(NOT EXISTS "/Users/huyang/esp/v5.4.2/esp-idf/components/bootloader/subproject
   file(MAKE_DIRECTORY "/Users/huyang/esp/v5.4.2/esp-idf/components/bootloader/subproject")
 endif()
 file(MAKE_DIRECTORY
-  "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader"
-  "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix"
-  "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/tmp"
-  "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp"
-  "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src"
-  "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader"
+  "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader-prefix"
+  "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader-prefix/tmp"
+  "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader-prefix/src/bootloader-stamp"
+  "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader-prefix/src"
+  "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/Users/huyang/Desktop/esp32/shexiang/esp32s3_camera_web/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()
