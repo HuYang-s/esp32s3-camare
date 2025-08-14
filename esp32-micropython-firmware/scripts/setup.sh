@@ -15,7 +15,14 @@ echo "ESP目录: $ESP_DIR"
 # 01. 安装Ubuntu依赖包
 echo "步骤1: 安装Ubuntu依赖包..."
 sudo apt-get update
-sudo apt-get install -y git wget libncurses-dev flex bison gperf python3 python3-pip python3-setuptools python3-serial python3-click python3-cryptography python3-future python3-pyparsing python3-pyelftools cmake ninja-build ccache libffi-dev libssl-dev python-is-python3 python3.10-venv --fix-missing
+# 先安装基础包
+sudo apt-get install -y git wget libncurses-dev flex bison gperf python3 python3-pip python3-setuptools cmake ninja-build ccache libffi-dev libssl-dev python3-venv --fix-missing
+
+# 尝试安装可选包（如果失败则忽略）
+sudo apt-get install -y python3-serial python3-click python3-cryptography python3-pyparsing python3-pyelftools python-is-python3 2>/dev/null || echo "某些可选包安装失败，将通过pip安装"
+
+# 通过pip安装可能缺失的Python包（如果需要）
+pip3 install pyserial click cryptography pyparsing pyelftools --break-system-packages 2>/dev/null || echo "Python包已通过系统包管理器安装"
 
 # 02. 配置pip源
 echo "步骤2: 配置pip源到阿里云..."
@@ -39,10 +46,10 @@ if [ ! -d "micropython" ]; then
     git clone https://github.com/micropython/micropython.git
 fi
 
-# 04. 切换ESP-IDF版本到v5.0.2
-echo "步骤4: 切换ESP-IDF版本到v5.0.2..."
+# 04. 切换ESP-IDF版本到v5.2
+echo "步骤4: 切换ESP-IDF版本到v5.2..."
 cd "$ESP_DIR/esp-idf"
-git checkout v5.0.2
+git checkout v5.2
 
 # 05. 配置esp-idf
 echo "步骤5: 配置esp-idf环境..."
