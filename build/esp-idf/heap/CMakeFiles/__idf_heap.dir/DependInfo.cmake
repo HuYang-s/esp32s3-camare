@@ -12,7 +12,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspace/esp-idf/components/heap/heap_caps_base.c" "esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_base.c.obj" "gcc" "esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_base.c.obj.d"
   "/workspace/esp-idf/components/heap/heap_caps_init.c" "esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj" "gcc" "esp-idf/heap/CMakeFiles/__idf_heap.dir/heap_caps_init.c.obj.d"
   "/workspace/esp-idf/components/heap/multi_heap.c" "esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj" "gcc" "esp-idf/heap/CMakeFiles/__idf_heap.dir/multi_heap.c.obj.d"
-  "/workspace/esp-idf/components/heap/port/esp32/memory_layout.c" "esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32/memory_layout.c.obj" "gcc" "esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32/memory_layout.c.obj.d"
+  "/workspace/esp-idf/components/heap/port/esp32s3/memory_layout.c" "esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32s3/memory_layout.c.obj" "gcc" "esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32s3/memory_layout.c.obj.d"
   "/workspace/esp-idf/components/heap/port/memory_layout_utils.c" "esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj" "gcc" "esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj.d"
   "/workspace/esp-idf/components/heap/tlsf/tlsf.c" "esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj" "gcc" "esp-idf/heap/CMakeFiles/__idf_heap.dir/tlsf/tlsf.c.obj.d"
   )

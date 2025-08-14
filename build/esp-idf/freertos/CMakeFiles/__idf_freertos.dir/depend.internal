@@ -8,13 +8,13 @@ esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/xtensa/p
  /workspace/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h
  /workspace/esp-idf/components/newlib/platform_include/assert.h
  /workspace/esp-idf/components/newlib/platform_include/sys/reent.h
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie-asm.h
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h
  /workspace/esp-idf/components/xtensa/include/xtensa/coreasm.h
  /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h

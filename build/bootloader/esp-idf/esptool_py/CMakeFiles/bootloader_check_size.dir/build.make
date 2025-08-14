@@ -67,7 +67,7 @@ include esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/compiler_depend.
 include esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/progress.make
 
 esp-idf/esptool_py/CMakeFiles/bootloader_check_size:
-	cd /workspace/build/bootloader/esp-idf/esptool_py && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 /workspace/build/bootloader/bootloader.bin
+	cd /workspace/build/bootloader/esp-idf/esptool_py && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /workspace/build/bootloader/bootloader.bin
 
 esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/codegen:
 .PHONY : esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/codegen

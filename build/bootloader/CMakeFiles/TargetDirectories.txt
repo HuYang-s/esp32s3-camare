@@ -11,6 +11,9 @@
 /workspace/build/bootloader/CMakeFiles/size.dir
 /workspace/build/bootloader/CMakeFiles/size-files.dir
 /workspace/build/bootloader/CMakeFiles/size-components.dir
+/workspace/build/bootloader/CMakeFiles/dfu.dir
+/workspace/build/bootloader/CMakeFiles/dfu-list.dir
+/workspace/build/bootloader/CMakeFiles/dfu-flash.dir
 /workspace/build/bootloader/CMakeFiles/uf2.dir
 /workspace/build/bootloader/CMakeFiles/uf2-app.dir
 /workspace/build/bootloader/CMakeFiles/edit_cache.dir
@@ -60,8 +63,8 @@
 /workspace/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir
 /workspace/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.dir
-/workspace/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/edit_cache.dir
-/workspace/build/bootloader/esp-idf/esp_hw_support/port/esp32/CMakeFiles/rebuild_cache.dir
+/workspace/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/edit_cache.dir
+/workspace/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir

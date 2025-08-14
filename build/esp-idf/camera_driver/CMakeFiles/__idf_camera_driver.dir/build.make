@@ -76,15 +76,15 @@ esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj: es
 esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj: /workspace/components/camera_driver/camera_driver.c
 esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj: esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj"
-	cd /workspace/build/esp-idf/camera_driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj -MF CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj.d -o CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj -c /workspace/components/camera_driver/camera_driver.c
+	cd /workspace/build/esp-idf/camera_driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj -MF CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj.d -o CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj -c /workspace/components/camera_driver/camera_driver.c
 
 esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_camera_driver.dir/camera_driver.c.i"
-	cd /workspace/build/esp-idf/camera_driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/camera_driver/camera_driver.c > CMakeFiles/__idf_camera_driver.dir/camera_driver.c.i
+	cd /workspace/build/esp-idf/camera_driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/camera_driver/camera_driver.c > CMakeFiles/__idf_camera_driver.dir/camera_driver.c.i
 
 esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_camera_driver.dir/camera_driver.c.s"
-	cd /workspace/build/esp-idf/camera_driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/camera_driver/camera_driver.c -o CMakeFiles/__idf_camera_driver.dir/camera_driver.c.s
+	cd /workspace/build/esp-idf/camera_driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/camera_driver/camera_driver.c -o CMakeFiles/__idf_camera_driver.dir/camera_driver.c.s
 
 # Object files for target __idf_camera_driver
 __idf_camera_driver_OBJECTS = \

@@ -39,23 +39,24 @@ esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/esp_err.c.obj: \
  /workspace/esp-idf/components/spi_flash/include/esp_private/cache_utils.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_cpu.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_api.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_context.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
  /workspace/esp-idf/components/xtensa/include/xt_utils.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /workspace/esp-idf/components/xtensa/include/xt_instr_macros.h \

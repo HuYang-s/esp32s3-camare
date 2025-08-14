@@ -30,7 +30,8 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_efuse.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_mac.h \
@@ -43,11 +44,10 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.obj: \
  /workspace/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
  /workspace/esp-idf/components/log/include/esp_log_timestamp.h \
- /workspace/esp-idf/components/efuse/esp32/include/esp_efuse_chip.h \
- /workspace/esp-idf/components/esp_common/include/esp_types.h \
- /workspace/esp-idf/components/efuse/esp32/include/esp_efuse_table.h
+ /workspace/esp-idf/components/efuse/esp32s3/include/esp_efuse_chip.h \
+ /workspace/esp-idf/components/efuse/esp32s3/include/esp_efuse_table.h

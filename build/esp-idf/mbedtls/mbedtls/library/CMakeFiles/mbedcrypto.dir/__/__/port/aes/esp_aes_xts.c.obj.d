@@ -38,7 +38,8 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
  /workspace/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h \

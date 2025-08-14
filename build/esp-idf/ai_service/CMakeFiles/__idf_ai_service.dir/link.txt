@@ -1,2 +1,2 @@
-/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-ar qc libai_service.a CMakeFiles/__idf_ai_service.dir/ai_service.c.obj CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj
-/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib libai_service.a
+/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-ar qc libai_service.a CMakeFiles/__idf_ai_service.dir/ai_service.c.obj CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj
+/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-ranlib libai_service.a

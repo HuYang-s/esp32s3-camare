@@ -1,6 +1,6 @@
 esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj: \
  /workspace/esp-idf/components/app_trace/port/port_uart.c \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
@@ -29,35 +29,35 @@ esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
  /workspace/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
  /workspace/esp-idf/components/log/include/esp_log_timestamp.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_cpu.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_api.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_context.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
  /workspace/esp-idf/components/xtensa/include/xt_utils.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /workspace/esp-idf/components/xtensa/include/xt_instr_macros.h \
@@ -112,19 +112,20 @@ esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port/port_uart.c.obj: \
  /workspace/esp-idf/components/esp_hw_support/include/esp_etm.h \
  /workspace/esp-idf/components/esp_driver_uart/include/driver/uart.h \
  /workspace/esp-idf/components/hal/include/hal/uart_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/uart_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/uart_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/uart_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/uart_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/uart_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/dport_access.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
  /workspace/esp-idf/components/hal/include/hal/gpio_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h

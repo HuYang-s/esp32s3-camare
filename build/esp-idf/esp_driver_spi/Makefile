@@ -271,6 +271,30 @@ src/gpspi/spi_slave.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build.make esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave.c.s
 .PHONY : src/gpspi/spi_slave.c.s
 
+src/gpspi/spi_slave_hd.obj: src/gpspi/spi_slave_hd.c.obj
+.PHONY : src/gpspi/spi_slave_hd.obj
+
+# target to build an object file
+src/gpspi/spi_slave_hd.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build.make esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave_hd.c.obj
+.PHONY : src/gpspi/spi_slave_hd.c.obj
+
+src/gpspi/spi_slave_hd.i: src/gpspi/spi_slave_hd.c.i
+.PHONY : src/gpspi/spi_slave_hd.i
+
+# target to preprocess a source file
+src/gpspi/spi_slave_hd.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build.make esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave_hd.c.i
+.PHONY : src/gpspi/spi_slave_hd.c.i
+
+src/gpspi/spi_slave_hd.s: src/gpspi/spi_slave_hd.c.s
+.PHONY : src/gpspi/spi_slave_hd.s
+
+# target to generate assembly for a file
+src/gpspi/spi_slave_hd.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/build.make esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi/spi_slave_hd.c.s
+.PHONY : src/gpspi/spi_slave_hd.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -296,6 +320,9 @@ help:
 	@echo "... src/gpspi/spi_slave.obj"
 	@echo "... src/gpspi/spi_slave.i"
 	@echo "... src/gpspi/spi_slave.s"
+	@echo "... src/gpspi/spi_slave_hd.obj"
+	@echo "... src/gpspi/spi_slave_hd.i"
+	@echo "... src/gpspi/spi_slave_hd.s"
 .PHONY : help
 
 

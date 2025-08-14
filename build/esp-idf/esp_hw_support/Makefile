@@ -247,6 +247,78 @@ cpu.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.s
 .PHONY : cpu.c.s
 
+deprecated/gdma_legacy.obj: deprecated/gdma_legacy.c.obj
+.PHONY : deprecated/gdma_legacy.obj
+
+# target to build an object file
+deprecated/gdma_legacy.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.obj
+.PHONY : deprecated/gdma_legacy.c.obj
+
+deprecated/gdma_legacy.i: deprecated/gdma_legacy.c.i
+.PHONY : deprecated/gdma_legacy.i
+
+# target to preprocess a source file
+deprecated/gdma_legacy.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.i
+.PHONY : deprecated/gdma_legacy.c.i
+
+deprecated/gdma_legacy.s: deprecated/gdma_legacy.c.s
+.PHONY : deprecated/gdma_legacy.s
+
+# target to generate assembly for a file
+deprecated/gdma_legacy.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.s
+.PHONY : deprecated/gdma_legacy.c.s
+
+dma/async_memcpy_gdma.obj: dma/async_memcpy_gdma.c.obj
+.PHONY : dma/async_memcpy_gdma.obj
+
+# target to build an object file
+dma/async_memcpy_gdma.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/async_memcpy_gdma.c.obj
+.PHONY : dma/async_memcpy_gdma.c.obj
+
+dma/async_memcpy_gdma.i: dma/async_memcpy_gdma.c.i
+.PHONY : dma/async_memcpy_gdma.i
+
+# target to preprocess a source file
+dma/async_memcpy_gdma.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/async_memcpy_gdma.c.i
+.PHONY : dma/async_memcpy_gdma.c.i
+
+dma/async_memcpy_gdma.s: dma/async_memcpy_gdma.c.s
+.PHONY : dma/async_memcpy_gdma.s
+
+# target to generate assembly for a file
+dma/async_memcpy_gdma.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/async_memcpy_gdma.c.s
+.PHONY : dma/async_memcpy_gdma.c.s
+
+dma/esp_async_memcpy.obj: dma/esp_async_memcpy.c.obj
+.PHONY : dma/esp_async_memcpy.obj
+
+# target to build an object file
+dma/esp_async_memcpy.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_async_memcpy.c.obj
+.PHONY : dma/esp_async_memcpy.c.obj
+
+dma/esp_async_memcpy.i: dma/esp_async_memcpy.c.i
+.PHONY : dma/esp_async_memcpy.i
+
+# target to preprocess a source file
+dma/esp_async_memcpy.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_async_memcpy.c.i
+.PHONY : dma/esp_async_memcpy.c.i
+
+dma/esp_async_memcpy.s: dma/esp_async_memcpy.c.s
+.PHONY : dma/esp_async_memcpy.s
+
+# target to generate assembly for a file
+dma/esp_async_memcpy.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_async_memcpy.c.s
+.PHONY : dma/esp_async_memcpy.c.s
+
 dma/esp_dma_utils.obj: dma/esp_dma_utils.c.obj
 .PHONY : dma/esp_dma_utils.obj
 
@@ -270,6 +342,30 @@ dma/esp_dma_utils.s: dma/esp_dma_utils.c.s
 dma/esp_dma_utils.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/esp_dma_utils.c.s
 .PHONY : dma/esp_dma_utils.c.s
+
+dma/gdma.obj: dma/gdma.c.obj
+.PHONY : dma/gdma.obj
+
+# target to build an object file
+dma/gdma.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma.c.obj
+.PHONY : dma/gdma.c.obj
+
+dma/gdma.i: dma/gdma.c.i
+.PHONY : dma/gdma.i
+
+# target to preprocess a source file
+dma/gdma.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma.c.i
+.PHONY : dma/gdma.c.i
+
+dma/gdma.s: dma/gdma.c.s
+.PHONY : dma/gdma.s
+
+# target to generate assembly for a file
+dma/gdma.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma/gdma.c.s
+.PHONY : dma/gdma.c.s
 
 dma/gdma_link.obj: dma/gdma_link.c.obj
 .PHONY : dma/gdma_link.obj
@@ -439,6 +535,30 @@ intr_alloc.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/intr_alloc.c.s
 .PHONY : intr_alloc.c.s
 
+lowpower/port/esp32s3/sleep_cpu.obj: lowpower/port/esp32s3/sleep_cpu.c.obj
+.PHONY : lowpower/port/esp32s3/sleep_cpu.obj
+
+# target to build an object file
+lowpower/port/esp32s3/sleep_cpu.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s3/sleep_cpu.c.obj
+.PHONY : lowpower/port/esp32s3/sleep_cpu.c.obj
+
+lowpower/port/esp32s3/sleep_cpu.i: lowpower/port/esp32s3/sleep_cpu.c.i
+.PHONY : lowpower/port/esp32s3/sleep_cpu.i
+
+# target to preprocess a source file
+lowpower/port/esp32s3/sleep_cpu.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s3/sleep_cpu.c.i
+.PHONY : lowpower/port/esp32s3/sleep_cpu.c.i
+
+lowpower/port/esp32s3/sleep_cpu.s: lowpower/port/esp32s3/sleep_cpu.c.s
+.PHONY : lowpower/port/esp32s3/sleep_cpu.s
+
+# target to generate assembly for a file
+lowpower/port/esp32s3/sleep_cpu.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32s3/sleep_cpu.c.s
+.PHONY : lowpower/port/esp32s3/sleep_cpu.c.s
+
 mac_addr.obj: mac_addr.c.obj
 .PHONY : mac_addr.obj
 
@@ -462,6 +582,30 @@ mac_addr.s: mac_addr.c.s
 mac_addr.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.s
 .PHONY : mac_addr.c.s
+
+mspi_timing_by_mspi_delay.obj: mspi_timing_by_mspi_delay.c.obj
+.PHONY : mspi_timing_by_mspi_delay.obj
+
+# target to build an object file
+mspi_timing_by_mspi_delay.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_by_mspi_delay.c.obj
+.PHONY : mspi_timing_by_mspi_delay.c.obj
+
+mspi_timing_by_mspi_delay.i: mspi_timing_by_mspi_delay.c.i
+.PHONY : mspi_timing_by_mspi_delay.i
+
+# target to preprocess a source file
+mspi_timing_by_mspi_delay.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_by_mspi_delay.c.i
+.PHONY : mspi_timing_by_mspi_delay.c.i
+
+mspi_timing_by_mspi_delay.s: mspi_timing_by_mspi_delay.c.s
+.PHONY : mspi_timing_by_mspi_delay.s
+
+# target to generate assembly for a file
+mspi_timing_by_mspi_delay.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_by_mspi_delay.c.s
+.PHONY : mspi_timing_by_mspi_delay.c.s
 
 mspi_timing_tuning.obj: mspi_timing_tuning.c.obj
 .PHONY : mspi_timing_tuning.obj
@@ -511,293 +655,341 @@ periph_ctrl.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/periph_ctrl.c.s
 .PHONY : periph_ctrl.c.s
 
-port/esp32/cache_sram_mmu.obj: port/esp32/cache_sram_mmu.c.obj
-.PHONY : port/esp32/cache_sram_mmu.obj
+port/esp32s3/chip_info.obj: port/esp32s3/chip_info.c.obj
+.PHONY : port/esp32s3/chip_info.obj
 
 # target to build an object file
-port/esp32/cache_sram_mmu.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/cache_sram_mmu.c.obj
-.PHONY : port/esp32/cache_sram_mmu.c.obj
+port/esp32s3/chip_info.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj
+.PHONY : port/esp32s3/chip_info.c.obj
 
-port/esp32/cache_sram_mmu.i: port/esp32/cache_sram_mmu.c.i
-.PHONY : port/esp32/cache_sram_mmu.i
+port/esp32s3/chip_info.i: port/esp32s3/chip_info.c.i
+.PHONY : port/esp32s3/chip_info.i
 
 # target to preprocess a source file
-port/esp32/cache_sram_mmu.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/cache_sram_mmu.c.i
-.PHONY : port/esp32/cache_sram_mmu.c.i
+port/esp32s3/chip_info.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.i
+.PHONY : port/esp32s3/chip_info.c.i
 
-port/esp32/cache_sram_mmu.s: port/esp32/cache_sram_mmu.c.s
-.PHONY : port/esp32/cache_sram_mmu.s
+port/esp32s3/chip_info.s: port/esp32s3/chip_info.c.s
+.PHONY : port/esp32s3/chip_info.s
 
 # target to generate assembly for a file
-port/esp32/cache_sram_mmu.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/cache_sram_mmu.c.s
-.PHONY : port/esp32/cache_sram_mmu.c.s
+port/esp32s3/chip_info.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.s
+.PHONY : port/esp32s3/chip_info.c.s
 
-port/esp32/chip_info.obj: port/esp32/chip_info.c.obj
-.PHONY : port/esp32/chip_info.obj
+port/esp32s3/cpu_region_protect.obj: port/esp32s3/cpu_region_protect.c.obj
+.PHONY : port/esp32s3/cpu_region_protect.obj
 
 # target to build an object file
-port/esp32/chip_info.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/chip_info.c.obj
-.PHONY : port/esp32/chip_info.c.obj
+port/esp32s3/cpu_region_protect.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj
+.PHONY : port/esp32s3/cpu_region_protect.c.obj
 
-port/esp32/chip_info.i: port/esp32/chip_info.c.i
-.PHONY : port/esp32/chip_info.i
+port/esp32s3/cpu_region_protect.i: port/esp32s3/cpu_region_protect.c.i
+.PHONY : port/esp32s3/cpu_region_protect.i
 
 # target to preprocess a source file
-port/esp32/chip_info.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/chip_info.c.i
-.PHONY : port/esp32/chip_info.c.i
+port/esp32s3/cpu_region_protect.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.i
+.PHONY : port/esp32s3/cpu_region_protect.c.i
 
-port/esp32/chip_info.s: port/esp32/chip_info.c.s
-.PHONY : port/esp32/chip_info.s
+port/esp32s3/cpu_region_protect.s: port/esp32s3/cpu_region_protect.c.s
+.PHONY : port/esp32s3/cpu_region_protect.s
 
 # target to generate assembly for a file
-port/esp32/chip_info.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/chip_info.c.s
-.PHONY : port/esp32/chip_info.c.s
+port/esp32s3/cpu_region_protect.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.s
+.PHONY : port/esp32s3/cpu_region_protect.c.s
 
-port/esp32/cpu_region_protect.obj: port/esp32/cpu_region_protect.c.obj
-.PHONY : port/esp32/cpu_region_protect.obj
+port/esp32s3/esp_clk_tree.obj: port/esp32s3/esp_clk_tree.c.obj
+.PHONY : port/esp32s3/esp_clk_tree.obj
 
 # target to build an object file
-port/esp32/cpu_region_protect.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/cpu_region_protect.c.obj
-.PHONY : port/esp32/cpu_region_protect.c.obj
+port/esp32s3/esp_clk_tree.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_clk_tree.c.obj
+.PHONY : port/esp32s3/esp_clk_tree.c.obj
 
-port/esp32/cpu_region_protect.i: port/esp32/cpu_region_protect.c.i
-.PHONY : port/esp32/cpu_region_protect.i
+port/esp32s3/esp_clk_tree.i: port/esp32s3/esp_clk_tree.c.i
+.PHONY : port/esp32s3/esp_clk_tree.i
 
 # target to preprocess a source file
-port/esp32/cpu_region_protect.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/cpu_region_protect.c.i
-.PHONY : port/esp32/cpu_region_protect.c.i
+port/esp32s3/esp_clk_tree.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_clk_tree.c.i
+.PHONY : port/esp32s3/esp_clk_tree.c.i
 
-port/esp32/cpu_region_protect.s: port/esp32/cpu_region_protect.c.s
-.PHONY : port/esp32/cpu_region_protect.s
+port/esp32s3/esp_clk_tree.s: port/esp32s3/esp_clk_tree.c.s
+.PHONY : port/esp32s3/esp_clk_tree.s
 
 # target to generate assembly for a file
-port/esp32/cpu_region_protect.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/cpu_region_protect.c.s
-.PHONY : port/esp32/cpu_region_protect.c.s
+port/esp32s3/esp_clk_tree.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_clk_tree.c.s
+.PHONY : port/esp32s3/esp_clk_tree.c.s
 
-port/esp32/esp_clk_tree.obj: port/esp32/esp_clk_tree.c.obj
-.PHONY : port/esp32/esp_clk_tree.obj
+port/esp32s3/esp_cpu_intr.obj: port/esp32s3/esp_cpu_intr.c.obj
+.PHONY : port/esp32s3/esp_cpu_intr.obj
 
 # target to build an object file
-port/esp32/esp_clk_tree.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/esp_clk_tree.c.obj
-.PHONY : port/esp32/esp_clk_tree.c.obj
+port/esp32s3/esp_cpu_intr.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj
+.PHONY : port/esp32s3/esp_cpu_intr.c.obj
 
-port/esp32/esp_clk_tree.i: port/esp32/esp_clk_tree.c.i
-.PHONY : port/esp32/esp_clk_tree.i
+port/esp32s3/esp_cpu_intr.i: port/esp32s3/esp_cpu_intr.c.i
+.PHONY : port/esp32s3/esp_cpu_intr.i
 
 # target to preprocess a source file
-port/esp32/esp_clk_tree.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/esp_clk_tree.c.i
-.PHONY : port/esp32/esp_clk_tree.c.i
+port/esp32s3/esp_cpu_intr.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.i
+.PHONY : port/esp32s3/esp_cpu_intr.c.i
 
-port/esp32/esp_clk_tree.s: port/esp32/esp_clk_tree.c.s
-.PHONY : port/esp32/esp_clk_tree.s
+port/esp32s3/esp_cpu_intr.s: port/esp32s3/esp_cpu_intr.c.s
+.PHONY : port/esp32s3/esp_cpu_intr.s
 
 # target to generate assembly for a file
-port/esp32/esp_clk_tree.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/esp_clk_tree.c.s
-.PHONY : port/esp32/esp_clk_tree.c.s
+port/esp32s3/esp_cpu_intr.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.s
+.PHONY : port/esp32s3/esp_cpu_intr.c.s
 
-port/esp32/esp_cpu_intr.obj: port/esp32/esp_cpu_intr.c.obj
-.PHONY : port/esp32/esp_cpu_intr.obj
+port/esp32s3/esp_memprot.obj: port/esp32s3/esp_memprot.c.obj
+.PHONY : port/esp32s3/esp_memprot.obj
 
 # target to build an object file
-port/esp32/esp_cpu_intr.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/esp_cpu_intr.c.obj
-.PHONY : port/esp32/esp_cpu_intr.c.obj
+port/esp32s3/esp_memprot.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_memprot.c.obj
+.PHONY : port/esp32s3/esp_memprot.c.obj
 
-port/esp32/esp_cpu_intr.i: port/esp32/esp_cpu_intr.c.i
-.PHONY : port/esp32/esp_cpu_intr.i
+port/esp32s3/esp_memprot.i: port/esp32s3/esp_memprot.c.i
+.PHONY : port/esp32s3/esp_memprot.i
 
 # target to preprocess a source file
-port/esp32/esp_cpu_intr.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/esp_cpu_intr.c.i
-.PHONY : port/esp32/esp_cpu_intr.c.i
+port/esp32s3/esp_memprot.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_memprot.c.i
+.PHONY : port/esp32s3/esp_memprot.c.i
 
-port/esp32/esp_cpu_intr.s: port/esp32/esp_cpu_intr.c.s
-.PHONY : port/esp32/esp_cpu_intr.s
+port/esp32s3/esp_memprot.s: port/esp32s3/esp_memprot.c.s
+.PHONY : port/esp32s3/esp_memprot.s
 
 # target to generate assembly for a file
-port/esp32/esp_cpu_intr.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/esp_cpu_intr.c.s
-.PHONY : port/esp32/esp_cpu_intr.c.s
+port/esp32s3/esp_memprot.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_memprot.c.s
+.PHONY : port/esp32s3/esp_memprot.c.s
 
-port/esp32/io_mux.obj: port/esp32/io_mux.c.obj
-.PHONY : port/esp32/io_mux.obj
+port/esp32s3/io_mux.obj: port/esp32s3/io_mux.c.obj
+.PHONY : port/esp32s3/io_mux.obj
 
 # target to build an object file
-port/esp32/io_mux.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/io_mux.c.obj
-.PHONY : port/esp32/io_mux.c.obj
+port/esp32s3/io_mux.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/io_mux.c.obj
+.PHONY : port/esp32s3/io_mux.c.obj
 
-port/esp32/io_mux.i: port/esp32/io_mux.c.i
-.PHONY : port/esp32/io_mux.i
+port/esp32s3/io_mux.i: port/esp32s3/io_mux.c.i
+.PHONY : port/esp32s3/io_mux.i
 
 # target to preprocess a source file
-port/esp32/io_mux.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/io_mux.c.i
-.PHONY : port/esp32/io_mux.c.i
+port/esp32s3/io_mux.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/io_mux.c.i
+.PHONY : port/esp32s3/io_mux.c.i
 
-port/esp32/io_mux.s: port/esp32/io_mux.c.s
-.PHONY : port/esp32/io_mux.s
+port/esp32s3/io_mux.s: port/esp32s3/io_mux.c.s
+.PHONY : port/esp32s3/io_mux.s
 
 # target to generate assembly for a file
-port/esp32/io_mux.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/io_mux.c.s
-.PHONY : port/esp32/io_mux.c.s
+port/esp32s3/io_mux.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/io_mux.c.s
+.PHONY : port/esp32s3/io_mux.c.s
 
-port/esp32/rtc_clk.obj: port/esp32/rtc_clk.c.obj
-.PHONY : port/esp32/rtc_clk.obj
+port/esp32s3/mspi_timing_config.obj: port/esp32s3/mspi_timing_config.c.obj
+.PHONY : port/esp32s3/mspi_timing_config.obj
 
 # target to build an object file
-port/esp32/rtc_clk.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_clk.c.obj
-.PHONY : port/esp32/rtc_clk.c.obj
+port/esp32s3/mspi_timing_config.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/mspi_timing_config.c.obj
+.PHONY : port/esp32s3/mspi_timing_config.c.obj
 
-port/esp32/rtc_clk.i: port/esp32/rtc_clk.c.i
-.PHONY : port/esp32/rtc_clk.i
+port/esp32s3/mspi_timing_config.i: port/esp32s3/mspi_timing_config.c.i
+.PHONY : port/esp32s3/mspi_timing_config.i
 
 # target to preprocess a source file
-port/esp32/rtc_clk.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_clk.c.i
-.PHONY : port/esp32/rtc_clk.c.i
+port/esp32s3/mspi_timing_config.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/mspi_timing_config.c.i
+.PHONY : port/esp32s3/mspi_timing_config.c.i
 
-port/esp32/rtc_clk.s: port/esp32/rtc_clk.c.s
-.PHONY : port/esp32/rtc_clk.s
+port/esp32s3/mspi_timing_config.s: port/esp32s3/mspi_timing_config.c.s
+.PHONY : port/esp32s3/mspi_timing_config.s
 
 # target to generate assembly for a file
-port/esp32/rtc_clk.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_clk.c.s
-.PHONY : port/esp32/rtc_clk.c.s
+port/esp32s3/mspi_timing_config.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/mspi_timing_config.c.s
+.PHONY : port/esp32s3/mspi_timing_config.c.s
 
-port/esp32/rtc_clk_init.obj: port/esp32/rtc_clk_init.c.obj
-.PHONY : port/esp32/rtc_clk_init.obj
+port/esp32s3/rtc_clk.obj: port/esp32s3/rtc_clk.c.obj
+.PHONY : port/esp32s3/rtc_clk.obj
 
 # target to build an object file
-port/esp32/rtc_clk_init.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_clk_init.c.obj
-.PHONY : port/esp32/rtc_clk_init.c.obj
+port/esp32s3/rtc_clk.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj
+.PHONY : port/esp32s3/rtc_clk.c.obj
 
-port/esp32/rtc_clk_init.i: port/esp32/rtc_clk_init.c.i
-.PHONY : port/esp32/rtc_clk_init.i
+port/esp32s3/rtc_clk.i: port/esp32s3/rtc_clk.c.i
+.PHONY : port/esp32s3/rtc_clk.i
 
 # target to preprocess a source file
-port/esp32/rtc_clk_init.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_clk_init.c.i
-.PHONY : port/esp32/rtc_clk_init.c.i
+port/esp32s3/rtc_clk.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.i
+.PHONY : port/esp32s3/rtc_clk.c.i
 
-port/esp32/rtc_clk_init.s: port/esp32/rtc_clk_init.c.s
-.PHONY : port/esp32/rtc_clk_init.s
+port/esp32s3/rtc_clk.s: port/esp32s3/rtc_clk.c.s
+.PHONY : port/esp32s3/rtc_clk.s
 
 # target to generate assembly for a file
-port/esp32/rtc_clk_init.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_clk_init.c.s
-.PHONY : port/esp32/rtc_clk_init.c.s
+port/esp32s3/rtc_clk.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.s
+.PHONY : port/esp32s3/rtc_clk.c.s
 
-port/esp32/rtc_init.obj: port/esp32/rtc_init.c.obj
-.PHONY : port/esp32/rtc_init.obj
+port/esp32s3/rtc_clk_init.obj: port/esp32s3/rtc_clk_init.c.obj
+.PHONY : port/esp32s3/rtc_clk_init.obj
 
 # target to build an object file
-port/esp32/rtc_init.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_init.c.obj
-.PHONY : port/esp32/rtc_init.c.obj
+port/esp32s3/rtc_clk_init.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj
+.PHONY : port/esp32s3/rtc_clk_init.c.obj
 
-port/esp32/rtc_init.i: port/esp32/rtc_init.c.i
-.PHONY : port/esp32/rtc_init.i
+port/esp32s3/rtc_clk_init.i: port/esp32s3/rtc_clk_init.c.i
+.PHONY : port/esp32s3/rtc_clk_init.i
 
 # target to preprocess a source file
-port/esp32/rtc_init.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_init.c.i
-.PHONY : port/esp32/rtc_init.c.i
+port/esp32s3/rtc_clk_init.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.i
+.PHONY : port/esp32s3/rtc_clk_init.c.i
 
-port/esp32/rtc_init.s: port/esp32/rtc_init.c.s
-.PHONY : port/esp32/rtc_init.s
+port/esp32s3/rtc_clk_init.s: port/esp32s3/rtc_clk_init.c.s
+.PHONY : port/esp32s3/rtc_clk_init.s
 
 # target to generate assembly for a file
-port/esp32/rtc_init.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_init.c.s
-.PHONY : port/esp32/rtc_init.c.s
+port/esp32s3/rtc_clk_init.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.s
+.PHONY : port/esp32s3/rtc_clk_init.c.s
 
-port/esp32/rtc_sleep.obj: port/esp32/rtc_sleep.c.obj
-.PHONY : port/esp32/rtc_sleep.obj
+port/esp32s3/rtc_init.obj: port/esp32s3/rtc_init.c.obj
+.PHONY : port/esp32s3/rtc_init.obj
 
 # target to build an object file
-port/esp32/rtc_sleep.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_sleep.c.obj
-.PHONY : port/esp32/rtc_sleep.c.obj
+port/esp32s3/rtc_init.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj
+.PHONY : port/esp32s3/rtc_init.c.obj
 
-port/esp32/rtc_sleep.i: port/esp32/rtc_sleep.c.i
-.PHONY : port/esp32/rtc_sleep.i
+port/esp32s3/rtc_init.i: port/esp32s3/rtc_init.c.i
+.PHONY : port/esp32s3/rtc_init.i
 
 # target to preprocess a source file
-port/esp32/rtc_sleep.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_sleep.c.i
-.PHONY : port/esp32/rtc_sleep.c.i
+port/esp32s3/rtc_init.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.i
+.PHONY : port/esp32s3/rtc_init.c.i
 
-port/esp32/rtc_sleep.s: port/esp32/rtc_sleep.c.s
-.PHONY : port/esp32/rtc_sleep.s
+port/esp32s3/rtc_init.s: port/esp32s3/rtc_init.c.s
+.PHONY : port/esp32s3/rtc_init.s
 
 # target to generate assembly for a file
-port/esp32/rtc_sleep.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_sleep.c.s
-.PHONY : port/esp32/rtc_sleep.c.s
+port/esp32s3/rtc_init.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.s
+.PHONY : port/esp32s3/rtc_init.c.s
 
-port/esp32/rtc_time.obj: port/esp32/rtc_time.c.obj
-.PHONY : port/esp32/rtc_time.obj
+port/esp32s3/rtc_sleep.obj: port/esp32s3/rtc_sleep.c.obj
+.PHONY : port/esp32s3/rtc_sleep.obj
 
 # target to build an object file
-port/esp32/rtc_time.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_time.c.obj
-.PHONY : port/esp32/rtc_time.c.obj
+port/esp32s3/rtc_sleep.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj
+.PHONY : port/esp32s3/rtc_sleep.c.obj
 
-port/esp32/rtc_time.i: port/esp32/rtc_time.c.i
-.PHONY : port/esp32/rtc_time.i
+port/esp32s3/rtc_sleep.i: port/esp32s3/rtc_sleep.c.i
+.PHONY : port/esp32s3/rtc_sleep.i
 
 # target to preprocess a source file
-port/esp32/rtc_time.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_time.c.i
-.PHONY : port/esp32/rtc_time.c.i
+port/esp32s3/rtc_sleep.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.i
+.PHONY : port/esp32s3/rtc_sleep.c.i
 
-port/esp32/rtc_time.s: port/esp32/rtc_time.c.s
-.PHONY : port/esp32/rtc_time.s
+port/esp32s3/rtc_sleep.s: port/esp32s3/rtc_sleep.c.s
+.PHONY : port/esp32s3/rtc_sleep.s
 
 # target to generate assembly for a file
-port/esp32/rtc_time.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/rtc_time.c.s
-.PHONY : port/esp32/rtc_time.c.s
+port/esp32s3/rtc_sleep.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.s
+.PHONY : port/esp32s3/rtc_sleep.c.s
 
-port/esp32/sar_periph_ctrl.obj: port/esp32/sar_periph_ctrl.c.obj
-.PHONY : port/esp32/sar_periph_ctrl.obj
+port/esp32s3/rtc_time.obj: port/esp32s3/rtc_time.c.obj
+.PHONY : port/esp32s3/rtc_time.obj
 
 # target to build an object file
-port/esp32/sar_periph_ctrl.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/sar_periph_ctrl.c.obj
-.PHONY : port/esp32/sar_periph_ctrl.c.obj
+port/esp32s3/rtc_time.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj
+.PHONY : port/esp32s3/rtc_time.c.obj
 
-port/esp32/sar_periph_ctrl.i: port/esp32/sar_periph_ctrl.c.i
-.PHONY : port/esp32/sar_periph_ctrl.i
+port/esp32s3/rtc_time.i: port/esp32s3/rtc_time.c.i
+.PHONY : port/esp32s3/rtc_time.i
 
 # target to preprocess a source file
-port/esp32/sar_periph_ctrl.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/sar_periph_ctrl.c.i
-.PHONY : port/esp32/sar_periph_ctrl.c.i
+port/esp32s3/rtc_time.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.i
+.PHONY : port/esp32s3/rtc_time.c.i
 
-port/esp32/sar_periph_ctrl.s: port/esp32/sar_periph_ctrl.c.s
-.PHONY : port/esp32/sar_periph_ctrl.s
+port/esp32s3/rtc_time.s: port/esp32s3/rtc_time.c.s
+.PHONY : port/esp32s3/rtc_time.s
 
 # target to generate assembly for a file
-port/esp32/sar_periph_ctrl.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32/sar_periph_ctrl.c.s
-.PHONY : port/esp32/sar_periph_ctrl.c.s
+port/esp32s3/rtc_time.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.s
+.PHONY : port/esp32s3/rtc_time.c.s
+
+port/esp32s3/sar_periph_ctrl.obj: port/esp32s3/sar_periph_ctrl.c.obj
+.PHONY : port/esp32s3/sar_periph_ctrl.obj
+
+# target to build an object file
+port/esp32s3/sar_periph_ctrl.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/sar_periph_ctrl.c.obj
+.PHONY : port/esp32s3/sar_periph_ctrl.c.obj
+
+port/esp32s3/sar_periph_ctrl.i: port/esp32s3/sar_periph_ctrl.c.i
+.PHONY : port/esp32s3/sar_periph_ctrl.i
+
+# target to preprocess a source file
+port/esp32s3/sar_periph_ctrl.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/sar_periph_ctrl.c.i
+.PHONY : port/esp32s3/sar_periph_ctrl.c.i
+
+port/esp32s3/sar_periph_ctrl.s: port/esp32s3/sar_periph_ctrl.c.s
+.PHONY : port/esp32s3/sar_periph_ctrl.s
+
+# target to generate assembly for a file
+port/esp32s3/sar_periph_ctrl.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/sar_periph_ctrl.c.s
+.PHONY : port/esp32s3/sar_periph_ctrl.c.s
+
+port/esp32s3/systimer.obj: port/esp32s3/systimer.c.obj
+.PHONY : port/esp32s3/systimer.obj
+
+# target to build an object file
+port/esp32s3/systimer.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/systimer.c.obj
+.PHONY : port/esp32s3/systimer.c.obj
+
+port/esp32s3/systimer.i: port/esp32s3/systimer.c.i
+.PHONY : port/esp32s3/systimer.i
+
+# target to preprocess a source file
+port/esp32s3/systimer.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/systimer.c.i
+.PHONY : port/esp32s3/systimer.c.i
+
+port/esp32s3/systimer.s: port/esp32s3/systimer.c.s
+.PHONY : port/esp32s3/systimer.s
+
+# target to generate assembly for a file
+port/esp32s3/systimer.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/systimer.c.s
+.PHONY : port/esp32s3/systimer.c.s
 
 port/esp_clk_tree_common.obj: port/esp_clk_tree_common.c.obj
 .PHONY : port/esp_clk_tree_common.obj
@@ -822,6 +1014,30 @@ port/esp_clk_tree_common.s: port/esp_clk_tree_common.c.s
 port/esp_clk_tree_common.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_clk_tree_common.c.s
 .PHONY : port/esp_clk_tree_common.c.s
+
+port/esp_memprot_conv.obj: port/esp_memprot_conv.c.obj
+.PHONY : port/esp_memprot_conv.obj
+
+# target to build an object file
+port/esp_memprot_conv.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.obj
+.PHONY : port/esp_memprot_conv.c.obj
+
+port/esp_memprot_conv.i: port/esp_memprot_conv.c.i
+.PHONY : port/esp_memprot_conv.i
+
+# target to preprocess a source file
+port/esp_memprot_conv.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.i
+.PHONY : port/esp_memprot_conv.c.i
+
+port/esp_memprot_conv.s: port/esp_memprot_conv.c.s
+.PHONY : port/esp_memprot_conv.s
+
+# target to generate assembly for a file
+port/esp_memprot_conv.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.s
+.PHONY : port/esp_memprot_conv.c.s
 
 regi2c_ctrl.obj: regi2c_ctrl.c.obj
 .PHONY : regi2c_ctrl.obj
@@ -894,30 +1110,6 @@ rtc_module.s: rtc_module.c.s
 rtc_module.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_module.c.s
 .PHONY : rtc_module.c.s
-
-rtc_wdt.obj: rtc_wdt.c.obj
-.PHONY : rtc_wdt.obj
-
-# target to build an object file
-rtc_wdt.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_wdt.c.obj
-.PHONY : rtc_wdt.c.obj
-
-rtc_wdt.i: rtc_wdt.c.i
-.PHONY : rtc_wdt.i
-
-# target to preprocess a source file
-rtc_wdt.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_wdt.c.i
-.PHONY : rtc_wdt.c.i
-
-rtc_wdt.s: rtc_wdt.c.s
-.PHONY : rtc_wdt.s
-
-# target to generate assembly for a file
-rtc_wdt.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rtc_wdt.c.s
-.PHONY : rtc_wdt.c.s
 
 sar_periph_ctrl_common.obj: sar_periph_ctrl_common.c.obj
 .PHONY : sar_periph_ctrl_common.obj
@@ -1157,9 +1349,21 @@ help:
 	@echo "... cpu.obj"
 	@echo "... cpu.i"
 	@echo "... cpu.s"
+	@echo "... deprecated/gdma_legacy.obj"
+	@echo "... deprecated/gdma_legacy.i"
+	@echo "... deprecated/gdma_legacy.s"
+	@echo "... dma/async_memcpy_gdma.obj"
+	@echo "... dma/async_memcpy_gdma.i"
+	@echo "... dma/async_memcpy_gdma.s"
+	@echo "... dma/esp_async_memcpy.obj"
+	@echo "... dma/esp_async_memcpy.i"
+	@echo "... dma/esp_async_memcpy.s"
 	@echo "... dma/esp_dma_utils.obj"
 	@echo "... dma/esp_dma_utils.i"
 	@echo "... dma/esp_dma_utils.s"
+	@echo "... dma/gdma.obj"
+	@echo "... dma/gdma.i"
+	@echo "... dma/gdma.s"
 	@echo "... dma/gdma_link.obj"
 	@echo "... dma/gdma_link.i"
 	@echo "... dma/gdma_link.s"
@@ -1181,54 +1385,69 @@ help:
 	@echo "... intr_alloc.obj"
 	@echo "... intr_alloc.i"
 	@echo "... intr_alloc.s"
+	@echo "... lowpower/port/esp32s3/sleep_cpu.obj"
+	@echo "... lowpower/port/esp32s3/sleep_cpu.i"
+	@echo "... lowpower/port/esp32s3/sleep_cpu.s"
 	@echo "... mac_addr.obj"
 	@echo "... mac_addr.i"
 	@echo "... mac_addr.s"
+	@echo "... mspi_timing_by_mspi_delay.obj"
+	@echo "... mspi_timing_by_mspi_delay.i"
+	@echo "... mspi_timing_by_mspi_delay.s"
 	@echo "... mspi_timing_tuning.obj"
 	@echo "... mspi_timing_tuning.i"
 	@echo "... mspi_timing_tuning.s"
 	@echo "... periph_ctrl.obj"
 	@echo "... periph_ctrl.i"
 	@echo "... periph_ctrl.s"
-	@echo "... port/esp32/cache_sram_mmu.obj"
-	@echo "... port/esp32/cache_sram_mmu.i"
-	@echo "... port/esp32/cache_sram_mmu.s"
-	@echo "... port/esp32/chip_info.obj"
-	@echo "... port/esp32/chip_info.i"
-	@echo "... port/esp32/chip_info.s"
-	@echo "... port/esp32/cpu_region_protect.obj"
-	@echo "... port/esp32/cpu_region_protect.i"
-	@echo "... port/esp32/cpu_region_protect.s"
-	@echo "... port/esp32/esp_clk_tree.obj"
-	@echo "... port/esp32/esp_clk_tree.i"
-	@echo "... port/esp32/esp_clk_tree.s"
-	@echo "... port/esp32/esp_cpu_intr.obj"
-	@echo "... port/esp32/esp_cpu_intr.i"
-	@echo "... port/esp32/esp_cpu_intr.s"
-	@echo "... port/esp32/io_mux.obj"
-	@echo "... port/esp32/io_mux.i"
-	@echo "... port/esp32/io_mux.s"
-	@echo "... port/esp32/rtc_clk.obj"
-	@echo "... port/esp32/rtc_clk.i"
-	@echo "... port/esp32/rtc_clk.s"
-	@echo "... port/esp32/rtc_clk_init.obj"
-	@echo "... port/esp32/rtc_clk_init.i"
-	@echo "... port/esp32/rtc_clk_init.s"
-	@echo "... port/esp32/rtc_init.obj"
-	@echo "... port/esp32/rtc_init.i"
-	@echo "... port/esp32/rtc_init.s"
-	@echo "... port/esp32/rtc_sleep.obj"
-	@echo "... port/esp32/rtc_sleep.i"
-	@echo "... port/esp32/rtc_sleep.s"
-	@echo "... port/esp32/rtc_time.obj"
-	@echo "... port/esp32/rtc_time.i"
-	@echo "... port/esp32/rtc_time.s"
-	@echo "... port/esp32/sar_periph_ctrl.obj"
-	@echo "... port/esp32/sar_periph_ctrl.i"
-	@echo "... port/esp32/sar_periph_ctrl.s"
+	@echo "... port/esp32s3/chip_info.obj"
+	@echo "... port/esp32s3/chip_info.i"
+	@echo "... port/esp32s3/chip_info.s"
+	@echo "... port/esp32s3/cpu_region_protect.obj"
+	@echo "... port/esp32s3/cpu_region_protect.i"
+	@echo "... port/esp32s3/cpu_region_protect.s"
+	@echo "... port/esp32s3/esp_clk_tree.obj"
+	@echo "... port/esp32s3/esp_clk_tree.i"
+	@echo "... port/esp32s3/esp_clk_tree.s"
+	@echo "... port/esp32s3/esp_cpu_intr.obj"
+	@echo "... port/esp32s3/esp_cpu_intr.i"
+	@echo "... port/esp32s3/esp_cpu_intr.s"
+	@echo "... port/esp32s3/esp_memprot.obj"
+	@echo "... port/esp32s3/esp_memprot.i"
+	@echo "... port/esp32s3/esp_memprot.s"
+	@echo "... port/esp32s3/io_mux.obj"
+	@echo "... port/esp32s3/io_mux.i"
+	@echo "... port/esp32s3/io_mux.s"
+	@echo "... port/esp32s3/mspi_timing_config.obj"
+	@echo "... port/esp32s3/mspi_timing_config.i"
+	@echo "... port/esp32s3/mspi_timing_config.s"
+	@echo "... port/esp32s3/rtc_clk.obj"
+	@echo "... port/esp32s3/rtc_clk.i"
+	@echo "... port/esp32s3/rtc_clk.s"
+	@echo "... port/esp32s3/rtc_clk_init.obj"
+	@echo "... port/esp32s3/rtc_clk_init.i"
+	@echo "... port/esp32s3/rtc_clk_init.s"
+	@echo "... port/esp32s3/rtc_init.obj"
+	@echo "... port/esp32s3/rtc_init.i"
+	@echo "... port/esp32s3/rtc_init.s"
+	@echo "... port/esp32s3/rtc_sleep.obj"
+	@echo "... port/esp32s3/rtc_sleep.i"
+	@echo "... port/esp32s3/rtc_sleep.s"
+	@echo "... port/esp32s3/rtc_time.obj"
+	@echo "... port/esp32s3/rtc_time.i"
+	@echo "... port/esp32s3/rtc_time.s"
+	@echo "... port/esp32s3/sar_periph_ctrl.obj"
+	@echo "... port/esp32s3/sar_periph_ctrl.i"
+	@echo "... port/esp32s3/sar_periph_ctrl.s"
+	@echo "... port/esp32s3/systimer.obj"
+	@echo "... port/esp32s3/systimer.i"
+	@echo "... port/esp32s3/systimer.s"
 	@echo "... port/esp_clk_tree_common.obj"
 	@echo "... port/esp_clk_tree_common.i"
 	@echo "... port/esp_clk_tree_common.s"
+	@echo "... port/esp_memprot_conv.obj"
+	@echo "... port/esp_memprot_conv.i"
+	@echo "... port/esp_memprot_conv.s"
 	@echo "... regi2c_ctrl.obj"
 	@echo "... regi2c_ctrl.i"
 	@echo "... regi2c_ctrl.s"
@@ -1238,9 +1457,6 @@ help:
 	@echo "... rtc_module.obj"
 	@echo "... rtc_module.i"
 	@echo "... rtc_module.s"
-	@echo "... rtc_wdt.obj"
-	@echo "... rtc_wdt.i"
-	@echo "... rtc_wdt.s"
 	@echo "... sar_periph_ctrl_common.obj"
 	@echo "... sar_periph_ctrl_common.i"
 	@echo "... sar_periph_ctrl_common.s"

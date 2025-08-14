@@ -67,7 +67,7 @@ include CMakeFiles/merge-bin.dir/compiler_depend.make
 include CMakeFiles/merge-bin.dir/progress.make
 
 CMakeFiles/merge-bin: bootloader
-	cd /workspace/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/workspace/esp-idf -D "SERIAL_TOOL=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/workspace/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32" -D "SERIAL_TOOL_ARGS=merge_bin;-o;/workspace/build/bootloader/merged-binary.bin;@/workspace/build/bootloader/flash_args" -D WORKING_DIRECTORY=/workspace/build/bootloader -P run_serial_tool.cmake
+	cd /workspace/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/workspace/esp-idf -D "SERIAL_TOOL=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/workspace/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=merge_bin;-o;/workspace/build/bootloader/merged-binary.bin;@/workspace/build/bootloader/flash_args" -D WORKING_DIRECTORY=/workspace/build/bootloader -P run_serial_tool.cmake
 
 CMakeFiles/merge-bin.dir/codegen:
 .PHONY : CMakeFiles/merge-bin.dir/codegen

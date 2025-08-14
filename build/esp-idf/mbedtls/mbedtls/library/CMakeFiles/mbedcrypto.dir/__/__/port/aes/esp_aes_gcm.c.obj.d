@@ -40,7 +40,8 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
  /workspace/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h \
@@ -63,15 +64,19 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes
  /workspace/esp-idf/components/mbedtls/port/include/esp_crypto_dma.h \
  /workspace/esp-idf/components/hal/include/hal/dma_types.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/hal/include/hal/aes_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/aes_ll.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/hwcrypto_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gdma_channel.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/gdma_ll.h \
+ /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
+ /workspace/esp-idf/components/hal/include/hal/gdma_types.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gdma_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gdma_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h \
+ /workspace/esp-idf/components/hal/include/hal/aes_hal.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/aes_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/hwcrypto_reg.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  /workspace/esp-idf/components/mbedtls/port/include/aes_alt.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h \
@@ -89,11 +94,12 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes
  /workspace/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
  /workspace/esp-idf/components/log/include/esp_log_timestamp.h \
  /workspace/esp-idf/components/heap/include/soc/soc_memory_layout.h \
  /workspace/esp-idf/components/heap/include/heap_memory_layout.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_memory_utils.h
+ /workspace/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
+ /workspace/esp-idf/components/mbedtls/port/aes/dma/include/esp_aes_dma_priv.h

@@ -30,19 +30,19 @@ esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/uart_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/uart_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
  /workspace/esp-idf/components/soc/include/soc/gpio_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/io_mux_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/gpio_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/gpio_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/uart_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/io_mux_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gpio_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gpio_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/uart_pins.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
@@ -53,22 +53,22 @@ esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj: \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
  /workspace/esp-idf/components/hal/include/hal/gpio_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_etm.h \
  /workspace/esp-idf/components/hal/include/hal/gpio_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/gpio_ll.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_io_reg.h \
- /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/gpio_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_io_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/usb_serial_jtag_reg.h \
  /workspace/esp-idf/components/espcoredump/include_core_dump/esp_core_dump_types.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -77,43 +77,21 @@ esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj: \
  /workspace/esp-idf/components/esp_common/include/esp_macros.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
  /workspace/esp-idf/components/espcoredump/include_core_dump/core_dump_checksum.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private_access.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
- /workspace/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
- /workspace/esp-idf/components/mbedtls/port/include/esp_mem.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_synonyms.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_dependencies.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_from_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_auto_enabled.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_x509.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_ssl.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/limits.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/syslimits.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
- /workspace/esp-idf/components/mbedtls/port/include/sha256_alt.h \
  /workspace/esp-idf/components/hal/include/hal/sha_types.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/sha.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/sha.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/ets_sys.h \
  /workspace/esp-idf/components/espcoredump/include_core_dump/esp_core_dump_port.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
  /workspace/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
  /workspace/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_config.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_context.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
@@ -122,7 +100,7 @@ esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj: \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /workspace/esp-idf/components/xtensa/include/xt_instr_macros.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
@@ -130,7 +108,7 @@ esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj: \
  /workspace/esp-idf/components/esp_hw_support/include/esp_cpu.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_api.h \
  /workspace/esp-idf/components/xtensa/include/xt_utils.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
  /workspace/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
  /workspace/esp-idf/components/newlib/platform_include/esp_newlib.h \
@@ -139,6 +117,10 @@ esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/core_dump_uart.c.obj: \
  /workspace/esp-idf/components/esp_system/include/esp_system.h \
  /workspace/esp-idf/components/esp_common/include/esp_idf_version.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/limits.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/syslimits.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/reent.h \
  /workspace/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h \

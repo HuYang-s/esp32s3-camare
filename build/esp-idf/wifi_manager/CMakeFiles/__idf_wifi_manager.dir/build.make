@@ -76,15 +76,15 @@ esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj: esp-i
 esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj: /workspace/components/wifi_manager/wifi_manager.c
 esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj: esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj"
-	cd /workspace/build/esp-idf/wifi_manager && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj -MF CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj.d -o CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj -c /workspace/components/wifi_manager/wifi_manager.c
+	cd /workspace/build/esp-idf/wifi_manager && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj -MF CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj.d -o CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.obj -c /workspace/components/wifi_manager/wifi_manager.c
 
 esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.i"
-	cd /workspace/build/esp-idf/wifi_manager && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/wifi_manager/wifi_manager.c > CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.i
+	cd /workspace/build/esp-idf/wifi_manager && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/wifi_manager/wifi_manager.c > CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.i
 
 esp-idf/wifi_manager/CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.s"
-	cd /workspace/build/esp-idf/wifi_manager && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/wifi_manager/wifi_manager.c -o CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.s
+	cd /workspace/build/esp-idf/wifi_manager && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/wifi_manager/wifi_manager.c -o CMakeFiles/__idf_wifi_manager.dir/wifi_manager.c.s
 
 # Object files for target __idf_wifi_manager
 __idf_wifi_manager_OBJECTS = \

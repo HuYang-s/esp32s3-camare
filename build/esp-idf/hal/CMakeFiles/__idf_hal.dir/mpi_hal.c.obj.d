@@ -23,7 +23,7 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/param.h \
  /workspace/esp-idf/components/hal/include/hal/mpi_types.h \
  /workspace/build/config/sdkconfig.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/mpi_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/mpi_ll.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
@@ -40,14 +40,20 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/mpi_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
- /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h \
  /workspace/esp-idf/components/soc/include/soc/hwcrypto_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/hwcrypto_reg.h \
- /workspace/esp-idf/components/soc/include/soc/mpi_periph.h
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/hwcrypto_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /workspace/esp-idf/components/esp_common/include/esp_assert.h \
+ /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/dport_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/interrupt_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/interrupt_core0_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/interrupt_core1_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/sensitive_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/dport_access.h \
+ /workspace/esp-idf/components/soc/include/soc/mpi_periph.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h

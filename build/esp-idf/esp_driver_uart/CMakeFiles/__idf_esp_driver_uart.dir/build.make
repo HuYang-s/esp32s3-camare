@@ -76,29 +76,29 @@ esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj: esp
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj: /workspace/esp-idf/components/esp_driver_uart/src/uart.c
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj"
-	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj -c /workspace/esp-idf/components/esp_driver_uart/src/uart.c
+	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.obj -c /workspace/esp-idf/components/esp_driver_uart/src/uart.c
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.i"
-	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_driver_uart/src/uart.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.i
+	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_driver_uart/src/uart.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.i
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.s"
-	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_driver_uart/src/uart.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.s
+	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_driver_uart/src/uart.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart.c.s
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/flags.make
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj: /workspace/esp-idf/components/esp_driver_uart/src/uart_vfs.c
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj: esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj"
-	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj -c /workspace/esp-idf/components/esp_driver_uart/src/uart_vfs.c
+	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj -MF CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj.d -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.obj -c /workspace/esp-idf/components/esp_driver_uart/src/uart_vfs.c
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.i"
-	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_driver_uart/src/uart_vfs.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.i
+	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_driver_uart/src/uart_vfs.c > CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.i
 
 esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.s"
-	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_driver_uart/src/uart_vfs.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.s
+	cd /workspace/build/esp-idf/esp_driver_uart && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_driver_uart/src/uart_vfs.c -o CMakeFiles/__idf_esp_driver_uart.dir/src/uart_vfs.c.s
 
 # Object files for target __idf_esp_driver_uart
 __idf_esp_driver_uart_OBJECTS = \

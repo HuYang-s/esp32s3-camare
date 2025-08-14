@@ -48,9 +48,9 @@ esp-idf/newlib/CMakeFiles/__idf_newlib.dir/assert.c.obj: \
  /workspace/esp-idf/components/heap/include/soc/soc_memory_layout.h \
  /workspace/esp-idf/components/heap/include/heap_memory_layout.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/spi_flash/include/esp_private/cache_utils.h

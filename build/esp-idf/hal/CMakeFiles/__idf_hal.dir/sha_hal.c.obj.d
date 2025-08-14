@@ -3,8 +3,8 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj: \
  /workspace/esp-idf/components/hal/include/hal/sha_hal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/build/config/sdkconfig.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/soc/include/soc/lldesc.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_lldesc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
@@ -17,10 +17,10 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/queue.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
  /workspace/esp-idf/components/hal/include/hal/sha_types.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/sha.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/sha_ll.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/build/config/sdkconfig.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/sha.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/ets_sys.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
  /workspace/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
@@ -39,15 +39,18 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/sha_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/hwcrypto_reg.h \
- /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/sha_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/dport_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/interrupt_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/interrupt_core0_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/interrupt_core1_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/sensitive_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/dport_access.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/hwcrypto_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h

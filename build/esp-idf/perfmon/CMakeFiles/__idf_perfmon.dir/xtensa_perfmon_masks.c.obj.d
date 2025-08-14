@@ -16,9 +16,9 @@ esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_masks.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xt_perf_consts.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h

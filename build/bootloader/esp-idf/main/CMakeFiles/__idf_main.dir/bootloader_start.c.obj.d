@@ -19,7 +19,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
  /workspace/build/bootloader/config/sdkconfig.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -49,10 +49,8 @@ esp-idf/main/CMakeFiles/__idf_main.dir/bootloader_start.c.obj: \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
  /workspace/esp-idf/components/bootloader_support/private_include/bootloader_utility.h \
  /workspace/esp-idf/components/bootloader_support/private_include/bootloader_config.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
  /workspace/esp-idf/components/bootloader_support/include/bootloader_common.h \
  /workspace/esp-idf/components/bootloader/subproject/main/bootloader_hooks.h

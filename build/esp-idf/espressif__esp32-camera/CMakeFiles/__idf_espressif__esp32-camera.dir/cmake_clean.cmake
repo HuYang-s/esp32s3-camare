@@ -49,10 +49,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj.d"
   "CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj"
   "CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj.d"
-  "CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj"
-  "CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj.d"
-  "CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj"
-  "CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj.d"
+  "CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.obj"
+  "CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.obj.d"
   "libespressif__esp32-camera.a"
   "libespressif__esp32-camera.pdb"
 )

@@ -92,6 +92,9 @@ clean: CMakeFiles/bootloader.elf.dir/clean
 clean: CMakeFiles/size.dir/clean
 clean: CMakeFiles/size-files.dir/clean
 clean: CMakeFiles/size-components.dir/clean
+clean: CMakeFiles/dfu.dir/clean
+clean: CMakeFiles/dfu-list.dir/clean
+clean: CMakeFiles/dfu-flash.dir/clean
 clean: CMakeFiles/uf2.dir/clean
 clean: CMakeFiles/uf2-app.dir/clean
 clean: esp-idf/clean
@@ -323,24 +326,24 @@ esp-idf/esp_common/clean: esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/cle
 
 # Recursive "all" directory target.
 esp-idf/esp_hw_support/all: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/all
-esp-idf/esp_hw_support/all: esp-idf/esp_hw_support/port/esp32/all
+esp-idf/esp_hw_support/all: esp-idf/esp_hw_support/port/esp32s3/all
 esp-idf/esp_hw_support/all: esp-idf/esp_hw_support/lowpower/all
 .PHONY : esp-idf/esp_hw_support/all
 
 # Recursive "codegen" directory target.
 esp-idf/esp_hw_support/codegen: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/codegen
-esp-idf/esp_hw_support/codegen: esp-idf/esp_hw_support/port/esp32/codegen
+esp-idf/esp_hw_support/codegen: esp-idf/esp_hw_support/port/esp32s3/codegen
 esp-idf/esp_hw_support/codegen: esp-idf/esp_hw_support/lowpower/codegen
 .PHONY : esp-idf/esp_hw_support/codegen
 
 # Recursive "preinstall" directory target.
-esp-idf/esp_hw_support/preinstall: esp-idf/esp_hw_support/port/esp32/preinstall
+esp-idf/esp_hw_support/preinstall: esp-idf/esp_hw_support/port/esp32s3/preinstall
 esp-idf/esp_hw_support/preinstall: esp-idf/esp_hw_support/lowpower/preinstall
 .PHONY : esp-idf/esp_hw_support/preinstall
 
 # Recursive "clean" directory target.
 esp-idf/esp_hw_support/clean: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clean
-esp-idf/esp_hw_support/clean: esp-idf/esp_hw_support/port/esp32/clean
+esp-idf/esp_hw_support/clean: esp-idf/esp_hw_support/port/esp32s3/clean
 esp-idf/esp_hw_support/clean: esp-idf/esp_hw_support/lowpower/clean
 .PHONY : esp-idf/esp_hw_support/clean
 
@@ -364,23 +367,23 @@ esp-idf/esp_hw_support/lowpower/clean:
 .PHONY : esp-idf/esp_hw_support/lowpower/clean
 
 #=============================================================================
-# Directory level rules for directory esp-idf/esp_hw_support/port/esp32
+# Directory level rules for directory esp-idf/esp_hw_support/port/esp32s3
 
 # Recursive "all" directory target.
-esp-idf/esp_hw_support/port/esp32/all:
-.PHONY : esp-idf/esp_hw_support/port/esp32/all
+esp-idf/esp_hw_support/port/esp32s3/all:
+.PHONY : esp-idf/esp_hw_support/port/esp32s3/all
 
 # Recursive "codegen" directory target.
-esp-idf/esp_hw_support/port/esp32/codegen:
-.PHONY : esp-idf/esp_hw_support/port/esp32/codegen
+esp-idf/esp_hw_support/port/esp32s3/codegen:
+.PHONY : esp-idf/esp_hw_support/port/esp32s3/codegen
 
 # Recursive "preinstall" directory target.
-esp-idf/esp_hw_support/port/esp32/preinstall:
-.PHONY : esp-idf/esp_hw_support/port/esp32/preinstall
+esp-idf/esp_hw_support/port/esp32s3/preinstall:
+.PHONY : esp-idf/esp_hw_support/port/esp32s3/preinstall
 
 # Recursive "clean" directory target.
-esp-idf/esp_hw_support/port/esp32/clean:
-.PHONY : esp-idf/esp_hw_support/port/esp32/clean
+esp-idf/esp_hw_support/port/esp32s3/clean:
+.PHONY : esp-idf/esp_hw_support/port/esp32s3/clean
 
 #=============================================================================
 # Directory level rules for directory esp-idf/esp_rom
@@ -913,7 +916,7 @@ CMakeFiles/monitor.dir/clean:
 CMakeFiles/_project_elf_src.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_project_elf_src.dir/build.make CMakeFiles/_project_elf_src.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_project_elf_src.dir/build.make CMakeFiles/_project_elf_src.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=93 "Built target _project_elf_src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=94 "Built target _project_elf_src"
 .PHONY : CMakeFiles/_project_elf_src.dir/all
 
 # Build rule for subdir invocation for target.
@@ -930,7 +933,7 @@ _project_elf_src: CMakeFiles/_project_elf_src.dir/rule
 # codegen rule for target.
 CMakeFiles/_project_elf_src.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/_project_elf_src.dir/build.make CMakeFiles/_project_elf_src.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=93 "Finished codegen for target _project_elf_src"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=94 "Finished codegen for target _project_elf_src"
 .PHONY : CMakeFiles/_project_elf_src.dir/codegen
 
 # clean rule for target.
@@ -947,7 +950,7 @@ CMakeFiles/bootloader.elf.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/al
 CMakeFiles/bootloader.elf.dir/all: esp-idf/main/CMakeFiles/__idf_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootloader.elf.dir/build.make CMakeFiles/bootloader.elf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootloader.elf.dir/build.make CMakeFiles/bootloader.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=94,95,96 "Built target bootloader.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=95,96 "Built target bootloader.elf"
 .PHONY : CMakeFiles/bootloader.elf.dir/all
 
 # Build rule for subdir invocation for target.
@@ -964,7 +967,7 @@ bootloader.elf: CMakeFiles/bootloader.elf.dir/rule
 # codegen rule for target.
 CMakeFiles/bootloader.elf.dir/codegen: CMakeFiles/_project_elf_src.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootloader.elf.dir/build.make CMakeFiles/bootloader.elf.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=94,95,96 "Finished codegen for target bootloader.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=95,96 "Finished codegen for target bootloader.elf"
 .PHONY : CMakeFiles/bootloader.elf.dir/codegen
 
 # clean rule for target.
@@ -1069,6 +1072,102 @@ CMakeFiles/size-components.dir/clean:
 .PHONY : CMakeFiles/size-components.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/dfu.dir
+
+# All Build rule for target.
+CMakeFiles/dfu.dir/all: CMakeFiles/gen_project_binary.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu.dir/build.make CMakeFiles/dfu.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu.dir/build.make CMakeFiles/dfu.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num= "Built target dfu"
+.PHONY : CMakeFiles/dfu.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dfu.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 97
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dfu.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
+.PHONY : CMakeFiles/dfu.dir/rule
+
+# Convenience name for target.
+dfu: CMakeFiles/dfu.dir/rule
+.PHONY : dfu
+
+# codegen rule for target.
+CMakeFiles/dfu.dir/codegen: CMakeFiles/gen_project_binary.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu.dir/build.make CMakeFiles/dfu.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num= "Finished codegen for target dfu"
+.PHONY : CMakeFiles/dfu.dir/codegen
+
+# clean rule for target.
+CMakeFiles/dfu.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu.dir/build.make CMakeFiles/dfu.dir/clean
+.PHONY : CMakeFiles/dfu.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dfu-list.dir
+
+# All Build rule for target.
+CMakeFiles/dfu-list.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-list.dir/build.make CMakeFiles/dfu-list.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-list.dir/build.make CMakeFiles/dfu-list.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num= "Built target dfu-list"
+.PHONY : CMakeFiles/dfu-list.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dfu-list.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dfu-list.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
+.PHONY : CMakeFiles/dfu-list.dir/rule
+
+# Convenience name for target.
+dfu-list: CMakeFiles/dfu-list.dir/rule
+.PHONY : dfu-list
+
+# codegen rule for target.
+CMakeFiles/dfu-list.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-list.dir/build.make CMakeFiles/dfu-list.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num= "Finished codegen for target dfu-list"
+.PHONY : CMakeFiles/dfu-list.dir/codegen
+
+# clean rule for target.
+CMakeFiles/dfu-list.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-list.dir/build.make CMakeFiles/dfu-list.dir/clean
+.PHONY : CMakeFiles/dfu-list.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/dfu-flash.dir
+
+# All Build rule for target.
+CMakeFiles/dfu-flash.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-flash.dir/build.make CMakeFiles/dfu-flash.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-flash.dir/build.make CMakeFiles/dfu-flash.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num= "Built target dfu-flash"
+.PHONY : CMakeFiles/dfu-flash.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/dfu-flash.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/dfu-flash.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
+.PHONY : CMakeFiles/dfu-flash.dir/rule
+
+# Convenience name for target.
+dfu-flash: CMakeFiles/dfu-flash.dir/rule
+.PHONY : dfu-flash
+
+# codegen rule for target.
+CMakeFiles/dfu-flash.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-flash.dir/build.make CMakeFiles/dfu-flash.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num= "Finished codegen for target dfu-flash"
+.PHONY : CMakeFiles/dfu-flash.dir/codegen
+
+# clean rule for target.
+CMakeFiles/dfu-flash.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-flash.dir/build.make CMakeFiles/dfu-flash.dir/clean
+.PHONY : CMakeFiles/dfu-flash.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/uf2.dir
 
 # All Build rule for target.
@@ -1139,12 +1238,12 @@ CMakeFiles/uf2-app.dir/clean:
 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all: esp-idf/soc/CMakeFiles/__idf_soc.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=91,92 "Built target __idf_xtensa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=91,92,93 "Built target __idf_xtensa"
 .PHONY : esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 90
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 91
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule
@@ -1156,7 +1255,7 @@ __idf_xtensa: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/rule
 # codegen rule for target.
 esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/build.make esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=91,92 "Finished codegen for target __idf_xtensa"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=91,92,93 "Finished codegen for target __idf_xtensa"
 .PHONY : esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/codegen
 
 # clean rule for target.
@@ -1171,7 +1270,7 @@ esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/clean:
 esp-idf/soc/CMakeFiles/__idf_soc.dir/all: esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88 "Built target __idf_soc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88 "Built target __idf_soc"
 .PHONY : esp-idf/soc/CMakeFiles/__idf_soc.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1188,7 +1287,7 @@ __idf_soc: esp-idf/soc/CMakeFiles/__idf_soc.dir/rule
 # codegen rule for target.
 esp-idf/soc/CMakeFiles/__idf_soc.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88 "Finished codegen for target __idf_soc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88 "Finished codegen for target __idf_soc"
 .PHONY : esp-idf/soc/CMakeFiles/__idf_soc.dir/codegen
 
 # clean rule for target.
@@ -1203,12 +1302,12 @@ esp-idf/soc/CMakeFiles/__idf_soc.dir/clean:
 esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/all: esp-idf/hal/CMakeFiles/__idf_hal.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=64 "Built target __idf_micro-ecc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=65,66 "Built target __idf_micro-ecc"
 .PHONY : esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 64
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 66
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/rule
@@ -1220,7 +1319,7 @@ __idf_micro-ecc: esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/rule
 # codegen rule for target.
 esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/build.make esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=64 "Finished codegen for target __idf_micro-ecc"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=65,66 "Finished codegen for target __idf_micro-ecc"
 .PHONY : esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/codegen
 
 # clean rule for target.
@@ -1235,12 +1334,12 @@ esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir/clean:
 esp-idf/hal/CMakeFiles/__idf_hal.dir/all: esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=51,52,53,54,55,56,57 "Built target __idf_hal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=54,55,56,57,58,59 "Built target __idf_hal"
 .PHONY : esp-idf/hal/CMakeFiles/__idf_hal.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/hal/CMakeFiles/__idf_hal.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 63
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 64
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/hal/CMakeFiles/__idf_hal.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/hal/CMakeFiles/__idf_hal.dir/rule
@@ -1252,7 +1351,7 @@ __idf_hal: esp-idf/hal/CMakeFiles/__idf_hal.dir/rule
 # codegen rule for target.
 esp-idf/hal/CMakeFiles/__idf_hal.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=51,52,53,54,55,56,57 "Finished codegen for target __idf_hal"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=54,55,56,57,58,59 "Finished codegen for target __idf_hal"
 .PHONY : esp-idf/hal/CMakeFiles/__idf_hal.dir/codegen
 
 # clean rule for target.
@@ -1272,7 +1371,7 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all: esp-idf/esp_bootloader_for
 
 # Build rule for subdir invocation for target.
 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 56
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 58
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/rule
@@ -1299,12 +1398,12 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/clean:
 esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/all: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/build.make esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/build.make esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=29 "Built target __idf_esp_bootloader_format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=28,29 "Built target __idf_esp_bootloader_format"
 .PHONY : esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 54
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 56
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/rule
@@ -1316,7 +1415,7 @@ __idf_esp_bootloader_format: esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_
 # codegen rule for target.
 esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/build.make esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=29 "Finished codegen for target __idf_esp_bootloader_format"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=28,29 "Finished codegen for target __idf_esp_bootloader_format"
 .PHONY : esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/codegen
 
 # clean rule for target.
@@ -1331,12 +1430,12 @@ esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir/clean:
 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all: esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/build.make esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/build.make esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Built target __idf_bootloader_support"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Built target __idf_bootloader_support"
 .PHONY : esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 53
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 54
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/rule
@@ -1348,7 +1447,7 @@ __idf_bootloader_support: esp-idf/bootloader_support/CMakeFiles/__idf_bootloader
 # codegen rule for target.
 esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/build.make esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21 "Finished codegen for target __idf_bootloader_support"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20 "Finished codegen for target __idf_bootloader_support"
 .PHONY : esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/codegen
 
 # clean rule for target.
@@ -1363,12 +1462,12 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/clean:
 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all: esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=22,23,24,25,26,27,28 "Built target __idf_efuse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=21,22,23,24,25,26,27 "Built target __idf_efuse"
 .PHONY : esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 32
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 34
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
@@ -1380,7 +1479,7 @@ __idf_efuse: esp-idf/efuse/CMakeFiles/__idf_efuse.dir/rule
 # codegen rule for target.
 esp-idf/efuse/CMakeFiles/__idf_efuse.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/efuse/CMakeFiles/__idf_efuse.dir/build.make esp-idf/efuse/CMakeFiles/__idf_efuse.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=22,23,24,25,26,27,28 "Finished codegen for target __idf_efuse"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=21,22,23,24,25,26,27 "Finished codegen for target __idf_efuse"
 .PHONY : esp-idf/efuse/CMakeFiles/__idf_efuse.dir/codegen
 
 # clean rule for target.
@@ -1619,12 +1718,12 @@ esp-idf/efuse/CMakeFiles/efuse_test_table.dir/clean:
 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=50 "Built target __idf_esp_system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=52,53 "Built target __idf_esp_system"
 .PHONY : esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 25
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 27
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule
@@ -1636,7 +1735,7 @@ __idf_esp_system: esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/rule
 # codegen rule for target.
 esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/build.make esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=50 "Finished codegen for target __idf_esp_system"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=52,53 "Finished codegen for target __idf_esp_system"
 .PHONY : esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/codegen
 
 # clean rule for target.
@@ -1651,12 +1750,12 @@ esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/clean:
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/all: esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40,41 "Built target __idf_esp_hw_support"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40 "Built target __idf_esp_hw_support"
 .PHONY : esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/rule
@@ -1668,7 +1767,7 @@ __idf_esp_hw_support: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir
 # codegen rule for target.
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40,41 "Finished codegen for target __idf_esp_hw_support"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=32,33,34,35,36,37,38,39,40 "Finished codegen for target __idf_esp_hw_support"
 .PHONY : esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/codegen
 
 # clean rule for target.
@@ -1688,7 +1787,7 @@ esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/all: esp-idf/esp_rom/CMakeFil
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 16
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/rule
@@ -1715,12 +1814,12 @@ esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/clean:
 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/all: esp-idf/log/CMakeFiles/__idf_log.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=42,43,44,45,46,47,48,49 "Built target __idf_esp_rom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51 "Built target __idf_esp_rom"
 .PHONY : esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 14
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule
@@ -1732,7 +1831,7 @@ __idf_esp_rom: esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/rule
 # codegen rule for target.
 esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=42,43,44,45,46,47,48,49 "Finished codegen for target __idf_esp_rom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=41,42,43,44,45,46,47,48,49,50,51 "Finished codegen for target __idf_esp_rom"
 .PHONY : esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/codegen
 
 # clean rule for target.
@@ -1747,12 +1846,12 @@ esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/clean:
 esp-idf/log/CMakeFiles/__idf_log.dir/all:
 	$(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=58,59,60,61 "Built target __idf_log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=60,61,62 "Built target __idf_log"
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/log/CMakeFiles/__idf_log.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/log/CMakeFiles/__idf_log.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/rule
@@ -1764,7 +1863,7 @@ __idf_log: esp-idf/log/CMakeFiles/__idf_log.dir/rule
 # codegen rule for target.
 esp-idf/log/CMakeFiles/__idf_log.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=58,59,60,61 "Finished codegen for target __idf_log"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=60,61,62 "Finished codegen for target __idf_log"
 .PHONY : esp-idf/log/CMakeFiles/__idf_log.dir/codegen
 
 # clean rule for target.
@@ -1811,12 +1910,12 @@ esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/clean:
 esp-idf/main/CMakeFiles/__idf_main.dir/all: esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/all
 	$(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=62,63 "Built target __idf_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=63,64 "Built target __idf_main"
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/all
 
 # Build rule for subdir invocation for target.
 esp-idf/main/CMakeFiles/__idf_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 92
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 93
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 esp-idf/main/CMakeFiles/__idf_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /workspace/build/bootloader/CMakeFiles 0
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/rule
@@ -1828,7 +1927,7 @@ __idf_main: esp-idf/main/CMakeFiles/__idf_main.dir/rule
 # codegen rule for target.
 esp-idf/main/CMakeFiles/__idf_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=62,63 "Finished codegen for target __idf_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=63,64 "Finished codegen for target __idf_main"
 .PHONY : esp-idf/main/CMakeFiles/__idf_main.dir/codegen
 
 # clean rule for target.

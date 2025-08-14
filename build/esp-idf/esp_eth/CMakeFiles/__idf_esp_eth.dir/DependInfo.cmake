@@ -10,16 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspace/esp-idf/components/esp_eth/src/esp_eth.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj.d"
   "/workspace/esp-idf/components/esp_eth/src/esp_eth_netif_glue.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp_dma.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_dma.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/mac/esp_eth_mac_esp_gpio.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/mac/esp_eth_mac_esp_gpio.c.obj.d"
   "/workspace/esp-idf/components/esp_eth/src/phy/esp_eth_phy_802_3.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/phy/esp_eth_phy_dp83848.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_dp83848.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_dp83848.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/phy/esp_eth_phy_generic.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_generic.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/phy/esp_eth_phy_ip101.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_ip101.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_ip101.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/phy/esp_eth_phy_ksz80xx.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_ksz80xx.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_ksz80xx.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/phy/esp_eth_phy_lan87xx.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_lan87xx.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_lan87xx.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/phy/esp_eth_phy_rtl8201.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_rtl8201.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_rtl8201.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

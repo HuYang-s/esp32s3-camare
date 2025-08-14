@@ -3,5 +3,5 @@ file(REMOVE_RECURSE
   "config/sdkconfig.cmake"
   "bootloader.bin"
   "bootloader.map"
-  "project_elf_src_esp32.c"
+  "project_elf_src_esp32s3.c"
 )

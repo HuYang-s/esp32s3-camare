@@ -36,7 +36,7 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj: \
  /workspace/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -44,7 +44,7 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj: \
  /workspace/esp-idf/components/spi_flash/include/spi_flash/spi_flash_defs.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_spiflash.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_spiflash_defs.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/spi_flash.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/spi_flash.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/esp-idf/components/spi_flash/include/spi_flash_override.h \
  /workspace/esp-idf/components/spi_flash/include/esp_private/spi_flash_os.h \
@@ -54,19 +54,23 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj: \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /workspace/esp-idf/components/hal/include/hal/esp_flash_err.h \
  /workspace/esp-idf/components/hal/include/hal/spi_flash_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/spi_flash_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/gpspi_flash_ll.h \
  /workspace/esp-idf/components/soc/include/soc/spi_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/spi_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/spi_struct.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/spi_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/interrupts.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_mem_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_mem_reg.h \
  /workspace/esp-idf/components/hal/include/hal/spi_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/param.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
@@ -76,9 +80,11 @@ esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/spimem_flash_ll.h \
+ /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /workspace/esp-idf/components/bootloader_support/bootloader_flash/include/bootloader_flash_override.h \
  /workspace/esp-idf/components/bootloader_support/bootloader_flash/include/bootloader_flash_priv.h \
  /workspace/esp-idf/components/spi_flash/include/spi_flash_mmap.h \
  /workspace/esp-idf/components/spi_flash/include/esp_spi_flash_counters.h \
  /workspace/esp-idf/components/bootloader_support/bootloader_flash/include/bootloader_flash.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/ext_mem_defs.h
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/ext_mem_defs.h

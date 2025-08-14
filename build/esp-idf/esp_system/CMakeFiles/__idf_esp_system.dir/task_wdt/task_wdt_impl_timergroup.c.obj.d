@@ -32,41 +32,43 @@ esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timerg
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
  /workspace/esp-idf/components/hal/include/hal/wdt_hal.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/hal/include/hal/wdt_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/mwdt_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/mwdt_ll.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /workspace/esp-idf/components/soc/include/soc/wdt_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/timer_group_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/timer_group_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/timer_group_struct.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/timer_group_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/periph_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/interrupts.h \
  /workspace/esp-idf/components/soc/include/soc/regdma.h \
+ /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/rwdt_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/rwdt_ll.h \
  /workspace/esp-idf/components/soc/include/soc/rtc_cntl_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_struct.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/timer_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/efuse_defs.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/timer_ll.h \
  /workspace/esp-idf/components/hal/include/hal/timer_types.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h \
  /workspace/esp-idf/components/esp_common/include/esp_check.h \
  /workspace/esp-idf/components/esp_common/include/esp_err.h \
  /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
  /workspace/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -84,12 +86,12 @@ esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timerg
  /workspace/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_config.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_context.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
@@ -98,7 +100,7 @@ esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timerg
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /workspace/esp-idf/components/xtensa/include/xt_instr_macros.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
@@ -106,7 +108,7 @@ esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt/task_wdt_impl_timerg
  /workspace/esp-idf/components/esp_hw_support/include/esp_cpu.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_api.h \
  /workspace/esp-idf/components/xtensa/include/xt_utils.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
  /workspace/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
  /workspace/esp-idf/components/esp_common/include/esp_macros.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \

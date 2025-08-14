@@ -21,21 +21,25 @@ esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/param.h \
- /workspace/esp-idf/components/esp_rom/esp32/esp_rom_caps.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/esp_rom_caps.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  /workspace/build/bootloader/config/sdkconfig.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/ets_sys.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/ets_sys.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /workspace/esp-idf/components/esp_common/include/esp_assert.h \
+ /workspace/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /workspace/esp-idf/components/newlib/platform_include/sys/lock.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
- /workspace/esp-idf/components/newlib/platform_include/assert.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
+ /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h

@@ -370,6 +370,45 @@ size-components/fast:
 .PHONY : size-components/fast
 
 #=============================================================================
+# Target rules for targets named dfu
+
+# Build rule for target.
+dfu: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dfu
+.PHONY : dfu
+
+# fast build rule for target.
+dfu/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu.dir/build.make CMakeFiles/dfu.dir/build
+.PHONY : dfu/fast
+
+#=============================================================================
+# Target rules for targets named dfu-list
+
+# Build rule for target.
+dfu-list: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dfu-list
+.PHONY : dfu-list
+
+# fast build rule for target.
+dfu-list/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-list.dir/build.make CMakeFiles/dfu-list.dir/build
+.PHONY : dfu-list/fast
+
+#=============================================================================
+# Target rules for targets named dfu-flash
+
+# Build rule for target.
+dfu-flash: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dfu-flash
+.PHONY : dfu-flash
+
+# fast build rule for target.
+dfu-flash/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/dfu-flash.dir/build.make CMakeFiles/dfu-flash.dir/build
+.PHONY : dfu-flash/fast
+
+#=============================================================================
 # Target rules for targets named uf2
 
 # Build rule for target.
@@ -1280,32 +1319,6 @@ __idf_esp_driver_sdspi/fast:
 .PHONY : __idf_esp_driver_sdspi/fast
 
 #=============================================================================
-# Target rules for targets named __idf_esp_driver_sdio
-
-# Build rule for target.
-__idf_esp_driver_sdio: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_driver_sdio
-.PHONY : __idf_esp_driver_sdio
-
-# fast build rule for target.
-__idf_esp_driver_sdio/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/build.make esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/build
-.PHONY : __idf_esp_driver_sdio/fast
-
-#=============================================================================
-# Target rules for targets named __idf_esp_driver_dac
-
-# Build rule for target.
-__idf_esp_driver_dac: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_driver_dac
-.PHONY : __idf_esp_driver_dac
-
-# fast build rule for target.
-__idf_esp_driver_dac/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/build.make esp-idf/esp_driver_dac/CMakeFiles/__idf_esp_driver_dac.dir/build
-.PHONY : __idf_esp_driver_dac/fast
-
-#=============================================================================
 # Target rules for targets named __idf_esp_driver_rmt
 
 # Build rule for target.
@@ -1317,6 +1330,19 @@ __idf_esp_driver_rmt: cmake_check_build_system
 __idf_esp_driver_rmt/fast:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/build.make esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/build
 .PHONY : __idf_esp_driver_rmt/fast
+
+#=============================================================================
+# Target rules for targets named __idf_esp_driver_tsens
+
+# Build rule for target.
+__idf_esp_driver_tsens: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_driver_tsens
+.PHONY : __idf_esp_driver_tsens
+
+# fast build rule for target.
+__idf_esp_driver_tsens/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/build.make esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/build
+.PHONY : __idf_esp_driver_tsens/fast
 
 #=============================================================================
 # Target rules for targets named __idf_esp_driver_sdm
@@ -1356,6 +1382,19 @@ __idf_esp_driver_ledc: cmake_check_build_system
 __idf_esp_driver_ledc/fast:
 	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/build.make esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/build
 .PHONY : __idf_esp_driver_ledc/fast
+
+#=============================================================================
+# Target rules for targets named __idf_esp_driver_usb_serial_jtag
+
+# Build rule for target.
+__idf_esp_driver_usb_serial_jtag: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp_driver_usb_serial_jtag
+.PHONY : __idf_esp_driver_usb_serial_jtag
+
+# fast build rule for target.
+__idf_esp_driver_usb_serial_jtag/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/build.make esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/build
+.PHONY : __idf_esp_driver_usb_serial_jtag/fast
 
 #=============================================================================
 # Target rules for targets named __idf_driver
@@ -1839,6 +1878,32 @@ __idf_spiffs/fast:
 .PHONY : __idf_spiffs/fast
 
 #=============================================================================
+# Target rules for targets named __idf_touch_element
+
+# Build rule for target.
+__idf_touch_element: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_touch_element
+.PHONY : __idf_touch_element
+
+# fast build rule for target.
+__idf_touch_element/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/build.make esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/build
+.PHONY : __idf_touch_element/fast
+
+#=============================================================================
+# Target rules for targets named __idf_usb
+
+# Build rule for target.
+__idf_usb: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_usb
+.PHONY : __idf_usb
+
+# fast build rule for target.
+__idf_usb/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/usb/CMakeFiles/__idf_usb.dir/build.make esp-idf/usb/CMakeFiles/__idf_usb.dir/build
+.PHONY : __idf_usb/fast
+
+#=============================================================================
 # Target rules for targets named __idf_wifi_provisioning
 
 # Build rule for target.
@@ -1981,29 +2046,29 @@ __idf_main/fast:
 	$(MAKE) $(MAKESILENT) -f esp-idf/main/CMakeFiles/__idf_main.dir/build.make esp-idf/main/CMakeFiles/__idf_main.dir/build
 .PHONY : __idf_main/fast
 
-project_elf_src_esp32.obj: project_elf_src_esp32.c.obj
-.PHONY : project_elf_src_esp32.obj
+project_elf_src_esp32s3.obj: project_elf_src_esp32s3.c.obj
+.PHONY : project_elf_src_esp32s3.obj
 
 # target to build an object file
-project_elf_src_esp32.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/esp32s3_camera_web.elf.dir/build.make CMakeFiles/esp32s3_camera_web.elf.dir/project_elf_src_esp32.c.obj
-.PHONY : project_elf_src_esp32.c.obj
+project_elf_src_esp32s3.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esp32s3_camera_web.elf.dir/build.make CMakeFiles/esp32s3_camera_web.elf.dir/project_elf_src_esp32s3.c.obj
+.PHONY : project_elf_src_esp32s3.c.obj
 
-project_elf_src_esp32.i: project_elf_src_esp32.c.i
-.PHONY : project_elf_src_esp32.i
+project_elf_src_esp32s3.i: project_elf_src_esp32s3.c.i
+.PHONY : project_elf_src_esp32s3.i
 
 # target to preprocess a source file
-project_elf_src_esp32.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/esp32s3_camera_web.elf.dir/build.make CMakeFiles/esp32s3_camera_web.elf.dir/project_elf_src_esp32.c.i
-.PHONY : project_elf_src_esp32.c.i
+project_elf_src_esp32s3.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esp32s3_camera_web.elf.dir/build.make CMakeFiles/esp32s3_camera_web.elf.dir/project_elf_src_esp32s3.c.i
+.PHONY : project_elf_src_esp32s3.c.i
 
-project_elf_src_esp32.s: project_elf_src_esp32.c.s
-.PHONY : project_elf_src_esp32.s
+project_elf_src_esp32s3.s: project_elf_src_esp32s3.c.s
+.PHONY : project_elf_src_esp32s3.s
 
 # target to generate assembly for a file
-project_elf_src_esp32.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/esp32s3_camera_web.elf.dir/build.make CMakeFiles/esp32s3_camera_web.elf.dir/project_elf_src_esp32.c.s
-.PHONY : project_elf_src_esp32.c.s
+project_elf_src_esp32s3.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/esp32s3_camera_web.elf.dir/build.make CMakeFiles/esp32s3_camera_web.elf.dir/project_elf_src_esp32s3.c.s
+.PHONY : project_elf_src_esp32s3.c.s
 
 # Help Target
 help:
@@ -2027,6 +2092,9 @@ help:
 	@echo "... bootloader-flash"
 	@echo "... confserver"
 	@echo "... custom_bundle"
+	@echo "... dfu"
+	@echo "... dfu-flash"
+	@echo "... dfu-list"
 	@echo "... efuse-common-table"
 	@echo "... efuse-custom-table"
 	@echo "... efuse_common_table"
@@ -2075,7 +2143,6 @@ help:
 	@echo "... __idf_esp_coex"
 	@echo "... __idf_esp_common"
 	@echo "... __idf_esp_driver_cam"
-	@echo "... __idf_esp_driver_dac"
 	@echo "... __idf_esp_driver_gpio"
 	@echo "... __idf_esp_driver_gptimer"
 	@echo "... __idf_esp_driver_i2c"
@@ -2084,12 +2151,13 @@ help:
 	@echo "... __idf_esp_driver_mcpwm"
 	@echo "... __idf_esp_driver_pcnt"
 	@echo "... __idf_esp_driver_rmt"
-	@echo "... __idf_esp_driver_sdio"
 	@echo "... __idf_esp_driver_sdm"
 	@echo "... __idf_esp_driver_sdmmc"
 	@echo "... __idf_esp_driver_sdspi"
 	@echo "... __idf_esp_driver_spi"
+	@echo "... __idf_esp_driver_tsens"
 	@echo "... __idf_esp_driver_uart"
+	@echo "... __idf_esp_driver_usb_serial_jtag"
 	@echo "... __idf_esp_eth"
 	@echo "... __idf_esp_event"
 	@echo "... __idf_esp_gdbstub"
@@ -2143,7 +2211,9 @@ help:
 	@echo "... __idf_storage_manager"
 	@echo "... __idf_tcp_transport"
 	@echo "... __idf_time_service"
+	@echo "... __idf_touch_element"
 	@echo "... __idf_unity"
+	@echo "... __idf_usb"
 	@echo "... __idf_vfs"
 	@echo "... __idf_wear_levelling"
 	@echo "... __idf_web_server"
@@ -2157,9 +2227,9 @@ help:
 	@echo "... mbedtls"
 	@echo "... mbedx509"
 	@echo "... p256m"
-	@echo "... project_elf_src_esp32.obj"
-	@echo "... project_elf_src_esp32.i"
-	@echo "... project_elf_src_esp32.s"
+	@echo "... project_elf_src_esp32s3.obj"
+	@echo "... project_elf_src_esp32s3.i"
+	@echo "... project_elf_src_esp32s3.s"
 .PHONY : help
 
 

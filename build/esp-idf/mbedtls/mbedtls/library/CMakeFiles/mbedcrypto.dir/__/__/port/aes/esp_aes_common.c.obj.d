@@ -15,7 +15,8 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
  /workspace/esp-idf/components/hal/include/hal/aes_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/mbedtls/port/include/esp_crypto_dma.h \
  /workspace/esp-idf/components/hal/include/hal/dma_types.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
@@ -36,6 +37,16 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gdma_channel.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/gdma_ll.h \
+ /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
+ /workspace/esp-idf/components/hal/include/hal/gdma_types.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gdma_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gdma_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private_access.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
@@ -61,15 +72,15 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/__/__/port/aes/esp_aes
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
  /workspace/esp-idf/components/mbedtls/port/include/aes_alt.h \
  /workspace/esp-idf/components/hal/include/hal/aes_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/aes_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/aes_ll.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/hwcrypto_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/hwcrypto_reg.h \
+ /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h \
+ /workspace/esp-idf/components/mbedtls/port/aes/dma/include/esp_aes_dma_priv.h \
+ /workspace/esp-idf/components/esp_common/include/esp_err.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
+ /workspace/esp-idf/components/esp_common/include/esp_compiler.h

@@ -53,19 +53,23 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_fl
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /workspace/esp-idf/components/hal/include/hal/esp_flash_err.h \
  /workspace/esp-idf/components/hal/include/hal/spi_flash_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/spi_flash_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/gpspi_flash_ll.h \
  /workspace/esp-idf/components/soc/include/soc/spi_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/spi_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/spi_struct.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/spi_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/interrupts.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_mem_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_mem_reg.h \
  /workspace/esp-idf/components/hal/include/hal/spi_types.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/param.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
@@ -75,19 +79,21 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_fl
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/spimem_flash_ll.h \
+ /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /workspace/esp-idf/components/spi_flash/include/spi_flash_override.h \
  /workspace/esp-idf/components/bootloader_support/bootloader_flash/include/bootloader_flash_override.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/ext_mem_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/ext_mem_defs.h \
  /workspace/esp-idf/components/log/include/esp_log.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
  /workspace/esp-idf/components/log/include/esp_log_timestamp.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_efuse.h \
  /workspace/esp-idf/components/soc/include/soc/efuse_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/efuse_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/efuse_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/efuse_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/io_mux_reg.h
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/efuse_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/io_mux_reg.h

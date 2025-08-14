@@ -175,6 +175,38 @@ __idf_esp_rom/fast:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build
 .PHONY : __idf_esp_rom/fast
 
+patches/esp_rom_cache_esp32s2_esp32s3.obj: patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+.PHONY : patches/esp_rom_cache_esp32s2_esp32s3.obj
+
+# target to build an object file
+patches/esp_rom_cache_esp32s2_esp32s3.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+.PHONY : patches/esp_rom_cache_esp32s2_esp32s3.c.obj
+
+patches/esp_rom_cache_esp32s2_esp32s3.i: patches/esp_rom_cache_esp32s2_esp32s3.c.i
+.PHONY : patches/esp_rom_cache_esp32s2_esp32s3.i
+
+# target to preprocess a source file
+patches/esp_rom_cache_esp32s2_esp32s3.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.i
+.PHONY : patches/esp_rom_cache_esp32s2_esp32s3.c.i
+
+patches/esp_rom_cache_esp32s2_esp32s3.s: patches/esp_rom_cache_esp32s2_esp32s3.c.s
+.PHONY : patches/esp_rom_cache_esp32s2_esp32s3.s
+
+# target to generate assembly for a file
+patches/esp_rom_cache_esp32s2_esp32s3.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.s
+.PHONY : patches/esp_rom_cache_esp32s2_esp32s3.c.s
+
+patches/esp_rom_cache_writeback_esp32s3.obj: patches/esp_rom_cache_writeback_esp32s3.S.obj
+.PHONY : patches/esp_rom_cache_writeback_esp32s3.obj
+
+# target to build an object file
+patches/esp_rom_cache_writeback_esp32s3.S.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj
+.PHONY : patches/esp_rom_cache_writeback_esp32s3.S.obj
+
 patches/esp_rom_crc.obj: patches/esp_rom_crc.c.obj
 .PHONY : patches/esp_rom_crc.obj
 
@@ -327,6 +359,30 @@ patches/esp_rom_sys.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.s
 .PHONY : patches/esp_rom_sys.c.s
 
+patches/esp_rom_systimer.obj: patches/esp_rom_systimer.c.obj
+.PHONY : patches/esp_rom_systimer.obj
+
+# target to build an object file
+patches/esp_rom_systimer.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj
+.PHONY : patches/esp_rom_systimer.c.obj
+
+patches/esp_rom_systimer.i: patches/esp_rom_systimer.c.i
+.PHONY : patches/esp_rom_systimer.i
+
+# target to preprocess a source file
+patches/esp_rom_systimer.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.i
+.PHONY : patches/esp_rom_systimer.c.i
+
+patches/esp_rom_systimer.s: patches/esp_rom_systimer.c.s
+.PHONY : patches/esp_rom_systimer.s
+
+# target to generate assembly for a file
+patches/esp_rom_systimer.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.s
+.PHONY : patches/esp_rom_systimer.c.s
+
 patches/esp_rom_uart.obj: patches/esp_rom_uart.c.obj
 .PHONY : patches/esp_rom_uart.obj
 
@@ -351,6 +407,30 @@ patches/esp_rom_uart.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.s
 .PHONY : patches/esp_rom_uart.c.s
 
+patches/esp_rom_wdt.obj: patches/esp_rom_wdt.c.obj
+.PHONY : patches/esp_rom_wdt.obj
+
+# target to build an object file
+patches/esp_rom_wdt.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj
+.PHONY : patches/esp_rom_wdt.c.obj
+
+patches/esp_rom_wdt.i: patches/esp_rom_wdt.c.i
+.PHONY : patches/esp_rom_wdt.i
+
+# target to preprocess a source file
+patches/esp_rom_wdt.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.i
+.PHONY : patches/esp_rom_wdt.c.i
+
+patches/esp_rom_wdt.s: patches/esp_rom_wdt.c.s
+.PHONY : patches/esp_rom_wdt.s
+
+# target to generate assembly for a file
+patches/esp_rom_wdt.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/build.make esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.s
+.PHONY : patches/esp_rom_wdt.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -364,6 +444,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... __idf_esp_rom"
+	@echo "... patches/esp_rom_cache_esp32s2_esp32s3.obj"
+	@echo "... patches/esp_rom_cache_esp32s2_esp32s3.i"
+	@echo "... patches/esp_rom_cache_esp32s2_esp32s3.s"
+	@echo "... patches/esp_rom_cache_writeback_esp32s3.obj"
 	@echo "... patches/esp_rom_crc.obj"
 	@echo "... patches/esp_rom_crc.i"
 	@echo "... patches/esp_rom_crc.s"
@@ -383,9 +467,15 @@ help:
 	@echo "... patches/esp_rom_sys.obj"
 	@echo "... patches/esp_rom_sys.i"
 	@echo "... patches/esp_rom_sys.s"
+	@echo "... patches/esp_rom_systimer.obj"
+	@echo "... patches/esp_rom_systimer.i"
+	@echo "... patches/esp_rom_systimer.s"
 	@echo "... patches/esp_rom_uart.obj"
 	@echo "... patches/esp_rom_uart.i"
 	@echo "... patches/esp_rom_uart.s"
+	@echo "... patches/esp_rom_wdt.obj"
+	@echo "... patches/esp_rom_wdt.i"
+	@echo "... patches/esp_rom_wdt.s"
 .PHONY : help
 
 

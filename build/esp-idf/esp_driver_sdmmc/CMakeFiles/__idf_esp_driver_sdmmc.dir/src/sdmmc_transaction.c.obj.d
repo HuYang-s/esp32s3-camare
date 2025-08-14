@@ -53,7 +53,7 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transac
  /workspace/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -66,12 +66,12 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transac
  /workspace/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_config.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_context.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
@@ -80,16 +80,17 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transac
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /workspace/esp-idf/components/xtensa/include/xt_instr_macros.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
  /workspace/esp-idf/components/esp_hw_support/include/spinlock.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_cpu.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_api.h \
  /workspace/esp-idf/components/xtensa/include/xt_utils.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
@@ -98,10 +99,9 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transac
  /workspace/esp-idf/components/esp_common/include/esp_macros.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
  /workspace/esp-idf/components/newlib/platform_include/esp_newlib.h \
  /workspace/esp-idf/components/heap/include/esp_heap_caps.h \
  /workspace/esp-idf/components/heap/include/multi_heap.h \
@@ -127,15 +127,16 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transac
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
  /workspace/esp-idf/components/soc/include/soc/sdmmc_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_pins.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/sdio_slave_pins.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/sdmmc_pins.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/sdmmc_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/sdmmc_struct.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/usb_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/spi_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/sdmmc_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/touch_sensor_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/sdmmc_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/sdmmc_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_sig_map.h \
  /workspace/esp-idf/components/esp_driver_sdmmc/include/driver/sdmmc_types.h \
  /workspace/esp-idf/components/sdmmc/include/sd_protocol_types.h \
  /workspace/esp-idf/components/sdmmc/include/sd_pwr_ctrl.h \
@@ -152,10 +153,9 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transac
  /workspace/esp-idf/components/esp_mm/include/esp_cache.h \
  /workspace/esp-idf/components/esp_mm/include/esp_private/esp_cache_private.h \
  /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_internal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/sdmmc_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/sdmmc_ll.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
  /workspace/esp-idf/components/hal/include/hal/sd_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h

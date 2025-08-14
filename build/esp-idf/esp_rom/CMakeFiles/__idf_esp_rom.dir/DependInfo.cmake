@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_ASM
+  "/workspace/esp-idf/components/esp_rom/patches/esp_rom_cache_writeback_esp32s3.S" "/workspace/build/esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_writeback_esp32s3.S.obj"
   "/workspace/esp-idf/components/esp_rom/patches/esp_rom_longjmp.S" "/workspace/build/esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_longjmp.S.obj"
   )
 set(CMAKE_ASM_COMPILER_ID "GNU")
@@ -28,9 +29,9 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "config"
   "/workspace/esp-idf/components/esp_rom/include"
-  "/workspace/esp-idf/components/esp_rom/esp32/include"
-  "/workspace/esp-idf/components/esp_rom/esp32/include/esp32"
-  "/workspace/esp-idf/components/esp_rom/esp32"
+  "/workspace/esp-idf/components/esp_rom/esp32s3/include"
+  "/workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3"
+  "/workspace/esp-idf/components/esp_rom/esp32s3"
   "/workspace/esp-idf/components/newlib/platform_include"
   "/workspace/esp-idf/components/freertos/config/include"
   "/workspace/esp-idf/components/freertos/config/include/freertos"
@@ -41,27 +42,27 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/workspace/esp-idf/components/freertos/esp_additions/include"
   "/workspace/esp-idf/components/esp_hw_support/include"
   "/workspace/esp-idf/components/esp_hw_support/include/soc"
-  "/workspace/esp-idf/components/esp_hw_support/include/soc/esp32"
+  "/workspace/esp-idf/components/esp_hw_support/include/soc/esp32s3"
   "/workspace/esp-idf/components/esp_hw_support/dma/include"
   "/workspace/esp-idf/components/esp_hw_support/ldo/include"
   "/workspace/esp-idf/components/esp_hw_support/debug_probe/include"
-  "/workspace/esp-idf/components/esp_hw_support/port/esp32/."
-  "/workspace/esp-idf/components/esp_hw_support/port/esp32/include"
+  "/workspace/esp-idf/components/esp_hw_support/port/esp32s3/."
+  "/workspace/esp-idf/components/esp_hw_support/port/esp32s3/include"
   "/workspace/esp-idf/components/heap/include"
   "/workspace/esp-idf/components/heap/tlsf"
   "/workspace/esp-idf/components/log/include"
   "/workspace/esp-idf/components/soc/include"
-  "/workspace/esp-idf/components/soc/esp32"
-  "/workspace/esp-idf/components/soc/esp32/include"
-  "/workspace/esp-idf/components/soc/esp32/register"
+  "/workspace/esp-idf/components/soc/esp32s3"
+  "/workspace/esp-idf/components/soc/esp32s3/include"
+  "/workspace/esp-idf/components/soc/esp32s3/register"
   "/workspace/esp-idf/components/hal/platform_port/include"
-  "/workspace/esp-idf/components/hal/esp32/include"
+  "/workspace/esp-idf/components/hal/esp32s3/include"
   "/workspace/esp-idf/components/hal/include"
   "/workspace/esp-idf/components/esp_common/include"
   "/workspace/esp-idf/components/esp_system/include"
   "/workspace/esp-idf/components/esp_system/port/soc"
   "/workspace/esp-idf/components/esp_system/port/include/private"
-  "/workspace/esp-idf/components/xtensa/esp32/include"
+  "/workspace/esp-idf/components/xtensa/esp32s3/include"
   "/workspace/esp-idf/components/xtensa/include"
   "/workspace/esp-idf/components/xtensa/deprecated_include"
   "/workspace/esp-idf/components/lwip/include"
@@ -77,13 +78,16 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/workspace/esp-idf/components/esp_rom/patches/esp_rom_cache_esp32s2_esp32s3.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_cache_esp32s2_esp32s3.c.obj.d"
   "/workspace/esp-idf/components/esp_rom/patches/esp_rom_crc.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_crc.c.obj.d"
   "/workspace/esp-idf/components/esp_rom/patches/esp_rom_efuse.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_efuse.c.obj.d"
   "/workspace/esp-idf/components/esp_rom/patches/esp_rom_gpio.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_gpio.c.obj.d"
   "/workspace/esp-idf/components/esp_rom/patches/esp_rom_print.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_print.c.obj.d"
   "/workspace/esp-idf/components/esp_rom/patches/esp_rom_spiflash.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_spiflash.c.obj.d"
   "/workspace/esp-idf/components/esp_rom/patches/esp_rom_sys.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_sys.c.obj.d"
+  "/workspace/esp-idf/components/esp_rom/patches/esp_rom_systimer.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_systimer.c.obj.d"
   "/workspace/esp-idf/components/esp_rom/patches/esp_rom_uart.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_uart.c.obj.d"
+  "/workspace/esp-idf/components/esp_rom/patches/esp_rom_wdt.c" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj" "gcc" "esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches/esp_rom_wdt.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

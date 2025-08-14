@@ -37,18 +37,18 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/param.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
- /workspace/esp-idf/components/esp_rom/esp32/esp_rom_caps.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/esp_rom_caps.h \
  /workspace/esp-idf/components/esp_common/include/esp_macros.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
  /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_sleep.h \
  /workspace/esp-idf/components/esp_common/include/esp_err.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
@@ -56,7 +56,7 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
  /workspace/esp-idf/components/hal/include/hal/touch_sensor_types.h \
  /workspace/esp-idf/components/hal/include/hal/gpio_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_private/esp_sleep_internal.h \
  /workspace/esp-idf/components/esp_timer/include/esp_private/esp_timer_private.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_private/rtc_clk.h \
@@ -65,11 +65,11 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj: \
  /workspace/esp-idf/components/esp_system/include/esp_system.h \
  /workspace/esp-idf/components/esp_common/include/esp_idf_version.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_private/io_mux.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/io_mux_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/io_mux_reg.h \
  /workspace/esp-idf/components/log/include/esp_log.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -83,12 +83,12 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj: \
  /workspace/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_config.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_context.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
@@ -97,7 +97,7 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj: \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /workspace/esp-idf/components/xtensa/include/xt_instr_macros.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
@@ -105,7 +105,7 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj: \
  /workspace/esp-idf/components/esp_hw_support/include/esp_cpu.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_api.h \
  /workspace/esp-idf/components/xtensa/include/xt_utils.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
  /workspace/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
@@ -129,73 +129,74 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj: \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
  /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/spi_pins.h \
  /workspace/esp-idf/components/soc/include/soc/chip_revision.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/rtc_io.h \
  /workspace/esp-idf/components/hal/include/hal/rtc_io_types.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/efuse_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/efuse_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/efuse_hal.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/efuse_ll.h \
  /workspace/esp-idf/components/soc/include/soc/efuse_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/efuse_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/efuse_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/efuse_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/efuse_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_struct.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/efuse.h \
  /workspace/esp-idf/components/hal/include/hal/efuse_hal.h \
  /workspace/esp-idf/components/hal/include/hal/rtc_io_hal.h \
  /workspace/esp-idf/components/soc/include/soc/rtc_io_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/rtc_io_ll.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_io_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_io_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/rtc_io_channel.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/rtc_io_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_io_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_io_reg.h \
  /workspace/esp-idf/components/soc/include/soc/rtc_periph.h \
  /workspace/esp-idf/components/soc/include/soc/rtc_cntl_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/usb_serial_jtag_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/usb_serial_jtag_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/sens_struct.h \
  /workspace/esp-idf/components/hal/include/hal/clk_tree_hal.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clkout_channel.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/rtc_cntl_ll.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/clk_tree_ll.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/syscon_reg.h \
- /workspace/esp-idf/components/hal/platform_port/include/hal/regi2c_ctrl.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clkout_channel.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/rtc_cntl_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/syscon_reg.h \
+ /workspace/esp-idf/components/hal/include/hal/rtc_hal.h \
+ /workspace/esp-idf/components/esp_hw_support/port/esp32s3/include/soc/rtc.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_private/regi2c_ctrl.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_regi2c.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/regi2c_defs.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/regi2c_bbpll.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/regi2c_apll.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/rtc.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/ets_sys.h \
- /workspace/esp-idf/components/hal/include/hal/rtc_hal.h \
- /workspace/esp-idf/components/esp_hw_support/port/esp32/include/soc/rtc.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/regi2c_defs.h \
  /workspace/esp-idf/components/hal/include/hal/cache_hal.h \
  /workspace/esp-idf/components/hal/include/hal/cache_types.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/cache_ll.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/ext_mem_defs.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/cache_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/extmem_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/ext_mem_defs.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/cache.h \
  /workspace/esp-idf/components/hal/include/hal/wdt_hal.h \
  /workspace/esp-idf/components/hal/include/hal/wdt_types.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/mwdt_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/mwdt_ll.h \
  /workspace/esp-idf/components/soc/include/soc/wdt_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/timer_group_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/timer_group_struct.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/timer_group_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/timer_group_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/periph_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/interrupts.h \
  /workspace/esp-idf/components/soc/include/soc/regdma.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/rwdt_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/rwdt_ll.h \
  /workspace/esp-idf/components/hal/include/hal/uart_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/uart_ll.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/uart_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/uart_struct.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/uart_ll.h \
  /workspace/esp-idf/components/hal/include/hal/uart_types.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/touch_sensor_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/uart_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/uart_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/dport_access.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/touch_sensor_hal.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/touch_sensor_ll.h \
  /workspace/esp-idf/components/soc/include/soc/touch_sensor_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/sens_struct.h \
  /workspace/esp-idf/components/hal/include/hal/touch_sensor_hal.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_uart.h \
  /workspace/esp-idf/components/esp_system/port/include/private/esp_private/brownout.h \
@@ -206,8 +207,4 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.obj: \
  /workspace/esp-idf/components/esp_system/include/esp_private/esp_task_wdt.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_private/sar_periph_ctrl.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_private/mspi_timing_tuning.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/cache.h \
- /workspace/esp-idf/components/esp_hw_support/include/dport_access.h \
- /workspace/esp-idf/components/esp_driver_gpio/include/esp_private/gpio.h \
- /workspace/esp-idf/components/esp_common/include/esp_types.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_private/sleep_gpio.h
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/rtc.h

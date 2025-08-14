@@ -44,14 +44,12 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/mmu_hal.c.obj: \
  /workspace/esp-idf/components/esp_common/include/esp_types.h \
  /workspace/esp-idf/components/hal/include/hal/mmu_types.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/mmu_ll.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/ext_mem_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/dport_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/mmu_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/extmem_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/dport_access.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/cache.h \
- /workspace/esp-idf/components/esp_hw_support/include/dport_access.h
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/ext_mem_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/cache.h

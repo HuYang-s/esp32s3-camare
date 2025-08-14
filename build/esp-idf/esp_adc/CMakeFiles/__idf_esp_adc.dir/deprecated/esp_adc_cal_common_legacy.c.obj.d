@@ -40,15 +40,16 @@ esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legac
  /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
  /workspace/esp-idf/components/log/include/esp_log.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
  /workspace/esp-idf/components/log/include/esp_log_timestamp.h \
  /workspace/esp-idf/components/esp_common/include/esp_check.h \
  /workspace/esp-idf/components/hal/include/hal/adc_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/esp-idf/components/esp_adc/deprecated/include/esp_adc_cal.h \
  /workspace/esp-idf/components/driver/deprecated/driver/adc_types_legacy.h \
@@ -59,9 +60,9 @@ esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legac
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
  /workspace/esp-idf/components/hal/include/hal/gpio_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_etm.h

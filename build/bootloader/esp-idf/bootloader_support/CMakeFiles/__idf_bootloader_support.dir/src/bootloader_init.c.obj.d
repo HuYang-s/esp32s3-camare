@@ -35,7 +35,7 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloade
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -63,27 +63,33 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloade
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /workspace/esp-idf/components/hal/include/hal/esp_flash_err.h \
  /workspace/esp-idf/components/hal/include/hal/spi_flash_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/spi_flash_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/spi_flash_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/gpspi_flash_ll.h \
  /workspace/esp-idf/components/soc/include/soc/spi_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/spi_pins.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/spi_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/spi_struct.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/spi_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/interrupts.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_mem_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/spi_mem_reg.h \
  /workspace/esp-idf/components/hal/include/hal/spi_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/param.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/param.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/spimem_flash_ll.h \
+ /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /workspace/esp-idf/components/spi_flash/include/spi_flash_override.h \
  /workspace/esp-idf/components/bootloader_support/bootloader_flash/include/bootloader_flash_override.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/ext_mem_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/ext_mem_defs.h \
  /workspace/esp-idf/components/bootloader_support/bootloader_flash/include/bootloader_flash_config.h \
  /workspace/esp-idf/components/bootloader_support/include/bootloader_random.h \
  /workspace/esp-idf/components/bootloader_support/include/bootloader_clock.h \
@@ -92,45 +98,41 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloade
  /workspace/esp-idf/components/xtensa/include/xtensa_api.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
  /workspace/esp-idf/components/xtensa/include/xtensa_context.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
  /workspace/esp-idf/components/xtensa/include/xt_utils.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/extreg.h \
- /workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
+ /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
  /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /workspace/esp-idf/components/xtensa/include/xt_instr_macros.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
- /workspace/esp-idf/components/esp_hw_support/port/esp32/include/soc/rtc.h \
- /workspace/esp-idf/components/soc/include/soc/rtc_periph.h \
- /workspace/esp-idf/components/soc/include/soc/rtc_io_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/io_mux_reg.h \
- /workspace/esp-idf/components/soc/include/soc/rtc_cntl_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/esp_hw_support/port/esp32s3/include/soc/rtc.h \
  /workspace/esp-idf/components/hal/include/hal/wdt_hal.h \
  /workspace/esp-idf/components/hal/include/hal/wdt_types.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/mwdt_ll.h \
- /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/mwdt_ll.h \
  /workspace/esp-idf/components/soc/include/soc/wdt_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/timer_group_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/timer_group_struct.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/periph_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/timer_group_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/timer_group_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/periph_defs.h \
  /workspace/esp-idf/components/soc/include/soc/regdma.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/rwdt_ll.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/efuse_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/efuse_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/rwdt_ll.h \
+ /workspace/esp-idf/components/soc/include/soc/rtc_cntl_periph.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/efuse_defs.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/efuse_hal.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/efuse_ll.h \
  /workspace/esp-idf/components/soc/include/soc/efuse_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/efuse_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/efuse_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/efuse_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_struct.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/efuse.h \
  /workspace/esp-idf/components/hal/include/hal/efuse_hal.h \
  /workspace/esp-idf/components/esp_bootloader_format/include/esp_bootloader_desc.h

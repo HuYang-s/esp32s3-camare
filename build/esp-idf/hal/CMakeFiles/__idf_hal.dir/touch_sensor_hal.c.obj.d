@@ -1,7 +1,7 @@
 esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj: \
  /workspace/esp-idf/components/hal/touch_sensor_hal.c \
- /workspace/esp-idf/components/hal/esp32/include/hal/touch_sensor_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/touch_sensor_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/touch_sensor_hal.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/touch_sensor_ll.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
@@ -35,10 +35,11 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
  /workspace/esp-idf/components/soc/include/soc/touch_sensor_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/sens_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_io_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_io_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/sens_struct.h \
  /workspace/esp-idf/components/hal/include/hal/touch_sensor_types.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \

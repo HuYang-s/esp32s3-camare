@@ -41,4 +41,14 @@ esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/heap_align_hw.c.obj: \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/esp-idf/components/esp_mm/include/esp_private/esp_cache_private.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/gdma_ll.h \
+ /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
+ /workspace/esp-idf/components/hal/include/hal/gdma_types.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gdma_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gdma_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /workspace/esp-idf/components/esp_common/include/esp_assert.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/system_struct.h

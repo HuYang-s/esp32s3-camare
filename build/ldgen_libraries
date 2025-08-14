@@ -37,12 +37,12 @@
 /workspace/build/esp-idf/sdmmc/libsdmmc.a
 /workspace/build/esp-idf/esp_driver_sdmmc/libesp_driver_sdmmc.a
 /workspace/build/esp-idf/esp_driver_sdspi/libesp_driver_sdspi.a
-/workspace/build/esp-idf/esp_driver_sdio/libesp_driver_sdio.a
-/workspace/build/esp-idf/esp_driver_dac/libesp_driver_dac.a
 /workspace/build/esp-idf/esp_driver_rmt/libesp_driver_rmt.a
+/workspace/build/esp-idf/esp_driver_tsens/libesp_driver_tsens.a
 /workspace/build/esp-idf/esp_driver_sdm/libesp_driver_sdm.a
 /workspace/build/esp-idf/esp_driver_i2c/libesp_driver_i2c.a
 /workspace/build/esp-idf/esp_driver_ledc/libesp_driver_ledc.a
+/workspace/build/esp-idf/esp_driver_usb_serial_jtag/libesp_driver_usb_serial_jtag.a
 /workspace/build/esp-idf/driver/libdriver.a
 /workspace/build/esp-idf/esp_phy/libesp_phy.a
 /workspace/build/esp-idf/esp_vfs_console/libesp_vfs_console.a
@@ -80,6 +80,8 @@
 /workspace/build/esp-idf/perfmon/libperfmon.a
 /workspace/build/esp-idf/rt/librt.a
 /workspace/build/esp-idf/spiffs/libspiffs.a
+/workspace/build/esp-idf/touch_element/libtouch_element.a
+/workspace/build/esp-idf/usb/libusb.a
 /workspace/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /workspace/build/esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
 /workspace/build/esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a

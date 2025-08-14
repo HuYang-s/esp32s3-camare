@@ -199,30 +199,6 @@ deprecated/adc_dma_legacy.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.s
 .PHONY : deprecated/adc_dma_legacy.c.s
 
-deprecated/adc_i2s_deprecated.obj: deprecated/adc_i2s_deprecated.c.obj
-.PHONY : deprecated/adc_i2s_deprecated.obj
-
-# target to build an object file
-deprecated/adc_i2s_deprecated.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_i2s_deprecated.c.obj
-.PHONY : deprecated/adc_i2s_deprecated.c.obj
-
-deprecated/adc_i2s_deprecated.i: deprecated/adc_i2s_deprecated.c.i
-.PHONY : deprecated/adc_i2s_deprecated.i
-
-# target to preprocess a source file
-deprecated/adc_i2s_deprecated.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_i2s_deprecated.c.i
-.PHONY : deprecated/adc_i2s_deprecated.c.i
-
-deprecated/adc_i2s_deprecated.s: deprecated/adc_i2s_deprecated.c.s
-.PHONY : deprecated/adc_i2s_deprecated.s
-
-# target to generate assembly for a file
-deprecated/adc_i2s_deprecated.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_i2s_deprecated.c.s
-.PHONY : deprecated/adc_i2s_deprecated.c.s
-
 deprecated/adc_legacy.obj: deprecated/adc_legacy.c.obj
 .PHONY : deprecated/adc_legacy.obj
 
@@ -246,54 +222,6 @@ deprecated/adc_legacy.s: deprecated/adc_legacy.c.s
 deprecated/adc_legacy.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.s
 .PHONY : deprecated/adc_legacy.c.s
-
-deprecated/dac_common_legacy.obj: deprecated/dac_common_legacy.c.obj
-.PHONY : deprecated/dac_common_legacy.obj
-
-# target to build an object file
-deprecated/dac_common_legacy.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/dac_common_legacy.c.obj
-.PHONY : deprecated/dac_common_legacy.c.obj
-
-deprecated/dac_common_legacy.i: deprecated/dac_common_legacy.c.i
-.PHONY : deprecated/dac_common_legacy.i
-
-# target to preprocess a source file
-deprecated/dac_common_legacy.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/dac_common_legacy.c.i
-.PHONY : deprecated/dac_common_legacy.c.i
-
-deprecated/dac_common_legacy.s: deprecated/dac_common_legacy.c.s
-.PHONY : deprecated/dac_common_legacy.s
-
-# target to generate assembly for a file
-deprecated/dac_common_legacy.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/dac_common_legacy.c.s
-.PHONY : deprecated/dac_common_legacy.c.s
-
-deprecated/esp32/dac_legacy.obj: deprecated/esp32/dac_legacy.c.obj
-.PHONY : deprecated/esp32/dac_legacy.obj
-
-# target to build an object file
-deprecated/esp32/dac_legacy.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/esp32/dac_legacy.c.obj
-.PHONY : deprecated/esp32/dac_legacy.c.obj
-
-deprecated/esp32/dac_legacy.i: deprecated/esp32/dac_legacy.c.i
-.PHONY : deprecated/esp32/dac_legacy.i
-
-# target to preprocess a source file
-deprecated/esp32/dac_legacy.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/esp32/dac_legacy.c.i
-.PHONY : deprecated/esp32/dac_legacy.c.i
-
-deprecated/esp32/dac_legacy.s: deprecated/esp32/dac_legacy.c.s
-.PHONY : deprecated/esp32/dac_legacy.s
-
-# target to generate assembly for a file
-deprecated/esp32/dac_legacy.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/esp32/dac_legacy.c.s
-.PHONY : deprecated/esp32/dac_legacy.c.s
 
 deprecated/i2s_legacy.obj: deprecated/i2s_legacy.c.obj
 .PHONY : deprecated/i2s_legacy.obj
@@ -391,6 +319,30 @@ deprecated/rmt_legacy.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.s
 .PHONY : deprecated/rmt_legacy.c.s
 
+deprecated/rtc_temperature_legacy.obj: deprecated/rtc_temperature_legacy.c.obj
+.PHONY : deprecated/rtc_temperature_legacy.obj
+
+# target to build an object file
+deprecated/rtc_temperature_legacy.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj
+.PHONY : deprecated/rtc_temperature_legacy.c.obj
+
+deprecated/rtc_temperature_legacy.i: deprecated/rtc_temperature_legacy.c.i
+.PHONY : deprecated/rtc_temperature_legacy.i
+
+# target to preprocess a source file
+deprecated/rtc_temperature_legacy.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.i
+.PHONY : deprecated/rtc_temperature_legacy.c.i
+
+deprecated/rtc_temperature_legacy.s: deprecated/rtc_temperature_legacy.c.s
+.PHONY : deprecated/rtc_temperature_legacy.s
+
+# target to generate assembly for a file
+deprecated/rtc_temperature_legacy.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.s
+.PHONY : deprecated/rtc_temperature_legacy.c.s
+
 deprecated/sigma_delta_legacy.obj: deprecated/sigma_delta_legacy.c.obj
 .PHONY : deprecated/sigma_delta_legacy.obj
 
@@ -463,29 +415,29 @@ i2c/i2c.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.s
 .PHONY : i2c/i2c.c.s
 
-touch_sensor/esp32/touch_sensor.obj: touch_sensor/esp32/touch_sensor.c.obj
-.PHONY : touch_sensor/esp32/touch_sensor.obj
+touch_sensor/esp32s3/touch_sensor.obj: touch_sensor/esp32s3/touch_sensor.c.obj
+.PHONY : touch_sensor/esp32s3/touch_sensor.obj
 
 # target to build an object file
-touch_sensor/esp32/touch_sensor.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32/touch_sensor.c.obj
-.PHONY : touch_sensor/esp32/touch_sensor.c.obj
+touch_sensor/esp32s3/touch_sensor.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj
+.PHONY : touch_sensor/esp32s3/touch_sensor.c.obj
 
-touch_sensor/esp32/touch_sensor.i: touch_sensor/esp32/touch_sensor.c.i
-.PHONY : touch_sensor/esp32/touch_sensor.i
+touch_sensor/esp32s3/touch_sensor.i: touch_sensor/esp32s3/touch_sensor.c.i
+.PHONY : touch_sensor/esp32s3/touch_sensor.i
 
 # target to preprocess a source file
-touch_sensor/esp32/touch_sensor.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32/touch_sensor.c.i
-.PHONY : touch_sensor/esp32/touch_sensor.c.i
+touch_sensor/esp32s3/touch_sensor.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.i
+.PHONY : touch_sensor/esp32s3/touch_sensor.c.i
 
-touch_sensor/esp32/touch_sensor.s: touch_sensor/esp32/touch_sensor.c.s
-.PHONY : touch_sensor/esp32/touch_sensor.s
+touch_sensor/esp32s3/touch_sensor.s: touch_sensor/esp32s3/touch_sensor.c.s
+.PHONY : touch_sensor/esp32s3/touch_sensor.s
 
 # target to generate assembly for a file
-touch_sensor/esp32/touch_sensor.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32/touch_sensor.c.s
-.PHONY : touch_sensor/esp32/touch_sensor.c.s
+touch_sensor/esp32s3/touch_sensor.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/driver/CMakeFiles/__idf_driver.dir/build.make esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.s
+.PHONY : touch_sensor/esp32s3/touch_sensor.c.s
 
 touch_sensor/touch_sensor_common.obj: touch_sensor/touch_sensor_common.c.obj
 .PHONY : touch_sensor/touch_sensor_common.obj
@@ -551,18 +503,9 @@ help:
 	@echo "... deprecated/adc_dma_legacy.obj"
 	@echo "... deprecated/adc_dma_legacy.i"
 	@echo "... deprecated/adc_dma_legacy.s"
-	@echo "... deprecated/adc_i2s_deprecated.obj"
-	@echo "... deprecated/adc_i2s_deprecated.i"
-	@echo "... deprecated/adc_i2s_deprecated.s"
 	@echo "... deprecated/adc_legacy.obj"
 	@echo "... deprecated/adc_legacy.i"
 	@echo "... deprecated/adc_legacy.s"
-	@echo "... deprecated/dac_common_legacy.obj"
-	@echo "... deprecated/dac_common_legacy.i"
-	@echo "... deprecated/dac_common_legacy.s"
-	@echo "... deprecated/esp32/dac_legacy.obj"
-	@echo "... deprecated/esp32/dac_legacy.i"
-	@echo "... deprecated/esp32/dac_legacy.s"
 	@echo "... deprecated/i2s_legacy.obj"
 	@echo "... deprecated/i2s_legacy.i"
 	@echo "... deprecated/i2s_legacy.s"
@@ -575,6 +518,9 @@ help:
 	@echo "... deprecated/rmt_legacy.obj"
 	@echo "... deprecated/rmt_legacy.i"
 	@echo "... deprecated/rmt_legacy.s"
+	@echo "... deprecated/rtc_temperature_legacy.obj"
+	@echo "... deprecated/rtc_temperature_legacy.i"
+	@echo "... deprecated/rtc_temperature_legacy.s"
 	@echo "... deprecated/sigma_delta_legacy.obj"
 	@echo "... deprecated/sigma_delta_legacy.i"
 	@echo "... deprecated/sigma_delta_legacy.s"
@@ -584,9 +530,9 @@ help:
 	@echo "... i2c/i2c.obj"
 	@echo "... i2c/i2c.i"
 	@echo "... i2c/i2c.s"
-	@echo "... touch_sensor/esp32/touch_sensor.obj"
-	@echo "... touch_sensor/esp32/touch_sensor.i"
-	@echo "... touch_sensor/esp32/touch_sensor.s"
+	@echo "... touch_sensor/esp32s3/touch_sensor.obj"
+	@echo "... touch_sensor/esp32s3/touch_sensor.i"
+	@echo "... touch_sensor/esp32s3/touch_sensor.s"
 	@echo "... touch_sensor/touch_sensor_common.obj"
 	@echo "... touch_sensor/touch_sensor_common.i"
 	@echo "... touch_sensor/touch_sensor_common.s"

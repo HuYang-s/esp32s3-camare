@@ -76,15 +76,15 @@ esp-idf/time_service/CMakeFiles/__idf_time_service.dir/time_service.c.obj: esp-i
 esp-idf/time_service/CMakeFiles/__idf_time_service.dir/time_service.c.obj: /workspace/components/time_service/time_service.c
 esp-idf/time_service/CMakeFiles/__idf_time_service.dir/time_service.c.obj: esp-idf/time_service/CMakeFiles/__idf_time_service.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/time_service/CMakeFiles/__idf_time_service.dir/time_service.c.obj"
-	cd /workspace/build/esp-idf/time_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/time_service/CMakeFiles/__idf_time_service.dir/time_service.c.obj -MF CMakeFiles/__idf_time_service.dir/time_service.c.obj.d -o CMakeFiles/__idf_time_service.dir/time_service.c.obj -c /workspace/components/time_service/time_service.c
+	cd /workspace/build/esp-idf/time_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/time_service/CMakeFiles/__idf_time_service.dir/time_service.c.obj -MF CMakeFiles/__idf_time_service.dir/time_service.c.obj.d -o CMakeFiles/__idf_time_service.dir/time_service.c.obj -c /workspace/components/time_service/time_service.c
 
 esp-idf/time_service/CMakeFiles/__idf_time_service.dir/time_service.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_time_service.dir/time_service.c.i"
-	cd /workspace/build/esp-idf/time_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/time_service/time_service.c > CMakeFiles/__idf_time_service.dir/time_service.c.i
+	cd /workspace/build/esp-idf/time_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/time_service/time_service.c > CMakeFiles/__idf_time_service.dir/time_service.c.i
 
 esp-idf/time_service/CMakeFiles/__idf_time_service.dir/time_service.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_time_service.dir/time_service.c.s"
-	cd /workspace/build/esp-idf/time_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/time_service/time_service.c -o CMakeFiles/__idf_time_service.dir/time_service.c.s
+	cd /workspace/build/esp-idf/time_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/time_service/time_service.c -o CMakeFiles/__idf_time_service.dir/time_service.c.s
 
 # Object files for target __idf_time_service
 __idf_time_service_OBJECTS = \

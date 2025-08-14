@@ -67,7 +67,7 @@ include esp-idf/efuse/CMakeFiles/efuse-common-table.dir/compiler_depend.make
 include esp-idf/efuse/CMakeFiles/efuse-common-table.dir/progress.make
 
 esp-idf/efuse/CMakeFiles/efuse-common-table:
-	cd /workspace/build/esp-idf/efuse && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/efuse/efuse_table_gen.py /workspace/esp-idf/components/efuse/esp32/esp_efuse_table.csv -t esp32 --max_blk_len 192
+	cd /workspace/build/esp-idf/efuse && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/efuse/efuse_table_gen.py /workspace/esp-idf/components/efuse/esp32s3/esp_efuse_table.csv -t esp32s3 --max_blk_len 256
 
 esp-idf/efuse/CMakeFiles/efuse-common-table.dir/codegen:
 .PHONY : esp-idf/efuse/CMakeFiles/efuse-common-table.dir/codegen

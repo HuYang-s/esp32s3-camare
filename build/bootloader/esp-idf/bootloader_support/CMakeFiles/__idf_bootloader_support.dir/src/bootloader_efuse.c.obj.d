@@ -40,21 +40,22 @@ esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/bootloade
  /workspace/esp-idf/components/bootloader_support/include/esp_app_format.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/efuse_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/efuse_ll.h \
  /workspace/esp-idf/components/soc/include/soc/efuse_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/efuse_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/efuse_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/efuse_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/efuse_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_struct.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/efuse_hal.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/efuse.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/efuse_hal.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/hal/include/hal/efuse_hal.h \
  /workspace/esp-idf/components/esp_common/include/esp_attr.h

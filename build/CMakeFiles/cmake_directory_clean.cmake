@@ -7,5 +7,5 @@ file(REMOVE_RECURSE
   "esp32s3_camera_web.bin"
   "flash_project_args"
   "esp32s3_camera_web.map"
-  "project_elf_src_esp32.c"
+  "project_elf_src_esp32s3.c"
 )

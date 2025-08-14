@@ -33,20 +33,23 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/rtc_io_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
  /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/soc/include/soc/rtc_io_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/io_mux_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/rtc_io_channel.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/io_mux_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/rtc_io_ll.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_io_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_io_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/rtc_io_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_io_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_io_reg.h \
  /workspace/esp-idf/components/soc/include/soc/rtc_periph.h \
  /workspace/esp-idf/components/soc/include/soc/rtc_cntl_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/usb_serial_jtag_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/usb_serial_jtag_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/sens_struct.h \
  /workspace/esp-idf/components/hal/include/hal/rtc_io_types.h

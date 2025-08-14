@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspace/esp-idf/components/spi_flash/cache_utils.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/cache_utils.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/cache_utils.c.obj.d"
+  "/workspace/esp-idf/components/spi_flash/esp32s3/spi_flash_oct_flash_init.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32s3/spi_flash_oct_flash_init.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp32s3/spi_flash_oct_flash_init.c.obj.d"
   "/workspace/esp-idf/components/spi_flash/esp_flash_api.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_api.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_api.c.obj.d"
   "/workspace/esp-idf/components/spi_flash/esp_flash_spi_init.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_spi_init.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/esp_flash_spi_init.c.obj.d"
   "/workspace/esp-idf/components/spi_flash/flash_brownout_hook.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_brownout_hook.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/flash_brownout_hook.c.obj.d"
@@ -24,6 +25,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/workspace/esp-idf/components/spi_flash/spi_flash_chip_mxic_opi.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic_opi.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_mxic_opi.c.obj.d"
   "/workspace/esp-idf/components/spi_flash/spi_flash_chip_th.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_th.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_th.c.obj.d"
   "/workspace/esp-idf/components/spi_flash/spi_flash_chip_winbond.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_winbond.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_chip_winbond.c.obj.d"
+  "/workspace/esp-idf/components/spi_flash/spi_flash_hpm_enable.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_hpm_enable.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_hpm_enable.c.obj.d"
   "/workspace/esp-idf/components/spi_flash/spi_flash_os_func_app.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_app.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_app.c.obj.d"
   "/workspace/esp-idf/components/spi_flash/spi_flash_os_func_noos.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_noos.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_os_func_noos.c.obj.d"
   "/workspace/esp-idf/components/spi_flash/spi_flash_wrap.c" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj" "gcc" "esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir/spi_flash_wrap.c.obj.d"

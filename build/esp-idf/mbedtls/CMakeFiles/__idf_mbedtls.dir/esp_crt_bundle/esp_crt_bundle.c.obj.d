@@ -45,7 +45,7 @@ esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj
  /workspace/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -56,7 +56,8 @@ esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
  /workspace/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h \
@@ -102,7 +103,12 @@ esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h \
  /workspace/esp-idf/components/mbedtls/port/include/sha1_alt.h \
  /workspace/esp-idf/components/hal/include/hal/sha_types.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/sha.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/sha.h \
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/ets_sys.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /workspace/esp-idf/components/esp_common/include/esp_assert.h \
+ /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
  /workspace/esp-idf/components/mbedtls/port/include/sha256_alt.h \
  /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h \

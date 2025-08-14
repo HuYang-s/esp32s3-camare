@@ -57,26 +57,17 @@ esp-idf/newlib/CMakeFiles/__idf_newlib.dir/port/esp_time_impl.c.obj: \
  /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /workspace/esp-idf/components/esp_common/include/esp_idf_version.h \
- /workspace/esp-idf/components/esp_hw_support/port/esp32/include/soc/rtc.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/esp_hw_support/port/esp32s3/include/soc/rtc.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/include/soc/rtc_periph.h \
- /workspace/esp-idf/components/soc/include/soc/rtc_io_periph.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/rtc_io_channel.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/io_mux_reg.h \
- /workspace/esp-idf/components/soc/include/soc/rtc_cntl_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_struct.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/clk_tree_defs.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/esp_system/include/esp_private/system_internal.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_private/esp_clk.h \
  /workspace/esp-idf/components/newlib/priv_include/esp_time_impl.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/rtc.h \
- /workspace/esp-idf/components/esp_rom/esp32/include/esp32/rom/ets_sys.h \
- /workspace/esp-idf/components/esp_hw_support/include/soc/esp32/rtc.h
+ /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/rtc.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_reg.h \
+ /workspace/esp-idf/components/esp_hw_support/include/soc/esp32s3/rtc.h

@@ -18,7 +18,7 @@ esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj: 
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
  /workspace/build/config/sdkconfig.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
  /workspace/esp-idf/components/log/include/esp_log_level.h \
  /workspace/esp-idf/components/log/include/esp_log_color.h \
  /workspace/esp-idf/components/log/include/esp_log_buffer.h \
@@ -48,37 +48,38 @@ esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj: 
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /workspace/esp-idf/components/hal/include/hal/gpio_types.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_num.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
  /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_pins.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
  /workspace/esp-idf/components/esp_hw_support/include/esp_etm.h \
  /workspace/esp-idf/components/driver/deprecated/driver/sigmadelta_types_legacy.h \
  /workspace/esp-idf/components/soc/include/soc/sdm_periph.h \
  /workspace/esp-idf/components/hal/include/hal/sdm_hal.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/sdm_ll.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/sdm_ll.h \
+ /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/gpio_sd_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/gpio_sd_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/soc.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gpio_sd_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gpio_sd_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/interrupts.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/reg_base.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
  /workspace/esp-idf/components/hal/include/hal/gpio_hal.h \
  /workspace/esp-idf/components/soc/include/soc/gpio_periph.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/io_mux_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/gpio_struct.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/gpio_reg.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/gpio_sig_map.h \
- /workspace/esp-idf/components/hal/esp32/include/hal/gpio_ll.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_cntl_reg.h \
- /workspace/esp-idf/components/soc/esp32/register/soc/rtc_io_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/io_mux_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gpio_struct.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/gpio_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_sig_map.h \
+ /workspace/esp-idf/components/hal/esp32s3/include/hal/gpio_ll.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_io_reg.h \
+ /workspace/esp-idf/components/soc/esp32s3/register/soc/usb_serial_jtag_reg.h \
  /workspace/esp-idf/components/esp_driver_gpio/include/esp_private/gpio.h \
  /workspace/esp-idf/components/esp_common/include/esp_types.h

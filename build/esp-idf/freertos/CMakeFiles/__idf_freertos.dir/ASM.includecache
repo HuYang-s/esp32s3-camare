@@ -56,19 +56,19 @@ stdint.h
 
 /workspace/esp-idf/components/newlib/platform_include/sys/reent.h
 
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h
 
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h
 
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h
 xtensa/hal.h
 -
 xtensa/xtensa-versions.h
 -
-xtensa/hal.h
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/xtensa/hal.h
-xtensa/xtensa-versions.h
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/xtensa/xtensa-versions.h
+../hal.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/hal.h
+../xtensa-versions.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/xtensa-versions.h
 xtensa/config/core-isa.h
 -
 xtensa/config/core-matmap.h
@@ -76,25 +76,25 @@ xtensa/config/core-matmap.h
 xtensa/config/tie.h
 -
 core-isa.h
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-isa.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h
 core-matmap.h
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/core-matmap.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h
 tie.h
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h
 xtensa/config/tie-asm.h
 -
 tie-asm.h
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie-asm.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h
 
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/specreg.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h
 xtensa/corebits.h
 -
 
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/system.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h
 
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie-asm.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h
 
-/workspace/esp-idf/components/xtensa/esp32/include/xtensa/config/tie.h
+/workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h
 
 /workspace/esp-idf/components/xtensa/include/xtensa/coreasm.h
 xtensa/config/core.h

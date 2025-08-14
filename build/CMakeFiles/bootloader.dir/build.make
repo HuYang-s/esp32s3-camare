@@ -88,7 +88,7 @@ bootloader-prefix/src/bootloader-stamp/bootloader-build: bootloader-prefix/src/b
 bootloader-prefix/src/bootloader-stamp/bootloader-configure: bootloader-prefix/tmp/bootloader-cfgcmd.txt
 bootloader-prefix/src/bootloader-stamp/bootloader-configure: bootloader-prefix/src/bootloader-stamp/bootloader-patch
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Performing configure step for 'bootloader'"
-	cd /workspace/build/bootloader && /usr/bin/cmake -DSDKCONFIG=/workspace/sdkconfig -DIDF_PATH=/workspace/esp-idf -DIDF_TARGET=esp32 -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -DEXTRA_COMPONENT_DIRS=/workspace/esp-idf/components/bootloader -DPROJECT_SOURCE_DIR=/workspace -DIGNORE_EXTRA_COMPONENT= "-GUnix Makefiles" -S /workspace/esp-idf/components/bootloader/subproject -B /workspace/build/bootloader
+	cd /workspace/build/bootloader && /usr/bin/cmake -DSDKCONFIG=/workspace/sdkconfig -DIDF_PATH=/workspace/esp-idf -DIDF_TARGET=esp32s3 -DPYTHON_DEPS_CHECKED=1 -DPYTHON=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -DEXTRA_COMPONENT_DIRS=/workspace/esp-idf/components/bootloader -DPROJECT_SOURCE_DIR=/workspace -DIGNORE_EXTRA_COMPONENT= "-GUnix Makefiles" -S /workspace/esp-idf/components/bootloader/subproject -B /workspace/build/bootloader
 	cd /workspace/build/bootloader && /usr/bin/cmake -E touch /workspace/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure
 
 bootloader-prefix/src/bootloader-stamp/bootloader-download: bootloader-prefix/src/bootloader-stamp/bootloader-source_dirinfo.txt

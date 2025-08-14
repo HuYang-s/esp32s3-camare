@@ -40,4 +40,4 @@ esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/stack_check.c.obj: \
  /workspace/esp-idf/components/esp_hw_support/include/esp_random.h \
  /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
- /workspace/esp-idf/components/soc/esp32/include/soc/reset_reasons.h
+ /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h

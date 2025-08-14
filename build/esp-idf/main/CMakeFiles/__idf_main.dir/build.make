@@ -76,15 +76,15 @@ esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj: esp-idf/main/CM
 esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj: /workspace/main/esp32s3_camera_web.c
 esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj: esp-idf/main/CMakeFiles/__idf_main.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj"
-	cd /workspace/build/esp-idf/main && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj -MF CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj.d -o CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj -c /workspace/main/esp32s3_camera_web.c
+	cd /workspace/build/esp-idf/main && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj -MF CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj.d -o CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj -c /workspace/main/esp32s3_camera_web.c
 
 esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.i"
-	cd /workspace/build/esp-idf/main && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/main/esp32s3_camera_web.c > CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.i
+	cd /workspace/build/esp-idf/main && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/main/esp32s3_camera_web.c > CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.i
 
 esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.s"
-	cd /workspace/build/esp-idf/main && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/main/esp32s3_camera_web.c -o CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.s
+	cd /workspace/build/esp-idf/main && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/main/esp32s3_camera_web.c -o CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.s
 
 # Object files for target __idf_main
 __idf_main_OBJECTS = \

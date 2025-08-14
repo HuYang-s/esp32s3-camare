@@ -775,53 +775,29 @@ sensors/sc101iot.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.s
 .PHONY : sensors/sc101iot.c.s
 
-target/esp32/ll_cam.obj: target/esp32/ll_cam.c.obj
-.PHONY : target/esp32/ll_cam.obj
+target/esp32s3/ll_cam.obj: target/esp32s3/ll_cam.c.obj
+.PHONY : target/esp32s3/ll_cam.obj
 
 # target to build an object file
-target/esp32/ll_cam.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.obj
-.PHONY : target/esp32/ll_cam.c.obj
+target/esp32s3/ll_cam.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.obj
+.PHONY : target/esp32s3/ll_cam.c.obj
 
-target/esp32/ll_cam.i: target/esp32/ll_cam.c.i
-.PHONY : target/esp32/ll_cam.i
-
-# target to preprocess a source file
-target/esp32/ll_cam.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.i
-.PHONY : target/esp32/ll_cam.c.i
-
-target/esp32/ll_cam.s: target/esp32/ll_cam.c.s
-.PHONY : target/esp32/ll_cam.s
-
-# target to generate assembly for a file
-target/esp32/ll_cam.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32/ll_cam.c.s
-.PHONY : target/esp32/ll_cam.c.s
-
-target/xclk.obj: target/xclk.c.obj
-.PHONY : target/xclk.obj
-
-# target to build an object file
-target/xclk.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.obj
-.PHONY : target/xclk.c.obj
-
-target/xclk.i: target/xclk.c.i
-.PHONY : target/xclk.i
+target/esp32s3/ll_cam.i: target/esp32s3/ll_cam.c.i
+.PHONY : target/esp32s3/ll_cam.i
 
 # target to preprocess a source file
-target/xclk.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.i
-.PHONY : target/xclk.c.i
+target/esp32s3/ll_cam.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.i
+.PHONY : target/esp32s3/ll_cam.c.i
 
-target/xclk.s: target/xclk.c.s
-.PHONY : target/xclk.s
+target/esp32s3/ll_cam.s: target/esp32s3/ll_cam.c.s
+.PHONY : target/esp32s3/ll_cam.s
 
 # target to generate assembly for a file
-target/xclk.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/xclk.c.s
-.PHONY : target/xclk.c.s
+target/esp32s3/ll_cam.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.s
+.PHONY : target/esp32s3/ll_cam.c.s
 
 # Help Target
 help:
@@ -911,12 +887,9 @@ help:
 	@echo "... sensors/sc101iot.obj"
 	@echo "... sensors/sc101iot.i"
 	@echo "... sensors/sc101iot.s"
-	@echo "... target/esp32/ll_cam.obj"
-	@echo "... target/esp32/ll_cam.i"
-	@echo "... target/esp32/ll_cam.s"
-	@echo "... target/xclk.obj"
-	@echo "... target/xclk.i"
-	@echo "... target/xclk.s"
+	@echo "... target/esp32s3/ll_cam.obj"
+	@echo "... target/esp32s3/ll_cam.i"
+	@echo "... target/esp32s3/ll_cam.s"
 .PHONY : help
 
 
