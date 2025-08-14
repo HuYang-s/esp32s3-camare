@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "esp32s3_camera_web",
-    "project_version":    "3b76a9e-dirty",
+    "project_version":    "2fa207a-dirty",
     "project_path":       "/workspace",
     "idf_path":           "/workspace/esp-idf",
     "build_dir":          "/workspace/build",
