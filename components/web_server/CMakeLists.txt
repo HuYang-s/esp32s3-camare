@@ -3,7 +3,7 @@ idf_component_register(SRCS "web_server.c"
                     REQUIRES
                     esp_http_server
                     json
-                    idf::log
+                    log
                     wifi_manager
                     time_service
                     storage_manager

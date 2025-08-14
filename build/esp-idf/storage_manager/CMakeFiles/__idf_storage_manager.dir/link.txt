@@ -1,0 +1,2 @@
+/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-ar qc libstorage_manager.a CMakeFiles/__idf_storage_manager.dir/storage_manager.c.obj
+/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-ranlib libstorage_manager.a

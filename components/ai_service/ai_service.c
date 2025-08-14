@@ -4,7 +4,7 @@
 #include "freertos/task.h"
 #include "esp_log.h"
 #include "esp_http_client.h"
-#include "esp_crt_bundle.h"
+#include "esp_tls.h"
 #include "mbedtls/base64.h"
 #include "cJSON.h"
 
@@ -27,8 +27,8 @@ static const char *TAG = "ai_service";
 
 static int socket_failure_count = 0;
 
-// 前向声明
-static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command);
+// 前向声明 - 注释掉未使用的函数
+// static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command);
 
 esp_err_t ai_service_init(void)
 {
@@ -154,7 +154,7 @@ esp_err_t ai_service_analyze_image(camera_fb_t *fb, const char* filename)
         .timeout_ms = 15000,
         .is_async = false,
         .use_global_ca_store = true,
-        .crt_bundle_attach = esp_crt_bundle_attach,
+        
     };
     
     esp_http_client_handle_t client = esp_http_client_init(&config);
@@ -247,7 +247,8 @@ int ai_service_get_socket_failure_count(void)
 }
 
 
-// 使用图片和命令执行AI分析
+// 使用图片和命令执行AI分析 - 暂时注释掉未使用的函数
+/*
 static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command)
 {
     ESP_LOGI(TAG, "🤖 开始执行AI命令: %s", command);
@@ -275,7 +276,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
         .timeout_ms = 15000,
         .is_async = false,
         .use_global_ca_store = true,
-        .crt_bundle_attach = esp_crt_bundle_attach,
+        
     };
     
     esp_http_client_handle_t client = esp_http_client_init(&config);
@@ -409,6 +410,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     free(response_buffer);
     return err;
 }
+*/
 
 // AI自动驾驶分析函数
 esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
@@ -461,7 +463,7 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
         .timeout_ms = 20000, // Increased timeout
         .is_async = false,
         .use_global_ca_store = true,
-        .crt_bundle_attach = esp_crt_bundle_attach,
+        
     };
     
     esp_http_client_handle_t client = esp_http_client_init(&config);

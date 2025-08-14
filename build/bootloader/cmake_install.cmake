@@ -1,4 +1,4 @@
-# Install script for directory: /Users/huyang/esp/v5.4.2/esp-idf/components/bootloader/subproject
+# Install script for directory: /workspace/esp-idf/components/bootloader/subproject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,18 +34,18 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Users/huyang/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump")
+  set(CMAKE_OBJDUMP "/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader/esp-idf/cmake_install.cmake")
+  include("/workspace/build/bootloader/esp-idf/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader/install_local_manifest.txt"
+  file(WRITE "/workspace/build/bootloader/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -61,6 +61,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/workspace/build/bootloader/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

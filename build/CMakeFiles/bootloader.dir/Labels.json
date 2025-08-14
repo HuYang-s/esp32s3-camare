@@ -2,34 +2,34 @@
 	"sources" : 
 	[
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/CMakeFiles/bootloader"
+			"file" : "/workspace/build/CMakeFiles/bootloader"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/CMakeFiles/bootloader.rule"
+			"file" : "/workspace/build/CMakeFiles/bootloader.rule"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/CMakeFiles/bootloader-complete.rule"
+			"file" : "/workspace/build/CMakeFiles/bootloader-complete.rule"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
+			"file" : "/workspace/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
+			"file" : "/workspace/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
+			"file" : "/workspace/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
+			"file" : "/workspace/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
+			"file" : "/workspace/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
+			"file" : "/workspace/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule"
 		},
 		{
-			"file" : "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_\u7f51\u9875_ai\u5206\u6790_component_lunzi_\u6a21\u578b\u66f4\u6539_ai\u9a7e\u9a76\u8bf4\u660e/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
+			"file" : "/workspace/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule"
 		}
 	],
 	"target" : 

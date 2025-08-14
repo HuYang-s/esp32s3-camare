@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "freertos/semphr.h"
@@ -13,6 +14,7 @@
 #include "ai_service.h"
 #include "web_server.h"
 #include "motor_driver.h"
+#include "local_ai_service.h"
 
 static const char *TAG = "main";
 

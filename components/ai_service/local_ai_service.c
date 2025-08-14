@@ -6,7 +6,6 @@
 #include "freertos/task.h"
 #include "freertos/semphr.h"
 #include "esp_log.h"
-#include "esp_timer.h"
 
 #include "local_ai_service.h"
 #include "storage_manager.h"
