@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp32s3_camera_web",
-    "project_version":    "76da204-dirty",
+    "project_version":    "580fe5e-dirty",
     "project_path":       "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明",
     "idf_path":           "/Users/huyang/esp/v5.4.2/esp-idf",
     "build_dir":          "/Users/huyang/Desktop/esp-shexiang/esp32s3_camera_web_网页_ai分析_component_lunzi_模型更改_ai驾驶说明/build",
