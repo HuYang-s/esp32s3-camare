@@ -9,4 +9,5 @@ idf_component_register(SRCS "web_server.c"
                     storage_manager
                     motor_driver
                     camera_driver
-                    ai_service)
+                    ai_service
+                    navigation_service)

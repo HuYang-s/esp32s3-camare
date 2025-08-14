@@ -15,6 +15,7 @@
 #include "web_server.h"
 #include "motor_driver.h"
 #include "local_ai_service.h"
+#include "navigation_service.h"
 
 static const char *TAG = "main";
 
@@ -191,6 +192,16 @@ void app_main(void)
     } else {
         ESP_LOGE(TAG, "AI服务初始化失败");
         printf("AI服务初始化失败\n");
+    }
+
+    // 初始化导航服务
+    ESP_LOGI(TAG, "初始化导航服务...");
+    esp_err_t nav_ret = navigation_service_init();
+    if (nav_ret == ESP_OK) {
+        printf("导航服务初始化成功\n");
+    } else {
+        ESP_LOGE(TAG, "导航服务初始化失败");
+        printf("导航服务初始化失败\n");
     }
 
     ESP_LOGI(TAG, "初始化L298N电机驱动...");

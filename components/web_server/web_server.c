@@ -13,6 +13,7 @@
 #include "camera_driver.h"
 #include "ai_service.h"
 #include "local_ai_service.h"
+#include "navigation_service.h"
 
 static const char *TAG = "web_server";
 
@@ -459,6 +460,16 @@ static esp_err_t index_handler(httpd_req_t *req)
         ".task-result.searching{border-left:3px solid #ffc107;color:#856404}"
         ".task-result.completed{border-left:3px solid #28a745;color:#155724}"
         ".task-result.failed{border-left:3px solid #dc3545;color:#721c24}"
+        ".checkbox-label{display:block;margin:8px 0;font-size:12px;color:#666}"
+        ".checkbox-label input{margin-right:5px}"
+        ".task-progress{margin:8px 0;padding:8px;background:#f5f5f5;border-radius:4px}"
+        ".progress-bar{width:100%;height:20px;background:#e0e0e0;border-radius:10px;overflow:hidden;margin-bottom:5px}"
+        ".progress-fill{height:100%;background:linear-gradient(90deg,#4CAF50,#45a049);transition:width 0.3s ease;border-radius:10px}"
+        ".progress-text{font-size:11px;color:#666;font-weight:bold}"
+        ".task-log{margin:10px 0;padding:10px;background:#f0f8ff;border:1px solid #d0d0d0;border-radius:6px;max-height:200px;overflow-y:auto}"
+        ".log-content{font-family:monospace;font-size:10px;line-height:1.4;white-space:pre-wrap;color:#333;margin-bottom:8px}"
+        ".btn.info{background:#17a2b8;border-color:#17a2b8}"
+        ".btn.info:hover{background:#138496;border-color:#117a8b}"
         "@media (max-width:900px){.main-content{grid-template-columns:1fr;gap:10px}.motor-controls{max-width:280px;margin:0 auto}}"
         "@media (max-width:600px){.status{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.motor-grid{max-width:160px}.motor-btn{width:45px;height:25px;font-size:10px}}"
         "</style>"
@@ -519,13 +530,28 @@ static esp_err_t index_handler(httpd_req_t *req)
         "<input type='text' id='target-object' class='task-input' placeholder='例如: 杯子, 苹果, 手机...' />"
         "<label>任务超时时间 (秒):</label>"
         "<input type='number' id='task-timeout' class='task-input' value='30' min='10' max='300' />"
+        "<label class='checkbox-label'>"
+        "<input type='checkbox' id='use-navigation' checked> 启用主动搜索导航"
+        "</label>"
         "<div class='task-controls'>"
-        "<button class='btn task-btn' onclick='startAITask()'>🎯 开始搜索</button>"
+        "<button class='btn task-btn' onclick='startAINavigationTask()'>🚀 开始搜索</button>"
         "<button class='btn task-btn' onclick='stopAITask()'>⏹️ 停止任务</button>"
+        "<button class='btn task-btn info' onclick='showTaskLog()'>📋 查看日志</button>"
         "</div>"
         "</div>"
         "<div class='task-status' id='task-status'>等待任务...</div>"
+        "<div class='task-progress'>"
+        "<div class='progress-bar'>"
+        "<div class='progress-fill' id='progress-fill' style='width: 0%'></div>"
+        "</div>"
+        "<span class='progress-text' id='progress-text'>0%</span>"
+        "</div>"
         "<div class='task-result' id='task-result'></div>"
+        "<div class='task-log' id='task-log' style='display:none'>"
+        "<h4>📋 任务详细日志</h4>"
+        "<div class='log-content' id='log-content'></div>"
+        "<button class='btn' onclick='hideTaskLog()'>关闭日志</button>"
+        "</div>"
         "</div>"
         "</div>"
         "<div class='images-section'>"
@@ -876,6 +902,49 @@ static esp_err_t index_handler(httpd_req_t *req)
         "}).catch(e=>imagesDiv.innerHTML='<div class=\"error\">图片加载失败</div>')"
         "}"
         "updateTime();updateNetworkStatus();loadImages();updateRefreshInterval();"
+        "function startAINavigationTask(){"
+        "const targetObj=document.getElementById('target-object').value;"
+        "const timeout=parseInt(document.getElementById('task-timeout').value);"
+        "const useNavigation=document.getElementById('use-navigation').checked;"
+        "if(!targetObj.trim()){alert('请输入目标物品名称');return}"
+        "const statusDiv=document.getElementById('task-status');"
+        "const resultDiv=document.getElementById('task-result');"
+        "const progressFill=document.getElementById('progress-fill');"
+        "const progressText=document.getElementById('progress-text');"
+        "statusDiv.textContent='🚀 启动AI导航搜索任务...';"
+        "statusDiv.style.color='#007bff';"
+        "resultDiv.textContent='';"
+        "resultDiv.className='task-result';"
+        "progressFill.style.width='0%';"
+        "progressText.textContent='0%';"
+        "fetch('/api/ai-navigation-task',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action:'start',target_object:targetObj,timeout:timeout,use_navigation:useNavigation})})"
+        ".then(r=>r.json()).then(data=>{"
+        "if(data.status==='success'){"
+        "statusDiv.textContent='✅ 任务启动成功，开始搜索: '+targetObj;"
+        "statusDiv.style.color='#28a745';"
+        "startTaskStatusPolling();"
+        "}else{"
+        "statusDiv.textContent='❌ 任务启动失败: '+data.message;"
+        "statusDiv.style.color='#dc3545';"
+        "}"
+        "}).catch(e=>{statusDiv.textContent='❌ 网络错误: '+e.message;statusDiv.style.color='#dc3545'})"
+        "}"
+        "function showTaskLog(){"
+        "const logDiv=document.getElementById('task-log');"
+        "const logContent=document.getElementById('log-content');"
+        "logDiv.style.display='block';"
+        "fetch('/api/ai-task-log').then(r=>r.json()).then(data=>{"
+        "if(data.status==='success'){"
+        "logContent.textContent=data.log||'暂无日志信息';"
+        "logDiv.scrollTop=logDiv.scrollHeight;"
+        "}else{"
+        "logContent.textContent='获取日志失败';"
+        "}"
+        "}).catch(e=>logContent.textContent='网络错误: '+e.message)"
+        "}"
+        "function hideTaskLog(){"
+        "document.getElementById('task-log').style.display='none'"
+        "}"
         "</script>"
         "</body></html>";
     
@@ -1038,6 +1107,133 @@ static esp_err_t ai_task_status_handler(httpd_req_t *req)
     return ESP_OK;
 }
 
+// AI导航任务控制API处理函数
+static esp_err_t ai_navigation_task_handler(httpd_req_t *req)
+{
+    ESP_LOGI(TAG, "收到AI导航任务控制API请求");
+    
+    char content[256];
+    size_t recv_size = MIN(req->content_len, sizeof(content) - 1);
+    
+    int ret = httpd_req_recv(req, content, recv_size);
+    if (ret <= 0) {
+        ESP_LOGE(TAG, "接收AI导航任务HTTP请求数据失败");
+        httpd_resp_send_500(req);
+        return ESP_FAIL;
+    }
+    content[ret] = '\0';
+    ESP_LOGI(TAG, "接收到的AI导航任务JSON: %s", content);
+    
+    cJSON *json = cJSON_Parse(content);
+    if (json == NULL) {
+        ESP_LOGE(TAG, "AI导航任务JSON解析失败");
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid JSON");
+        return ESP_FAIL;
+    }
+    
+    cJSON *action_obj = cJSON_GetObjectItem(json, "action");
+    cJSON *target_obj = cJSON_GetObjectItem(json, "target_object");
+    cJSON *timeout_obj = cJSON_GetObjectItem(json, "timeout");
+    cJSON *navigation_obj = cJSON_GetObjectItem(json, "use_navigation");
+    
+    if (!action_obj || !cJSON_IsString(action_obj)) {
+        ESP_LOGE(TAG, "缺少或无效的action参数");
+        cJSON_Delete(json);
+        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Missing or invalid action");
+        return ESP_FAIL;
+    }
+    
+    const char *action = action_obj->valuestring;
+    ESP_LOGI(TAG, "AI导航任务动作: %s", action);
+    
+    // 设置响应头
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    httpd_resp_set_type(req, "application/json");
+    
+    cJSON *response_json = cJSON_CreateObject();
+    
+    if (strcmp(action, "start") == 0) {
+        if (!target_obj || !cJSON_IsString(target_obj)) {
+            cJSON_AddStringToObject(response_json, "status", "error");
+            cJSON_AddStringToObject(response_json, "message", "缺少目标物体参数");
+        } else {
+            const char *target_object = target_obj->valuestring;
+            int timeout_seconds = (timeout_obj && cJSON_IsNumber(timeout_obj)) ? timeout_obj->valueint : 60;
+            bool use_navigation = (navigation_obj && cJSON_IsTrue(navigation_obj)) ? true : false;
+            
+            esp_err_t result = local_ai_start_navigation_task(target_object, timeout_seconds, use_navigation);
+            
+            if (result == ESP_OK) {
+                cJSON_AddStringToObject(response_json, "status", "success");
+                cJSON_AddStringToObject(response_json, "message", "AI导航任务启动成功");
+                cJSON_AddStringToObject(response_json, "target_object", target_object);
+                cJSON_AddNumberToObject(response_json, "timeout", timeout_seconds);
+                cJSON_AddBoolToObject(response_json, "use_navigation", use_navigation);
+                ESP_LOGI(TAG, "AI导航任务启动成功: %s", target_object);
+            } else {
+                cJSON_AddStringToObject(response_json, "status", "error");
+                cJSON_AddStringToObject(response_json, "message", "AI导航任务启动失败");
+                ESP_LOGE(TAG, "AI导航任务启动失败");
+            }
+        }
+    } else if (strcmp(action, "stop") == 0) {
+        esp_err_t result = local_ai_stop_task();
+        
+        if (result == ESP_OK) {
+            cJSON_AddStringToObject(response_json, "status", "success");
+            cJSON_AddStringToObject(response_json, "message", "AI导航任务停止成功");
+            ESP_LOGI(TAG, "AI导航任务停止成功");
+        } else {
+            cJSON_AddStringToObject(response_json, "status", "error");
+            cJSON_AddStringToObject(response_json, "message", "AI导航任务停止失败");
+            ESP_LOGE(TAG, "AI导航任务停止失败");
+        }
+    } else {
+        cJSON_AddStringToObject(response_json, "status", "error");
+        cJSON_AddStringToObject(response_json, "message", "未知的动作");
+        ESP_LOGE(TAG, "未知的AI导航任务动作: %s", action);
+    }
+    
+    char *response = cJSON_Print(response_json);
+    httpd_resp_send(req, response, strlen(response));
+    
+    free(response);
+    cJSON_Delete(response_json);
+    cJSON_Delete(json);
+    
+    return ESP_OK;
+}
+
+// AI任务日志API处理函数
+static esp_err_t ai_task_log_handler(httpd_req_t *req)
+{
+    ESP_LOGI(TAG, "收到AI任务日志API请求");
+    
+    // 设置响应头
+    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
+    httpd_resp_set_type(req, "application/json");
+    
+    cJSON *response_json = cJSON_CreateObject();
+    
+    // 获取任务日志
+    const char *task_log = local_ai_get_task_log();
+    int progress = local_ai_get_task_progress();
+    bool timeout = local_ai_is_task_timeout();
+    
+    cJSON_AddStringToObject(response_json, "status", "success");
+    cJSON_AddStringToObject(response_json, "log", task_log);
+    cJSON_AddNumberToObject(response_json, "progress", progress);
+    cJSON_AddBoolToObject(response_json, "timeout", timeout);
+    
+    char *response = cJSON_Print(response_json);
+    httpd_resp_send(req, response, strlen(response));
+    
+    free(response);
+    cJSON_Delete(response_json);
+    
+    return ESP_OK;
+}
+
 // --- Public Functions ---
 
 esp_err_t web_server_start(void)
@@ -1045,7 +1241,7 @@ esp_err_t web_server_start(void)
     httpd_handle_t server = NULL;
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     config.server_port = 80;
-    config.max_uri_handlers = 12;
+    config.max_uri_handlers = 14;
     config.stack_size = 4096;
 
     ESP_LOGI(TAG, "Starting server on port: '%d'", config.server_port);
@@ -1084,6 +1280,12 @@ esp_err_t web_server_start(void)
 
         httpd_uri_t ai_task_status_uri = { .uri = "/api/ai-task-status", .method = HTTP_GET, .handler = ai_task_status_handler };
         httpd_register_uri_handler(server, &ai_task_status_uri);
+
+        httpd_uri_t ai_navigation_task_uri = { .uri = "/api/ai-navigation-task", .method = HTTP_POST, .handler = ai_navigation_task_handler };
+        httpd_register_uri_handler(server, &ai_navigation_task_uri);
+
+        httpd_uri_t ai_task_log_uri = { .uri = "/api/ai-task-log", .method = HTTP_GET, .handler = ai_task_log_handler };
+        httpd_register_uri_handler(server, &ai_task_log_uri);
 
         return ESP_OK;
     }
