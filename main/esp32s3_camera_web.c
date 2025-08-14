@@ -69,6 +69,15 @@ static void capture_and_analyze_task(void *pvParameters)
                 
                 xSemaphoreGive(camera_mutex);
                 
+                // 处理本地AI任务
+                esp_err_t local_ai_result = local_ai_process_task(fb);
+                if (local_ai_result == ESP_OK) {
+                    const ai_task_t* task_status = local_ai_get_task_status();
+                    if (task_status->status != AI_TASK_IDLE) {
+                        printf("本地AI任务状态: %s\n", task_status->status_message);
+                    }
+                }
+                
                 // 根据模式选择分析方式
                 esp_err_t ai_result;
                 if (ai_auto_drive_mode) {
@@ -80,15 +89,34 @@ static void capture_and_analyze_task(void *pvParameters)
                         printf("AI自动驾驶分析失败\n");
                     }
                 } else {
-                    ai_result = ai_service_analyze_image(fb, saved_filename);
-                    if (ai_result == ESP_OK) {
-                        printf("AI分析完成\n");
+                    // 尝试本地AI检测
+                    detection_result_t local_results[5];
+                    int local_detection_count = local_ai_detect_objects(fb, local_results, 5);
+                    
+                    if (local_detection_count > 0) {
+                        printf("本地AI检测到 %d 个物体:\n", local_detection_count);
+                        char local_result_text[512] = "本地AI检测结果:\n";
+                        for (int i = 0; i < local_detection_count; i++) {
+                            printf("- %s (置信度: %.2f)\n", local_results[i].class_name, local_results[i].confidence);
+                            char item_text[64];
+                            snprintf(item_text, sizeof(item_text), "- %s (置信度: %.2f)\n", 
+                                local_results[i].class_name, local_results[i].confidence);
+                            strcat(local_result_text, item_text);
+                        }
+                        storage_manager_update_ai_result(saved_filename, local_result_text);
+                        ai_result = ESP_OK;
                     } else {
-                        int failure_count = ai_service_get_socket_failure_count();
-                        printf("AI分析失败 (失败次数: %d)\n", failure_count);
-                        if (failure_count >= 3) {
-                            printf("连续AI分析失败，等待5秒后重试...\n");
-                            vTaskDelay(pdMS_TO_TICKS(5000));
+                        // 如果本地AI没有检测到物体，则使用云端AI
+                        ai_result = ai_service_analyze_image(fb, saved_filename);
+                        if (ai_result == ESP_OK) {
+                            printf("云端AI分析完成\n");
+                        } else {
+                            int failure_count = ai_service_get_socket_failure_count();
+                            printf("云端AI分析失败 (失败次数: %d)\n", failure_count);
+                            if (failure_count >= 3) {
+                                printf("连续AI分析失败，等待5秒后重试...\n");
+                                vTaskDelay(pdMS_TO_TICKS(5000));
+                            }
                         }
                     }
                 }
@@ -152,6 +180,16 @@ void app_main(void)
 
     ESP_ERROR_CHECK(camera_init());
     printf("摄像头初始化完成\n");
+
+    // 初始化AI服务
+    ESP_LOGI(TAG, "初始化AI服务...");
+    esp_err_t ai_ret = ai_service_init();
+    if (ai_ret == ESP_OK) {
+        printf("AI服务初始化成功\n");
+    } else {
+        ESP_LOGE(TAG, "AI服务初始化失败");
+        printf("AI服务初始化失败\n");
+    }
 
     ESP_LOGI(TAG, "初始化L298N电机驱动...");
     esp_err_t motor_ret = motor_driver_init();

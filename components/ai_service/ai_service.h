@@ -3,6 +3,14 @@
 
 #include "esp_err.h"
 #include "camera_driver.h"
+#include "local_ai_service.h"
+
+/**
+ * @brief 初始化AI服务（包括本地AI）
+ * 
+ * @return esp_err_t
+ */
+esp_err_t ai_service_init(void);
 
 /**
  * @brief 使用AI服务分析给定的图像帧

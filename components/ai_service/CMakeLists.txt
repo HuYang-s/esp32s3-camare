@@ -1,3 +1,4 @@
-idf_component_register(SRCS "ai_service.c" "ai_service_text_parser.c"
+idf_component_register(SRCS "ai_service.c" "local_ai_service.c"
                     INCLUDE_DIRS "."
-                    REQUIRES esp_http_client json mbedtls idf::log wifi_manager storage_manager esp-tls motor_driver)
+                    REQUIRES esp_http_client json mbedtls camera_driver storage_manager wifi_manager motor_driver
+                    PRIV_REQUIRES esp_crt_bundle)

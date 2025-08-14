@@ -9,6 +9,7 @@
 #include "cJSON.h"
 
 #include "ai_service.h"
+#include "local_ai_service.h"
 #include "storage_manager.h"
 #include "wifi_manager.h"
 #include "motor_driver.h"
@@ -28,6 +29,21 @@ static int socket_failure_count = 0;
 
 // 前向声明
 static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command);
+
+esp_err_t ai_service_init(void)
+{
+    ESP_LOGI(TAG, "初始化AI服务...");
+    
+    // 初始化本地AI服务
+    esp_err_t ret = local_ai_service_init();
+    if (ret != ESP_OK) {
+        ESP_LOGE(TAG, "本地AI服务初始化失败");
+        return ret;
+    }
+    
+    ESP_LOGI(TAG, "AI服务初始化完成");
+    return ESP_OK;
+}
 
 // Base64编码函数
 static char* encode_image_to_base64(camera_fb_t *fb)
