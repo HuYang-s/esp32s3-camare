@@ -5,6 +5,7 @@
 #include "esp_log.h"
 #include "esp_http_client.h"
 #include "esp_tls.h"
+#include "esp_crt_bundle.h"
 #include "mbedtls/base64.h"
 #include "cJSON.h"
 
@@ -158,9 +159,7 @@ esp_err_t ai_service_analyze_image(camera_fb_t *fb, const char* filename)
         .user_data = response_buffer,
         .timeout_ms = 15000,
         .is_async = false,
-        .skip_cert_common_name_check = true,
-        .use_global_ca_store = false,
-        
+        .crt_bundle_attach = esp_crt_bundle_attach,
     };
     
     esp_http_client_handle_t client = esp_http_client_init(&config);
@@ -281,9 +280,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
         .user_data = response_buffer,
         .timeout_ms = 15000,
         .is_async = false,
-        .skip_cert_common_name_check = true,
-        .use_global_ca_store = false,
-        
+        .crt_bundle_attach = esp_crt_bundle_attach,
     };
     
     esp_http_client_handle_t client = esp_http_client_init(&config);
@@ -469,9 +466,7 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
         .user_data = response_buffer,
         .timeout_ms = 20000, // Increased timeout
         .is_async = false,
-        .skip_cert_common_name_check = true,
-        .use_global_ca_store = false,
-        
+        .crt_bundle_attach = esp_crt_bundle_attach,
     };
     
     esp_http_client_handle_t client = esp_http_client_init(&config);
