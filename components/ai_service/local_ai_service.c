@@ -383,8 +383,8 @@ esp_err_t local_ai_start_navigation_task(const char *target_object, int timeout_
     snprintf(current_task.status_message, sizeof(current_task.status_message), 
              "开始搜索目标: %s", target_object);
     snprintf(current_task.detailed_log, sizeof(current_task.detailed_log),
-             "任务启动时间: %ld, 超时时间: %d秒, 使用导航: %s",
-             current_task.start_time, timeout_seconds, use_navigation ? "是" : "否");
+             "任务启动时间: %lld, 超时时间: %d秒, 使用导航: %s",
+             (long long)current_task.start_time, timeout_seconds, use_navigation ? "是" : "否");
     
     xSemaphoreGive(task_mutex);
     
