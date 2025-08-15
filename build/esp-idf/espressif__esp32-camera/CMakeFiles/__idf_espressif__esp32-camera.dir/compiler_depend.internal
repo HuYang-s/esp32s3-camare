@@ -51,8 +51,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/con
  /tmp/esp-idf/components/newlib/platform_include/sys/lock.h
  /tmp/esp-idf/components/newlib/platform_include/sys/reent.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/jpge.cpp
- /workspace/managed_components/espressif__esp32-camera/conversions/private_include/jpge.h
+ /workspace/components/espressif__esp32-camera/conversions/private_include/jpge.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/to_bmp.c.obj
  /workspace/components/espressif__esp32-camera/conversions/to_bmp.c
@@ -145,11 +144,10 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/con
  /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h
  /tmp/esp-idf/components/soc/include/soc/soc_caps_eval.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/conversions/private_include/yuv.h
- /workspace/managed_components/espressif__esp32-camera/conversions/to_bmp.c
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/conversions/private_include/yuv.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/to_jpg.cpp.obj
@@ -248,12 +246,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/con
  /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h
  /tmp/esp-idf/components/soc/include/soc/soc_caps_eval.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/conversions/private_include/jpge.h
- /workspace/managed_components/espressif__esp32-camera/conversions/private_include/yuv.h
- /workspace/managed_components/espressif__esp32-camera/conversions/to_jpg.cpp
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/conversions/private_include/jpge.h
+ /workspace/components/espressif__esp32-camera/conversions/private_include/yuv.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/yuv.c.obj
@@ -267,8 +264,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/con
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h
  /tmp/esp-idf/components/esp_common/include/esp_attr.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/private_include/yuv.h
- /workspace/managed_components/espressif__esp32-camera/conversions/yuv.c
+ /workspace/components/espressif__esp32-camera/conversions/private_include/yuv.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/cam_hal.c.obj
  /workspace/components/espressif__esp32-camera/driver/cam_hal.c
@@ -418,12 +414,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/dri
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/cam_hal.c
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/cam_hal.h
- /workspace/managed_components/espressif__esp32-camera/target/private_include/ll_cam.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/cam_hal.h
+ /workspace/components/espressif__esp32-camera/target/private_include/ll_cam.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/esp_camera.c.obj
@@ -571,28 +566,27 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/dri
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/esp_camera.c
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/cam_hal.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/bf20a6.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/bf3005.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc0308.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc032a.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc2145.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/hm0360.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/hm1055.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/mega_ccm.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/nt99141.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov2640.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov3660.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov5640.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov7670.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov7725.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/sc030iot.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/cam_hal.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/bf20a6.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/bf3005.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc0308.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc032a.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc2145.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/hm0360.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/hm1055.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/mega_ccm.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/nt99141.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov2640.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov3660.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov5640.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov7670.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov7725.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/sc030iot.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb-ng.c.obj
@@ -715,9 +709,8 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/dri
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/sccb-ng.c
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sensor.c.obj
  /workspace/components/espressif__esp32-camera/driver/sensor.c
@@ -752,8 +745,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/dri
  /tmp/esp-idf/components/newlib/platform_include/sys/lock.h
  /tmp/esp-idf/components/newlib/platform_include/sys/reent.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/sensor.c
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf20a6.c.obj
  /workspace/components/espressif__esp32-camera/sensors/bf20a6.c
@@ -867,12 +859,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/sensors/bf20a6.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/bf20a6.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/bf20a6_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/bf20a6_settings.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/bf20a6.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/bf20a6_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/bf20a6_settings.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/bf3005.c.obj
  /workspace/components/espressif__esp32-camera/sensors/bf3005.c
@@ -1009,14 +1000,13 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/bf3005.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/bf3005.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/bf3005_regs.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/bf3005.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/bf3005_regs.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj
@@ -1131,12 +1121,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/sensors/gc0308.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc0308.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc0308_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc0308_settings.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc0308.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc0308_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc0308_settings.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc032a.c.obj
  /workspace/components/espressif__esp32-camera/sensors/gc032a.c
@@ -1250,12 +1239,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/sensors/gc032a.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc032a.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc032a_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc032a_settings.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc032a.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc032a_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc032a_settings.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc2145.c.obj
  /workspace/components/espressif__esp32-camera/sensors/gc2145.c
@@ -1369,12 +1357,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/sensors/gc2145.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc2145.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc2145_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc2145_settings.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc2145.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc2145_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc2145_settings.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/hm0360.c.obj
  /workspace/components/espressif__esp32-camera/sensors/hm0360.c
@@ -1514,15 +1501,14 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/hm0360.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/hm0360.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/hm0360_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/hm0360_settings.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/hm0360.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/hm0360_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/hm0360_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/hm1055.c.obj
@@ -1660,15 +1646,14 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/hm1055.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/hm1055.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/hm1055_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/hm1055_settings.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/hm1055.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/hm1055_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/hm1055_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/mega_ccm.c.obj
@@ -1783,12 +1768,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/sensors/mega_ccm.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/mega_ccm.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/mega_ccm_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/mega_ccm_settings.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/mega_ccm.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/mega_ccm_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/mega_ccm_settings.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/nt99141.c.obj
  /workspace/components/espressif__esp32-camera/sensors/nt99141.c
@@ -1925,15 +1909,14 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/nt99141.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/nt99141.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/nt99141_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/nt99141_settings.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/nt99141.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/nt99141_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/nt99141_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov2640.c.obj
@@ -2071,15 +2054,14 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/ov2640.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov2640.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov2640_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov2640_settings.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov2640.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov2640_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov2640_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov3660.c.obj
@@ -2217,15 +2199,14 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/ov3660.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov3660.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov3660_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov3660_settings.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov3660.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov3660_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov3660_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov5640.c.obj
@@ -2363,15 +2344,14 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/ov5640.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov5640.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov5640_regs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov5640_settings.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov5640.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov5640_regs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov5640_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj
@@ -2486,11 +2466,10 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/sensors/ov7670.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov7670.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov7670_regs.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov7670.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov7670_regs.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7725.c.obj
  /workspace/components/espressif__esp32-camera/sensors/ov7725.c
@@ -2627,14 +2606,13 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/ov7725.c
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov7725.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov7725_regs.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov7725.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov7725_regs.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc030iot.c.obj
@@ -2772,14 +2750,13 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/sc030iot.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/sc030iot_settings.h
- /workspace/managed_components/espressif__esp32-camera/sensors/sc030iot.c
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/sc030iot.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/sc030iot_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc031gs.c.obj
@@ -2917,14 +2894,13 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/sc031gs.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/sc031gs_settings.h
- /workspace/managed_components/espressif__esp32-camera/sensors/sc031gs.c
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/sc031gs.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/sc031gs_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/sc101iot.c.obj
@@ -3062,14 +3038,13 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/xclk.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/sc101iot.h
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/sc101iot_settings.h
- /workspace/managed_components/espressif__esp32-camera/sensors/sc101iot.c
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/xclk.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/sc101iot.h
+ /workspace/components/espressif__esp32-camera/sensors/private_include/sc101iot_settings.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.obj
@@ -3238,11 +3213,10 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/tar
  /tmp/esp-idf/components/xtensa/include/xtensa_config.h
  /tmp/esp-idf/components/xtensa/include/xtensa_context.h
  /workspace/build/config/sdkconfig.h
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/cam_hal.h
- /workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c
- /workspace/managed_components/espressif__esp32-camera/target/private_include/ll_cam.h
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h
+ /workspace/components/espressif__esp32-camera/driver/private_include/cam_hal.h
+ /workspace/components/espressif__esp32-camera/target/private_include/ll_cam.h
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 

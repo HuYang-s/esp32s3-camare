@@ -86,19 +86,15 @@ esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj: /w
   /tmp/esp-idf/components/soc/include/soc/soc_caps_eval.h \
   config/sdkconfig.h \
   /workspace/components/camera_driver/include/camera_driver.h \
-  /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
+  /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
+  /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
+  /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 
 /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h:
 
-/workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h:
-
-/workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:
-
-/workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h:
+/workspace/components/espressif__esp32-camera/driver/include/esp_camera.h:
 
 /workspace/components/camera_driver/include/camera_driver.h:
 
@@ -188,6 +184,8 @@ config/sdkconfig.h:
 
 /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h:
 
+/workspace/components/espressif__esp32-camera/conversions/include/img_converters.h:
+
 /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h:
 
 /tmp/esp-idf/components/hal/include/hal/ledc_types.h:
@@ -267,5 +265,7 @@ config/sdkconfig.h:
 /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_sigset.h:
 
 /tmp/esp-idf/components/esp_hw_support/include/esp_intr_types.h:
+
+/workspace/components/espressif__esp32-camera/driver/include/sensor.h:
 
 /tmp/esp-idf/components/esp_rom/include/esp_rom_sys.h:

@@ -140,22 +140,20 @@ esp-idf/storage_manager/CMakeFiles/__idf_storage_manager.dir/storage_manager.c.o
   /tmp/esp-idf/components/xtensa/include/xtensa_context.h \
   config/sdkconfig.h \
   /workspace/components/camera_driver/include/camera_driver.h \
+  /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
+  /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
+  /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/components/storage_manager/storage_manager.h \
-  /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 
 /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h:
 
-/workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h:
-
-/workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:
-
-/workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h:
-
 /workspace/components/storage_manager/storage_manager.h:
+
+/workspace/components/espressif__esp32-camera/driver/include/sensor.h:
+
+/workspace/components/espressif__esp32-camera/conversions/include/img_converters.h:
 
 /workspace/components/camera_driver/include/camera_driver.h:
 
@@ -306,6 +304,8 @@ config/sdkconfig.h:
 /tmp/esp-idf/components/heap/include/multi_heap.h:
 
 /tmp/esp-idf/components/esp_common/include/esp_assert.h:
+
+/workspace/components/espressif__esp32-camera/driver/include/esp_camera.h:
 
 /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdarg.h:
 

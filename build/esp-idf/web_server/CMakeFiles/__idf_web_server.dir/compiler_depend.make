@@ -146,25 +146,19 @@ esp-idf/web_server/CMakeFiles/__idf_web_server.dir/web_server.c.obj: /workspace/
   /workspace/components/ai_service/ai_service.h \
   /workspace/components/ai_service/local_ai_service.h \
   /workspace/components/camera_driver/include/camera_driver.h \
+  /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
+  /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
+  /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/components/motor_driver/include/motor_driver.h \
   /workspace/components/navigation_service/navigation_service.h \
   /workspace/components/storage_manager/storage_manager.h \
   /workspace/components/time_service/time_service.h \
   /workspace/components/web_server/web_server.h \
   /workspace/components/wifi_manager/wifi_manager.h \
-  /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 
 /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h:
-
-/workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h:
-
-/workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:
-
-/workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h:
 
 /workspace/components/web_server/web_server.h:
 
@@ -173,6 +167,10 @@ esp-idf/web_server/CMakeFiles/__idf_web_server.dir/web_server.c.obj: /workspace/
 /workspace/components/storage_manager/storage_manager.h:
 
 /workspace/components/motor_driver/include/motor_driver.h:
+
+/workspace/components/espressif__esp32-camera/driver/include/sensor.h:
+
+/workspace/components/espressif__esp32-camera/conversions/include/img_converters.h:
 
 /workspace/components/camera_driver/include/camera_driver.h:
 
@@ -289,6 +287,8 @@ config/sdkconfig.h:
 /tmp/esp-idf/components/newlib/platform_include/sys/reent.h:
 
 /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h:
+
+/workspace/components/espressif__esp32-camera/driver/include/esp_camera.h:
 
 /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h:
 

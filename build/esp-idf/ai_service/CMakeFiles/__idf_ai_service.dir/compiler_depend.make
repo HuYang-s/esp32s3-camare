@@ -270,12 +270,12 @@ esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj: /workspace/
   /workspace/components/ai_service/ai_service.h \
   /workspace/components/ai_service/local_ai_service.h \
   /workspace/components/camera_driver/include/camera_driver.h \
+  /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
+  /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
+  /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/components/motor_driver/include/motor_driver.h \
   /workspace/components/storage_manager/storage_manager.h \
   /workspace/components/wifi_manager/wifi_manager.h \
-  /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj: /workspace/components/ai_service/local_ai_service.c \
@@ -415,23 +415,23 @@ esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj: /work
   config/sdkconfig.h \
   /workspace/components/ai_service/local_ai_service.h \
   /workspace/components/camera_driver/include/camera_driver.h \
+  /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
+  /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
+  /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/components/navigation_service/navigation_service.h \
   /workspace/components/storage_manager/storage_manager.h \
-  /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
-  /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
   /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h
 
 
 /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h:
 
-/workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h:
-
-/workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h:
-
 /workspace/components/storage_manager/storage_manager.h:
 
 /workspace/components/motor_driver/include/motor_driver.h:
+
+/workspace/components/espressif__esp32-camera/driver/include/esp_camera.h:
+
+/workspace/components/espressif__esp32-camera/conversions/include/img_converters.h:
 
 /workspace/components/ai_service/local_ai_service.h:
 
@@ -512,6 +512,8 @@ config/sdkconfig.h:
 /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:
 
 /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h:
+
+/workspace/components/espressif__esp32-camera/driver/include/sensor.h:
 
 /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/signal.h:
 
@@ -934,8 +936,6 @@ config/sdkconfig.h:
 /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_values.h:
 
 /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_platform.h:
-
-/workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h:
 
 /tmp/esp-idf/components/lwip/lwip/src/include/lwip/opt.h:
 
