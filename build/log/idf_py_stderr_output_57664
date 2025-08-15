@@ -1,0 +1,29 @@
+Command: make -j 6 all
+/workspace/components/ai_service/ai_service.c: In function 'ai_service_execute_command_with_image':
+/workspace/components/ai_service/ai_service.c:370:32: error: argument to 'sizeof' in 'snprintf' call is the same expression as the destination; did you mean to provide an explicit length? [-Werror=sizeof-pointer-memaccess]
+  370 |         snprintf(prompt, sizeof(prompt),
+      |                                ^
+/workspace/components/ai_service/ai_service.c:380:32: error: argument to 'sizeof' in 'snprintf' call is the same expression as the destination; did you mean to provide an explicit length? [-Werror=sizeof-pointer-memaccess]
+  380 |         snprintf(prompt, sizeof(prompt),
+      |                                ^
+/workspace/components/ai_service/ai_service.c:390:32: error: argument to 'sizeof' in 'snprintf' call is the same expression as the destination; did you mean to provide an explicit length? [-Werror=sizeof-pointer-memaccess]
+  390 |         snprintf(prompt, sizeof(prompt),
+      |                                ^
+/workspace/components/ai_service/ai_service.c:400:32: error: argument to 'sizeof' in 'snprintf' call is the same expression as the destination; did you mean to provide an explicit length? [-Werror=sizeof-pointer-memaccess]
+  400 |         snprintf(prompt, sizeof(prompt),
+      |                                ^
+/workspace/components/ai_service/ai_service.c:498:61: error: argument to 'sizeof' in 'snprintf' call is the same expression as the destination; did you mean to provide an explicit length? [-Werror=sizeof-pointer-memaccess]
+  498 |                         snprintf(result_with_command, sizeof(result_with_command),
+      |                                                             ^
+/workspace/components/ai_service/ai_service.c: In function 'ai_service_auto_drive_analyze':
+/workspace/components/ai_service/ai_service.c:828:10: error: 'prompt' undeclared (first use in this function)
+  828 |     free(prompt);
+      |          ^~~~~~
+/workspace/components/ai_service/ai_service.c:828:10: note: each undeclared identifier is reported only once for each function it appears in
+/workspace/components/ai_service/ai_service.c:829:10: error: 'result_with_command' undeclared (first use in this function)
+  829 |     free(result_with_command);
+      |          ^~~~~~~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+make[2]: *** [esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/build.make:79: esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:7995: esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

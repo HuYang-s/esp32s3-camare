@@ -271,7 +271,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     bool is_search_command;
     bool is_navigation_command; 
     bool is_describe_command;
-    char prompt[1024];
+    char *prompt;
     esp_http_client_config_t config;
     esp_http_client_handle_t client;
     cJSON *json, *messages, *message, *content, *text_content, *image_content, *image_url;
@@ -281,7 +281,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     cJSON *response_json, *choices, *content_obj;
     const char *ai_response;
     bool found_object, need_action;
-    char result_with_command[768];
+    char *result_with_command;
     const char* task_type;
     
     base64_image = encode_image_to_base64(fb);
@@ -298,6 +298,18 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
         return ESP_FAIL;
     }
     memset(response_buffer, 0, MAX_HTTP_OUTPUT_BUFFER);
+    
+    // Allocate buffers on heap to reduce stack usage
+    prompt = malloc(1024);
+    result_with_command = malloc(768);
+    if (!prompt || !result_with_command) {
+        ESP_LOGE(TAG, "Failed to allocate prompt/result buffers");
+        free(base64_image);
+        free(response_buffer);
+        if (prompt) free(prompt);
+        if (result_with_command) free(result_with_command);
+        return ESP_FAIL;
+    }
     
     config = (esp_http_client_config_t) {
         .url = AI_BASE_URL "/v1/chat/completions",
@@ -317,6 +329,8 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
         ESP_LOGE(TAG, "Failed to init HTTP client for command analysis");
         free(base64_image);
         free(response_buffer);
+        free(prompt);
+        free(result_with_command);
         return ESP_FAIL;
     }
     
@@ -353,7 +367,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     
     // 根据用户命令类型构建不同的提示词
     if (is_search_command) {
-        snprintf(prompt, sizeof(prompt),
+        snprintf(prompt, 1024,
             "我是一个智能机器人助手，用户要求我搜索特定物体。\n\n"
             "👤 用户指令：%s\n\n"
             "🔍 搜索任务分析：\n"
@@ -363,7 +377,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
             "• 提供搜索建议，如是否需要移动到其他位置继续寻找\n\n"
             "请基于当前画面，告诉我是否找到了用户要求的物体，并提供详细的搜索结果。", command);
     } else if (is_navigation_command) {
-        snprintf(prompt, sizeof(prompt),
+        snprintf(prompt, 1024,
             "我是一个智能机器人助手，用户要求我执行移动或导航任务。\n\n"
             "👤 用户指令：%s\n\n"
             "🧭 导航任务分析：\n"
@@ -373,7 +387,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
             "• 提供具体的移动建议和注意事项\n\n"
             "请基于当前画面，分析用户的导航指令并提供执行建议。", command);
     } else if (is_describe_command) {
-        snprintf(prompt, sizeof(prompt),
+        snprintf(prompt, 1024,
             "我是一个智能机器人助手，用户要求我描述当前看到的画面。\n\n"
             "👤 用户指令：%s\n\n"
             "👁️ 视觉描述任务：\n"
@@ -383,7 +397,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
             "• 注意画面中的特殊细节和有趣之处\n\n"
             "请基于当前画面，提供详细而生动的视觉描述。", command);
     } else {
-        snprintf(prompt, sizeof(prompt),
+        snprintf(prompt, 1024,
             "我是一个智能机器人助手，现在通过摄像头观察周围环境。\n\n"
             "👤 用户指令：%s\n\n"
             "🤖 智能任务分析：\n"
@@ -481,7 +495,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
                                    (is_navigation_command ? "🧭 导航任务" : 
                                    (is_describe_command ? "👁️ 描述任务" : "🤖 智能任务"));
                         
-                        snprintf(result_with_command, sizeof(result_with_command), 
+                        snprintf(result_with_command, 768, 
                             "%s\\n📝 指令: %s\\n🎯 状态: %s\\n💬 AI回答: %s",
                             task_type, command, 
                             (found_object || need_action) ? "成功执行" : "已完成分析",
@@ -510,6 +524,8 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     cJSON_Delete(json);
     free(json_string);
     free(response_buffer);
+    free(prompt);
+    free(result_with_command);
     return err;
 }
 

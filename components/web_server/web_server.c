@@ -1242,7 +1242,7 @@ esp_err_t web_server_start(void)
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     config.server_port = 80;
     config.max_uri_handlers = 14;
-    config.stack_size = 4096;
+    config.stack_size = 16384;  // Increased from 4096 to 16KB for AI processing
 
     ESP_LOGI(TAG, "Starting server on port: '%d'", config.server_port);
     if (httpd_start(&server, &config) == ESP_OK) {
