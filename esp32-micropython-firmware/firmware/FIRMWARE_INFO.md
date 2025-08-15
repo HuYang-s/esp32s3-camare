@@ -22,16 +22,35 @@
 
 ## 固件烧录方法
 
-### 使用esptool.py烧录
+⚠️ **重要提示**: ESP32-S3需要烧录多个文件到不同地址，不能只烧录单一固件文件！
+
+### 方法1: 使用专用烧录脚本（推荐）
+
+#### ESP32-S3固件烧录:
+```bash
+# 方法1a: 使用idf.py（推荐，自动处理所有细节）
+source ../esp/esp-idf/export.sh
+./flash_esp32s3_simple.sh /dev/ttyUSB0
+
+# 方法1b: 使用esptool.py（手动指定所有文件）
+./flash_esp32s3.sh /dev/ttyUSB0 460800
+```
 
 #### ESP32固件烧录:
 ```bash
 python -m esptool --chip esp32 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x1000 esp32-generic-firmware.bin
 ```
 
-#### ESP32-S3固件烧录:
+### 方法2: 手动使用esptool.py烧录ESP32-S3
+
+ESP32-S3需要烧录三个文件：
 ```bash
-python -m esptool --chip esp32s3 --port /dev/ttyUSB0 --baud 460800 write_flash -z 0x0 esp32-s3-generic-firmware.bin
+esptool.py --chip esp32s3 --port /dev/ttyUSB0 --baud 460800 \
+    --before default_reset --after hard_reset \
+    write_flash --flash_mode dio --flash_freq 80m --flash_size 8MB \
+    0x0 esp32-s3-complete/bootloader.bin \
+    0x8000 esp32-s3-complete/partition-table.bin \
+    0x10000 esp32-s3-complete/micropython.bin
 ```
 
 ### 使用idf.py烧录 (如果在ESP-IDF环境中)
