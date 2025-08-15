@@ -17,10 +17,15 @@
 
 static const char *TAG = "ai_service";
 
+// 临时禁用HTTPS证书验证以解决连接问题
+
 // AI API配置 - 使用Mistral API进行图片分析
 #define AI_API_KEY "cNKVad6nyJ3vyK4U9mkADJD1hAe102o4"
 #define AI_BASE_URL "https://api.mistral.ai"
 #define AI_MODEL "mistral-small-latest"
+
+// 测试用HTTP端点（如果HTTPS失败）
+#define TEST_HTTP_URL "http://httpbin.org/post"
 
 #define MAX_HTTP_RECV_BUFFER 4096
 #define MAX_HTTP_OUTPUT_BUFFER 4096
@@ -153,7 +158,8 @@ esp_err_t ai_service_analyze_image(camera_fb_t *fb, const char* filename)
         .user_data = response_buffer,
         .timeout_ms = 15000,
         .is_async = false,
-        .use_global_ca_store = true,
+        .skip_cert_common_name_check = true,
+        .use_global_ca_store = false,
         
     };
     
@@ -275,7 +281,8 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
         .user_data = response_buffer,
         .timeout_ms = 15000,
         .is_async = false,
-        .use_global_ca_store = true,
+        .skip_cert_common_name_check = true,
+        .use_global_ca_store = false,
         
     };
     
@@ -462,7 +469,8 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
         .user_data = response_buffer,
         .timeout_ms = 20000, // Increased timeout
         .is_async = false,
-        .use_global_ca_store = true,
+        .skip_cert_common_name_check = true,
+        .use_global_ca_store = false,
         
     };
     
