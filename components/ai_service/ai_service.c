@@ -114,6 +114,12 @@ static esp_err_t _http_event_handler(esp_http_client_event_t *evt)
         case HTTP_EVENT_REDIRECT:
             ESP_LOGD(TAG, "HTTP_EVENT_REDIRECT");
             break;
+        case HTTP_EVENT_ON_HEADERS_COMPLETE:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_HEADERS_COMPLETE");
+            break;
+        case HTTP_EVENT_ON_STATUS_CODE:
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_STATUS_CODE");
+            break;
     }
     return ESP_OK;
 }
@@ -318,7 +324,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     }
     
     // 创建AI请求JSON
-    cJSON *json = cJSON_CreateObject();
+    json = cJSON_CreateObject();
     cJSON_AddStringToObject(json, "model", AI_MODEL);
     cJSON_AddNumberToObject(json, "max_tokens", 128);
     cJSON_AddNumberToObject(json, "temperature", 0.7);
@@ -326,12 +332,12 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     cJSON_AddNumberToObject(json, "frequency_penalty", 0.5);
     cJSON_AddNumberToObject(json, "n", 1);
     
-    cJSON *messages = cJSON_CreateArray();
-    cJSON *message = cJSON_CreateObject();
+    messages = cJSON_CreateArray();
+    message = cJSON_CreateObject();
     cJSON_AddStringToObject(message, "role", "user");
     
-    cJSON *content = cJSON_CreateArray();
-    cJSON *text_content = cJSON_CreateObject();
+    content = cJSON_CreateArray();
+    text_content = cJSON_CreateObject();
     cJSON_AddStringToObject(text_content, "type", "text");
     
     // 智能分析用户命令类型

@@ -1,0 +1,23 @@
+Command: make -j 6 all
+/workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c: In function 'll_cam_set_pin':
+/workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:371:5: error: implicit declaration of function 'gpio_set_direction' [-Wimplicit-function-declaration]
+  371 |     gpio_set_direction(config->pin_pclk, GPIO_MODE_INPUT);
+      |     ^~~~~~~~~~~~~~~~~~
+/workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:371:42: error: 'GPIO_MODE_INPUT' undeclared (first use in this function)
+  371 |     gpio_set_direction(config->pin_pclk, GPIO_MODE_INPUT);
+      |                                          ^~~~~~~~~~~~~~~
+/workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:371:42: note: each undeclared identifier is reported only once for each function it appears in
+/workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:372:5: error: implicit declaration of function 'gpio_set_pull_mode' [-Wimplicit-function-declaration]
+  372 |     gpio_set_pull_mode(config->pin_pclk, GPIO_FLOATING);
+      |     ^~~~~~~~~~~~~~~~~~
+/workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:372:42: error: 'GPIO_FLOATING' undeclared (first use in this function)
+  372 |     gpio_set_pull_mode(config->pin_pclk, GPIO_FLOATING);
+      |                                          ^~~~~~~~~~~~~
+/workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c:396:46: error: 'GPIO_MODE_OUTPUT' undeclared (first use in this function)
+  396 |         gpio_set_direction(config->pin_xclk, GPIO_MODE_OUTPUT);
+      |                                              ^~~~~~~~~~~~~~~~
+make[2]: *** [esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make:415: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.obj] Error 1
+make[2]: *** Waiting for unfinished jobs....
+make[1]: *** [CMakeFiles/Makefile2:7755: esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+make: *** [Makefile:136: all] Error 2
