@@ -1,6 +1,6 @@
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/conversions/yuv.c.obj: \
- /workspace/managed_components/espressif__esp32-camera/conversions/yuv.c \
- /workspace/managed_components/espressif__esp32-camera/conversions/private_include/yuv.h \
+ /workspace/components/espressif__esp32-camera/conversions/yuv.c \
+ /workspace/components/espressif__esp32-camera/conversions/private_include/yuv.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \

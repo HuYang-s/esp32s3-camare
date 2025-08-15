@@ -1,5 +1,5 @@
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/target/esp32s3/ll_cam.c.obj: \
- /workspace/managed_components/espressif__esp32-camera/target/esp32s3/ll_cam.c \
+ /workspace/components/espressif__esp32-camera/target/esp32s3/ll_cam.c \
  /tmp/esp-idf/components/newlib/platform_include/stdio.h \
  /workspace/build/config/sdkconfig.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
@@ -60,7 +60,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/tar
  /tmp/esp-idf/components/esp_common/include/esp_compiler.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/gdma_channel.h \
  /tmp/esp-idf/components/hal/include/hal/gdma_types.h \
- /workspace/managed_components/espressif__esp32-camera/target/private_include/ll_cam.h \
+ /workspace/components/espressif__esp32-camera/target/private_include/ll_cam.h \
  /tmp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /tmp/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/lldesc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/queue.h \
@@ -81,13 +81,13 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/tar
  /tmp/esp-idf/components/esp_common/include/esp_assert.h \
  /tmp/esp-idf/components/log/include/esp_log_attr.h \
  /tmp/esp-idf/components/log/include/esp_private/log_attr.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
  /tmp/esp-idf/components/esp_driver_ledc/include/driver/ledc.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
  /tmp/esp-idf/components/hal/include/hal/ledc_types.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
  /tmp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
@@ -108,7 +108,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/tar
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/signal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/signal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h \
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
  /tmp/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
@@ -164,7 +164,7 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/tar
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_private/periph_ctrl.h \
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/cam_hal.h \
+ /workspace/components/espressif__esp32-camera/driver/private_include/cam_hal.h \
  /tmp/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
  /tmp/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \

@@ -1,5 +1,5 @@
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/driver/sccb-ng.c.obj: \
- /workspace/managed_components/espressif__esp32-camera/driver/sccb-ng.c \
+ /workspace/components/espressif__esp32-camera/driver/sccb-ng.c \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdbool.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
@@ -105,8 +105,8 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/dri
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h \
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
  /tmp/esp-idf/components/log/include/esp_log.h \
  /tmp/esp-idf/components/log/include/esp_log_config.h \
  /tmp/esp-idf/components/log/include/esp_log_level.h \

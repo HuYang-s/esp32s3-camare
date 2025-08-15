@@ -1,5 +1,5 @@
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/gc0308.c.obj: \
- /workspace/managed_components/espressif__esp32-camera/sensors/gc0308.c \
+ /workspace/components/espressif__esp32-camera/sensors/gc0308.c \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
@@ -105,11 +105,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h \
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc0308.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc0308_regs.h \
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/gc0308_settings.h \
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h \
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc0308.h \
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc0308_regs.h \
+ /workspace/components/espressif__esp32-camera/sensors/private_include/gc0308_settings.h \
  /tmp/esp-idf/components/log/include/esp_log.h \
  /tmp/esp-idf/components/log/include/esp_log_config.h \
  /tmp/esp-idf/components/log/include/esp_log_level.h \

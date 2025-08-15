@@ -1,7 +1,7 @@
 esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj: \
  /workspace/components/camera_driver/camera_driver.c \
  /workspace/components/camera_driver/include/camera_driver.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
  /tmp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
@@ -43,7 +43,7 @@ esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj: \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
  /tmp/esp-idf/components/soc/include/soc/soc_caps_eval.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
  /tmp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
@@ -64,7 +64,7 @@ esp-idf/camera_driver/CMakeFiles/__idf_camera_driver.dir/camera_driver.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/signal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/signal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h \
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h \
  /tmp/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \

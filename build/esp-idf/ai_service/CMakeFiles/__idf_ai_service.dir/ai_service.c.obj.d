@@ -272,12 +272,12 @@ esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj: \
  /tmp/esp-idf/components/json/cJSON/cJSON.h \
  /workspace/components/ai_service/ai_service.h \
  /workspace/components/camera_driver/include/camera_driver.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
  /tmp/esp-idf/components/esp_driver_ledc/include/driver/ledc.h \
  /tmp/esp-idf/components/hal/include/hal/ledc_types.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
- /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h \
  /workspace/components/ai_service/local_ai_service.h \
  /workspace/components/storage_manager/storage_manager.h \

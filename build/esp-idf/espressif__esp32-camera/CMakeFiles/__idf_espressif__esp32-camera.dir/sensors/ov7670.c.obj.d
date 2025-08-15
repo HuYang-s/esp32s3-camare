@@ -1,5 +1,5 @@
 esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sensors/ov7670.c.obj: \
- /workspace/managed_components/espressif__esp32-camera/sensors/ov7670.c \
+ /workspace/components/espressif__esp32-camera/sensors/ov7670.c \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
@@ -30,11 +30,11 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/sen
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/managed_components/espressif__esp32-camera/driver/private_include/sccb.h \
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov7670.h \
- /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
+ /workspace/components/espressif__esp32-camera/driver/private_include/sccb.h \
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov7670.h \
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdbool.h \
- /workspace/managed_components/espressif__esp32-camera/sensors/private_include/ov7670_regs.h \
+ /workspace/components/espressif__esp32-camera/sensors/private_include/ov7670_regs.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
  /tmp/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
  /tmp/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
