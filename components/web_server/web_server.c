@@ -316,69 +316,7 @@ static esp_err_t auto_drive_api_handler(httpd_req_t *req)
     return ESP_FAIL;
 }
 
-// AI命令处理API函数
-static esp_err_t ai_command_handler(httpd_req_t *req)
-{
-    ESP_LOGI(TAG, "收到AI命令API请求");
-    
-    // 获取请求内容
-    char content[512];
-    size_t recv_size = MIN(req->content_len, sizeof(content) - 1);
-    
-    int ret = httpd_req_recv(req, content, recv_size);
-    if (ret <= 0) {
-        ESP_LOGE(TAG, "接收AI命令HTTP请求数据失败");
-        httpd_resp_send_500(req);
-        return ESP_FAIL;
-    }
-    content[ret] = '\0';
-    ESP_LOGI(TAG, "接收到的AI命令JSON: %s", content);
-    
-    // 解析JSON
-    cJSON *json = cJSON_Parse(content);
-    if (json == NULL) {
-        ESP_LOGE(TAG, "AI命令JSON解析失败");
-        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid JSON");
-        return ESP_FAIL;
-    }
-    
-    cJSON *command_obj = cJSON_GetObjectItem(json, "command");
-    if (!cJSON_IsString(command_obj)) {
-        ESP_LOGE(TAG, "command字段不是字符串或不存在");
-        cJSON_Delete(json);
-        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Missing command field");
-        return ESP_FAIL;
-    }
-    
-    const char *command = cJSON_GetStringValue(command_obj);
-    ESP_LOGI(TAG, "🗣️ 接收到AI命令: %s", command);
-    
-    // 触发AI命令分析
-    esp_err_t ai_result = ai_service_command_analyze(command);
-    
-    // 返回响应
-    cJSON *response = cJSON_CreateObject();
-    if (ai_result == ESP_OK) {
-        cJSON_AddBoolToObject(response, "success", true);
-        cJSON_AddStringToObject(response, "response", "AI正在分析当前图像并执行您的指令...");
-        ESP_LOGI(TAG, "✅ AI命令执行成功");
-    } else {
-        cJSON_AddBoolToObject(response, "success", false);
-        cJSON_AddStringToObject(response, "error", "AI命令处理失败，请检查网络连接");
-        ESP_LOGI(TAG, "❌ AI命令执行失败");
-    }
-    
-    char *response_str = cJSON_Print(response);
-    httpd_resp_set_type(req, "application/json");
-    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
-    httpd_resp_send(req, response_str, strlen(response_str));
-    
-    free(response_str);
-    cJSON_Delete(response);
-    cJSON_Delete(json);
-    
-    return ESP_OK;
-}
+
 
 static esp_err_t index_handler(httpd_req_t *req)
 {
@@ -438,13 +376,7 @@ static esp_err_t index_handler(httpd_req_t *req)
         ".auto-drive-toggle input:checked + .toggle-slider:before{transform:translateX(15px)}"
         ".auto-drive-status{font-size:10px;color:#666;margin:3px 0;font-weight:bold}"
         ".auto-drive-info{font-size:9px;color:#888;margin-top:5px;line-height:1.3}"
-        ".ai-command-control{background:#f0f8ff;padding:10px;border-radius:6px;margin-top:10px}"
-        ".command-input-area{margin:8px 0}"
-        ".command-textarea{width:100%;min-height:80px;padding:6px;border:1px solid #ccc;border-radius:4px;font-size:11px;resize:vertical;font-family:Arial,sans-serif}"
-        ".command-controls{display:flex;gap:5px;margin-top:5px;justify-content:center}"
-        ".command-btn{background:#17a2b8;padding:4px 8px;font-size:10px}"
-        ".command-btn:hover{background:#138496}"
-        ".command-status{font-size:10px;color:#666;margin:5px 0;text-align:center;font-weight:bold}"
+
         ".command-response{background:#ffffff;border:1px solid #e0e0e0;border-radius:4px;padding:8px;margin:5px 0;font-size:11px;line-height:1.4;min-height:20px;max-height:150px;overflow-y:auto}"
         ".command-response.loading{color:#666;font-style:italic}"
         ".command-response.success{border-left:3px solid #28a745}"
@@ -511,18 +443,7 @@ static esp_err_t index_handler(httpd_req_t *req)
         "<div class='auto-drive-status' id='auto-drive-status'>AI自动驾驶: 关闭</div>"
         "<div class='auto-drive-info'>AI将根据摄像头图像自动控制电机移动</div>"
         "</div>"
-        "<div class='ai-command-control'>"
-        "<h3>🗣️ AI命令控制</h3>"
-        "<div class='command-input-area'>"
-        "<textarea id='command-input' class='command-textarea' placeholder='输入AI任务指令，例如：\\n- 找到房间里的瓶子\\n- 告诉我你看到了什么\\n- 寻找红色的物体\\n- 检查前方是否有障碍物'></textarea>"
-        "<div class='command-controls'>"
-        "<button class='btn command-btn' onclick='sendAICommand()'>🚀 发送指令</button>"
-        "<button class='btn command-btn' onclick='clearCommand()'>🗑️ 清空</button>"
-        "</div>"
-        "</div>"
-        "<div class='command-status' id='command-status'>等待指令...</div>"
-        "<div class='command-response' id='command-response'></div>"
-        "</div>"
+
         "<div class='ai-task-control'>"
         "<h3>🎯 AI物体搜索任务</h3>"
         "<div class='task-input-area'>"
@@ -658,51 +579,7 @@ static esp_err_t index_handler(httpd_req_t *req)
         "checkbox.checked=!checkbox.checked;"
         "})"
         "}"
-        "function sendAICommand(){"
-        "const commandInput=document.getElementById('command-input');"
-        "const command=commandInput.value.trim();"
-        "if(!command){"
-        "alert('请输入AI指令');"
-        "return"
-        "}"
-        "const statusDiv=document.getElementById('command-status');"
-        "const responseDiv=document.getElementById('command-response');"
-        "statusDiv.textContent='🔄 AI正在执行指令...';"
-        "statusDiv.style.color='#007bff';"
-        "responseDiv.textContent='处理中，请稍候...';"
-        "responseDiv.className='command-response loading';"
-        "fetch('/api/ai-command',{"
-        "method:'POST',"
-        "headers:{'Content-Type':'application/json'},"
-        "body:JSON.stringify({command:command})"
-        "}).then(r=>r.json()).then(data=>{"
-        "if(data.success){"
-        "statusDiv.textContent='✅ 指令执行完成';"
-        "statusDiv.style.color='#28a745';"
-        "responseDiv.textContent=data.response||'AI执行成功';"
-        "responseDiv.className='command-response success';"
-        "loadImages();"
-        "}else{"
-        "statusDiv.textContent='❌ 指令执行失败';"
-        "statusDiv.style.color='#dc3545';"
-        "responseDiv.textContent=data.error||'未知错误';"
-        "responseDiv.className='command-response error';"
-        "}"
-        "}).catch(e=>{"
-        "console.error('AI命令API错误:',e);"
-        "statusDiv.textContent='❌ 网络错误';"
-        "statusDiv.style.color='#dc3545';"
-        "responseDiv.textContent='网络连接失败，请检查ESP32连接状态';"
-        "responseDiv.className='command-response error';"
-        "})"
-        "}"
-        "function clearCommand(){"
-        "document.getElementById('command-input').value='';"
-        "document.getElementById('command-status').textContent='等待指令...';"
-        "document.getElementById('command-status').style.color='#666';"
-        "document.getElementById('command-response').textContent='';"
-        "document.getElementById('command-response').className='command-response';"
-        "}"
+
         "function startAITask(){"
         "const targetObject=document.getElementById('target-object').value.trim();"
         "const timeout=parseInt(document.getElementById('task-timeout').value);"
@@ -1272,8 +1149,7 @@ esp_err_t web_server_start(void)
         httpd_uri_t auto_drive_post_uri = { .uri = "/api/auto-drive", .method = HTTP_POST, .handler = auto_drive_api_handler };
         httpd_register_uri_handler(server, &auto_drive_post_uri);
 
-        httpd_uri_t ai_command_uri = { .uri = "/api/ai-command", .method = HTTP_POST, .handler = ai_command_handler };
-        httpd_register_uri_handler(server, &ai_command_uri);
+
 
         httpd_uri_t ai_task_uri = { .uri = "/api/ai-task", .method = HTTP_POST, .handler = ai_task_handler };
         httpd_register_uri_handler(server, &ai_task_uri);

@@ -30,13 +30,7 @@ esp_err_t ai_service_analyze_image(camera_fb_t *fb, const char* filename);
  */
 esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename);
 
-/**
- * @brief 根据用户命令执行AI图像分析任务
- *
- * @param command 用户输入的命令字符串
- * @return esp_err_t
- */
-esp_err_t ai_service_command_analyze(const char* command);
+
 
 /**
  * @brief 获取当前网络请求失败的计数值
