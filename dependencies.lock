@@ -1,8 +1,8 @@
 dependencies:
-  espressif/esp32-camera:
+  esp32-camera:
     dependencies: []
     source:
-      path: /workspace/components/espressif__esp32-camera
+      path: /workspace/components/esp32-camera
       type: local
     version: 2.1.0
   espressif/esp_jpeg:
@@ -23,6 +23,6 @@ direct_dependencies:
 - espressif/esp32-camera
 - espressif/esp_jpeg
 - idf
-manifest_hash: d6552463791396efc40174db5b51257f34a63a9c369bf61910841cfbf0e12fc0
+manifest_hash: b83e5c25056f5e90bb8c1df9f64e86d284a5f7680fc8e083046e22c9d0689962
 target: esp32s3
 version: 2.0.0

@@ -1982,17 +1982,17 @@ __idf_espressif__esp_jpeg/fast:
 .PHONY : __idf_espressif__esp_jpeg/fast
 
 #=============================================================================
-# Target rules for targets named __idf_espressif__esp32-camera
+# Target rules for targets named __idf_esp32-camera
 
 # Build rule for target.
-__idf_espressif__esp32-camera: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_espressif__esp32-camera
-.PHONY : __idf_espressif__esp32-camera
+__idf_esp32-camera: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_esp32-camera
+.PHONY : __idf_esp32-camera
 
 # fast build rule for target.
-__idf_espressif__esp32-camera/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build.make esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/build
-.PHONY : __idf_espressif__esp32-camera/fast
+__idf_esp32-camera/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/build.make esp-idf/esp32-camera/CMakeFiles/__idf_esp32-camera.dir/build
+.PHONY : __idf_esp32-camera/fast
 
 #=============================================================================
 # Target rules for targets named __idf_camera_driver
@@ -2203,6 +2203,7 @@ help:
 	@echo "... __idf_driver"
 	@echo "... __idf_efuse"
 	@echo "... __idf_esp-tls"
+	@echo "... __idf_esp32-camera"
 	@echo "... __idf_esp_adc"
 	@echo "... __idf_esp_app_format"
 	@echo "... __idf_esp_bootloader_format"
@@ -2251,7 +2252,6 @@ help:
 	@echo "... __idf_esp_vfs_console"
 	@echo "... __idf_esp_wifi"
 	@echo "... __idf_espcoredump"
-	@echo "... __idf_espressif__esp32-camera"
 	@echo "... __idf_espressif__esp_jpeg"
 	@echo "... __idf_fatfs"
 	@echo "... __idf_freertos"

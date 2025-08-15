@@ -188,7 +188,7 @@ esp32s3_camera_web.elf: esp-idf/touch_element/libtouch_element.a
 esp32s3_camera_web.elf: esp-idf/usb/libusb.a
 esp32s3_camera_web.elf: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp32s3_camera_web.elf: esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
-esp32s3_camera_web.elf: esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
+esp32s3_camera_web.elf: esp-idf/esp32-camera/libesp32-camera.a
 esp32s3_camera_web.elf: esp-idf/camera_driver/libcamera_driver.a
 esp32s3_camera_web.elf: esp-idf/wifi_manager/libwifi_manager.a
 esp32s3_camera_web.elf: esp-idf/time_service/libtime_service.a
@@ -216,7 +216,7 @@ esp32s3_camera_web.elf: esp-idf/storage_manager/libstorage_manager.a
 esp32s3_camera_web.elf: esp-idf/spiffs/libspiffs.a
 esp32s3_camera_web.elf: esp-idf/camera_driver/libcamera_driver.a
 esp32s3_camera_web.elf: esp-idf/json/libjson.a
-esp32s3_camera_web.elf: esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
+esp32s3_camera_web.elf: esp-idf/esp32-camera/libesp32-camera.a
 esp32s3_camera_web.elf: esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
 esp32s3_camera_web.elf: esp-idf/motor_driver/libmotor_driver.a
 esp32s3_camera_web.elf: esp-idf/xtensa/libxtensa.a
