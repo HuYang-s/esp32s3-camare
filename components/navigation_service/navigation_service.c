@@ -105,7 +105,7 @@ esp_err_t navigation_stop_search(void)
     }
     
     // 停止所有电机
-    motor_stop();
+    motor_stop_all();
     
     // 重置状态
     nav_task.nav_state = NAV_IDLE;
@@ -171,21 +171,21 @@ esp_err_t navigation_perform_360_scan(const char* target_object)
         
         // 原地右转
         ESP_LOGI(TAG, "旋转到角度: %d度", angle);
-        motor_turn_right();
+        motor_right(MOTOR_SPEED_MEDIUM);
         vTaskDelay(pdMS_TO_TICKS(500)); // 旋转0.5秒
-        motor_stop();
+        motor_stop_all();
         vTaskDelay(pdMS_TO_TICKS(200)); // 稳定0.2秒
         
         // 拍照并进行AI识别
-        camera_fb_t *fb = camera_capture();
-        if (fb != NULL) {
+        camera_fb_t *fb = NULL;
+        esp_err_t capture_result = camera_capture(&fb);
+        if (capture_result == ESP_OK && fb != NULL) {
             detection_result_t results[5];
-            int result_count = 0;
             
             // 执行本地AI检测
-            esp_err_t ai_result = local_ai_detect_objects(fb, results, 5, &result_count);
+            int result_count = local_ai_detect_objects(fb, results, 5);
             
-            if (ai_result == ESP_OK && result_count > 0) {
+            if (result_count > 0) {
                 // 检查是否找到目标物体
                 for (int i = 0; i < result_count; i++) {
                     ESP_LOGI(TAG, "检测到物体: %s (置信度: %.2f)", 
@@ -195,7 +195,7 @@ esp_err_t navigation_perform_360_scan(const char* target_object)
                     if (strstr(results[i].class_name, target_object) != NULL && 
                         results[i].confidence > 0.5) {
                         ESP_LOGI(TAG, "找到目标物体: %s", target_object);
-                        camera_fb_return(fb);
+                        camera_return_fb(fb);
                         return ESP_OK; // 找到目标
                     }
                     
@@ -210,7 +210,7 @@ esp_err_t navigation_perform_360_scan(const char* target_object)
                 }
             }
             
-            camera_fb_return(fb);
+            camera_return_fb(fb);
         }
         
         // 检查是否需要停止搜索
@@ -242,9 +242,9 @@ esp_err_t navigation_expand_search_area(void)
         }
         
         // 向前移动一小步
-        motor_move_forward();
+        motor_forward(MOTOR_SPEED_MEDIUM);
         vTaskDelay(pdMS_TO_TICKS(MOVE_STEP_TIME_MS));
-        motor_stop();
+        motor_stop_all();
         
         // 检查是否卡住
         if (navigation_is_stuck()) {
@@ -303,18 +303,18 @@ esp_err_t navigation_navigate_to_door(void)
     
     // 先旋转到目标方向
     if (angle > 0) {
-        motor_turn_left();
+        motor_left(MOTOR_SPEED_MEDIUM);
     } else {
-        motor_turn_right();
+        motor_right(MOTOR_SPEED_MEDIUM);
     }
     vTaskDelay(pdMS_TO_TICKS(abs((int)angle) * 10)); // 根据角度调整旋转时间
-    motor_stop();
+    motor_stop_all();
     
     // 向前移动
     int move_time = (int)(min_distance * 100); // 根据距离调整移动时间
-    motor_move_forward();
+    motor_forward(MOTOR_SPEED_MEDIUM);
     vTaskDelay(pdMS_TO_TICKS(move_time));
-    motor_stop();
+    motor_stop_all();
     
     // 标记该兴趣点为已访问
     if (xSemaphoreTake(nav_task.nav_mutex, pdMS_TO_TICKS(100)) == pdTRUE) {
@@ -480,11 +480,11 @@ void navigation_service_task(void* pvParameters)
             case NAV_STUCK:
                 // 机器人卡住，尝试脱困
                 ESP_LOGW(TAG, "机器人卡住，尝试脱困");
-                motor_move_backward();
+                motor_backward(MOTOR_SPEED_MEDIUM);
                 vTaskDelay(pdMS_TO_TICKS(1000));
-                motor_turn_left();
+                motor_left(MOTOR_SPEED_MEDIUM);
                 vTaskDelay(pdMS_TO_TICKS(500));
-                motor_stop();
+                motor_stop_all();
                 
                 // 重置卡住状态
                 if (xSemaphoreTake(nav_task.nav_mutex, pdMS_TO_TICKS(100)) == pdTRUE) {
