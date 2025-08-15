@@ -102,6 +102,7 @@ EXPECTED_CHECKSUMS="f2ca02bd721ddb2812ef9afb49da9e00bd94eb5f6d331d4286c0e55b8f77
 3bbcfc7ec45e95afd50c732e3e1669e006c7c927bd908bbcbe6ebe59cd7b71ea  $MICROPYTHON
 79d4d11acdbdad3cc82dc25b98b90c77f42eb70bf0db064bc6884e8bcc42e331  $PARTITION_TABLE"
 
+# Check for checksum command (Linux vs macOS)
 if command -v sha256sum &> /dev/null; then
     echo "$EXPECTED_CHECKSUMS" | sha256sum -c --quiet
     if [ $? -eq 0 ]; then
@@ -111,9 +112,19 @@ if command -v sha256sum &> /dev/null; then
         print_warning "固件文件校验失败，但继续刷写"
         print_warning "Firmware file verification failed, but continuing"
     fi
+elif command -v shasum &> /dev/null; then
+    # macOS uses shasum
+    echo "$EXPECTED_CHECKSUMS" | shasum -a 256 -c --quiet
+    if [ $? -eq 0 ]; then
+        print_info "固件文件校验成功"
+        print_info "Firmware files verified successfully"
+    else
+        print_warning "固件文件校验失败，但继续刷写"
+        print_warning "Firmware file verification failed, but continuing"
+    fi
 else
-    print_warning "sha256sum 不可用，跳过校验"
-    print_warning "sha256sum not available, skipping verification"
+    print_warning "校验工具不可用，跳过校验"
+    print_warning "Checksum tool not available, skipping verification"
 fi
 
 print_info "配置信息:"
