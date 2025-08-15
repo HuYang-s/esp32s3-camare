@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <math.h>
+#include <time.h>
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
 #include "esp_log.h"
@@ -260,14 +262,33 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
 {
     ESP_LOGI(TAG, "🤖 开始执行AI命令: %s", command);
     
-    char *base64_image = encode_image_to_base64(fb);
+    // 声明所有变量
+    char *base64_image;
+    char *response_buffer;
+    bool is_search_command;
+    bool is_navigation_command; 
+    bool is_describe_command;
+    char prompt[1024];
+    esp_http_client_config_t config;
+    esp_http_client_handle_t client;
+    cJSON *json, *messages, *message, *content, *text_content, *image_content, *image_url;
+    char *image_url_str, *json_string;
+    esp_err_t err;
+    int status_code;
+    cJSON *response_json, *choices, *content_obj;
+    const char *ai_response;
+    bool found_object, need_action;
+    char result_with_command[768];
+    const char* task_type;
+    
+    base64_image = encode_image_to_base64(fb);
     if (!base64_image) {
         ESP_LOGE(TAG, "❌ Base64编码失败");
         return ESP_FAIL;
     }
     ESP_LOGI(TAG, "📸 图像Base64编码完成，长度: %d", (int)strlen(base64_image));
     
-    char *response_buffer = malloc(MAX_HTTP_OUTPUT_BUFFER);
+    response_buffer = malloc(MAX_HTTP_OUTPUT_BUFFER);
     if (!response_buffer) {
         ESP_LOGE(TAG, "Failed to allocate response buffer for command analysis");
         free(base64_image);
@@ -275,7 +296,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     }
     memset(response_buffer, 0, MAX_HTTP_OUTPUT_BUFFER);
     
-    esp_http_client_config_t config = {
+    config = (esp_http_client_config_t) {
         .url = AI_BASE_URL "/v1/chat/completions",
         .method = HTTP_METHOD_POST,
         .event_handler = _http_event_handler,
@@ -288,7 +309,7 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
         .transport_type = HTTP_TRANSPORT_OVER_SSL,
     };
     
-    esp_http_client_handle_t client = esp_http_client_init(&config);
+    client = esp_http_client_init(&config);
     if (!client) {
         ESP_LOGE(TAG, "Failed to init HTTP client for command analysis");
         free(base64_image);
@@ -314,21 +335,20 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     cJSON_AddStringToObject(text_content, "type", "text");
     
     // 智能分析用户命令类型
-    bool is_search_command = (strstr(command, "找") != NULL || strstr(command, "搜索") != NULL || 
-                             strstr(command, "寻找") != NULL || strstr(command, "search") != NULL ||
-                             strstr(command, "find") != NULL || strstr(command, "look for") != NULL);
+    is_search_command = (strstr(command, "找") != NULL || strstr(command, "搜索") != NULL || 
+                        strstr(command, "寻找") != NULL || strstr(command, "search") != NULL ||
+                        strstr(command, "find") != NULL || strstr(command, "look for") != NULL);
     
-    bool is_navigation_command = (strstr(command, "去") != NULL || strstr(command, "移动") != NULL || 
-                                 strstr(command, "前进") != NULL || strstr(command, "后退") != NULL ||
-                                 strstr(command, "左转") != NULL || strstr(command, "右转") != NULL ||
-                                 strstr(command, "导航") != NULL || strstr(command, "move") != NULL);
+    is_navigation_command = (strstr(command, "去") != NULL || strstr(command, "移动") != NULL || 
+                            strstr(command, "前进") != NULL || strstr(command, "后退") != NULL ||
+                            strstr(command, "左转") != NULL || strstr(command, "右转") != NULL ||
+                            strstr(command, "导航") != NULL || strstr(command, "move") != NULL);
     
-    bool is_describe_command = (strstr(command, "看到") != NULL || strstr(command, "描述") != NULL || 
-                               strstr(command, "什么") != NULL || strstr(command, "观察") != NULL ||
-                               strstr(command, "describe") != NULL || strstr(command, "see") != NULL);
+    is_describe_command = (strstr(command, "看到") != NULL || strstr(command, "描述") != NULL || 
+                          strstr(command, "什么") != NULL || strstr(command, "观察") != NULL ||
+                          strstr(command, "describe") != NULL || strstr(command, "see") != NULL);
     
     // 根据用户命令类型构建不同的提示词
-    char prompt[1024];
     if (is_search_command) {
         snprintf(prompt, sizeof(prompt),
             "我是一个智能机器人助手，用户要求我搜索特定物体。\n\n"
@@ -374,10 +394,10 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     cJSON_AddStringToObject(text_content, "text", prompt);
     cJSON_AddItemToArray(content, text_content);
     
-    cJSON *image_content = cJSON_CreateObject();
+    image_content = cJSON_CreateObject();
     cJSON_AddStringToObject(image_content, "type", "image_url");
-    cJSON *image_url = cJSON_CreateObject();
-    char *image_url_str = malloc(strlen("data:image/jpeg;base64,") + strlen(base64_image) + 1);
+    image_url = cJSON_CreateObject();
+    image_url_str = malloc(strlen("data:image/jpeg;base64,") + strlen(base64_image) + 1);
     sprintf(image_url_str, "data:image/jpeg;base64,%s", base64_image);
     cJSON_AddStringToObject(image_url, "url", image_url_str);
     cJSON_AddItemToObject(image_content, "image_url", image_url);
@@ -387,50 +407,47 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     cJSON_AddItemToArray(messages, message);
     cJSON_AddItemToObject(json, "messages", messages);
     
-    char *json_string = cJSON_Print(json);
+    json_string = cJSON_Print(json);
     free(base64_image);
     free(image_url_str);
     
     ESP_LOGI(TAG, "📡 准备发送AI命令分析请求到NVIDIA API");
     ESP_LOGI(TAG, "📊 请求JSON大小: %d 字节", (int)strlen(json_string));
     
-    char auth_header[256];
-    snprintf(auth_header, sizeof(auth_header), "Bearer %s", AI_API_KEY);
-    
-    esp_http_client_set_header(client, "Authorization", auth_header);
+    esp_http_client_set_header(client, "Authorization", "Bearer " AI_API_KEY);
     esp_http_client_set_header(client, "Content-Type", "application/json");
     esp_http_client_set_post_field(client, json_string, strlen(json_string));
     
     ESP_LOGI(TAG, "🌐 开始执行HTTP请求...");
-    esp_err_t err = esp_http_client_perform(client);
+    err = esp_http_client_perform(client);
     
     if (err == ESP_OK) {
-        int status_code = esp_http_client_get_status_code(client);
+        status_code = esp_http_client_get_status_code(client);
         ESP_LOGI(TAG, "AI命令分析HTTP状态: %d", status_code);
         
         if (status_code == 200) {
             ESP_LOGI(TAG, "开始解析AI命令分析响应...");
             
             // 解析AI响应
-            cJSON *response_json = cJSON_Parse(response_buffer);
+            response_json = cJSON_Parse(response_buffer);
             if (response_json) {
                 ESP_LOGI(TAG, "AI响应JSON解析成功");
                 
-                cJSON *choices = cJSON_GetObjectItem(response_json, "choices");
+                choices = cJSON_GetObjectItem(response_json, "choices");
                 if (cJSON_IsArray(choices) && cJSON_GetArraySize(choices) > 0) {
                     cJSON *choice = cJSON_GetArrayItem(choices, 0);
-                    cJSON *message = cJSON_GetObjectItem(choice, "message");
-                    cJSON *content_obj = cJSON_GetObjectItem(message, "content");
+                    message = cJSON_GetObjectItem(choice, "message");
+                    content_obj = cJSON_GetObjectItem(message, "content");
                     
                     if (cJSON_IsString(content_obj)) {
-                        const char *ai_response = cJSON_GetStringValue(content_obj);
+                        ai_response = cJSON_GetStringValue(content_obj);
                         ESP_LOGI(TAG, "✅ AI命令分析结果: %s", ai_response);
                         
                         // 智能分析AI响应，提取关键信息
-                        bool found_object = (strstr(ai_response, "找到") != NULL || strstr(ai_response, "发现") != NULL ||
-                                           strstr(ai_response, "看到") != NULL || strstr(ai_response, "识别") != NULL);
-                        bool need_action = (strstr(ai_response, "建议") != NULL || strstr(ai_response, "应该") != NULL ||
-                                          strstr(ai_response, "可以") != NULL || strstr(ai_response, "需要") != NULL);
+                        found_object = (strstr(ai_response, "找到") != NULL || strstr(ai_response, "发现") != NULL ||
+                                       strstr(ai_response, "看到") != NULL || strstr(ai_response, "识别") != NULL);
+                        need_action = (strstr(ai_response, "建议") != NULL || strstr(ai_response, "应该") != NULL ||
+                                      strstr(ai_response, "可以") != NULL || strstr(ai_response, "需要") != NULL);
                         
                         // 在控制台输出智能格式化的结果
                         printf("\\n=== 🤖 AI智能命令执行结果 ===\\n");
@@ -453,14 +470,13 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
                             printf("💡 操作提示: AI已提供执行建议，可考虑采取相应行动\\n");
                         }
                         
-                        printf("⏰ 执行时间: %ld\\n", time(NULL));
+                        printf("⏰ 执行时间: %lld\\n", (long long)time(NULL));
                         printf("=====================================\\n\\n");
                         
                         // 保存结果到存储，包含分类信息
-                        char result_with_command[768];
-                        const char* task_type = is_search_command ? "🔍 搜索任务" : 
-                                               (is_navigation_command ? "🧭 导航任务" : 
-                                               (is_describe_command ? "👁️ 描述任务" : "🤖 智能任务"));
+                        task_type = is_search_command ? "🔍 搜索任务" : 
+                                   (is_navigation_command ? "🧭 导航任务" : 
+                                   (is_describe_command ? "👁️ 描述任务" : "🤖 智能任务"));
                         
                         snprintf(result_with_command, sizeof(result_with_command), 
                             "%s\\n📝 指令: %s\\n🎯 状态: %s\\n💬 AI回答: %s",
@@ -824,8 +840,9 @@ esp_err_t ai_service_command_analyze(const char* command)
     }
     
     // 获取当前摄像头图像
-    camera_fb_t *fb = camera_driver_get_fb();
-    if (!fb) {
+    camera_fb_t *fb = NULL;
+    esp_err_t capture_result = camera_capture(&fb);
+    if (capture_result != ESP_OK || !fb) {
         ESP_LOGE(TAG, "无法获取摄像头图像");
         return ESP_FAIL;
     }
@@ -834,7 +851,7 @@ esp_err_t ai_service_command_analyze(const char* command)
     esp_err_t result = ai_service_execute_command_with_image(fb, "command_analysis", command);
     
     // 释放图像缓冲区
-    camera_driver_return_fb(fb);
+    camera_return_fb(fb);
     
     return result;
 }
