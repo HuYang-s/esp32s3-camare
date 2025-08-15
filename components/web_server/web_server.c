@@ -1047,7 +1047,7 @@ static esp_err_t ai_task_handler(httpd_req_t *req)
 // AI任务状态查询API处理函数
 static esp_err_t ai_task_status_handler(httpd_req_t *req)
 {
-    const ai_task_t* task_status = local_ai_get_task_status();
+    const ai_task_t* task_status = ai_service_get_search_status();
     
     cJSON *response = cJSON_CreateObject();
     
@@ -1161,7 +1161,7 @@ static esp_err_t ai_navigation_task_handler(httpd_req_t *req)
             int timeout_seconds = (timeout_obj && cJSON_IsNumber(timeout_obj)) ? timeout_obj->valueint : 60;
             bool use_navigation = (navigation_obj && cJSON_IsTrue(navigation_obj)) ? true : false;
             
-            esp_err_t result = local_ai_start_navigation_task(target_object, timeout_seconds, use_navigation);
+            esp_err_t result = ai_service_start_object_search(target_object, timeout_seconds, use_navigation);
             
             if (result == ESP_OK) {
                 cJSON_AddStringToObject(response_json, "status", "success");
@@ -1177,7 +1177,7 @@ static esp_err_t ai_navigation_task_handler(httpd_req_t *req)
             }
         }
     } else if (strcmp(action, "stop") == 0) {
-        esp_err_t result = local_ai_stop_task();
+        esp_err_t result = ai_service_stop_object_search();
         
         if (result == ESP_OK) {
             cJSON_AddStringToObject(response_json, "status", "success");

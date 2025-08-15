@@ -72,6 +72,12 @@ static void capture_and_analyze_task(void *pvParameters)
                 
                 xSemaphoreGive(camera_mutex);
                 
+                // 处理AI搜索任务（包含实时状态输出）
+                esp_err_t search_result = ai_service_process_search_task(fb);
+                if (search_result != ESP_OK) {
+                    ESP_LOGD(TAG, "AI搜索任务处理出错");
+                }
+                
                 // 处理本地AI任务
                 esp_err_t local_ai_result = local_ai_process_task(fb);
                 if (local_ai_result == ESP_OK) {

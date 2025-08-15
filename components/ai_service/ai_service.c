@@ -33,8 +33,8 @@ static const char *TAG = "ai_service";
 
 static int socket_failure_count = 0;
 
-// 前向声明 - 注释掉未使用的函数
-// static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command);
+// 前向声明
+static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command);
 
 esp_err_t ai_service_init(void)
 {
@@ -255,8 +255,7 @@ int ai_service_get_socket_failure_count(void)
 }
 
 
-// 使用图片和命令执行AI分析 - 暂时注释掉未使用的函数
-/*
+// 使用图片和命令执行AI分析
 static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const char* filename, const char* command)
 {
     ESP_LOGI(TAG, "🤖 开始执行AI命令: %s", command);
@@ -314,20 +313,63 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     cJSON *text_content = cJSON_CreateObject();
     cJSON_AddStringToObject(text_content, "type", "text");
     
-    // 根据用户命令构建提示词
+    // 智能分析用户命令类型
+    bool is_search_command = (strstr(command, "找") != NULL || strstr(command, "搜索") != NULL || 
+                             strstr(command, "寻找") != NULL || strstr(command, "search") != NULL ||
+                             strstr(command, "find") != NULL || strstr(command, "look for") != NULL);
+    
+    bool is_navigation_command = (strstr(command, "去") != NULL || strstr(command, "移动") != NULL || 
+                                 strstr(command, "前进") != NULL || strstr(command, "后退") != NULL ||
+                                 strstr(command, "左转") != NULL || strstr(command, "右转") != NULL ||
+                                 strstr(command, "导航") != NULL || strstr(command, "move") != NULL);
+    
+    bool is_describe_command = (strstr(command, "看到") != NULL || strstr(command, "描述") != NULL || 
+                               strstr(command, "什么") != NULL || strstr(command, "观察") != NULL ||
+                               strstr(command, "describe") != NULL || strstr(command, "see") != NULL);
+    
+    // 根据用户命令类型构建不同的提示词
     char prompt[1024];
-    snprintf(prompt, sizeof(prompt),
-        "我是一个智能机器人助手，现在通过我的摄像头观察周围环境。作为一个有意识的AI助手，我需要根据用户的指令和我看到的画面内容来提供帮助。\n\n"
-        "👤 用户指令：%s\n\n"
-        "🤖 作为AI助手，我会：\n"
-        "• 仔细观察我通过摄像头看到的画面内容\n"
-        "• 理解用户的指令和需求\n"
-        "• 结合视觉信息和用户指令提供准确的回答\n"
-        "• 用自然、友好的中文与用户交流\n"
-        "• 如果用户询问我看到了什么，我会详细描述画面内容\n"
-        "• 如果用户要求寻找特定物体，我会告知是否找到以及具体位置\n"
-        "• 如果用户需要我执行任务，我会基于视觉信息给出建议\n\n"
-        "现在请告诉我：基于我看到的画面，我应该如何回应用户的指令？", command);
+    if (is_search_command) {
+        snprintf(prompt, sizeof(prompt),
+            "我是一个智能机器人助手，用户要求我搜索特定物体。\n\n"
+            "👤 用户指令：%s\n\n"
+            "🔍 搜索任务分析：\n"
+            "• 仔细观察摄像头画面，寻找用户提到的物体\n"
+            "• 如果找到目标物体，详细描述其位置、外观和特征\n"
+            "• 如果没有找到，说明当前视野中没有该物体\n"
+            "• 提供搜索建议，如是否需要移动到其他位置继续寻找\n\n"
+            "请基于当前画面，告诉我是否找到了用户要求的物体，并提供详细的搜索结果。", command);
+    } else if (is_navigation_command) {
+        snprintf(prompt, sizeof(prompt),
+            "我是一个智能机器人助手，用户要求我执行移动或导航任务。\n\n"
+            "👤 用户指令：%s\n\n"
+            "🧭 导航任务分析：\n"
+            "• 分析当前环境，识别障碍物和可通行路径\n"
+            "• 理解用户的移动意图（方向、距离等）\n"
+            "• 评估移动的安全性和可行性\n"
+            "• 提供具体的移动建议和注意事项\n\n"
+            "请基于当前画面，分析用户的导航指令并提供执行建议。", command);
+    } else if (is_describe_command) {
+        snprintf(prompt, sizeof(prompt),
+            "我是一个智能机器人助手，用户要求我描述当前看到的画面。\n\n"
+            "👤 用户指令：%s\n\n"
+            "👁️ 视觉描述任务：\n"
+            "• 详细描述画面中的主要物体和场景\n"
+            "• 分析物体的颜色、形状、大小和位置关系\n"
+            "• 识别环境类型（室内/室外、房间类型等）\n"
+            "• 注意画面中的特殊细节和有趣之处\n\n"
+            "请基于当前画面，提供详细而生动的视觉描述。", command);
+    } else {
+        snprintf(prompt, sizeof(prompt),
+            "我是一个智能机器人助手，现在通过摄像头观察周围环境。\n\n"
+            "👤 用户指令：%s\n\n"
+            "🤖 智能任务分析：\n"
+            "• 理解用户的具体需求和意图\n"
+            "• 结合当前视觉信息提供准确回答\n"
+            "• 如果需要执行特定动作，提供详细的执行建议\n"
+            "• 用自然、友好的中文与用户交流\n\n"
+            "请基于当前画面和用户指令，提供最合适的回应。", command);
+    }
     
     cJSON_AddStringToObject(text_content, "text", prompt);
     cJSON_AddItemToArray(content, text_content);
@@ -384,16 +426,47 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
                         const char *ai_response = cJSON_GetStringValue(content_obj);
                         ESP_LOGI(TAG, "✅ AI命令分析结果: %s", ai_response);
                         
-                        // 在控制台输出结果
-                        printf("\\n=== AI命令执行结果 ===\\n");
-                        printf("指令：%s\\n", command);
-                        printf("AI回答：%s\\n", ai_response);
-                        printf("======================\\n\\n");
+                        // 智能分析AI响应，提取关键信息
+                        bool found_object = (strstr(ai_response, "找到") != NULL || strstr(ai_response, "发现") != NULL ||
+                                           strstr(ai_response, "看到") != NULL || strstr(ai_response, "识别") != NULL);
+                        bool need_action = (strstr(ai_response, "建议") != NULL || strstr(ai_response, "应该") != NULL ||
+                                          strstr(ai_response, "可以") != NULL || strstr(ai_response, "需要") != NULL);
                         
-                        // 保存结果到存储
-                        char result_with_command[512];
+                        // 在控制台输出智能格式化的结果
+                        printf("\\n=== 🤖 AI智能命令执行结果 ===\\n");
+                        printf("📝 用户指令: %s\\n", command);
+                        
+                        if (is_search_command) {
+                            printf("🔍 搜索结果: %s\\n", found_object ? "✅ 发现目标" : "❌ 未找到目标");
+                        } else if (is_navigation_command) {
+                            printf("🧭 导航分析: %s\\n", need_action ? "✅ 已提供建议" : "ℹ️ 环境分析完成");
+                        } else if (is_describe_command) {
+                            printf("👁️ 视觉描述: ✅ 场景分析完成\\n");
+                        } else {
+                            printf("🤖 任务分析: ✅ 指令处理完成\\n");
+                        }
+                        
+                        printf("💬 AI详细回答:\\n%s\\n", ai_response);
+                        
+                        // 如果AI建议执行动作，提供操作提示
+                        if (need_action) {
+                            printf("💡 操作提示: AI已提供执行建议，可考虑采取相应行动\\n");
+                        }
+                        
+                        printf("⏰ 执行时间: %ld\\n", time(NULL));
+                        printf("=====================================\\n\\n");
+                        
+                        // 保存结果到存储，包含分类信息
+                        char result_with_command[768];
+                        const char* task_type = is_search_command ? "🔍 搜索任务" : 
+                                               (is_navigation_command ? "🧭 导航任务" : 
+                                               (is_describe_command ? "👁️ 描述任务" : "🤖 智能任务"));
+                        
                         snprintf(result_with_command, sizeof(result_with_command), 
-                            "🗣️ 指令: %s\\n📝 AI回答: %s", command, ai_response);
+                            "%s\\n📝 指令: %s\\n🎯 状态: %s\\n💬 AI回答: %s",
+                            task_type, command, 
+                            (found_object || need_action) ? "成功执行" : "已完成分析",
+                            ai_response);
                         storage_manager_update_ai_result(filename, result_with_command);
                     }
                 } else {
@@ -420,7 +493,6 @@ static esp_err_t ai_service_execute_command_with_image(camera_fb_t *fb, const ch
     free(response_buffer);
     return err;
 }
-*/
 
 // AI自动驾驶分析函数
 esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
@@ -751,5 +823,179 @@ esp_err_t ai_service_command_analyze(const char* command)
         return ESP_FAIL;
     }
     
-    return ESP_OK;
+    // 获取当前摄像头图像
+    camera_fb_t *fb = camera_driver_get_fb();
+    if (!fb) {
+        ESP_LOGE(TAG, "无法获取摄像头图像");
+        return ESP_FAIL;
+    }
+    
+    // 执行AI命令分析
+    esp_err_t result = ai_service_execute_command_with_image(fb, "command_analysis", command);
+    
+    // 释放图像缓冲区
+    camera_driver_return_fb(fb);
+    
+    return result;
+}
+
+// AI物体搜索任务实现
+esp_err_t ai_service_start_object_search(const char* target_object, int timeout_seconds, bool use_navigation)
+{
+    ESP_LOGI(TAG, "🔍 启动AI物体搜索任务");
+    ESP_LOGI(TAG, "🎯 目标物体: %s, 超时: %d秒, 导航: %s", 
+        target_object, timeout_seconds, use_navigation ? "开启" : "关闭");
+    
+    // 检查网络连接
+    if (!wifi_manager_is_sta_connected()) {
+        ESP_LOGW(TAG, "WiFi未连接，无法启动AI物体搜索");
+        return ESP_FAIL;
+    }
+    
+    // 检查内存
+    size_t free_heap = esp_get_free_heap_size();
+    if (free_heap < 60000) {
+        ESP_LOGW(TAG, "内存不足，无法启动AI物体搜索");
+        return ESP_FAIL;
+    }
+    
+    // 启动本地AI搜索任务
+    esp_err_t result = local_ai_start_navigation_task(target_object, timeout_seconds, use_navigation);
+    
+    if (result == ESP_OK) {
+        ESP_LOGI(TAG, "✅ AI物体搜索任务启动成功");
+        printf("\n=== AI物体搜索任务启动 ===\n");
+        printf("🎯 目标物体: %s\n", target_object);
+        printf("⏰ 超时时间: %d秒\n", timeout_seconds);
+        printf("🧭 主动导航: %s\n", use_navigation ? "开启" : "关闭");
+        printf("📊 任务状态: 正在搜索...\n");
+        printf("==============================\n\n");
+    } else {
+        ESP_LOGE(TAG, "❌ AI物体搜索任务启动失败");
+    }
+    
+    return result;
+}
+
+esp_err_t ai_service_stop_object_search(void)
+{
+    ESP_LOGI(TAG, "⏹️ 停止AI物体搜索任务");
+    
+    esp_err_t result = local_ai_stop_task();
+    
+    if (result == ESP_OK) {
+        ESP_LOGI(TAG, "✅ AI物体搜索任务已停止");
+        printf("\n=== AI物体搜索任务停止 ===\n");
+        printf("📊 任务状态: 已停止\n");
+        printf("==============================\n\n");
+    } else {
+        ESP_LOGE(TAG, "❌ 停止AI物体搜索任务失败");
+    }
+    
+    return result;
+}
+
+const ai_task_t* ai_service_get_search_status(void)
+{
+    return local_ai_get_task_status();
+}
+
+esp_err_t ai_service_process_search_task(camera_fb_t *fb)
+{
+    if (!fb) {
+        return ESP_FAIL;
+    }
+    
+    // 获取当前任务状态
+    const ai_task_t* task = local_ai_get_task_status();
+    if (!task || task->status == AI_TASK_IDLE) {
+        return ESP_OK; // 没有活动任务
+    }
+    
+    // 处理本地AI搜索任务
+    esp_err_t result = local_ai_process_task(fb);
+    
+    // 获取更新后的状态
+    task = local_ai_get_task_status();
+    if (task) {
+        // 实时输出任务状态
+        static ai_task_status_t last_status = AI_TASK_IDLE;
+        static float last_progress = -1.0f;
+        static time_t last_update = 0;
+        time_t now = time(NULL);
+        
+        // 状态改变时或每5秒输出一次状态
+        if (task->status != last_status || 
+            fabs(task->progress - last_progress) > 0.1f ||
+            (now - last_update) >= 5) {
+            
+            printf("\n=== AI搜索任务状态更新 ===\n");
+            printf("🎯 目标物体: %s\n", task->target_object);
+            
+            switch (task->status) {
+                case AI_TASK_IDLE:
+                    printf("📊 状态: 空闲\n");
+                    break;
+                case AI_TASK_SEARCHING:
+                    printf("📊 状态: 正在搜索\n");
+                    break;
+                case AI_TASK_SCANNING:
+                    printf("📊 状态: 正在扫描\n");
+                    break;
+                case AI_TASK_MOVING:
+                    printf("📊 状态: 正在移动搜索\n");
+                    break;
+                case AI_TASK_NAVIGATING:
+                    printf("📊 状态: 正在导航\n");
+                    break;
+                case AI_TASK_COMPLETED:
+                    printf("📊 状态: ✅ 任务完成\n");
+                    if (task->target_found) {
+                        printf("🎉 找到目标! 置信度: %.1f%%\n", task->target_confidence * 100);
+                    }
+                    break;
+                case AI_TASK_FAILED_TIMEOUT:
+                    printf("📊 状态: ⏰ 任务超时\n");
+                    break;
+                case AI_TASK_FAILED_UNABLE:
+                    printf("📊 状态: ❌ 无法完成\n");
+                    break;
+            }
+            
+            printf("📈 进度: %.1f%%\n", task->progress * 100);
+            printf("🔄 搜索周期: %d\n", task->search_cycles);
+            printf("🗺️ 已探索区域: %d\n", task->areas_explored);
+            printf("💬 状态信息: %s\n", task->status_message);
+            
+            if (strlen(task->detailed_log) > 0) {
+                printf("📝 详细日志: %s\n", task->detailed_log);
+            }
+            
+            printf("==============================\n\n");
+            
+            last_status = task->status;
+            last_progress = task->progress;
+            last_update = now;
+        }
+        
+        // 如果任务完成，更新存储记录
+        if (task->status == AI_TASK_COMPLETED || 
+            task->status == AI_TASK_FAILED_TIMEOUT || 
+            task->status == AI_TASK_FAILED_UNABLE) {
+            
+            char result_message[256];
+            snprintf(result_message, sizeof(result_message),
+                "🔍 物体搜索结果:\n目标: %s\n状态: %s\n进度: %.1f%%\n搜索周期: %d\n已探索区域: %d",
+                task->target_object,
+                task->status == AI_TASK_COMPLETED ? "成功完成" : 
+                (task->status == AI_TASK_FAILED_TIMEOUT ? "超时失败" : "无法完成"),
+                task->progress * 100,
+                task->search_cycles,
+                task->areas_explored);
+            
+            storage_manager_update_ai_result("object_search", result_message);
+        }
+    }
+    
+    return result;
 }
