@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -67,11 +67,11 @@ include CMakeFiles/menuconfig.dir/compiler_depend.make
 include CMakeFiles/menuconfig.dir/progress.make
 
 CMakeFiles/menuconfig:
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/bootloader/config.env
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /workspace/esp-idf/Kconfig --sdkconfig-rename /workspace/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/bootloader/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --dont-write-deprecated --output config /workspace/sdkconfig
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/tools/check_term.py
-	/usr/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/workspace/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/workspace/build/bootloader/kconfigs_projbuild.in KCONFIG_CONFIG=/workspace/sdkconfig IDF_TARGET=esp32s3 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.4.0 /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m menuconfig /workspace/esp-idf/Kconfig
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /workspace/esp-idf/Kconfig --sdkconfig-rename /workspace/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/bootloader/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --output config /workspace/sdkconfig
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/bootloader/config.env
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/bootloader/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --dont-write-deprecated --output config /workspace/sdkconfig
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/check_term.py
+	/usr/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/workspace/build/bootloader/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/workspace/build/bootloader/kconfigs_projbuild.in KCONFIG_CONFIG=/workspace/sdkconfig IDF_TARGET=esp32s3 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.4.0 /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m menuconfig /tmp/esp-idf/Kconfig
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/bootloader/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --output config /workspace/sdkconfig
 
 CMakeFiles/menuconfig.dir/codegen:
 .PHONY : CMakeFiles/menuconfig.dir/codegen
@@ -89,6 +89,6 @@ CMakeFiles/menuconfig.dir/clean:
 .PHONY : CMakeFiles/menuconfig.dir/clean
 
 CMakeFiles/menuconfig.dir/depend:
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/menuconfig.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/menuconfig.dir/depend
 

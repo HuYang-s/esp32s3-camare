@@ -73,158 +73,158 @@ esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/codegen:
 .PHONY : esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/codegen
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj: /workspace/esp-idf/components/esp_adc/adc_oneshot.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj: /tmp/esp-idf/components/esp_adc/adc_oneshot.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj -c /workspace/esp-idf/components/esp_adc/adc_oneshot.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj -c /tmp/esp-idf/components/esp_adc/adc_oneshot.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/adc_oneshot.c > CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/adc_oneshot.c > CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/adc_oneshot.c -o CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/adc_oneshot.c -o CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj: /workspace/esp-idf/components/esp_adc/adc_common.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj: /tmp/esp-idf/components/esp_adc/adc_common.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj -c /workspace/esp-idf/components/esp_adc/adc_common.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_common.c.obj -c /tmp/esp-idf/components/esp_adc/adc_common.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/adc_common.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/adc_common.c > CMakeFiles/__idf_esp_adc.dir/adc_common.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/adc_common.c > CMakeFiles/__idf_esp_adc.dir/adc_common.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/adc_common.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/adc_common.c -o CMakeFiles/__idf_esp_adc.dir/adc_common.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/adc_common.c -o CMakeFiles/__idf_esp_adc.dir/adc_common.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj: /workspace/esp-idf/components/esp_adc/adc_cali.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj: /tmp/esp-idf/components/esp_adc/adc_cali.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj -c /workspace/esp-idf/components/esp_adc/adc_cali.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_cali.c.obj -c /tmp/esp-idf/components/esp_adc/adc_cali.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/adc_cali.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/adc_cali.c > CMakeFiles/__idf_esp_adc.dir/adc_cali.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/adc_cali.c > CMakeFiles/__idf_esp_adc.dir/adc_cali.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/adc_cali.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/adc_cali.c -o CMakeFiles/__idf_esp_adc.dir/adc_cali.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/adc_cali.c -o CMakeFiles/__idf_esp_adc.dir/adc_cali.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj: /workspace/esp-idf/components/esp_adc/adc_cali_curve_fitting.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj: /tmp/esp-idf/components/esp_adc/adc_cali_curve_fitting.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj -c /workspace/esp-idf/components/esp_adc/adc_cali_curve_fitting.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.obj -c /tmp/esp-idf/components/esp_adc/adc_cali_curve_fitting.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/adc_cali_curve_fitting.c > CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/adc_cali_curve_fitting.c > CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/adc_cali_curve_fitting.c -o CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/adc_cali_curve_fitting.c -o CMakeFiles/__idf_esp_adc.dir/adc_cali_curve_fitting.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj: /workspace/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj: /tmp/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj -MF CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj -c /workspace/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj -MF CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj -c /tmp/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c > CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c > CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c -o CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c -o CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj: /workspace/esp-idf/components/esp_adc/adc_continuous.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj: /tmp/esp-idf/components/esp_adc/adc_continuous.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj -c /workspace/esp-idf/components/esp_adc/adc_continuous.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.obj -c /tmp/esp-idf/components/esp_adc/adc_continuous.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/adc_continuous.c > CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/adc_continuous.c > CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/adc_continuous.c -o CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/adc_continuous.c -o CMakeFiles/__idf_esp_adc.dir/adc_continuous.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj: /workspace/esp-idf/components/esp_adc/adc_monitor.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj: /tmp/esp-idf/components/esp_adc/adc_monitor.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj -c /workspace/esp-idf/components/esp_adc/adc_monitor.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj -c /tmp/esp-idf/components/esp_adc/adc_monitor.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/adc_monitor.c > CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/adc_monitor.c > CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/adc_monitor.c -o CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/adc_monitor.c -o CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj: /workspace/esp-idf/components/esp_adc/gdma/adc_dma.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj: /tmp/esp-idf/components/esp_adc/gdma/adc_dma.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj -MF CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj -c /workspace/esp-idf/components/esp_adc/gdma/adc_dma.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj -MF CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj -c /tmp/esp-idf/components/esp_adc/gdma/adc_dma.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/gdma/adc_dma.c > CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/gdma/adc_dma.c > CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/gdma/adc_dma.c -o CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/gdma/adc_dma.c -o CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj: /workspace/esp-idf/components/esp_adc/adc_filter.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj: /tmp/esp-idf/components/esp_adc/adc_filter.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj -c /workspace/esp-idf/components/esp_adc/adc_filter.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj -MF CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj -c /tmp/esp-idf/components/esp_adc/adc_filter.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/adc_filter.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/adc_filter.c > CMakeFiles/__idf_esp_adc.dir/adc_filter.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/adc_filter.c > CMakeFiles/__idf_esp_adc.dir/adc_filter.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/adc_filter.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/adc_filter.c -o CMakeFiles/__idf_esp_adc.dir/adc_filter.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/adc_filter.c -o CMakeFiles/__idf_esp_adc.dir/adc_filter.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj: /workspace/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj: /tmp/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj -MF CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj -c /workspace/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj -MF CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj -c /tmp/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c > CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c > CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c -o CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c -o CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.s
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/flags.make
-esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj: /workspace/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c
+esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj: /tmp/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj: esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj -MF CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj -c /workspace/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj -MF CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj.d -o CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj -c /tmp/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.i"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c > CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.i
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c > CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.i
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.s"
-	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c -o CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.s
+	cd /workspace/build/esp-idf/esp_adc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c -o CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.s
 
 # Object files for target __idf_esp_adc
 __idf_esp_adc_OBJECTS = \
@@ -269,6 +269,6 @@ esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/clean:
 .PHONY : esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/clean
 
 esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/esp_adc /workspace/build /workspace/build/esp-idf/esp_adc /workspace/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/esp_adc /workspace/build /workspace/build/esp-idf/esp_adc /workspace/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/depend
 

@@ -81,6 +81,6 @@ esp-idf/efuse/CMakeFiles/efuse-custom-table.dir/clean:
 .PHONY : esp-idf/efuse/CMakeFiles/efuse-custom-table.dir/clean
 
 esp-idf/efuse/CMakeFiles/efuse-custom-table.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/efuse /workspace/build /workspace/build/esp-idf/efuse /workspace/build/esp-idf/efuse/CMakeFiles/efuse-custom-table.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/efuse /workspace/build /workspace/build/esp-idf/efuse /workspace/build/esp-idf/efuse/CMakeFiles/efuse-custom-table.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/efuse/CMakeFiles/efuse-custom-table.dir/depend
 

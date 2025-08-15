@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -67,7 +67,7 @@ include CMakeFiles/monitor.dir/compiler_depend.make
 include CMakeFiles/monitor.dir/progress.make
 
 CMakeFiles/monitor:
-	cd /workspace/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/workspace/esp-idf -D "SERIAL_TOOL=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;-m;esp_idf_monitor" -D "SERIAL_TOOL_ARGS=--toolchain-prefix;xtensa-esp32s3-elf-;;--target;esp32s3;;--revision;0;;/workspace/build/bootloader/bootloader.elf" -D WORKING_DIRECTORY=/workspace/build/bootloader -P run_serial_tool.cmake
+	cd /tmp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/tmp/esp-idf -D "SERIAL_TOOL=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;-m;esp_idf_monitor" -D "SERIAL_TOOL_ARGS=--toolchain-prefix;xtensa-esp32s3-elf-;;--target;esp32s3;;--revision;0;;/workspace/build/bootloader/bootloader.elf" -D WORKING_DIRECTORY=/workspace/build/bootloader -P run_serial_tool.cmake
 
 CMakeFiles/monitor.dir/codegen:
 .PHONY : CMakeFiles/monitor.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/monitor.dir/clean:
 .PHONY : CMakeFiles/monitor.dir/clean
 
 CMakeFiles/monitor.dir/depend:
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/monitor.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/monitor.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/monitor.dir/depend
 

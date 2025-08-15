@@ -1,5 +1,5 @@
 esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj: \
- /workspace/esp-idf/components/heap/port/memory_layout_utils.c \
+ /tmp/esp-idf/components/heap/port/memory_layout_utils.c \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
@@ -12,16 +12,16 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/lock.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
  /workspace/build/config/sdkconfig.h \
- /workspace/esp-idf/components/newlib/platform_include/assert.h \
+ /tmp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
@@ -30,25 +30,25 @@ esp-idf/heap/CMakeFiles/__idf_heap.dir/port/memory_layout_utils.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/log/include/esp_log.h \
+ /tmp/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
- /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
- /workspace/esp-idf/components/log/include/esp_log_level.h \
- /workspace/esp-idf/components/log/include/esp_log_color.h \
- /workspace/esp-idf/components/log/include/esp_log_buffer.h \
- /workspace/esp-idf/components/log/include/esp_log_timestamp.h \
- /workspace/esp-idf/components/heap/include/soc/soc_memory_layout.h \
- /workspace/esp-idf/components/heap/include/heap_memory_layout.h \
+ /tmp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
+ /tmp/esp-idf/components/log/include/esp_log_level.h \
+ /tmp/esp-idf/components/log/include/esp_log_color.h \
+ /tmp/esp-idf/components/log/include/esp_log_buffer.h \
+ /tmp/esp-idf/components/log/include/esp_log_timestamp.h \
+ /tmp/esp-idf/components/heap/include/soc/soc_memory_layout.h \
+ /tmp/esp-idf/components/heap/include/heap_memory_layout.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
- /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
- /workspace/esp-idf/components/esp_common/include/esp_attr.h \
- /workspace/esp-idf/components/esp_rom/esp32s3/esp_rom_caps.h \
- /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/rom_layout.h
+ /tmp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /tmp/esp-idf/components/esp_common/include/esp_assert.h \
+ /tmp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /tmp/esp-idf/components/esp_common/include/esp_attr.h \
+ /tmp/esp-idf/components/esp_rom/esp32s3/esp_rom_caps.h \
+ /tmp/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/rom_layout.h

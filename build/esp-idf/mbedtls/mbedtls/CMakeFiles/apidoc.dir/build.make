@@ -67,7 +67,7 @@ include esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/compiler_depend.make
 include esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/progress.make
 
 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc:
-	cd /workspace/esp-idf/components/mbedtls/mbedtls/doxygen && doxygen mbedtls.doxyfile
+	cd /tmp/esp-idf/components/mbedtls/mbedtls/doxygen && doxygen mbedtls.doxyfile
 
 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/codegen:
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/codegen
@@ -85,6 +85,6 @@ esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/clean:
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/clean
 
 esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/mbedtls/mbedtls /workspace/build /workspace/build/esp-idf/mbedtls/mbedtls /workspace/build/esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/mbedtls/mbedtls /workspace/build /workspace/build/esp-idf/mbedtls/mbedtls /workspace/build/esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/mbedtls/mbedtls/CMakeFiles/apidoc.dir/depend
 

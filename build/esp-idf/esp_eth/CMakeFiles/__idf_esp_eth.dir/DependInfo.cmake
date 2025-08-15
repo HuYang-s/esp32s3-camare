@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/esp-idf/components/esp_eth/src/esp_eth.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/esp_eth_netif_glue.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj.d"
-  "/workspace/esp-idf/components/esp_eth/src/phy/esp_eth_phy_802_3.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj.d"
+  "/tmp/esp-idf/components/esp_eth/src/esp_eth.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth.c.obj.d"
+  "/tmp/esp-idf/components/esp_eth/src/esp_eth_netif_glue.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/esp_eth_netif_glue.c.obj.d"
+  "/tmp/esp-idf/components/esp_eth/src/phy/esp_eth_phy_802_3.c" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj" "gcc" "esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy/esp_eth_phy_802_3.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

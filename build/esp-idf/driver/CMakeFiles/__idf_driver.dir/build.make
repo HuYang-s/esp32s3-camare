@@ -73,186 +73,186 @@ esp-idf/driver/CMakeFiles/__idf_driver.dir/codegen:
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/codegen
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/adc_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/adc_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/adc_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/adc_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/adc_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/adc_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/adc_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/adc_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/adc_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/adc_dma_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/adc_dma_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/adc_dma_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/adc_dma_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/adc_dma_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/adc_dma_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/adc_dma_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/adc_dma_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/adc_dma_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/timer_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/timer_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/timer_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/timer_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/timer_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/timer_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/timer_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/timer_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/timer_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj: /workspace/esp-idf/components/driver/i2c/i2c.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj: /tmp/esp-idf/components/driver/i2c/i2c.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj -MF CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj.d -o CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj -c /workspace/esp-idf/components/driver/i2c/i2c.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj -MF CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj.d -o CMakeFiles/__idf_driver.dir/i2c/i2c.c.obj -c /tmp/esp-idf/components/driver/i2c/i2c.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/i2c/i2c.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/i2c/i2c.c > CMakeFiles/__idf_driver.dir/i2c/i2c.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/i2c/i2c.c > CMakeFiles/__idf_driver.dir/i2c/i2c.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c/i2c.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/i2c/i2c.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/i2c/i2c.c -o CMakeFiles/__idf_driver.dir/i2c/i2c.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/i2c/i2c.c -o CMakeFiles/__idf_driver.dir/i2c/i2c.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/i2s_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/i2s_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/i2s_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/i2s_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/i2s_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/i2s_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/i2s_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/i2s_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/i2s_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/mcpwm_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/mcpwm_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/mcpwm_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/mcpwm_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/mcpwm_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/mcpwm_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/mcpwm_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/mcpwm_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/mcpwm_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/pcnt_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/pcnt_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/pcnt_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/pcnt_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/pcnt_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/pcnt_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/pcnt_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/pcnt_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/pcnt_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/rmt_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/rmt_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/rmt_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/rmt_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/rmt_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/rmt_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/rmt_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/rmt_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/rmt_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/sigma_delta_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/sigma_delta_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/sigma_delta_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/sigma_delta_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/sigma_delta_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/sigma_delta_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/sigma_delta_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/sigma_delta_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/sigma_delta_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj: /workspace/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj: /tmp/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj -c /workspace/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj -MF CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj.d -o CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.obj -c /tmp/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c > CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/deprecated/rtc_temperature_legacy.c -o CMakeFiles/__idf_driver.dir/deprecated/rtc_temperature_legacy.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj: /workspace/esp-idf/components/driver/touch_sensor/touch_sensor_common.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj: /tmp/esp-idf/components/driver/touch_sensor/touch_sensor_common.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj -MF CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj.d -o CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj -c /workspace/esp-idf/components/driver/touch_sensor/touch_sensor_common.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj -MF CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj.d -o CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.obj -c /tmp/esp-idf/components/driver/touch_sensor/touch_sensor_common.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/touch_sensor/touch_sensor_common.c > CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/touch_sensor/touch_sensor_common.c > CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/touch_sensor/touch_sensor_common.c -o CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/touch_sensor/touch_sensor_common.c -o CMakeFiles/__idf_driver.dir/touch_sensor/touch_sensor_common.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj: /workspace/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj: /tmp/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj -MF CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj.d -o CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj -c /workspace/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj -MF CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj.d -o CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.obj -c /tmp/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c > CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c > CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c -o CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/touch_sensor/esp32s3/touch_sensor.c -o CMakeFiles/__idf_driver.dir/touch_sensor/esp32s3/touch_sensor.c.s
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/flags.make
-esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj: /workspace/esp-idf/components/driver/twai/twai.c
+esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj: /tmp/esp-idf/components/driver/twai/twai.c
 esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj: esp-idf/driver/CMakeFiles/__idf_driver.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj -MF CMakeFiles/__idf_driver.dir/twai/twai.c.obj.d -o CMakeFiles/__idf_driver.dir/twai/twai.c.obj -c /workspace/esp-idf/components/driver/twai/twai.c
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.obj -MF CMakeFiles/__idf_driver.dir/twai/twai.c.obj.d -o CMakeFiles/__idf_driver.dir/twai/twai.c.obj -c /tmp/esp-idf/components/driver/twai/twai.c
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_driver.dir/twai/twai.c.i"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/driver/twai/twai.c > CMakeFiles/__idf_driver.dir/twai/twai.c.i
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/driver/twai/twai.c > CMakeFiles/__idf_driver.dir/twai/twai.c.i
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/twai/twai.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_driver.dir/twai/twai.c.s"
-	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/driver/twai/twai.c -o CMakeFiles/__idf_driver.dir/twai/twai.c.s
+	cd /workspace/build/esp-idf/driver && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/driver/twai/twai.c -o CMakeFiles/__idf_driver.dir/twai/twai.c.s
 
 # Object files for target __idf_driver
 __idf_driver_OBJECTS = \
@@ -301,6 +301,6 @@ esp-idf/driver/CMakeFiles/__idf_driver.dir/clean:
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/clean
 
 esp-idf/driver/CMakeFiles/__idf_driver.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/driver /workspace/build /workspace/build/esp-idf/driver /workspace/build/esp-idf/driver/CMakeFiles/__idf_driver.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/driver /workspace/build /workspace/build/esp-idf/driver /workspace/build/esp-idf/driver/CMakeFiles/__idf_driver.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/driver/CMakeFiles/__idf_driver.dir/depend
 

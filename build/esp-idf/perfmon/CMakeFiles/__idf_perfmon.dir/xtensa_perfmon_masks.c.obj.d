@@ -1,6 +1,6 @@
 esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_masks.c.obj: \
- /workspace/esp-idf/components/perfmon/xtensa_perfmon_masks.c \
- /workspace/esp-idf/components/perfmon/include/xtensa_perfmon_masks.h \
+ /tmp/esp-idf/components/perfmon/xtensa_perfmon_masks.c \
+ /tmp/esp-idf/components/perfmon/include/xtensa_perfmon_masks.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
@@ -15,10 +15,10 @@ esp-idf/perfmon/CMakeFiles/__idf_perfmon.dir/xtensa_perfmon_masks.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/xt_perf_consts.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h
+ /tmp/esp-idf/components/xtensa/include/xtensa/xt_perf_consts.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/hal.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h

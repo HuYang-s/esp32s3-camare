@@ -69,59 +69,59 @@ include esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/progress.ma
 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld: esp-idf/esp_system/ld/sections.ld
 
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_system/ld/sections.ld.in
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/xtensa/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_gpio/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_pm/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_mm/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/spi_flash/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_system/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_system/app.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_common/common.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_common/soc.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_rom/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/hal/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/log/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/heap/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/soc/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_hw_support/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_hw_support/dma/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_hw_support/ldo/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/freertos/linker_common.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/freertos/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/newlib/newlib.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/newlib/system_libs.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_gptimer/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_ringbuf/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_uart/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/app_trace/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_event/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_pcnt/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_spi/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_mcpwm/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_ana_cmpr/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_dac/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_rmt/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_sdm/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_i2c/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_ledc/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_parlio/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_usb_serial_jtag/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/driver/twai/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_phy/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/vfs/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/lwip/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_netif/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/wpa_supplicant/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_wifi/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_adc/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_driver_isp/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_eth/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_gdbstub/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_psram/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/esp_lcd/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/espcoredump/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/ieee802154/linker.lf
-esp-idf/esp_system/ld/sections.ld: /workspace/esp-idf/components/openthread/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/xtensa/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_gpio/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_pm/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_mm/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/spi_flash/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_system/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_system/app.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_common/common.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_common/soc.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_rom/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/hal/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/log/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/heap/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/soc/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_hw_support/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_hw_support/dma/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_hw_support/ldo/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/freertos/linker_common.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/freertos/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/newlib/newlib.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/newlib/system_libs.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_gptimer/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_ringbuf/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_uart/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/app_trace/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_event/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_pcnt/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_spi/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_mcpwm/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_ana_cmpr/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_dac/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_rmt/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_sdm/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_i2c/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_ledc/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_parlio/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_usb_serial_jtag/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/driver/twai/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_phy/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/vfs/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/lwip/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_netif/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/wpa_supplicant/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_wifi/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_adc/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_driver_isp/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_eth/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_gdbstub/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_psram/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/esp_lcd/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/espcoredump/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/ieee802154/linker.lf
+esp-idf/esp_system/ld/sections.ld: /tmp/esp-idf/components/openthread/linker.lf
 esp-idf/esp_system/ld/sections.ld: esp-idf/xtensa/libxtensa.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_driver_gpio/libesp_driver_gpio.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/esp_pm/libesp_pm.a
@@ -214,17 +214,18 @@ esp-idf/esp_system/ld/sections.ld: esp-idf/wifi_manager/libwifi_manager.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/time_service/libtime_service.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/storage_manager/libstorage_manager.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/motor_driver/libmotor_driver.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/navigation_service/libnavigation_service.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/ai_service/libai_service.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/web_server/libweb_server.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/main/libmain.a
 esp-idf/esp_system/ld/sections.ld: /workspace/sdkconfig
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ld/sections.ld"
-	cd /workspace/build/esp-idf/esp_system && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/tools/ldgen/ldgen.py --config /workspace/sdkconfig --fragments-list "/workspace/esp-idf/components/xtensa/linker.lf;/workspace/esp-idf/components/esp_driver_gpio/linker.lf;/workspace/esp-idf/components/esp_pm/linker.lf;/workspace/esp-idf/components/esp_mm/linker.lf;/workspace/esp-idf/components/spi_flash/linker.lf;/workspace/esp-idf/components/esp_system/linker.lf;/workspace/esp-idf/components/esp_system/app.lf;/workspace/esp-idf/components/esp_common/common.lf;/workspace/esp-idf/components/esp_common/soc.lf;/workspace/esp-idf/components/esp_rom/linker.lf;/workspace/esp-idf/components/hal/linker.lf;/workspace/esp-idf/components/log/linker.lf;/workspace/esp-idf/components/heap/linker.lf;/workspace/esp-idf/components/soc/linker.lf;/workspace/esp-idf/components/esp_hw_support/linker.lf;/workspace/esp-idf/components/esp_hw_support/dma/linker.lf;/workspace/esp-idf/components/esp_hw_support/ldo/linker.lf;/workspace/esp-idf/components/freertos/linker_common.lf;/workspace/esp-idf/components/freertos/linker.lf;/workspace/esp-idf/components/newlib/newlib.lf;/workspace/esp-idf/components/newlib/system_libs.lf;/workspace/esp-idf/components/esp_driver_gptimer/linker.lf;/workspace/esp-idf/components/esp_ringbuf/linker.lf;/workspace/esp-idf/components/esp_driver_uart/linker.lf;/workspace/esp-idf/components/app_trace/linker.lf;/workspace/esp-idf/components/esp_event/linker.lf;/workspace/esp-idf/components/esp_driver_pcnt/linker.lf;/workspace/esp-idf/components/esp_driver_spi/linker.lf;/workspace/esp-idf/components/esp_driver_mcpwm/linker.lf;/workspace/esp-idf/components/esp_driver_ana_cmpr/linker.lf;/workspace/esp-idf/components/esp_driver_dac/linker.lf;/workspace/esp-idf/components/esp_driver_rmt/linker.lf;/workspace/esp-idf/components/esp_driver_sdm/linker.lf;/workspace/esp-idf/components/esp_driver_i2c/linker.lf;/workspace/esp-idf/components/esp_driver_ledc/linker.lf;/workspace/esp-idf/components/esp_driver_parlio/linker.lf;/workspace/esp-idf/components/esp_driver_usb_serial_jtag/linker.lf;/workspace/esp-idf/components/driver/twai/linker.lf;/workspace/esp-idf/components/esp_phy/linker.lf;/workspace/esp-idf/components/vfs/linker.lf;/workspace/esp-idf/components/lwip/linker.lf;/workspace/esp-idf/components/esp_netif/linker.lf;/workspace/esp-idf/components/wpa_supplicant/linker.lf;/workspace/esp-idf/components/esp_wifi/linker.lf;/workspace/esp-idf/components/esp_adc/linker.lf;/workspace/esp-idf/components/esp_driver_isp/linker.lf;/workspace/esp-idf/components/esp_eth/linker.lf;/workspace/esp-idf/components/esp_gdbstub/linker.lf;/workspace/esp-idf/components/esp_psram/linker.lf;/workspace/esp-idf/components/esp_lcd/linker.lf;/workspace/esp-idf/components/espcoredump/linker.lf;/workspace/esp-idf/components/ieee802154/linker.lf;/workspace/esp-idf/components/openthread/linker.lf" --input /workspace/build/esp-idf/esp_system/ld/sections.ld.in --output /workspace/build/esp-idf/esp_system/ld/sections.ld --kconfig /workspace/esp-idf/Kconfig --env-file /workspace/build/config.env --libraries-file /workspace/build/ldgen_libraries --objdump /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump
+	cd /workspace/build/esp-idf/esp_system && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/ldgen/ldgen.py --config /workspace/sdkconfig --fragments-list "/tmp/esp-idf/components/xtensa/linker.lf;/tmp/esp-idf/components/esp_driver_gpio/linker.lf;/tmp/esp-idf/components/esp_pm/linker.lf;/tmp/esp-idf/components/esp_mm/linker.lf;/tmp/esp-idf/components/spi_flash/linker.lf;/tmp/esp-idf/components/esp_system/linker.lf;/tmp/esp-idf/components/esp_system/app.lf;/tmp/esp-idf/components/esp_common/common.lf;/tmp/esp-idf/components/esp_common/soc.lf;/tmp/esp-idf/components/esp_rom/linker.lf;/tmp/esp-idf/components/hal/linker.lf;/tmp/esp-idf/components/log/linker.lf;/tmp/esp-idf/components/heap/linker.lf;/tmp/esp-idf/components/soc/linker.lf;/tmp/esp-idf/components/esp_hw_support/linker.lf;/tmp/esp-idf/components/esp_hw_support/dma/linker.lf;/tmp/esp-idf/components/esp_hw_support/ldo/linker.lf;/tmp/esp-idf/components/freertos/linker_common.lf;/tmp/esp-idf/components/freertos/linker.lf;/tmp/esp-idf/components/newlib/newlib.lf;/tmp/esp-idf/components/newlib/system_libs.lf;/tmp/esp-idf/components/esp_driver_gptimer/linker.lf;/tmp/esp-idf/components/esp_ringbuf/linker.lf;/tmp/esp-idf/components/esp_driver_uart/linker.lf;/tmp/esp-idf/components/app_trace/linker.lf;/tmp/esp-idf/components/esp_event/linker.lf;/tmp/esp-idf/components/esp_driver_pcnt/linker.lf;/tmp/esp-idf/components/esp_driver_spi/linker.lf;/tmp/esp-idf/components/esp_driver_mcpwm/linker.lf;/tmp/esp-idf/components/esp_driver_ana_cmpr/linker.lf;/tmp/esp-idf/components/esp_driver_dac/linker.lf;/tmp/esp-idf/components/esp_driver_rmt/linker.lf;/tmp/esp-idf/components/esp_driver_sdm/linker.lf;/tmp/esp-idf/components/esp_driver_i2c/linker.lf;/tmp/esp-idf/components/esp_driver_ledc/linker.lf;/tmp/esp-idf/components/esp_driver_parlio/linker.lf;/tmp/esp-idf/components/esp_driver_usb_serial_jtag/linker.lf;/tmp/esp-idf/components/driver/twai/linker.lf;/tmp/esp-idf/components/esp_phy/linker.lf;/tmp/esp-idf/components/vfs/linker.lf;/tmp/esp-idf/components/lwip/linker.lf;/tmp/esp-idf/components/esp_netif/linker.lf;/tmp/esp-idf/components/wpa_supplicant/linker.lf;/tmp/esp-idf/components/esp_wifi/linker.lf;/tmp/esp-idf/components/esp_adc/linker.lf;/tmp/esp-idf/components/esp_driver_isp/linker.lf;/tmp/esp-idf/components/esp_eth/linker.lf;/tmp/esp-idf/components/esp_gdbstub/linker.lf;/tmp/esp-idf/components/esp_psram/linker.lf;/tmp/esp-idf/components/esp_lcd/linker.lf;/tmp/esp-idf/components/espcoredump/linker.lf;/tmp/esp-idf/components/ieee802154/linker.lf;/tmp/esp-idf/components/openthread/linker.lf" --input /workspace/build/esp-idf/esp_system/ld/sections.ld.in --output /workspace/build/esp-idf/esp_system/ld/sections.ld --kconfig /tmp/esp-idf/Kconfig --env-file /workspace/build/config.env --libraries-file /workspace/build/ldgen_libraries --objdump /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-objdump
 
-esp-idf/esp_system/ld/sections.ld.in: /workspace/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
+esp-idf/esp_system/ld/sections.ld.in: /tmp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in
 esp-idf/esp_system/ld/sections.ld.in: config/sdkconfig.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating /workspace/build/esp-idf/esp_system/ld/sections.ld.in linker script..."
-	cd /workspace/build/esp-idf/esp_system && /usr/bin/cmake -DCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DSOURCE=/workspace/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in -DTARGET=/workspace/build/esp-idf/esp_system/ld/sections.ld.in -DCONFIG_DIR=/workspace/build/config -DLD_DIR=/workspace/esp-idf/components/esp_system/ld -P /workspace/build/esp-idf/esp_system/ld/linker_script_generator.cmake
+	cd /workspace/build/esp-idf/esp_system && /usr/bin/cmake -DCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DSOURCE=/tmp/esp-idf/components/esp_system/ld/esp32s3/sections.ld.in -DTARGET=/workspace/build/esp-idf/esp_system/ld/sections.ld.in -DCONFIG_DIR=/workspace/build/config -DLD_DIR=/tmp/esp-idf/components/esp_system/ld -P /workspace/build/esp-idf/esp_system/ld/linker_script_generator.cmake
 
 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/codegen:
 .PHONY : esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/codegen
@@ -244,6 +245,6 @@ esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/clean:
 .PHONY : esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/clean
 
 esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/esp_system /workspace/build /workspace/build/esp-idf/esp_system /workspace/build/esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/esp_system /workspace/build /workspace/build/esp-idf/esp_system /workspace/build/esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_system/CMakeFiles/__ldgen_output_sections.ld.dir/depend
 

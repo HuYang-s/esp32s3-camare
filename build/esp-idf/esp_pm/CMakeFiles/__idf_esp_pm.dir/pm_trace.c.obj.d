@@ -1,9 +1,9 @@
 esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj: \
- /workspace/esp-idf/components/esp_pm/pm_trace.c \
- /workspace/esp-idf/components/esp_common/include/esp_attr.h \
+ /tmp/esp-idf/components/esp_pm/pm_trace.c \
+ /tmp/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/build/config/sdkconfig.h \
- /workspace/esp-idf/components/esp_pm/include/esp_private/pm_trace.h \
- /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
+ /tmp/esp-idf/components/esp_pm/include/esp_private/pm_trace.h \
+ /tmp/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
@@ -15,14 +15,14 @@ esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/lock.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
- /workspace/esp-idf/components/newlib/platform_include/assert.h \
+ /tmp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
@@ -34,20 +34,20 @@ esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir/pm_trace.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/esp_common/include/esp_err.h \
- /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
- /workspace/esp-idf/components/hal/include/hal/gpio_types.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
- /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_etm.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
- /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/gpio_reg.h
+ /tmp/esp-idf/components/esp_common/include/esp_err.h \
+ /tmp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /tmp/esp-idf/components/hal/include/hal/gpio_types.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
+ /tmp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /tmp/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
+ /tmp/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_etm.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /tmp/esp-idf/components/esp_common/include/esp_assert.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/gpio_reg.h

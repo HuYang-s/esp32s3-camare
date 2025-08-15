@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/esp-idf/components/usb/enum.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj.d"
-  "/workspace/esp-idf/components/usb/hcd_dwc.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj.d"
-  "/workspace/esp-idf/components/usb/hub.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj.d"
-  "/workspace/esp-idf/components/usb/usb_helpers.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj.d"
-  "/workspace/esp-idf/components/usb/usb_host.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj.d"
-  "/workspace/esp-idf/components/usb/usb_phy.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj.d"
-  "/workspace/esp-idf/components/usb/usb_private.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj.d"
-  "/workspace/esp-idf/components/usb/usbh.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj.d"
+  "/tmp/esp-idf/components/usb/enum.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj.d"
+  "/tmp/esp-idf/components/usb/hcd_dwc.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj.d"
+  "/tmp/esp-idf/components/usb/hub.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj.d"
+  "/tmp/esp-idf/components/usb/usb_helpers.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj.d"
+  "/tmp/esp-idf/components/usb/usb_host.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj.d"
+  "/tmp/esp-idf/components/usb/usb_phy.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj.d"
+  "/tmp/esp-idf/components/usb/usb_private.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj.d"
+  "/tmp/esp-idf/components/usb/usbh.c" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj" "gcc" "esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

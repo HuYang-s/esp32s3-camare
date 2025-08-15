@@ -69,7 +69,7 @@ include esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/progress.ma
 esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash:
 	cd /workspace/build/esp-idf/bootloader && /usr/bin/cmake -E echo "Error: The target encrypted-bootloader-flash requires"
 	cd /workspace/build/esp-idf/bootloader && /usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
-	cd /workspace/build/esp-idf/bootloader && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /workspace/esp-idf/tools/cmake/scripts/fail.cmake
+	cd /workspace/build/esp-idf/bootloader && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /tmp/esp-idf/tools/cmake/scripts/fail.cmake
 
 esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/codegen:
 .PHONY : esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/codegen
@@ -87,6 +87,6 @@ esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/clean:
 .PHONY : esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/clean
 
 esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/bootloader /workspace/build /workspace/build/esp-idf/bootloader /workspace/build/esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/bootloader /workspace/build /workspace/build/esp-idf/bootloader /workspace/build/esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/bootloader/CMakeFiles/encrypted-bootloader-flash.dir/depend
 

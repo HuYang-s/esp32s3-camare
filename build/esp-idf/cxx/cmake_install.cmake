@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/cxx
+# Install script for directory: /tmp/esp-idf/components/cxx
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -70,30 +70,30 @@ include esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/progress.make
 include esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/flags.make
 
 x509_crt_bundle.S: esp-idf/mbedtls/x509_crt_bundle
-x509_crt_bundle.S: /workspace/esp-idf/tools/cmake/scripts/data_file_embed_asm.cmake
+x509_crt_bundle.S: /tmp/esp-idf/tools/cmake/scripts/data_file_embed_asm.cmake
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../../x509_crt_bundle.S"
-	/usr/bin/cmake -D DATA_FILE=/workspace/build/esp-idf/mbedtls/x509_crt_bundle -D SOURCE_FILE=/workspace/build/x509_crt_bundle.S -D FILE_TYPE=BINARY -P /workspace/esp-idf/tools/cmake/scripts/data_file_embed_asm.cmake
+	/usr/bin/cmake -D DATA_FILE=/workspace/build/esp-idf/mbedtls/x509_crt_bundle -D SOURCE_FILE=/workspace/build/x509_crt_bundle.S -D FILE_TYPE=BINARY -P /tmp/esp-idf/tools/cmake/scripts/data_file_embed_asm.cmake
 
 esp-idf/mbedtls/x509_crt_bundle:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating x509_crt_bundle"
-	cd /workspace/build/esp-idf/mbedtls && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/mbedtls/esp_crt_bundle/gen_crt_bundle.py --input /workspace/esp-idf/components/mbedtls/esp_crt_bundle/cacrt_all.pem /workspace/esp-idf/components/mbedtls/esp_crt_bundle/cacrt_local.pem -q --max-certs 200
+	cd /workspace/build/esp-idf/mbedtls && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/components/mbedtls/esp_crt_bundle/gen_crt_bundle.py --input /tmp/esp-idf/components/mbedtls/esp_crt_bundle/cacrt_all.pem /tmp/esp-idf/components/mbedtls/esp_crt_bundle/cacrt_local.pem -q --max-certs 200
 
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/codegen:
 .PHONY : esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/codegen
 
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj: esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/flags.make
-esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj: /workspace/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c
+esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj: /tmp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj: esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj"
-	cd /workspace/build/esp-idf/mbedtls && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj -MF CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj.d -o CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj -c /workspace/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c
+	cd /workspace/build/esp-idf/mbedtls && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj -MF CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj.d -o CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.obj -c /tmp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c
 
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.i"
-	cd /workspace/build/esp-idf/mbedtls && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c > CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.i
+	cd /workspace/build/esp-idf/mbedtls && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c > CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.i
 
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.s"
-	cd /workspace/build/esp-idf/mbedtls && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c -o CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.s
+	cd /workspace/build/esp-idf/mbedtls && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/mbedtls/esp_crt_bundle/esp_crt_bundle.c -o CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle/esp_crt_bundle.c.s
 
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj: esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/flags.make
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__/x509_crt_bundle.S.obj: x509_crt_bundle.S
@@ -134,6 +134,6 @@ esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/clean:
 
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/depend: esp-idf/mbedtls/x509_crt_bundle
 esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/depend: x509_crt_bundle.S
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/mbedtls /workspace/build /workspace/build/esp-idf/mbedtls /workspace/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/mbedtls /workspace/build /workspace/build/esp-idf/mbedtls /workspace/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/depend
 

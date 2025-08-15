@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/esp_driver_usb_serial_jtag
+# Install script for directory: /tmp/esp-idf/components/esp_driver_usb_serial_jtag
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

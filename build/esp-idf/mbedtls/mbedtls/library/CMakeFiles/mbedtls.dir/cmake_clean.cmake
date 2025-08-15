@@ -1,10 +1,4 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/mbedtls.dir/__/__/port/esp_platform_time.c.obj"
-  "CMakeFiles/mbedtls.dir/__/__/port/esp_platform_time.c.obj.d"
-  "CMakeFiles/mbedtls.dir/__/__/port/mbedtls_debug.c.obj"
-  "CMakeFiles/mbedtls.dir/__/__/port/mbedtls_debug.c.obj.d"
-  "CMakeFiles/mbedtls.dir/__/__/port/net_sockets.c.obj"
-  "CMakeFiles/mbedtls.dir/__/__/port/net_sockets.c.obj.d"
   "CMakeFiles/mbedtls.dir/debug.c.obj"
   "CMakeFiles/mbedtls.dir/debug.c.obj.d"
   "CMakeFiles/mbedtls.dir/mps_reader.c.obj"
@@ -39,6 +33,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/mbedtls.dir/ssl_tls13_keys.c.obj.d"
   "CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj"
   "CMakeFiles/mbedtls.dir/ssl_tls13_server.c.obj.d"
+  "CMakeFiles/mbedtls.dir/tmp/esp-idf/components/mbedtls/port/esp_platform_time.c.obj"
+  "CMakeFiles/mbedtls.dir/tmp/esp-idf/components/mbedtls/port/esp_platform_time.c.obj.d"
+  "CMakeFiles/mbedtls.dir/tmp/esp-idf/components/mbedtls/port/mbedtls_debug.c.obj"
+  "CMakeFiles/mbedtls.dir/tmp/esp-idf/components/mbedtls/port/mbedtls_debug.c.obj.d"
+  "CMakeFiles/mbedtls.dir/tmp/esp-idf/components/mbedtls/port/net_sockets.c.obj"
+  "CMakeFiles/mbedtls.dir/tmp/esp-idf/components/mbedtls/port/net_sockets.c.obj.d"
   "libmbedtls.a"
   "libmbedtls.pdb"
 )

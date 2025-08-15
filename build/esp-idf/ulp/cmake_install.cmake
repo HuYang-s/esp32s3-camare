@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/ulp
+# Install script for directory: /tmp/esp-idf/components/ulp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

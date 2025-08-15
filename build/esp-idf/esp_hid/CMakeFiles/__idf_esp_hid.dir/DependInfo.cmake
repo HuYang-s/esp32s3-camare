@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/esp-idf/components/esp_hid/src/esp_hid_common.c" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj" "gcc" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj.d"
-  "/workspace/esp-idf/components/esp_hid/src/esp_hidd.c" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj" "gcc" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj.d"
-  "/workspace/esp-idf/components/esp_hid/src/esp_hidh.c" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj" "gcc" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj.d"
+  "/tmp/esp-idf/components/esp_hid/src/esp_hid_common.c" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj" "gcc" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hid_common.c.obj.d"
+  "/tmp/esp-idf/components/esp_hid/src/esp_hidd.c" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj" "gcc" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidd.c.obj.d"
+  "/tmp/esp-idf/components/esp_hid/src/esp_hidh.c" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj" "gcc" "esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src/esp_hidh.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -67,7 +67,7 @@ include esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/compiler_de
 include esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/progress.make
 
 esp-idf/partition_table/CMakeFiles/partition-table-flash:
-	cd /workspace/esp-idf/components/partition_table && /usr/bin/cmake -D IDF_PATH=/workspace/esp-idf -D "SERIAL_TOOL=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/workspace/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@partition-table-flash_args" -D WORKING_DIRECTORY=/workspace/build -P /workspace/esp-idf/components/esptool_py/run_serial_tool.cmake
+	cd /tmp/esp-idf/components/partition_table && /usr/bin/cmake -D IDF_PATH=/tmp/esp-idf -D "SERIAL_TOOL=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;;/tmp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@partition-table-flash_args" -D WORKING_DIRECTORY=/workspace/build -P /tmp/esp-idf/components/esptool_py/run_serial_tool.cmake
 
 esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/codegen:
 .PHONY : esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/codegen
@@ -85,6 +85,6 @@ esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/clean:
 .PHONY : esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/clean
 
 esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/partition_table /workspace/build /workspace/build/esp-idf/partition_table /workspace/build/esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/partition_table /workspace/build /workspace/build/esp-idf/partition_table /workspace/build/esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/partition_table/CMakeFiles/partition-table-flash.dir/depend
 

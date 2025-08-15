@@ -1,13 +1,13 @@
 esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj: \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/ssl_tls.c \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/common.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
- /workspace/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/ssl_tls.c \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/common.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
+ /tmp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
  /workspace/build/config/sdkconfig.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
- /workspace/esp-idf/components/mbedtls/port/include/esp_mem.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /tmp/esp-idf/components/mbedtls/port/include/esp_mem.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
@@ -16,15 +16,15 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/lock.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
- /workspace/esp-idf/components/newlib/platform_include/assert.h \
+ /tmp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
@@ -34,34 +34,34 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_synonyms.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_dependencies.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_from_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_auto_enabled.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_x509.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_ssl.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_synonyms.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_dependencies.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_from_legacy.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_auto_enabled.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_x509.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_ssl.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/limits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/syslimits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/alignment.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/alignment.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private_access.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
- /workspace/esp-idf/components/newlib/platform_include/time.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private_access.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_time.h \
+ /tmp/esp-idf/components/newlib/platform_include/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/select.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/select.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/select.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_sigset.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timeval.h \
@@ -78,85 +78,85 @@ esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/ssl_tls.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
- /workspace/esp-idf/components/mbedtls/port/include/mbedtls/bignum.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
- /workspace/esp-idf/components/mbedtls/port/include/mbedtls/ecp.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pk.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_platform.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/build_info.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_types.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_values.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_sizes.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_struct.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_primitives.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_common.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_sizes.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_primitives.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md5.h \
- /workspace/esp-idf/components/mbedtls/port/include/md5_alt.h \
- /workspace/esp-idf/components/mbedtls/port/include/md/esp_md.h \
- /workspace/esp-idf/components/esp_rom/include/esp_rom_md5.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ripemd160.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h \
- /workspace/esp-idf/components/mbedtls/port/include/sha1_alt.h \
- /workspace/esp-idf/components/hal/include/hal/sha_types.h \
- /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/sha.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
+ /tmp/esp-idf/components/mbedtls/port/include/mbedtls/bignum.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
+ /tmp/esp-idf/components/mbedtls/port/include/mbedtls/ecp.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecp.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ssl_ciphersuites.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/pk.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/rsa.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdsa.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_platform.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/build_info.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_types.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_values.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_sizes.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_struct.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_primitives.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_common.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_sizes.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_primitives.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md5.h \
+ /tmp/esp-idf/components/mbedtls/port/include/md5_alt.h \
+ /tmp/esp-idf/components/mbedtls/port/include/md/esp_md.h \
+ /tmp/esp-idf/components/esp_rom/include/esp_rom_md5.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ripemd160.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha1.h \
+ /tmp/esp-idf/components/mbedtls/port/include/sha1_alt.h \
+ /tmp/esp-idf/components/hal/include/hal/sha_types.h \
+ /tmp/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/sha.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/ets_sys.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
- /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
- /workspace/esp-idf/components/mbedtls/port/include/sha256_alt.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
- /workspace/esp-idf/components/mbedtls/port/include/sha512_alt.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha3.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_composites.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_composites.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cmac.h \
- /workspace/esp-idf/components/mbedtls/port/include/mbedtls/gcm.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/gcm.h \
- /workspace/esp-idf/components/mbedtls/port/include/gcm_alt.h \
- /workspace/esp-idf/components/mbedtls/port/include/aes/esp_aes_gcm.h \
- /workspace/esp-idf/components/mbedtls/port/include/aes/esp_aes.h \
- /workspace/esp-idf/components/esp_common/include/esp_types.h \
- /workspace/esp-idf/components/hal/include/hal/aes_types.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/chachapoly.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/poly1305.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/chacha20.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecjpake.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_key_derivation.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_key_derivation.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_extra.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_compat.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/ssl_client.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/ssl_misc.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/ssl_ciphersuites_internal.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/x509_internal.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/pk_internal.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/psa_util_internal.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/psa_util.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1write.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/ssl_debug_helpers.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/library/debug_internal.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/debug.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/version.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/constant_time.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h
+ /tmp/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/ets_sys.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /tmp/esp-idf/components/esp_common/include/esp_assert.h \
+ /tmp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha256.h \
+ /tmp/esp-idf/components/mbedtls/port/include/sha256_alt.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
+ /tmp/esp-idf/components/mbedtls/port/include/sha512_alt.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha3.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cipher.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_composites.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_composites.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/cmac.h \
+ /tmp/esp-idf/components/mbedtls/port/include/mbedtls/gcm.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/gcm.h \
+ /tmp/esp-idf/components/mbedtls/port/include/gcm_alt.h \
+ /tmp/esp-idf/components/mbedtls/port/include/aes/esp_aes_gcm.h \
+ /tmp/esp-idf/components/mbedtls/port/include/aes/esp_aes.h \
+ /tmp/esp-idf/components/esp_common/include/esp_types.h \
+ /tmp/esp-idf/components/hal/include/hal/aes_types.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ccm.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/chachapoly.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/poly1305.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/chacha20.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecjpake.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_driver_contexts_key_derivation.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_builtin_key_derivation.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_extra.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_compat.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crt.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/x509_crl.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ecdh.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/ssl_client.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/ssl_misc.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/error.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/ssl_ciphersuites_internal.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/x509_internal.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/pk_internal.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/psa_util_internal.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/psa_util.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/asn1write.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/ssl_debug_helpers.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/library/debug_internal.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/debug.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/version.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/constant_time.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/oid.h

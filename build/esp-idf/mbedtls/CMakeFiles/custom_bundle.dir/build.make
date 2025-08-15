@@ -81,6 +81,6 @@ esp-idf/mbedtls/CMakeFiles/custom_bundle.dir/clean:
 .PHONY : esp-idf/mbedtls/CMakeFiles/custom_bundle.dir/clean
 
 esp-idf/mbedtls/CMakeFiles/custom_bundle.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/mbedtls /workspace/build /workspace/build/esp-idf/mbedtls /workspace/build/esp-idf/mbedtls/CMakeFiles/custom_bundle.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/mbedtls /workspace/build /workspace/build/esp-idf/mbedtls /workspace/build/esp-idf/mbedtls/CMakeFiles/custom_bundle.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/mbedtls/CMakeFiles/custom_bundle.dir/depend
 

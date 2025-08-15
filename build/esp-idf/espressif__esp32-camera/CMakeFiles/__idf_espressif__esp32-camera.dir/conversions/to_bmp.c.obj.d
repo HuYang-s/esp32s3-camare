@@ -8,16 +8,16 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/con
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/lock.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
  /workspace/build/config/sdkconfig.h \
- /workspace/esp-idf/components/newlib/platform_include/assert.h \
+ /tmp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
@@ -33,32 +33,32 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/con
  /workspace/managed_components/espressif__esp32-camera/conversions/include/img_converters.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
  /workspace/managed_components/espressif__esp32-camera/driver/include/esp_camera.h \
- /workspace/esp-idf/components/esp_common/include/esp_err.h \
+ /tmp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
- /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
- /workspace/esp-idf/components/esp_driver_ledc/include/driver/ledc.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
- /workspace/esp-idf/components/hal/include/hal/ledc_types.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
- /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
- /workspace/esp-idf/components/hal/include/hal/gpio_types.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
- /workspace/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_etm.h \
+ /tmp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /tmp/esp-idf/components/esp_driver_ledc/include/driver/ledc.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
+ /tmp/esp-idf/components/hal/include/hal/ledc_types.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
+ /tmp/esp-idf/components/esp_driver_gpio/include/driver/gpio.h \
+ /tmp/esp-idf/components/hal/include/hal/gpio_types.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
+ /tmp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /tmp/esp-idf/components/esp_rom/include/esp_rom_gpio.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
+ /tmp/esp-idf/components/esp_driver_gpio/include/driver/gpio_etm.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_etm.h \
  /workspace/managed_components/espressif__esp32-camera/driver/include/sensor.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/time.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/select.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/select.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/select.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_sigset.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_timeval.h \
@@ -68,29 +68,29 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/con
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/sched.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/time.h \
- /workspace/esp-idf/components/newlib/platform_include/time.h \
+ /tmp/esp-idf/components/newlib/platform_include/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/signal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/signal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h \
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/efuse_reg.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
- /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/efuse_defs.h \
- /workspace/esp-idf/components/heap/include/esp_heap_caps.h \
- /workspace/esp-idf/components/heap/include/multi_heap.h \
- /workspace/esp-idf/components/esp_common/include/esp_attr.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/efuse_reg.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /tmp/esp-idf/components/esp_common/include/esp_assert.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/efuse_defs.h \
+ /tmp/esp-idf/components/heap/include/esp_heap_caps.h \
+ /tmp/esp-idf/components/heap/include/multi_heap.h \
+ /tmp/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/managed_components/espressif__esp32-camera/conversions/private_include/yuv.h \
- /workspace/esp-idf/components/esp_system/include/esp_system.h \
- /workspace/esp-idf/components/esp_common/include/esp_idf_version.h \
- /workspace/esp-idf/components/log/include/esp_log.h \
+ /tmp/esp-idf/components/esp_system/include/esp_system.h \
+ /tmp/esp-idf/components/esp_common/include/esp_idf_version.h \
+ /tmp/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
- /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
- /workspace/esp-idf/components/log/include/esp_log_level.h \
- /workspace/esp-idf/components/log/include/esp_log_color.h \
- /workspace/esp-idf/components/log/include/esp_log_buffer.h \
- /workspace/esp-idf/components/log/include/esp_log_timestamp.h
+ /tmp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
+ /tmp/esp-idf/components/log/include/esp_log_level.h \
+ /tmp/esp-idf/components/log/include/esp_log_color.h \
+ /tmp/esp-idf/components/log/include/esp_log_buffer.h \
+ /tmp/esp-idf/components/log/include/esp_log_timestamp.h

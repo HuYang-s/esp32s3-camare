@@ -1,5 +1,5 @@
 esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj: \
- /workspace/esp-idf/components/fatfs/diskio/diskio_rawflash.c \
+ /tmp/esp-idf/components/fatfs/diskio/diskio_rawflash.c \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
@@ -7,17 +7,17 @@ esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/lock.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
  /workspace/build/config/sdkconfig.h \
- /workspace/esp-idf/components/newlib/platform_include/assert.h \
+ /tmp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
@@ -30,94 +30,94 @@ esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio/diskio_rawflash.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/fatfs/diskio/diskio_impl.h \
- /workspace/esp-idf/components/fatfs/src/diskio.h \
- /workspace/esp-idf/components/fatfs/src/ff.h \
- /workspace/esp-idf/components/fatfs/src/ffconf.h \
+ /tmp/esp-idf/components/fatfs/diskio/diskio_impl.h \
+ /tmp/esp-idf/components/fatfs/src/diskio.h \
+ /tmp/esp-idf/components/fatfs/src/ff.h \
+ /tmp/esp-idf/components/fatfs/src/ffconf.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/param.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/param.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
- /workspace/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
- /workspace/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
- /workspace/esp-idf/components/xtensa/include/xtensa_config.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/hal.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
- /workspace/esp-idf/components/xtensa/include/xtensa_context.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/corebits.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h \
+ /tmp/esp-idf/components/freertos/config/include/freertos/FreeRTOSConfig.h \
+ /tmp/esp-idf/components/freertos/config/xtensa/include/freertos/FreeRTOSConfig_arch.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa_config.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/hal.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/xtensa-versions.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa_context.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/corebits.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/xtruntime-frames.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/projdefs.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
- /workspace/esp-idf/components/xtensa/include/xt_instr_macros.h \
- /workspace/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
- /workspace/esp-idf/components/esp_hw_support/include/spinlock.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_cpu.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
- /workspace/esp-idf/components/xtensa/include/xtensa_api.h \
- /workspace/esp-idf/components/xtensa/include/xt_utils.h \
- /workspace/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/esp_common/include/esp_attr.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
+ /tmp/esp-idf/components/xtensa/include/xt_instr_macros.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
+ /tmp/esp-idf/components/esp_hw_support/include/spinlock.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_cpu.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /tmp/esp-idf/components/xtensa/include/xtensa_api.h \
+ /tmp/esp-idf/components/xtensa/include/xt_utils.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/extreg.h \
+ /tmp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /tmp/esp-idf/components/esp_common/include/esp_attr.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
- /workspace/esp-idf/components/esp_common/include/esp_err.h \
- /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
- /workspace/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
- /workspace/esp-idf/components/esp_common/include/esp_macros.h \
- /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
- /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
- /workspace/esp-idf/components/newlib/platform_include/esp_newlib.h \
- /workspace/esp-idf/components/heap/include/esp_heap_caps.h \
- /workspace/esp-idf/components/heap/include/multi_heap.h \
- /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
+ /tmp/esp-idf/components/esp_common/include/esp_err.h \
+ /tmp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
+ /tmp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
+ /tmp/esp-idf/components/esp_common/include/esp_macros.h \
+ /tmp/esp-idf/components/esp_common/include/esp_assert.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /tmp/esp-idf/components/esp_common/include/esp_assert.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /tmp/esp-idf/components/newlib/platform_include/esp_newlib.h \
+ /tmp/esp-idf/components/heap/include/esp_heap_caps.h \
+ /tmp/esp-idf/components/heap/include/multi_heap.h \
+ /tmp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
- /workspace/esp-idf/components/esp_system/include/esp_system.h \
- /workspace/esp-idf/components/esp_common/include/esp_idf_version.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
+ /tmp/esp-idf/components/esp_system/include/esp_system.h \
+ /tmp/esp-idf/components/esp_common/include/esp_idf_version.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/limits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/syslimits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/reent.h \
- /workspace/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/message_buffer.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
- /workspace/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
- /workspace/esp-idf/components/fatfs/src/ffconf.h \
- /workspace/esp-idf/components/fatfs/src/ff.h \
- /workspace/esp-idf/components/log/include/esp_log.h \
- /workspace/esp-idf/components/log/include/esp_log_level.h \
- /workspace/esp-idf/components/log/include/esp_log_color.h \
- /workspace/esp-idf/components/log/include/esp_log_buffer.h \
- /workspace/esp-idf/components/log/include/esp_log_timestamp.h \
- /workspace/esp-idf/components/fatfs/diskio/diskio_rawflash.h \
- /workspace/esp-idf/components/esp_partition/include/esp_partition.h
+ /tmp/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/semphr.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/queue.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/message_buffer.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/stream_buffer.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/event_groups.h \
+ /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
+ /tmp/esp-idf/components/fatfs/src/ffconf.h \
+ /tmp/esp-idf/components/fatfs/src/ff.h \
+ /tmp/esp-idf/components/log/include/esp_log.h \
+ /tmp/esp-idf/components/log/include/esp_log_level.h \
+ /tmp/esp-idf/components/log/include/esp_log_color.h \
+ /tmp/esp-idf/components/log/include/esp_log_buffer.h \
+ /tmp/esp-idf/components/log/include/esp_log_timestamp.h \
+ /tmp/esp-idf/components/fatfs/diskio/diskio_rawflash.h \
+ /tmp/esp-idf/components/esp_partition/include/esp_partition.h

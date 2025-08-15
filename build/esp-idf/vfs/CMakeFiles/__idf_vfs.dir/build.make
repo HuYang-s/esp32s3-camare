@@ -73,60 +73,60 @@ esp-idf/vfs/CMakeFiles/__idf_vfs.dir/codegen:
 .PHONY : esp-idf/vfs/CMakeFiles/__idf_vfs.dir/codegen
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj: esp-idf/vfs/CMakeFiles/__idf_vfs.dir/flags.make
-esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj: /workspace/esp-idf/components/vfs/vfs.c
+esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj: /tmp/esp-idf/components/vfs/vfs.c
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj: esp-idf/vfs/CMakeFiles/__idf_vfs.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj -MF CMakeFiles/__idf_vfs.dir/vfs.c.obj.d -o CMakeFiles/__idf_vfs.dir/vfs.c.obj -c /workspace/esp-idf/components/vfs/vfs.c
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.obj -MF CMakeFiles/__idf_vfs.dir/vfs.c.obj.d -o CMakeFiles/__idf_vfs.dir/vfs.c.obj -c /tmp/esp-idf/components/vfs/vfs.c
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_vfs.dir/vfs.c.i"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/vfs/vfs.c > CMakeFiles/__idf_vfs.dir/vfs.c.i
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/vfs/vfs.c > CMakeFiles/__idf_vfs.dir/vfs.c.i
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_vfs.dir/vfs.c.s"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/vfs/vfs.c -o CMakeFiles/__idf_vfs.dir/vfs.c.s
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/vfs/vfs.c -o CMakeFiles/__idf_vfs.dir/vfs.c.s
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj: esp-idf/vfs/CMakeFiles/__idf_vfs.dir/flags.make
-esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj: /workspace/esp-idf/components/vfs/vfs_eventfd.c
+esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj: /tmp/esp-idf/components/vfs/vfs_eventfd.c
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj: esp-idf/vfs/CMakeFiles/__idf_vfs.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj -MF CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj.d -o CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj -c /workspace/esp-idf/components/vfs/vfs_eventfd.c
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj -MF CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj.d -o CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.obj -c /tmp/esp-idf/components/vfs/vfs_eventfd.c
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.i"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/vfs/vfs_eventfd.c > CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.i
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/vfs/vfs_eventfd.c > CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.i
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.s"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/vfs/vfs_eventfd.c -o CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.s
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/vfs/vfs_eventfd.c -o CMakeFiles/__idf_vfs.dir/vfs_eventfd.c.s
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj: esp-idf/vfs/CMakeFiles/__idf_vfs.dir/flags.make
-esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj: /workspace/esp-idf/components/vfs/vfs_semihost.c
+esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj: /tmp/esp-idf/components/vfs/vfs_semihost.c
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj: esp-idf/vfs/CMakeFiles/__idf_vfs.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj -MF CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj.d -o CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj -c /workspace/esp-idf/components/vfs/vfs_semihost.c
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj -MF CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj.d -o CMakeFiles/__idf_vfs.dir/vfs_semihost.c.obj -c /tmp/esp-idf/components/vfs/vfs_semihost.c
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_vfs.dir/vfs_semihost.c.i"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/vfs/vfs_semihost.c > CMakeFiles/__idf_vfs.dir/vfs_semihost.c.i
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/vfs/vfs_semihost.c > CMakeFiles/__idf_vfs.dir/vfs_semihost.c.i
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/vfs_semihost.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_vfs.dir/vfs_semihost.c.s"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/vfs/vfs_semihost.c -o CMakeFiles/__idf_vfs.dir/vfs_semihost.c.s
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/vfs/vfs_semihost.c -o CMakeFiles/__idf_vfs.dir/vfs_semihost.c.s
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.obj: esp-idf/vfs/CMakeFiles/__idf_vfs.dir/flags.make
-esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.obj: /workspace/esp-idf/components/vfs/nullfs.c
+esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.obj: /tmp/esp-idf/components/vfs/nullfs.c
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.obj: esp-idf/vfs/CMakeFiles/__idf_vfs.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.obj"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.obj -MF CMakeFiles/__idf_vfs.dir/nullfs.c.obj.d -o CMakeFiles/__idf_vfs.dir/nullfs.c.obj -c /workspace/esp-idf/components/vfs/nullfs.c
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.obj -MF CMakeFiles/__idf_vfs.dir/nullfs.c.obj.d -o CMakeFiles/__idf_vfs.dir/nullfs.c.obj -c /tmp/esp-idf/components/vfs/nullfs.c
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_vfs.dir/nullfs.c.i"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/vfs/nullfs.c > CMakeFiles/__idf_vfs.dir/nullfs.c.i
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/vfs/nullfs.c > CMakeFiles/__idf_vfs.dir/nullfs.c.i
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/nullfs.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_vfs.dir/nullfs.c.s"
-	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/vfs/nullfs.c -o CMakeFiles/__idf_vfs.dir/nullfs.c.s
+	cd /workspace/build/esp-idf/vfs && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/vfs/nullfs.c -o CMakeFiles/__idf_vfs.dir/nullfs.c.s
 
 # Object files for target __idf_vfs
 __idf_vfs_OBJECTS = \
@@ -157,6 +157,6 @@ esp-idf/vfs/CMakeFiles/__idf_vfs.dir/clean:
 .PHONY : esp-idf/vfs/CMakeFiles/__idf_vfs.dir/clean
 
 esp-idf/vfs/CMakeFiles/__idf_vfs.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/vfs /workspace/build /workspace/build/esp-idf/vfs /workspace/build/esp-idf/vfs/CMakeFiles/__idf_vfs.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/vfs /workspace/build /workspace/build/esp-idf/vfs /workspace/build/esp-idf/vfs/CMakeFiles/__idf_vfs.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/vfs/CMakeFiles/__idf_vfs.dir/depend
 

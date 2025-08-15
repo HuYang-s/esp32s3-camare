@@ -67,11 +67,11 @@ include CMakeFiles/menuconfig.dir/compiler_depend.make
 include CMakeFiles/menuconfig.dir/progress.make
 
 CMakeFiles/menuconfig:
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/config.env
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /workspace/esp-idf/Kconfig --sdkconfig-rename /workspace/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --dont-write-deprecated --output config /workspace/sdkconfig
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/tools/check_term.py
-	/usr/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/workspace/build/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/workspace/build/kconfigs_projbuild.in KCONFIG_CONFIG=/workspace/sdkconfig IDF_TARGET=esp32s3 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.4.0 /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m menuconfig /workspace/esp-idf/Kconfig
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /workspace/esp-idf/Kconfig --sdkconfig-rename /workspace/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --output config /workspace/sdkconfig
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/config.env
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --dont-write-deprecated --output config /workspace/sdkconfig
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/check_term.py
+	/usr/bin/cmake -E env COMPONENT_KCONFIGS_SOURCE_FILE=/workspace/build/kconfigs.in COMPONENT_KCONFIGS_PROJBUILD_SOURCE_FILE=/workspace/build/kconfigs_projbuild.in KCONFIG_CONFIG=/workspace/sdkconfig IDF_TARGET=esp32s3 IDF_TOOLCHAIN=gcc IDF_ENV_FPGA= IDF_INIT_VERSION=5.4.0 /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m menuconfig /tmp/esp-idf/Kconfig
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/config.env --env IDF_TARGET=esp32s3 --env IDF_TOOLCHAIN=gcc --env IDF_ENV_FPGA= --env IDF_INIT_VERSION=5.4.0 --output config /workspace/sdkconfig
 
 CMakeFiles/menuconfig.dir/codegen:
 .PHONY : CMakeFiles/menuconfig.dir/codegen

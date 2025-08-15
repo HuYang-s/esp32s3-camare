@@ -2008,6 +2008,19 @@ __idf_motor_driver/fast:
 .PHONY : __idf_motor_driver/fast
 
 #=============================================================================
+# Target rules for targets named __idf_navigation_service
+
+# Build rule for target.
+__idf_navigation_service: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 __idf_navigation_service
+.PHONY : __idf_navigation_service
+
+# fast build rule for target.
+__idf_navigation_service/fast:
+	$(MAKE) $(MAKESILENT) -f esp-idf/navigation_service/CMakeFiles/__idf_navigation_service.dir/build.make esp-idf/navigation_service/CMakeFiles/__idf_navigation_service.dir/build
+.PHONY : __idf_navigation_service/fast
+
+#=============================================================================
 # Target rules for targets named __idf_ai_service
 
 # Build rule for target.
@@ -2196,6 +2209,7 @@ help:
 	@echo "... __idf_mbedtls"
 	@echo "... __idf_motor_driver"
 	@echo "... __idf_mqtt"
+	@echo "... __idf_navigation_service"
 	@echo "... __idf_newlib"
 	@echo "... __idf_nvs_flash"
 	@echo "... __idf_nvs_sec_provider"

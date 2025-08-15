@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/esp_ringbuf
+# Install script for directory: /tmp/esp-idf/components/esp_ringbuf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -73,116 +73,116 @@ esp-idf/usb/CMakeFiles/__idf_usb.dir/codegen:
 .PHONY : esp-idf/usb/CMakeFiles/__idf_usb.dir/codegen
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/flags.make
-esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj: /workspace/esp-idf/components/usb/hcd_dwc.c
+esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj: /tmp/esp-idf/components/usb/hcd_dwc.c
 esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj -MF CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj.d -o CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj -c /workspace/esp-idf/components/usb/hcd_dwc.c
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj -MF CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj.d -o CMakeFiles/__idf_usb.dir/hcd_dwc.c.obj -c /tmp/esp-idf/components/usb/hcd_dwc.c
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_usb.dir/hcd_dwc.c.i"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/usb/hcd_dwc.c > CMakeFiles/__idf_usb.dir/hcd_dwc.c.i
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/usb/hcd_dwc.c > CMakeFiles/__idf_usb.dir/hcd_dwc.c.i
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/hcd_dwc.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_usb.dir/hcd_dwc.c.s"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/usb/hcd_dwc.c -o CMakeFiles/__idf_usb.dir/hcd_dwc.c.s
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/usb/hcd_dwc.c -o CMakeFiles/__idf_usb.dir/hcd_dwc.c.s
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/flags.make
-esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj: /workspace/esp-idf/components/usb/enum.c
+esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj: /tmp/esp-idf/components/usb/enum.c
 esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj -MF CMakeFiles/__idf_usb.dir/enum.c.obj.d -o CMakeFiles/__idf_usb.dir/enum.c.obj -c /workspace/esp-idf/components/usb/enum.c
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.obj -MF CMakeFiles/__idf_usb.dir/enum.c.obj.d -o CMakeFiles/__idf_usb.dir/enum.c.obj -c /tmp/esp-idf/components/usb/enum.c
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_usb.dir/enum.c.i"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/usb/enum.c > CMakeFiles/__idf_usb.dir/enum.c.i
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/usb/enum.c > CMakeFiles/__idf_usb.dir/enum.c.i
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/enum.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_usb.dir/enum.c.s"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/usb/enum.c -o CMakeFiles/__idf_usb.dir/enum.c.s
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/usb/enum.c -o CMakeFiles/__idf_usb.dir/enum.c.s
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/flags.make
-esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj: /workspace/esp-idf/components/usb/hub.c
+esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj: /tmp/esp-idf/components/usb/hub.c
 esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj -MF CMakeFiles/__idf_usb.dir/hub.c.obj.d -o CMakeFiles/__idf_usb.dir/hub.c.obj -c /workspace/esp-idf/components/usb/hub.c
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.obj -MF CMakeFiles/__idf_usb.dir/hub.c.obj.d -o CMakeFiles/__idf_usb.dir/hub.c.obj -c /tmp/esp-idf/components/usb/hub.c
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_usb.dir/hub.c.i"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/usb/hub.c > CMakeFiles/__idf_usb.dir/hub.c.i
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/usb/hub.c > CMakeFiles/__idf_usb.dir/hub.c.i
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/hub.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_usb.dir/hub.c.s"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/usb/hub.c -o CMakeFiles/__idf_usb.dir/hub.c.s
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/usb/hub.c -o CMakeFiles/__idf_usb.dir/hub.c.s
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/flags.make
-esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj: /workspace/esp-idf/components/usb/usb_helpers.c
+esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj: /tmp/esp-idf/components/usb/usb_helpers.c
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj -MF CMakeFiles/__idf_usb.dir/usb_helpers.c.obj.d -o CMakeFiles/__idf_usb.dir/usb_helpers.c.obj -c /workspace/esp-idf/components/usb/usb_helpers.c
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.obj -MF CMakeFiles/__idf_usb.dir/usb_helpers.c.obj.d -o CMakeFiles/__idf_usb.dir/usb_helpers.c.obj -c /tmp/esp-idf/components/usb/usb_helpers.c
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_usb.dir/usb_helpers.c.i"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/usb/usb_helpers.c > CMakeFiles/__idf_usb.dir/usb_helpers.c.i
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/usb/usb_helpers.c > CMakeFiles/__idf_usb.dir/usb_helpers.c.i
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_helpers.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_usb.dir/usb_helpers.c.s"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/usb/usb_helpers.c -o CMakeFiles/__idf_usb.dir/usb_helpers.c.s
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/usb/usb_helpers.c -o CMakeFiles/__idf_usb.dir/usb_helpers.c.s
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/flags.make
-esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj: /workspace/esp-idf/components/usb/usb_host.c
+esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj: /tmp/esp-idf/components/usb/usb_host.c
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj -MF CMakeFiles/__idf_usb.dir/usb_host.c.obj.d -o CMakeFiles/__idf_usb.dir/usb_host.c.obj -c /workspace/esp-idf/components/usb/usb_host.c
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.obj -MF CMakeFiles/__idf_usb.dir/usb_host.c.obj.d -o CMakeFiles/__idf_usb.dir/usb_host.c.obj -c /tmp/esp-idf/components/usb/usb_host.c
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_usb.dir/usb_host.c.i"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/usb/usb_host.c > CMakeFiles/__idf_usb.dir/usb_host.c.i
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/usb/usb_host.c > CMakeFiles/__idf_usb.dir/usb_host.c.i
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_usb.dir/usb_host.c.s"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/usb/usb_host.c -o CMakeFiles/__idf_usb.dir/usb_host.c.s
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/usb/usb_host.c -o CMakeFiles/__idf_usb.dir/usb_host.c.s
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/flags.make
-esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj: /workspace/esp-idf/components/usb/usb_private.c
+esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj: /tmp/esp-idf/components/usb/usb_private.c
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj -MF CMakeFiles/__idf_usb.dir/usb_private.c.obj.d -o CMakeFiles/__idf_usb.dir/usb_private.c.obj -c /workspace/esp-idf/components/usb/usb_private.c
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.obj -MF CMakeFiles/__idf_usb.dir/usb_private.c.obj.d -o CMakeFiles/__idf_usb.dir/usb_private.c.obj -c /tmp/esp-idf/components/usb/usb_private.c
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_usb.dir/usb_private.c.i"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/usb/usb_private.c > CMakeFiles/__idf_usb.dir/usb_private.c.i
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/usb/usb_private.c > CMakeFiles/__idf_usb.dir/usb_private.c.i
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_private.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_usb.dir/usb_private.c.s"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/usb/usb_private.c -o CMakeFiles/__idf_usb.dir/usb_private.c.s
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/usb/usb_private.c -o CMakeFiles/__idf_usb.dir/usb_private.c.s
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/flags.make
-esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj: /workspace/esp-idf/components/usb/usbh.c
+esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj: /tmp/esp-idf/components/usb/usbh.c
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj -MF CMakeFiles/__idf_usb.dir/usbh.c.obj.d -o CMakeFiles/__idf_usb.dir/usbh.c.obj -c /workspace/esp-idf/components/usb/usbh.c
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.obj -MF CMakeFiles/__idf_usb.dir/usbh.c.obj.d -o CMakeFiles/__idf_usb.dir/usbh.c.obj -c /tmp/esp-idf/components/usb/usbh.c
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_usb.dir/usbh.c.i"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/usb/usbh.c > CMakeFiles/__idf_usb.dir/usbh.c.i
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/usb/usbh.c > CMakeFiles/__idf_usb.dir/usbh.c.i
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usbh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_usb.dir/usbh.c.s"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/usb/usbh.c -o CMakeFiles/__idf_usb.dir/usbh.c.s
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/usb/usbh.c -o CMakeFiles/__idf_usb.dir/usbh.c.s
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/flags.make
-esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj: /workspace/esp-idf/components/usb/usb_phy.c
+esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj: /tmp/esp-idf/components/usb/usb_phy.c
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj: esp-idf/usb/CMakeFiles/__idf_usb.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj -MF CMakeFiles/__idf_usb.dir/usb_phy.c.obj.d -o CMakeFiles/__idf_usb.dir/usb_phy.c.obj -c /workspace/esp-idf/components/usb/usb_phy.c
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj -MF CMakeFiles/__idf_usb.dir/usb_phy.c.obj.d -o CMakeFiles/__idf_usb.dir/usb_phy.c.obj -c /tmp/esp-idf/components/usb/usb_phy.c
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_usb.dir/usb_phy.c.i"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/usb/usb_phy.c > CMakeFiles/__idf_usb.dir/usb_phy.c.i
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/usb/usb_phy.c > CMakeFiles/__idf_usb.dir/usb_phy.c.i
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_usb.dir/usb_phy.c.s"
-	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/usb/usb_phy.c -o CMakeFiles/__idf_usb.dir/usb_phy.c.s
+	cd /workspace/build/esp-idf/usb && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/usb/usb_phy.c -o CMakeFiles/__idf_usb.dir/usb_phy.c.s
 
 # Object files for target __idf_usb
 __idf_usb_OBJECTS = \
@@ -221,6 +221,6 @@ esp-idf/usb/CMakeFiles/__idf_usb.dir/clean:
 .PHONY : esp-idf/usb/CMakeFiles/__idf_usb.dir/clean
 
 esp-idf/usb/CMakeFiles/__idf_usb.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/usb /workspace/build /workspace/build/esp-idf/usb /workspace/build/esp-idf/usb/CMakeFiles/__idf_usb.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/usb /workspace/build /workspace/build/esp-idf/usb /workspace/build/esp-idf/usb/CMakeFiles/__idf_usb.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/usb/CMakeFiles/__idf_usb.dir/depend
 

@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -73,144 +73,144 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/codegen:
 .PHONY : esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/codegen
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj: /workspace/esp-idf/components/esp_hw_support/cpu.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj: /tmp/esp-idf/components/esp_hw_support/cpu.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj -c /workspace/esp-idf/components/esp_hw_support/cpu.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/cpu.c.obj -c /tmp/esp-idf/components/esp_hw_support/cpu.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/cpu.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/cpu.c > CMakeFiles/__idf_esp_hw_support.dir/cpu.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/cpu.c > CMakeFiles/__idf_esp_hw_support.dir/cpu.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/cpu.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/cpu.c -o CMakeFiles/__idf_esp_hw_support.dir/cpu.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/cpu.c -o CMakeFiles/__idf_esp_hw_support.dir/cpu.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj: /workspace/esp-idf/components/esp_hw_support/port/esp32s3/esp_cpu_intr.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj: /tmp/esp-idf/components/esp_hw_support/port/esp32s3/esp_cpu_intr.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj -c /workspace/esp-idf/components/esp_hw_support/port/esp32s3/esp_cpu_intr.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.obj -c /tmp/esp-idf/components/esp_hw_support/port/esp32s3/esp_cpu_intr.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/port/esp32s3/esp_cpu_intr.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/port/esp32s3/esp_cpu_intr.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/port/esp32s3/esp_cpu_intr.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/port/esp32s3/esp_cpu_intr.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/esp_cpu_intr.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj: /workspace/esp-idf/components/esp_hw_support/esp_memory_utils.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj: /tmp/esp-idf/components/esp_hw_support/esp_memory_utils.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj -c /workspace/esp-idf/components/esp_hw_support/esp_memory_utils.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.obj -c /tmp/esp-idf/components/esp_hw_support/esp_memory_utils.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/esp_memory_utils.c > CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/esp_memory_utils.c > CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/esp_memory_utils.c -o CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/esp_memory_utils.c -o CMakeFiles/__idf_esp_hw_support.dir/esp_memory_utils.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj: /workspace/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj: /tmp/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj -c /workspace/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.obj -c /tmp/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/port/esp32s3/cpu_region_protect.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/cpu_region_protect.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj: /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj: /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj -c /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.obj -c /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj: /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj: /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj -c /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.obj -c /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_clk_init.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_clk_init.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj: /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj: /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj -c /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.obj -c /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_init.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_init.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj: /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj: /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj -c /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.obj -c /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_sleep.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_sleep.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj: /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj: /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj -c /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.obj -c /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/port/esp32s3/rtc_time.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/rtc_time.c.s
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/flags.make
-esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj: /workspace/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c
+esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj: /tmp/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj: esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj -c /workspace/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj -MF CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj.d -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.obj -c /tmp/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.i"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.i
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c > CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.i
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.s"
-	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.s
+	cd /workspace/build/bootloader/esp-idf/esp_hw_support && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_hw_support/port/esp32s3/chip_info.c -o CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/chip_info.c.s
 
 # Object files for target __idf_esp_hw_support
 __idf_esp_hw_support_OBJECTS = \
@@ -253,6 +253,6 @@ esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clean:
 .PHONY : esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clean
 
 esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/depend:
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/esp_hw_support /workspace/build/bootloader /workspace/build/bootloader/esp-idf/esp_hw_support /workspace/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/esp_hw_support /workspace/build/bootloader /workspace/build/bootloader/esp-idf/esp_hw_support /workspace/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/depend
 

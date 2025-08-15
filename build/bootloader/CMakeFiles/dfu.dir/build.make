@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -67,7 +67,7 @@ include CMakeFiles/dfu.dir/compiler_depend.make
 include CMakeFiles/dfu.dir/progress.make
 
 CMakeFiles/dfu: bootloader
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/tools/mkdfu.py write -o /workspace/build/bootloader/dfu.bin --json /workspace/build/bootloader/flasher_args.json --pid 9 --flash-size 2MB
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/mkdfu.py write -o /workspace/build/bootloader/dfu.bin --json /workspace/build/bootloader/flasher_args.json --pid 9 --flash-size 2MB
 
 CMakeFiles/dfu.dir/codegen:
 .PHONY : CMakeFiles/dfu.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/dfu.dir/clean:
 .PHONY : CMakeFiles/dfu.dir/clean
 
 CMakeFiles/dfu.dir/depend:
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/dfu.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/dfu.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dfu.dir/depend
 

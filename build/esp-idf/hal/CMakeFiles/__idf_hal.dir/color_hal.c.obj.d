@@ -1,7 +1,7 @@
 esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj: \
- /workspace/esp-idf/components/hal/color_hal.c \
+ /tmp/esp-idf/components/hal/color_hal.c \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/hal/include/hal/color_hal.h \
+ /tmp/esp-idf/components/hal/include/hal/color_hal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
@@ -9,6 +9,6 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/color_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
- /workspace/esp-idf/components/hal/include/hal/color_types.h \
- /workspace/esp-idf/components/hal/platform_port/include/hal/assert.h \
+ /tmp/esp-idf/components/hal/include/hal/color_types.h \
+ /tmp/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /workspace/build/config/sdkconfig.h

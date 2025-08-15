@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -67,8 +67,8 @@ include CMakeFiles/save-defconfig.dir/compiler_depend.make
 include CMakeFiles/save-defconfig.dir/progress.make
 
 CMakeFiles/save-defconfig:
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/bootloader/config.env
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /workspace/esp-idf/Kconfig --sdkconfig-rename /workspace/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/bootloader/config.env --dont-write-deprecated --output savedefconfig /workspace/esp-idf/components/bootloader/subproject/sdkconfig.defaults
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/bootloader/config.env
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/bootloader/config.env --dont-write-deprecated --output savedefconfig /tmp/esp-idf/components/bootloader/subproject/sdkconfig.defaults
 
 CMakeFiles/save-defconfig.dir/codegen:
 .PHONY : CMakeFiles/save-defconfig.dir/codegen
@@ -86,6 +86,6 @@ CMakeFiles/save-defconfig.dir/clean:
 .PHONY : CMakeFiles/save-defconfig.dir/clean
 
 CMakeFiles/save-defconfig.dir/depend:
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/save-defconfig.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/save-defconfig.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/save-defconfig.dir/depend
 

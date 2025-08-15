@@ -8,5 +8,5 @@ esp-idf/espressif__esp32-camera/CMakeFiles/__idf_espressif__esp32-camera.dir/con
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
- /workspace/esp-idf/components/esp_common/include/esp_attr.h \
+ /tmp/esp-idf/components/esp_common/include/esp_attr.h \
  /workspace/build/config/sdkconfig.h

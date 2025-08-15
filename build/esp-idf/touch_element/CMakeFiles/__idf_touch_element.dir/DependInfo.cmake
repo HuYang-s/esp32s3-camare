@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/esp-idf/components/touch_element/touch_button.c" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj" "gcc" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj.d"
-  "/workspace/esp-idf/components/touch_element/touch_element.c" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj" "gcc" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj.d"
-  "/workspace/esp-idf/components/touch_element/touch_matrix.c" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj" "gcc" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj.d"
-  "/workspace/esp-idf/components/touch_element/touch_slider.c" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj" "gcc" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj.d"
+  "/tmp/esp-idf/components/touch_element/touch_button.c" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj" "gcc" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj.d"
+  "/tmp/esp-idf/components/touch_element/touch_element.c" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj" "gcc" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj.d"
+  "/tmp/esp-idf/components/touch_element/touch_matrix.c" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj" "gcc" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj.d"
+  "/tmp/esp-idf/components/touch_element/touch_slider.c" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj" "gcc" "esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

@@ -69,7 +69,7 @@ include esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/p
 esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash:
 	cd /workspace/build/esp-idf/partition_table && /usr/bin/cmake -E echo "Error: The target encrypted-partition-table-flash requires"
 	cd /workspace/build/esp-idf/partition_table && /usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
-	cd /workspace/build/esp-idf/partition_table && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /workspace/esp-idf/tools/cmake/scripts/fail.cmake
+	cd /workspace/build/esp-idf/partition_table && /usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /tmp/esp-idf/tools/cmake/scripts/fail.cmake
 
 esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/codegen:
 .PHONY : esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/codegen
@@ -87,6 +87,6 @@ esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/clean:
 .PHONY : esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/clean
 
 esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/partition_table /workspace/build /workspace/build/esp-idf/partition_table /workspace/build/esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/partition_table /workspace/build /workspace/build/esp-idf/partition_table /workspace/build/esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/partition_table/CMakeFiles/encrypted-partition-table-flash.dir/depend
 

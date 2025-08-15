@@ -73,18 +73,18 @@ esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/codegen:
 .PHONY : esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/codegen
 
 esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj: esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/flags.make
-esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj: /workspace/esp-idf/components/http_parser/http_parser.c
+esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj: /tmp/esp-idf/components/http_parser/http_parser.c
 esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj: esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj"
-	cd /workspace/build/esp-idf/http_parser && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj -MF CMakeFiles/__idf_http_parser.dir/http_parser.c.obj.d -o CMakeFiles/__idf_http_parser.dir/http_parser.c.obj -c /workspace/esp-idf/components/http_parser/http_parser.c
+	cd /workspace/build/esp-idf/http_parser && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.obj -MF CMakeFiles/__idf_http_parser.dir/http_parser.c.obj.d -o CMakeFiles/__idf_http_parser.dir/http_parser.c.obj -c /tmp/esp-idf/components/http_parser/http_parser.c
 
 esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_http_parser.dir/http_parser.c.i"
-	cd /workspace/build/esp-idf/http_parser && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/http_parser/http_parser.c > CMakeFiles/__idf_http_parser.dir/http_parser.c.i
+	cd /workspace/build/esp-idf/http_parser && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/http_parser/http_parser.c > CMakeFiles/__idf_http_parser.dir/http_parser.c.i
 
 esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/http_parser.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_http_parser.dir/http_parser.c.s"
-	cd /workspace/build/esp-idf/http_parser && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/http_parser/http_parser.c -o CMakeFiles/__idf_http_parser.dir/http_parser.c.s
+	cd /workspace/build/esp-idf/http_parser && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/http_parser/http_parser.c -o CMakeFiles/__idf_http_parser.dir/http_parser.c.s
 
 # Object files for target __idf_http_parser
 __idf_http_parser_OBJECTS = \
@@ -109,6 +109,6 @@ esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/clean:
 .PHONY : esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/clean
 
 esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/http_parser /workspace/build /workspace/build/esp-idf/http_parser /workspace/build/esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/http_parser /workspace/build /workspace/build/esp-idf/http_parser /workspace/build/esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir/depend
 

@@ -73,60 +73,60 @@ esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/codegen:
 .PHONY : esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/codegen
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/flags.make
-esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj: /workspace/esp-idf/components/esp_security/src/init.c
+esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj: /tmp/esp-idf/components/esp_security/src/init.c
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj -MF CMakeFiles/__idf_esp_security.dir/src/init.c.obj.d -o CMakeFiles/__idf_esp_security.dir/src/init.c.obj -c /workspace/esp-idf/components/esp_security/src/init.c
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.obj -MF CMakeFiles/__idf_esp_security.dir/src/init.c.obj.d -o CMakeFiles/__idf_esp_security.dir/src/init.c.obj -c /tmp/esp-idf/components/esp_security/src/init.c
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_security.dir/src/init.c.i"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_security/src/init.c > CMakeFiles/__idf_esp_security.dir/src/init.c.i
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_security/src/init.c > CMakeFiles/__idf_esp_security.dir/src/init.c.i
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_security.dir/src/init.c.s"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_security/src/init.c -o CMakeFiles/__idf_esp_security.dir/src/init.c.s
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_security/src/init.c -o CMakeFiles/__idf_esp_security.dir/src/init.c.s
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/flags.make
-esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj: /workspace/esp-idf/components/esp_security/src/esp_hmac.c
+esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj: /tmp/esp-idf/components/esp_security/src/esp_hmac.c
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj -MF CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj.d -o CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj -c /workspace/esp-idf/components/esp_security/src/esp_hmac.c
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj -MF CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj.d -o CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.obj -c /tmp/esp-idf/components/esp_security/src/esp_hmac.c
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.i"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_security/src/esp_hmac.c > CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.i
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_security/src/esp_hmac.c > CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.i
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.s"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_security/src/esp_hmac.c -o CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.s
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_security/src/esp_hmac.c -o CMakeFiles/__idf_esp_security.dir/src/esp_hmac.c.s
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/flags.make
-esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj: /workspace/esp-idf/components/esp_security/src/esp_ds.c
+esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj: /tmp/esp-idf/components/esp_security/src/esp_ds.c
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj -MF CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj.d -o CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj -c /workspace/esp-idf/components/esp_security/src/esp_ds.c
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj -MF CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj.d -o CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.obj -c /tmp/esp-idf/components/esp_security/src/esp_ds.c
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.i"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_security/src/esp_ds.c > CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.i
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_security/src/esp_ds.c > CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.i
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.s"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_security/src/esp_ds.c -o CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.s
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_security/src/esp_ds.c -o CMakeFiles/__idf_esp_security.dir/src/esp_ds.c.s
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/flags.make
-esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj: /workspace/esp-idf/components/esp_security/src/esp_crypto_lock.c
+esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj: /tmp/esp-idf/components/esp_security/src/esp_crypto_lock.c
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj: esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj -MF CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj.d -o CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj -c /workspace/esp-idf/components/esp_security/src/esp_crypto_lock.c
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj -MF CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj.d -o CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.obj -c /tmp/esp-idf/components/esp_security/src/esp_crypto_lock.c
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.i"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_security/src/esp_crypto_lock.c > CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.i
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_security/src/esp_crypto_lock.c > CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.i
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.s"
-	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_security/src/esp_crypto_lock.c -o CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.s
+	cd /workspace/build/esp-idf/esp_security && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_security/src/esp_crypto_lock.c -o CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.s
 
 # Object files for target __idf_esp_security
 __idf_esp_security_OBJECTS = \
@@ -157,6 +157,6 @@ esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/clean:
 .PHONY : esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/clean
 
 esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/esp_security /workspace/build /workspace/build/esp-idf/esp_security /workspace/build/esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/esp_security /workspace/build /workspace/build/esp-idf/esp_security /workspace/build/esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/depend
 

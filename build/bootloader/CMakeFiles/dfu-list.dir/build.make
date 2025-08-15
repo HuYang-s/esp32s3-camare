@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -67,7 +67,7 @@ include CMakeFiles/dfu-list.dir/compiler_depend.make
 include CMakeFiles/dfu-list.dir/progress.make
 
 CMakeFiles/dfu-list:
-	/usr/bin/cmake -D ESP_DFU_LIST="1" -P /workspace/esp-idf/tools/cmake/run_dfu_util.cmake
+	/usr/bin/cmake -D ESP_DFU_LIST="1" -P /tmp/esp-idf/tools/cmake/run_dfu_util.cmake
 
 CMakeFiles/dfu-list.dir/codegen:
 .PHONY : CMakeFiles/dfu-list.dir/codegen
@@ -85,6 +85,6 @@ CMakeFiles/dfu-list.dir/clean:
 .PHONY : CMakeFiles/dfu-list.dir/clean
 
 CMakeFiles/dfu-list.dir/depend:
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/dfu-list.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/dfu-list.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/dfu-list.dir/depend
 

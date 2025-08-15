@@ -73,60 +73,60 @@ esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/codegen:
 .PHONY : esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/codegen
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj: esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/flags.make
-esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj: /workspace/esp-idf/components/touch_element/touch_element.c
+esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj: /tmp/esp-idf/components/touch_element/touch_element.c
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj: esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj -MF CMakeFiles/__idf_touch_element.dir/touch_element.c.obj.d -o CMakeFiles/__idf_touch_element.dir/touch_element.c.obj -c /workspace/esp-idf/components/touch_element/touch_element.c
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.obj -MF CMakeFiles/__idf_touch_element.dir/touch_element.c.obj.d -o CMakeFiles/__idf_touch_element.dir/touch_element.c.obj -c /tmp/esp-idf/components/touch_element/touch_element.c
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_touch_element.dir/touch_element.c.i"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/touch_element/touch_element.c > CMakeFiles/__idf_touch_element.dir/touch_element.c.i
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/touch_element/touch_element.c > CMakeFiles/__idf_touch_element.dir/touch_element.c.i
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_element.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_touch_element.dir/touch_element.c.s"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/touch_element/touch_element.c -o CMakeFiles/__idf_touch_element.dir/touch_element.c.s
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/touch_element/touch_element.c -o CMakeFiles/__idf_touch_element.dir/touch_element.c.s
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj: esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/flags.make
-esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj: /workspace/esp-idf/components/touch_element/touch_button.c
+esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj: /tmp/esp-idf/components/touch_element/touch_button.c
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj: esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj -MF CMakeFiles/__idf_touch_element.dir/touch_button.c.obj.d -o CMakeFiles/__idf_touch_element.dir/touch_button.c.obj -c /workspace/esp-idf/components/touch_element/touch_button.c
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.obj -MF CMakeFiles/__idf_touch_element.dir/touch_button.c.obj.d -o CMakeFiles/__idf_touch_element.dir/touch_button.c.obj -c /tmp/esp-idf/components/touch_element/touch_button.c
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_touch_element.dir/touch_button.c.i"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/touch_element/touch_button.c > CMakeFiles/__idf_touch_element.dir/touch_button.c.i
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/touch_element/touch_button.c > CMakeFiles/__idf_touch_element.dir/touch_button.c.i
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_button.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_touch_element.dir/touch_button.c.s"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/touch_element/touch_button.c -o CMakeFiles/__idf_touch_element.dir/touch_button.c.s
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/touch_element/touch_button.c -o CMakeFiles/__idf_touch_element.dir/touch_button.c.s
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj: esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/flags.make
-esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj: /workspace/esp-idf/components/touch_element/touch_slider.c
+esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj: /tmp/esp-idf/components/touch_element/touch_slider.c
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj: esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj -MF CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj.d -o CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj -c /workspace/esp-idf/components/touch_element/touch_slider.c
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj -MF CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj.d -o CMakeFiles/__idf_touch_element.dir/touch_slider.c.obj -c /tmp/esp-idf/components/touch_element/touch_slider.c
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_touch_element.dir/touch_slider.c.i"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/touch_element/touch_slider.c > CMakeFiles/__idf_touch_element.dir/touch_slider.c.i
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/touch_element/touch_slider.c > CMakeFiles/__idf_touch_element.dir/touch_slider.c.i
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_slider.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_touch_element.dir/touch_slider.c.s"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/touch_element/touch_slider.c -o CMakeFiles/__idf_touch_element.dir/touch_slider.c.s
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/touch_element/touch_slider.c -o CMakeFiles/__idf_touch_element.dir/touch_slider.c.s
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj: esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/flags.make
-esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj: /workspace/esp-idf/components/touch_element/touch_matrix.c
+esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj: /tmp/esp-idf/components/touch_element/touch_matrix.c
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj: esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj -MF CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj.d -o CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj -c /workspace/esp-idf/components/touch_element/touch_matrix.c
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj -MF CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj.d -o CMakeFiles/__idf_touch_element.dir/touch_matrix.c.obj -c /tmp/esp-idf/components/touch_element/touch_matrix.c
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_touch_element.dir/touch_matrix.c.i"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/touch_element/touch_matrix.c > CMakeFiles/__idf_touch_element.dir/touch_matrix.c.i
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/touch_element/touch_matrix.c > CMakeFiles/__idf_touch_element.dir/touch_matrix.c.i
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/touch_matrix.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_touch_element.dir/touch_matrix.c.s"
-	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/touch_element/touch_matrix.c -o CMakeFiles/__idf_touch_element.dir/touch_matrix.c.s
+	cd /workspace/build/esp-idf/touch_element && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/touch_element/touch_matrix.c -o CMakeFiles/__idf_touch_element.dir/touch_matrix.c.s
 
 # Object files for target __idf_touch_element
 __idf_touch_element_OBJECTS = \
@@ -157,6 +157,6 @@ esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/clean:
 .PHONY : esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/clean
 
 esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/touch_element /workspace/build /workspace/build/esp-idf/touch_element /workspace/build/esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/touch_element /workspace/build /workspace/build/esp-idf/touch_element /workspace/build/esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/touch_element/CMakeFiles/__idf_touch_element.dir/depend
 

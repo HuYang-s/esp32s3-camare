@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf
+# Install script for directory: /tmp/esp-idf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -90,6 +90,7 @@
 /workspace/build/esp-idf/time_service/libtime_service.a
 /workspace/build/esp-idf/storage_manager/libstorage_manager.a
 /workspace/build/esp-idf/motor_driver/libmotor_driver.a
+/workspace/build/esp-idf/navigation_service/libnavigation_service.a
 /workspace/build/esp-idf/ai_service/libai_service.a
 /workspace/build/esp-idf/web_server/libweb_server.a
 /workspace/build/esp-idf/main/libmain.a

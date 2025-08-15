@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/openthread
+# Install script for directory: /tmp/esp-idf/components/openthread
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

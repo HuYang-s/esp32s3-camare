@@ -90,6 +90,7 @@ $<TARGET_FILE:__idf_wifi_manager>
 $<TARGET_FILE:__idf_time_service>
 $<TARGET_FILE:__idf_storage_manager>
 $<TARGET_FILE:__idf_motor_driver>
+$<TARGET_FILE:__idf_navigation_service>
 $<TARGET_FILE:__idf_ai_service>
 $<TARGET_FILE:__idf_web_server>
 $<TARGET_FILE:__idf_main>

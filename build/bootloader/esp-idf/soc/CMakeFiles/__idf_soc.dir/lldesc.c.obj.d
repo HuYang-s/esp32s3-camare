@@ -1,8 +1,8 @@
 esp-idf/soc/CMakeFiles/__idf_soc.dir/lldesc.c.obj: \
- /workspace/esp-idf/components/soc/lldesc.c \
- /workspace/esp-idf/components/soc/include/soc/lldesc.h \
+ /tmp/esp-idf/components/soc/lldesc.c \
+ /tmp/esp-idf/components/soc/include/soc/lldesc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/esp_rom/include/esp_rom_lldesc.h \
+ /tmp/esp-idf/components/esp_rom/include/esp_rom_lldesc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \

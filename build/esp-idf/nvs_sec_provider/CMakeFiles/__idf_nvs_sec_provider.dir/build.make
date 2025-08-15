@@ -73,18 +73,18 @@ esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/codegen:
 .PHONY : esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/codegen
 
 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj: esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/flags.make
-esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj: /workspace/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c
+esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj: /tmp/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c
 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj: esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj"
-	cd /workspace/build/esp-idf/nvs_sec_provider && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj -MF CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj.d -o CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj -c /workspace/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c
+	cd /workspace/build/esp-idf/nvs_sec_provider && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj -MF CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj.d -o CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.obj -c /tmp/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c
 
 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.i"
-	cd /workspace/build/esp-idf/nvs_sec_provider && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c > CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.i
+	cd /workspace/build/esp-idf/nvs_sec_provider && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c > CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.i
 
 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.s"
-	cd /workspace/build/esp-idf/nvs_sec_provider && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c -o CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.s
+	cd /workspace/build/esp-idf/nvs_sec_provider && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/nvs_sec_provider/nvs_sec_provider.c -o CMakeFiles/__idf_nvs_sec_provider.dir/nvs_sec_provider.c.s
 
 # Object files for target __idf_nvs_sec_provider
 __idf_nvs_sec_provider_OBJECTS = \
@@ -109,6 +109,6 @@ esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/clean:
 .PHONY : esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/clean
 
 esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/nvs_sec_provider /workspace/build /workspace/build/esp-idf/nvs_sec_provider /workspace/build/esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/nvs_sec_provider /workspace/build /workspace/build/esp-idf/nvs_sec_provider /workspace/build/esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir/depend
 

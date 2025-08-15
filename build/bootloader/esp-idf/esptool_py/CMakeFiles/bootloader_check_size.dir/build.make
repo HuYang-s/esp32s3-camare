@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -67,7 +67,7 @@ include esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/compiler_depend.
 include esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/progress.make
 
 esp-idf/esptool_py/CMakeFiles/bootloader_check_size:
-	cd /workspace/build/bootloader/esp-idf/esptool_py && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /workspace/build/bootloader/bootloader.bin
+	cd /workspace/build/bootloader/esp-idf/esptool_py && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /workspace/build/bootloader/bootloader.bin
 
 esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/codegen:
 .PHONY : esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/codegen
@@ -85,6 +85,6 @@ esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/clean:
 .PHONY : esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/clean
 
 esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/depend:
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/esptool_py /workspace/build/bootloader /workspace/build/bootloader/esp-idf/esptool_py /workspace/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/esptool_py /workspace/build/bootloader /workspace/build/bootloader/esp-idf/esptool_py /workspace/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/depend
 

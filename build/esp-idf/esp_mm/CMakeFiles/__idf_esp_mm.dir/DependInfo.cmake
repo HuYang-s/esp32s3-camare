@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/esp-idf/components/esp_mm/esp_cache.c" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache.c.obj" "gcc" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache.c.obj.d"
-  "/workspace/esp-idf/components/esp_mm/esp_mmu_map.c" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj" "gcc" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj.d"
-  "/workspace/esp-idf/components/esp_mm/heap_align_hw.c" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/heap_align_hw.c.obj" "gcc" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/heap_align_hw.c.obj.d"
-  "/workspace/esp-idf/components/esp_mm/port/esp32s3/ext_mem_layout.c" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32s3/ext_mem_layout.c.obj" "gcc" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32s3/ext_mem_layout.c.obj.d"
+  "/tmp/esp-idf/components/esp_mm/esp_cache.c" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache.c.obj" "gcc" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_cache.c.obj.d"
+  "/tmp/esp-idf/components/esp_mm/esp_mmu_map.c" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj" "gcc" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/esp_mmu_map.c.obj.d"
+  "/tmp/esp-idf/components/esp_mm/heap_align_hw.c" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/heap_align_hw.c.obj" "gcc" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/heap_align_hw.c.obj.d"
+  "/tmp/esp-idf/components/esp_mm/port/esp32s3/ext_mem_layout.c" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32s3/ext_mem_layout.c.obj" "gcc" "esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32s3/ext_mem_layout.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

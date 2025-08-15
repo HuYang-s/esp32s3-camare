@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/tcp_transport
+# Install script for directory: /tmp/esp-idf/components/tcp_transport
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

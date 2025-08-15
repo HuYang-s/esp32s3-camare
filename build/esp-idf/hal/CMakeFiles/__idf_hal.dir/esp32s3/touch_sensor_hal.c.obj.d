@@ -1,13 +1,13 @@
 esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/touch_sensor_hal.c.obj: \
- /workspace/esp-idf/components/hal/esp32s3/touch_sensor_hal.c \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_pins.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/usb_pins.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/spi_pins.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/sdmmc_pins.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/touch_sensor_pins.h \
- /workspace/esp-idf/components/hal/esp32s3/include/hal/touch_sensor_hal.h \
- /workspace/esp-idf/components/hal/esp32s3/include/hal/touch_sensor_ll.h \
+ /tmp/esp-idf/components/hal/esp32s3/touch_sensor_hal.c \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_pins.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/usb_pins.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/gpio_pins.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/spi_pins.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/sdmmc_pins.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/touch_sensor_pins.h \
+ /tmp/esp-idf/components/hal/esp32s3/include/hal/touch_sensor_hal.h \
+ /tmp/esp-idf/components/hal/esp32s3/include/hal/touch_sensor_ll.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
@@ -16,16 +16,16 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/touch_sensor_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/lock.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
  /workspace/build/config/sdkconfig.h \
- /workspace/esp-idf/components/newlib/platform_include/assert.h \
+ /tmp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
@@ -36,17 +36,17 @@ esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32s3/touch_sensor_hal.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/hal/platform_port/include/hal/misc.h \
+ /tmp/esp-idf/components/hal/platform_port/include/hal/misc.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/soc/include/soc/touch_sensor_periph.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_struct.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/rtc_io_struct.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/sens_struct.h \
- /workspace/esp-idf/components/hal/include/hal/touch_sensor_types.h \
- /workspace/esp-idf/components/esp_common/include/esp_attr.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/hal/include/hal/touch_sensor_hal.h
+ /tmp/esp-idf/components/soc/include/soc/touch_sensor_periph.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/rtc_cntl_struct.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/rtc_io_struct.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/sens_struct.h \
+ /tmp/esp-idf/components/hal/include/hal/touch_sensor_types.h \
+ /tmp/esp-idf/components/esp_common/include/esp_attr.h \
+ /tmp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /tmp/esp-idf/components/hal/include/hal/touch_sensor_hal.h

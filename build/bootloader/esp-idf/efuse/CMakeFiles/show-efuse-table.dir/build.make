@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -67,7 +67,7 @@ include esp-idf/efuse/CMakeFiles/show-efuse-table.dir/compiler_depend.make
 include esp-idf/efuse/CMakeFiles/show-efuse-table.dir/progress.make
 
 esp-idf/efuse/CMakeFiles/show-efuse-table:
-	cd /workspace/build/bootloader/esp-idf/efuse && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/efuse/efuse_table_gen.py /workspace/esp-idf/components/efuse/esp32s3/esp_efuse_table.csv -t esp32s3 --max_blk_len 256 --info
+	cd /workspace/build/bootloader/esp-idf/efuse && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/components/efuse/efuse_table_gen.py /tmp/esp-idf/components/efuse/esp32s3/esp_efuse_table.csv -t esp32s3 --max_blk_len 256 --info
 
 esp-idf/efuse/CMakeFiles/show-efuse-table.dir/codegen:
 .PHONY : esp-idf/efuse/CMakeFiles/show-efuse-table.dir/codegen
@@ -85,6 +85,6 @@ esp-idf/efuse/CMakeFiles/show-efuse-table.dir/clean:
 .PHONY : esp-idf/efuse/CMakeFiles/show-efuse-table.dir/clean
 
 esp-idf/efuse/CMakeFiles/show-efuse-table.dir/depend:
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/efuse /workspace/build/bootloader /workspace/build/bootloader/esp-idf/efuse /workspace/build/bootloader/esp-idf/efuse/CMakeFiles/show-efuse-table.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/efuse /workspace/build/bootloader /workspace/build/bootloader/esp-idf/efuse /workspace/build/bootloader/esp-idf/efuse/CMakeFiles/show-efuse-table.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/efuse/CMakeFiles/show-efuse-table.dir/depend
 

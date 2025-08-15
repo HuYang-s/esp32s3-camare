@@ -67,7 +67,7 @@ include CMakeFiles/size-components.dir/compiler_depend.make
 include CMakeFiles/size-components.dir/progress.make
 
 CMakeFiles/size-components: esp32s3_camera_web.map
-	/usr/bin/cmake -D "IDF_SIZE_TOOL=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;-m;esp_idf_size" -D IDF_SIZE_MODE=--archives -D MAP_FILE=/workspace/build/esp32s3_camera_web.map -D OUTPUT_JSON= -P /workspace/esp-idf/tools/cmake/run_size_tool.cmake
+	/usr/bin/cmake -D "IDF_SIZE_TOOL=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;-m;esp_idf_size" -D IDF_SIZE_MODE=--archives -D MAP_FILE=/workspace/build/esp32s3_camera_web.map -D OUTPUT_JSON= -P /tmp/esp-idf/tools/cmake/run_size_tool.cmake
 
 CMakeFiles/size-components.dir/codegen:
 .PHONY : CMakeFiles/size-components.dir/codegen

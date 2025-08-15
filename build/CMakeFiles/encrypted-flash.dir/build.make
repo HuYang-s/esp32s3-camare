@@ -69,7 +69,7 @@ include CMakeFiles/encrypted-flash.dir/progress.make
 CMakeFiles/encrypted-flash:
 	/usr/bin/cmake -E echo "Error: The target encrypted-flash requires"
 	/usr/bin/cmake -E echo "CONFIG_SECURE_FLASH_ENCRYPTION_MODE_DEVELOPMENT to be enabled."
-	/usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /workspace/esp-idf/tools/cmake/scripts/fail.cmake
+	/usr/bin/cmake -E env "FAIL_MESSAGE=Failed executing target (see errors on lines above)" /usr/bin/cmake -P /tmp/esp-idf/tools/cmake/scripts/fail.cmake
 
 CMakeFiles/encrypted-flash.dir/codegen:
 .PHONY : CMakeFiles/encrypted-flash.dir/codegen

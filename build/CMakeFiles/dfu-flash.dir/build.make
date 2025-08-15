@@ -67,7 +67,7 @@ include CMakeFiles/dfu-flash.dir/compiler_depend.make
 include CMakeFiles/dfu-flash.dir/progress.make
 
 CMakeFiles/dfu-flash:
-	/usr/bin/cmake -D ESP_DFU_BIN="/workspace/build/dfu.bin" -D ESP_DFU_PID="9" -P /workspace/esp-idf/tools/cmake/run_dfu_util.cmake
+	/usr/bin/cmake -D ESP_DFU_BIN="/workspace/build/dfu.bin" -D ESP_DFU_PID="9" -P /tmp/esp-idf/tools/cmake/run_dfu_util.cmake
 
 CMakeFiles/dfu-flash.dir/codegen:
 .PHONY : CMakeFiles/dfu-flash.dir/codegen

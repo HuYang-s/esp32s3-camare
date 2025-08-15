@@ -86,6 +86,6 @@ esp-idf/partition_table/CMakeFiles/partition_table-flash.dir/clean:
 .PHONY : esp-idf/partition_table/CMakeFiles/partition_table-flash.dir/clean
 
 esp-idf/partition_table/CMakeFiles/partition_table-flash.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/partition_table /workspace/build /workspace/build/esp-idf/partition_table /workspace/build/esp-idf/partition_table/CMakeFiles/partition_table-flash.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/partition_table /workspace/build /workspace/build/esp-idf/partition_table /workspace/build/esp-idf/partition_table/CMakeFiles/partition_table-flash.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/partition_table/CMakeFiles/partition_table-flash.dir/depend
 

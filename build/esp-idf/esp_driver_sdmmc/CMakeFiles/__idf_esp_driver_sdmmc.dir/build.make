@@ -73,32 +73,32 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/codegen:
 .PHONY : esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/codegen
 
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj: esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/flags.make
-esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj: /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c
+esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj: /tmp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj: esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj"
-	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj -MF CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj.d -o CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj -c /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c
+	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj -MF CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj.d -o CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.obj -c /tmp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c
 
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.i"
-	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c > CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.i
+	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c > CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.i
 
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.s"
-	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c -o CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.s
+	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_transaction.c -o CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_transaction.c.s
 
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj: esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/flags.make
-esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj: /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c
+esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj: /tmp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj: esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj"
-	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj -MF CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj.d -o CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj -c /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c
+	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj -MF CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj.d -o CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.obj -c /tmp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c
 
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.i"
-	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c > CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.i
+	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c > CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.i
 
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.s"
-	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c -o CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.s
+	cd /workspace/build/esp-idf/esp_driver_sdmmc && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_driver_sdmmc/src/sdmmc_host.c -o CMakeFiles/__idf_esp_driver_sdmmc.dir/src/sdmmc_host.c.s
 
 # Object files for target __idf_esp_driver_sdmmc
 __idf_esp_driver_sdmmc_OBJECTS = \
@@ -125,6 +125,6 @@ esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/clean:
 .PHONY : esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/clean
 
 esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/esp_driver_sdmmc /workspace/build /workspace/build/esp-idf/esp_driver_sdmmc /workspace/build/esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/esp_driver_sdmmc /workspace/build /workspace/build/esp-idf/esp_driver_sdmmc /workspace/build/esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_driver_sdmmc/CMakeFiles/__idf_esp_driver_sdmmc.dir/depend
 

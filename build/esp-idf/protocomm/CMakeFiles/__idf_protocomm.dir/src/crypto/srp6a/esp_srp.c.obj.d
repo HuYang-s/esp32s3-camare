@@ -1,5 +1,5 @@
 esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp.c.obj: \
- /workspace/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp.c \
+ /tmp/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp.c \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
@@ -7,17 +7,17 @@ esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp.c.obj:
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/reent.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
- /workspace/esp-idf/components/newlib/platform_include/sys/lock.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
  /workspace/build/config/sdkconfig.h \
- /workspace/esp-idf/components/newlib/platform_include/assert.h \
+ /tmp/esp-idf/components/newlib/platform_include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
@@ -30,64 +30,64 @@ esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a/esp_srp.c.obj:
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /workspace/esp-idf/components/log/include/esp_log.h \
+ /tmp/esp-idf/components/log/include/esp_log.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
- /workspace/esp-idf/components/esp_rom/include/esp_rom_sys.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
- /workspace/esp-idf/components/log/include/esp_log_level.h \
- /workspace/esp-idf/components/log/include/esp_log_color.h \
- /workspace/esp-idf/components/log/include/esp_log_buffer.h \
- /workspace/esp-idf/components/log/include/esp_log_timestamp.h \
- /workspace/esp-idf/components/esp_common/include/esp_err.h \
+ /tmp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
+ /tmp/esp-idf/components/log/include/esp_log_level.h \
+ /tmp/esp-idf/components/log/include/esp_log_color.h \
+ /tmp/esp-idf/components/log/include/esp_log_buffer.h \
+ /tmp/esp-idf/components/log/include/esp_log_timestamp.h \
+ /tmp/esp-idf/components/esp_common/include/esp_err.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
- /workspace/esp-idf/components/esp_common/include/esp_compiler.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private_access.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
- /workspace/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
- /workspace/esp-idf/components/mbedtls/port/include/esp_mem.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_synonyms.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_dependencies.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_from_legacy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_auto_enabled.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_x509.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_ssl.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
+ /tmp/esp-idf/components/esp_common/include/esp_compiler.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/sha512.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/private_access.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/build_info.h \
+ /tmp/esp-idf/components/mbedtls/port/include/mbedtls/esp_config.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/mbedtls_config.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
+ /tmp/esp-idf/components/mbedtls/port/include/esp_mem.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_psa.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_legacy.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_synonyms.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_dependencies.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_superset_legacy.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_psa_from_legacy.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_config_key_pair_types.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/psa/crypto_adjust_auto_enabled.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_legacy_crypto.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_x509.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/config_adjust_ssl.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/check_config.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/limits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/syslimits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
- /workspace/esp-idf/components/mbedtls/port/include/sha512_alt.h \
- /workspace/esp-idf/components/hal/include/hal/sha_types.h \
- /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/sha.h \
+ /tmp/esp-idf/components/mbedtls/port/include/sha512_alt.h \
+ /tmp/esp-idf/components/hal/include/hal/sha_types.h \
+ /tmp/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/sha.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
- /workspace/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/ets_sys.h \
- /workspace/esp-idf/components/soc/esp32s3/include/soc/soc.h \
- /workspace/esp-idf/components/esp_common/include/esp_assert.h \
- /workspace/esp-idf/components/esp_common/include/esp_bit_defs.h \
- /workspace/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
- /workspace/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp_mpi.h \
- /workspace/esp-idf/components/mbedtls/port/include/mbedtls/bignum.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
- /workspace/esp-idf/components/mbedtls/port/include/aes_alt.h \
- /workspace/esp-idf/components/mbedtls/port/include/aes/esp_aes.h \
- /workspace/esp-idf/components/esp_common/include/esp_types.h \
- /workspace/esp-idf/components/hal/include/hal/aes_types.h \
- /workspace/esp-idf/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
- /workspace/esp-idf/components/esp_hw_support/include/esp_random.h \
- /workspace/esp-idf/components/protocomm/include/crypto/srp6a/esp_srp.h
+ /tmp/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/ets_sys.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h \
+ /tmp/esp-idf/components/esp_common/include/esp_assert.h \
+ /tmp/esp-idf/components/esp_common/include/esp_bit_defs.h \
+ /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
+ /tmp/esp-idf/components/protocomm/src/crypto/srp6a/esp_srp_mpi.h \
+ /tmp/esp-idf/components/mbedtls/port/include/mbedtls/bignum.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/bignum.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/md.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/platform_util.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/ctr_drbg.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/aes.h \
+ /tmp/esp-idf/components/mbedtls/port/include/aes_alt.h \
+ /tmp/esp-idf/components/mbedtls/port/include/aes/esp_aes.h \
+ /tmp/esp-idf/components/esp_common/include/esp_types.h \
+ /tmp/esp-idf/components/hal/include/hal/aes_types.h \
+ /tmp/esp-idf/components/mbedtls/mbedtls/include/mbedtls/entropy.h \
+ /tmp/esp-idf/components/esp_hw_support/include/esp_random.h \
+ /tmp/esp-idf/components/protocomm/include/crypto/srp6a/esp_srp.h

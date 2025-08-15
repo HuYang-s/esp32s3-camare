@@ -8,13 +8,13 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/workspace/esp-idf/components/sdmmc/sd_pwr_ctrl/sd_pwr_ctrl.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sd_pwr_ctrl/sd_pwr_ctrl.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sd_pwr_ctrl/sd_pwr_ctrl.c.obj.d"
-  "/workspace/esp-idf/components/sdmmc/sdmmc_cmd.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj.d"
-  "/workspace/esp-idf/components/sdmmc/sdmmc_common.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj.d"
-  "/workspace/esp-idf/components/sdmmc/sdmmc_init.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj.d"
-  "/workspace/esp-idf/components/sdmmc/sdmmc_io.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj.d"
-  "/workspace/esp-idf/components/sdmmc/sdmmc_mmc.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj.d"
-  "/workspace/esp-idf/components/sdmmc/sdmmc_sd.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj.d"
+  "/tmp/esp-idf/components/sdmmc/sd_pwr_ctrl/sd_pwr_ctrl.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sd_pwr_ctrl/sd_pwr_ctrl.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sd_pwr_ctrl/sd_pwr_ctrl.c.obj.d"
+  "/tmp/esp-idf/components/sdmmc/sdmmc_cmd.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_cmd.c.obj.d"
+  "/tmp/esp-idf/components/sdmmc/sdmmc_common.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_common.c.obj.d"
+  "/tmp/esp-idf/components/sdmmc/sdmmc_init.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_init.c.obj.d"
+  "/tmp/esp-idf/components/sdmmc/sdmmc_io.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_io.c.obj.d"
+  "/tmp/esp-idf/components/sdmmc/sdmmc_mmc.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_mmc.c.obj.d"
+  "/tmp/esp-idf/components/sdmmc/sdmmc_sd.c" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj" "gcc" "esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sdmmc_sd.c.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

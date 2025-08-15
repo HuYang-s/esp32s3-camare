@@ -73,32 +73,32 @@ esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/codegen:
 .PHONY : esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/codegen
 
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj: esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/flags.make
-esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj: /workspace/esp-idf/components/esp_partition/partition.c
+esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj: /tmp/esp-idf/components/esp_partition/partition.c
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj: esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj"
-	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj -MF CMakeFiles/__idf_esp_partition.dir/partition.c.obj.d -o CMakeFiles/__idf_esp_partition.dir/partition.c.obj -c /workspace/esp-idf/components/esp_partition/partition.c
+	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.obj -MF CMakeFiles/__idf_esp_partition.dir/partition.c.obj.d -o CMakeFiles/__idf_esp_partition.dir/partition.c.obj -c /tmp/esp-idf/components/esp_partition/partition.c
 
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_partition.dir/partition.c.i"
-	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_partition/partition.c > CMakeFiles/__idf_esp_partition.dir/partition.c.i
+	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_partition/partition.c > CMakeFiles/__idf_esp_partition.dir/partition.c.i
 
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_partition.dir/partition.c.s"
-	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_partition/partition.c -o CMakeFiles/__idf_esp_partition.dir/partition.c.s
+	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_partition/partition.c -o CMakeFiles/__idf_esp_partition.dir/partition.c.s
 
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj: esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/flags.make
-esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj: /workspace/esp-idf/components/esp_partition/partition_target.c
+esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj: /tmp/esp-idf/components/esp_partition/partition_target.c
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj: esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj"
-	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj -MF CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj.d -o CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj -c /workspace/esp-idf/components/esp_partition/partition_target.c
+	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj -MF CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj.d -o CMakeFiles/__idf_esp_partition.dir/partition_target.c.obj -c /tmp/esp-idf/components/esp_partition/partition_target.c
 
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_partition.dir/partition_target.c.i"
-	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/esp-idf/components/esp_partition/partition_target.c > CMakeFiles/__idf_esp_partition.dir/partition_target.c.i
+	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_partition/partition_target.c > CMakeFiles/__idf_esp_partition.dir/partition_target.c.i
 
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/partition_target.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_partition.dir/partition_target.c.s"
-	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/esp-idf/components/esp_partition/partition_target.c -o CMakeFiles/__idf_esp_partition.dir/partition_target.c.s
+	cd /workspace/build/esp-idf/esp_partition && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_partition/partition_target.c -o CMakeFiles/__idf_esp_partition.dir/partition_target.c.s
 
 # Object files for target __idf_esp_partition
 __idf_esp_partition_OBJECTS = \
@@ -125,6 +125,6 @@ esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/clean:
 .PHONY : esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/clean
 
 esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/esp_partition /workspace/build /workspace/build/esp-idf/esp_partition /workspace/build/esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/esp_partition /workspace/build /workspace/build/esp-idf/esp_partition /workspace/build/esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir/depend
 

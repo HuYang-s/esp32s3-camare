@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/newlib
+# Install script for directory: /tmp/esp-idf/components/newlib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

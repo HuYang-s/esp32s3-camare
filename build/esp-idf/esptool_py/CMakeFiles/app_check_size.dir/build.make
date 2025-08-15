@@ -67,7 +67,7 @@ include esp-idf/esptool_py/CMakeFiles/app_check_size.dir/compiler_depend.make
 include esp-idf/esptool_py/CMakeFiles/app_check_size.dir/progress.make
 
 esp-idf/esptool_py/CMakeFiles/app_check_size:
-	cd /workspace/build/esp-idf/esptool_py && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /workspace/build/partition_table/partition-table.bin /workspace/build/esp32s3_camera_web.bin
+	cd /workspace/build/esp-idf/esptool_py && /home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /workspace/build/partition_table/partition-table.bin /workspace/build/esp32s3_camera_web.bin
 
 esp-idf/esptool_py/CMakeFiles/app_check_size.dir/codegen:
 .PHONY : esp-idf/esptool_py/CMakeFiles/app_check_size.dir/codegen
@@ -85,6 +85,6 @@ esp-idf/esptool_py/CMakeFiles/app_check_size.dir/clean:
 .PHONY : esp-idf/esptool_py/CMakeFiles/app_check_size.dir/clean
 
 esp-idf/esptool_py/CMakeFiles/app_check_size.dir/depend:
-	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /workspace/esp-idf/components/esptool_py /workspace/build /workspace/build/esp-idf/esptool_py /workspace/build/esp-idf/esptool_py/CMakeFiles/app_check_size.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace /tmp/esp-idf/components/esptool_py /workspace/build /workspace/build/esp-idf/esptool_py /workspace/build/esp-idf/esptool_py/CMakeFiles/app_check_size.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : esp-idf/esptool_py/CMakeFiles/app_check_size.dir/depend
 

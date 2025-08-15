@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/nvs_sec_provider
+# Install script for directory: /tmp/esp-idf/components/nvs_sec_provider
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

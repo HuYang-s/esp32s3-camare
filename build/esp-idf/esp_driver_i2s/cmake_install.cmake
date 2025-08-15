@@ -1,4 +1,4 @@
-# Install script for directory: /workspace/esp-idf/components/esp_driver_i2s
+# Install script for directory: /tmp/esp-idf/components/esp_driver_i2s
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

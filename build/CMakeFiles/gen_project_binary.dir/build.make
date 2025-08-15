@@ -70,7 +70,7 @@ CMakeFiles/gen_project_binary: .bin_timestamp
 
 .bin_timestamp: esp32s3_camera_web.elf
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating binary image from built executable"
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /workspace/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32s3 elf2image --flash_mode dio --flash_freq 80m --flash_size 2MB --elf-sha256-offset 0xb0 --min-rev-full 0 --max-rev-full 99 -o /workspace/build/esp32s3_camera_web.bin /workspace/build/esp32s3_camera_web.elf
+	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32s3 elf2image --flash_mode dio --flash_freq 80m --flash_size 2MB --elf-sha256-offset 0xb0 --min-rev-full 0 --max-rev-full 99 -o /workspace/build/esp32s3_camera_web.bin /workspace/build/esp32s3_camera_web.elf
 	/usr/bin/cmake -E echo "Generated /workspace/build/esp32s3_camera_web.bin"
 	/usr/bin/cmake -E md5sum /workspace/build/esp32s3_camera_web.bin > /workspace/build/.bin_timestamp
 

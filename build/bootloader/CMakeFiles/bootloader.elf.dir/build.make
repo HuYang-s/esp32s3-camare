@@ -53,7 +53,7 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /workspace/esp-idf/components/bootloader/subproject
+CMAKE_SOURCE_DIR = /tmp/esp-idf/components/bootloader/subproject
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /workspace/build/bootloader
@@ -165,17 +165,17 @@ bootloader.elf: esp-idf/esp_hw_support/libesp_hw_support.a
 bootloader.elf: esp-idf/esp_common/libesp_common.a
 bootloader.elf: esp-idf/esp_rom/libesp_rom.a
 bootloader.elf: esp-idf/log/liblog.a
-bootloader.elf: /workspace/esp-idf/components/xtensa/esp32s3/libxt_hal.a
-bootloader.elf: /workspace/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
-bootloader.elf: /workspace/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
-bootloader.elf: /workspace/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
-bootloader.elf: /workspace/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
-bootloader.elf: /workspace/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
-bootloader.elf: /workspace/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
-bootloader.elf: /workspace/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
-bootloader.elf: /workspace/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
-bootloader.elf: /workspace/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
-bootloader.elf: /workspace/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
+bootloader.elf: /tmp/esp-idf/components/xtensa/esp32s3/libxt_hal.a
+bootloader.elf: /tmp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.ld
+bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
+bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+bootloader.elf: /tmp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
+bootloader.elf: /tmp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
 bootloader.elf: CMakeFiles/bootloader.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bootloader.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/bootloader.elf.dir/link.txt --verbose=$(VERBOSE)
@@ -189,6 +189,6 @@ CMakeFiles/bootloader.elf.dir/clean:
 .PHONY : CMakeFiles/bootloader.elf.dir/clean
 
 CMakeFiles/bootloader.elf.dir/depend: project_elf_src_esp32s3.c
-	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /workspace/esp-idf/components/bootloader/subproject /workspace/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/bootloader.elf.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /workspace/build/bootloader && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /tmp/esp-idf/components/bootloader/subproject /tmp/esp-idf/components/bootloader/subproject /workspace/build/bootloader /workspace/build/bootloader /workspace/build/bootloader/CMakeFiles/bootloader.elf.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/bootloader.elf.dir/depend
 

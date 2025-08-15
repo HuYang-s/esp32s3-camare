@@ -67,7 +67,7 @@ include CMakeFiles/dfu-list.dir/compiler_depend.make
 include CMakeFiles/dfu-list.dir/progress.make
 
 CMakeFiles/dfu-list:
-	/usr/bin/cmake -D ESP_DFU_LIST="1" -P /workspace/esp-idf/tools/cmake/run_dfu_util.cmake
+	/usr/bin/cmake -D ESP_DFU_LIST="1" -P /tmp/esp-idf/tools/cmake/run_dfu_util.cmake
 
 CMakeFiles/dfu-list.dir/codegen:
 .PHONY : CMakeFiles/dfu-list.dir/codegen
