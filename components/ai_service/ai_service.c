@@ -30,8 +30,8 @@ static const char *TAG = "ai_service";
 // 测试用HTTP端点（如果HTTPS失败）
 #define TEST_HTTP_URL "http://httpbin.org/post"
 
-#define MAX_HTTP_RECV_BUFFER 4096
-#define MAX_HTTP_OUTPUT_BUFFER 4096
+#define MAX_HTTP_RECV_BUFFER 8192
+#define MAX_HTTP_OUTPUT_BUFFER 8192
 
 static int socket_failure_count = 0;
 
@@ -96,9 +96,13 @@ static esp_err_t _http_event_handler(esp_http_client_event_t *evt)
         case HTTP_EVENT_ON_DATA:
             ESP_LOGD(TAG, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
             if (!esp_http_client_is_chunked_response(evt->client)) {
-                if (evt->user_data) {
+                if (evt->user_data && (output_len + evt->data_len) < MAX_HTTP_OUTPUT_BUFFER) {
                     memcpy(evt->user_data + output_len, evt->data, evt->data_len);
                     output_len += evt->data_len;
+                    // 确保字符串以null结尾
+                    ((char*)evt->user_data)[output_len] = '\0';
+                } else if (evt->user_data && output_len + evt->data_len >= MAX_HTTP_OUTPUT_BUFFER) {
+                    ESP_LOGW(TAG, "HTTP响应缓冲区即将溢出，当前长度: %d, 新数据: %d", output_len, evt->data_len);
                 }
             }
             break;
@@ -469,9 +473,11 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
                         cJSON *arguments = cJSON_GetObjectItem(function, "arguments");
                         
                         if (cJSON_IsString(arguments)) {
-                            ESP_LOGI(TAG, "📋 Tool Call参数: %s", cJSON_GetStringValue(arguments));
+                            const char* args_str = cJSON_GetStringValue(arguments);
+                            ESP_LOGI(TAG, "📋 Tool Call参数长度: %d", strlen(args_str));
+                            ESP_LOGI(TAG, "📋 Tool Call参数: %.200s%s", args_str, strlen(args_str) > 200 ? "..." : "");
                             
-                            cJSON *args_json = cJSON_Parse(cJSON_GetStringValue(arguments));
+                            cJSON *args_json = cJSON_Parse(args_str);
                             if (args_json) {
                                 // 4. 解析新的reasoning字段和原有字段
                                 cJSON *reasoning = cJSON_GetObjectItem(args_json, "reasoning");

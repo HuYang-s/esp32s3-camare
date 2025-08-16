@@ -277,6 +277,7 @@ esp_err_t local_ai_process_task(camera_fb_t *fb)
     time_t current_time = time(NULL);
     if (current_time - current_task.start_time >= current_task.timeout_seconds) {
         current_task.status = AI_TASK_FAILED_TIMEOUT;
+        current_task.progress = 1.0f; // 超时也算完成了流程
         strcpy(current_task.status_message, "任务超时");
         ESP_LOGW(TAG, "AI任务超时");
         xSemaphoreGive(task_mutex);
@@ -308,12 +309,19 @@ esp_err_t local_ai_process_task(camera_fb_t *fb)
             
             if (found_target) {
                 current_task.status = AI_TASK_COMPLETED;
+                current_task.progress = 1.0f; // 完成
+                current_task.target_found = true;
+                current_task.target_confidence = 0.8f; // 模拟置信度
                 snprintf(current_task.status_message, sizeof(current_task.status_message),
                     "找到目标物体: %s", current_task.target_object);
                 ESP_LOGI(TAG, "AI任务完成: 找到目标物体 '%s'", current_task.target_object);
             } else {
+                // 更新搜索进度
+                current_task.search_cycles++;
+                float elapsed = (float)(current_time - current_task.start_time);
+                current_task.progress = (elapsed / current_task.timeout_seconds) * 0.9f; // 最多到90%，完成时才100%
                 snprintf(current_task.status_message, sizeof(current_task.status_message),
-                    "搜索中... 已检测到 %d 个物体", detection_count);
+                    "搜索中... 已检测到 %d 个物体 (搜索周期: %d)", detection_count, current_task.search_cycles);
             }
             
             xSemaphoreGive(task_mutex);
