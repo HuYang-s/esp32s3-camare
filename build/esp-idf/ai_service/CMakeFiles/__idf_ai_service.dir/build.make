@@ -76,29 +76,29 @@ esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj: esp-idf/ai_
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj: /workspace/components/ai_service/ai_service.c
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj: esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj"
-	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj -MF CMakeFiles/__idf_ai_service.dir/ai_service.c.obj.d -o CMakeFiles/__idf_ai_service.dir/ai_service.c.obj -c /workspace/components/ai_service/ai_service.c
+	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.obj -MF CMakeFiles/__idf_ai_service.dir/ai_service.c.obj.d -o CMakeFiles/__idf_ai_service.dir/ai_service.c.obj -c /workspace/components/ai_service/ai_service.c
 
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_ai_service.dir/ai_service.c.i"
-	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/ai_service/ai_service.c > CMakeFiles/__idf_ai_service.dir/ai_service.c.i
+	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/ai_service/ai_service.c > CMakeFiles/__idf_ai_service.dir/ai_service.c.i
 
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/ai_service.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_ai_service.dir/ai_service.c.s"
-	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/ai_service/ai_service.c -o CMakeFiles/__idf_ai_service.dir/ai_service.c.s
+	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/ai_service/ai_service.c -o CMakeFiles/__idf_ai_service.dir/ai_service.c.s
 
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj: esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/flags.make
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj: /workspace/components/ai_service/local_ai_service.c
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj: esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj"
-	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj -MF CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj.d -o CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj -c /workspace/components/ai_service/local_ai_service.c
+	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj -MF CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj.d -o CMakeFiles/__idf_ai_service.dir/local_ai_service.c.obj -c /workspace/components/ai_service/local_ai_service.c
 
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_ai_service.dir/local_ai_service.c.i"
-	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/ai_service/local_ai_service.c > CMakeFiles/__idf_ai_service.dir/local_ai_service.c.i
+	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/components/ai_service/local_ai_service.c > CMakeFiles/__idf_ai_service.dir/local_ai_service.c.i
 
 esp-idf/ai_service/CMakeFiles/__idf_ai_service.dir/local_ai_service.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_ai_service.dir/local_ai_service.c.s"
-	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/ai_service/local_ai_service.c -o CMakeFiles/__idf_ai_service.dir/local_ai_service.c.s
+	cd /workspace/build/esp-idf/ai_service && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/components/ai_service/local_ai_service.c -o CMakeFiles/__idf_ai_service.dir/local_ai_service.c.s
 
 # Object files for target __idf_ai_service
 __idf_ai_service_OBJECTS = \

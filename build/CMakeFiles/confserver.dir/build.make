@@ -67,8 +67,8 @@ include CMakeFiles/confserver.dir/compiler_depend.make
 include CMakeFiles/confserver.dir/progress.make
 
 CMakeFiles/confserver:
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/config.env
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfserver --env-file /workspace/build/config.env --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig
+	/home/ubuntu/.espressif/python_env/idf6.0_py3.13_env/bin/python /tmp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/config.env
+	/home/ubuntu/.espressif/python_env/idf6.0_py3.13_env/bin/python -m kconfserver --env-file /workspace/build/config.env --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig
 
 CMakeFiles/confserver.dir/codegen:
 .PHONY : CMakeFiles/confserver.dir/codegen

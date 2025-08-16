@@ -319,6 +319,30 @@ cache_hal.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/cache_hal.c.s
 .PHONY : cache_hal.c.s
 
+cam_hal.obj: cam_hal.c.obj
+.PHONY : cam_hal.obj
+
+# target to build an object file
+cam_hal.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/cam_hal.c.obj
+.PHONY : cam_hal.c.obj
+
+cam_hal.i: cam_hal.c.i
+.PHONY : cam_hal.i
+
+# target to preprocess a source file
+cam_hal.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/cam_hal.c.i
+.PHONY : cam_hal.c.i
+
+cam_hal.s: cam_hal.c.s
+.PHONY : cam_hal.s
+
+# target to generate assembly for a file
+cam_hal.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/cam_hal.c.s
+.PHONY : cam_hal.c.s
+
 color_hal.obj: color_hal.c.obj
 .PHONY : color_hal.obj
 
@@ -1255,6 +1279,30 @@ timer_hal.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/timer_hal.c.s
 .PHONY : timer_hal.c.s
 
+touch_sens_hal.obj: touch_sens_hal.c.obj
+.PHONY : touch_sens_hal.obj
+
+# target to build an object file
+touch_sens_hal.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.obj
+.PHONY : touch_sens_hal.c.obj
+
+touch_sens_hal.i: touch_sens_hal.c.i
+.PHONY : touch_sens_hal.i
+
+# target to preprocess a source file
+touch_sens_hal.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.i
+.PHONY : touch_sens_hal.c.i
+
+touch_sens_hal.s: touch_sens_hal.c.s
+.PHONY : touch_sens_hal.s
+
+# target to generate assembly for a file
+touch_sens_hal.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sens_hal.c.s
+.PHONY : touch_sens_hal.c.s
+
 touch_sensor_hal.obj: touch_sensor_hal.c.obj
 .PHONY : touch_sensor_hal.obj
 
@@ -1279,53 +1327,29 @@ touch_sensor_hal.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/touch_sensor_hal.c.s
 .PHONY : touch_sensor_hal.c.s
 
-twai_hal.obj: twai_hal.c.obj
-.PHONY : twai_hal.obj
+twai_hal_sja1000.obj: twai_hal_sja1000.c.obj
+.PHONY : twai_hal_sja1000.obj
 
 # target to build an object file
-twai_hal.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.obj
-.PHONY : twai_hal.c.obj
+twai_hal_sja1000.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_sja1000.c.obj
+.PHONY : twai_hal_sja1000.c.obj
 
-twai_hal.i: twai_hal.c.i
-.PHONY : twai_hal.i
-
-# target to preprocess a source file
-twai_hal.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.i
-.PHONY : twai_hal.c.i
-
-twai_hal.s: twai_hal.c.s
-.PHONY : twai_hal.s
-
-# target to generate assembly for a file
-twai_hal.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal.c.s
-.PHONY : twai_hal.c.s
-
-twai_hal_iram.obj: twai_hal_iram.c.obj
-.PHONY : twai_hal_iram.obj
-
-# target to build an object file
-twai_hal_iram.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.obj
-.PHONY : twai_hal_iram.c.obj
-
-twai_hal_iram.i: twai_hal_iram.c.i
-.PHONY : twai_hal_iram.i
+twai_hal_sja1000.i: twai_hal_sja1000.c.i
+.PHONY : twai_hal_sja1000.i
 
 # target to preprocess a source file
-twai_hal_iram.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.i
-.PHONY : twai_hal_iram.c.i
+twai_hal_sja1000.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_sja1000.c.i
+.PHONY : twai_hal_sja1000.c.i
 
-twai_hal_iram.s: twai_hal_iram.c.s
-.PHONY : twai_hal_iram.s
+twai_hal_sja1000.s: twai_hal_sja1000.c.s
+.PHONY : twai_hal_sja1000.s
 
 # target to generate assembly for a file
-twai_hal_iram.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_iram.c.s
-.PHONY : twai_hal_iram.c.s
+twai_hal_sja1000.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/twai_hal_sja1000.c.s
+.PHONY : twai_hal_sja1000.c.s
 
 uart_hal.obj: uart_hal.c.obj
 .PHONY : uart_hal.obj
@@ -1374,6 +1398,30 @@ uart_hal_iram.s: uart_hal_iram.c.s
 uart_hal_iram.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/uart_hal_iram.c.s
 .PHONY : uart_hal_iram.c.s
+
+uhci_hal.obj: uhci_hal.c.obj
+.PHONY : uhci_hal.obj
+
+# target to build an object file
+uhci_hal.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/uhci_hal.c.obj
+.PHONY : uhci_hal.c.obj
+
+uhci_hal.i: uhci_hal.c.i
+.PHONY : uhci_hal.i
+
+# target to preprocess a source file
+uhci_hal.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/uhci_hal.c.i
+.PHONY : uhci_hal.c.i
+
+uhci_hal.s: uhci_hal.c.s
+.PHONY : uhci_hal.s
+
+# target to generate assembly for a file
+uhci_hal.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/hal/CMakeFiles/__idf_hal.dir/build.make esp-idf/hal/CMakeFiles/__idf_hal.dir/uhci_hal.c.s
+.PHONY : uhci_hal.c.s
 
 usb_dwc_hal.obj: usb_dwc_hal.c.obj
 .PHONY : usb_dwc_hal.obj
@@ -1502,6 +1550,9 @@ help:
 	@echo "... cache_hal.obj"
 	@echo "... cache_hal.i"
 	@echo "... cache_hal.s"
+	@echo "... cam_hal.obj"
+	@echo "... cam_hal.i"
+	@echo "... cam_hal.s"
 	@echo "... color_hal.obj"
 	@echo "... color_hal.i"
 	@echo "... color_hal.s"
@@ -1619,21 +1670,24 @@ help:
 	@echo "... timer_hal.obj"
 	@echo "... timer_hal.i"
 	@echo "... timer_hal.s"
+	@echo "... touch_sens_hal.obj"
+	@echo "... touch_sens_hal.i"
+	@echo "... touch_sens_hal.s"
 	@echo "... touch_sensor_hal.obj"
 	@echo "... touch_sensor_hal.i"
 	@echo "... touch_sensor_hal.s"
-	@echo "... twai_hal.obj"
-	@echo "... twai_hal.i"
-	@echo "... twai_hal.s"
-	@echo "... twai_hal_iram.obj"
-	@echo "... twai_hal_iram.i"
-	@echo "... twai_hal_iram.s"
+	@echo "... twai_hal_sja1000.obj"
+	@echo "... twai_hal_sja1000.i"
+	@echo "... twai_hal_sja1000.s"
 	@echo "... uart_hal.obj"
 	@echo "... uart_hal.i"
 	@echo "... uart_hal.s"
 	@echo "... uart_hal_iram.obj"
 	@echo "... uart_hal_iram.i"
 	@echo "... uart_hal_iram.s"
+	@echo "... uhci_hal.obj"
+	@echo "... uhci_hal.i"
+	@echo "... uhci_hal.s"
 	@echo "... usb_dwc_hal.obj"
 	@echo "... usb_dwc_hal.i"
 	@echo "... usb_dwc_hal.s"

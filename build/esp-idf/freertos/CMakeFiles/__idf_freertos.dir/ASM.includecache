@@ -55,6 +55,8 @@ stdint.h
 -
 
 /tmp/esp-idf/components/newlib/platform_include/sys/reent.h
+sdkconfig.h
+/tmp/esp-idf/components/newlib/platform_include/sys/sdkconfig.h
 
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h
 
@@ -86,20 +88,20 @@ xtensa/config/tie-asm.h
 tie-asm.h
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h
 
-/tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h
-xtensa/corebits.h
--
-
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h
 
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h
 
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h
 
+/tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/xt_specreg.h
+xtensa/corebits.h
+-
+
 /tmp/esp-idf/components/xtensa/include/xtensa/coreasm.h
 xtensa/config/core.h
 -
-xtensa/config/specreg.h
+xtensa/config/xt_specreg.h
 -
 xtensa/config/system.h
 -

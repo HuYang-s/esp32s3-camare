@@ -15,8 +15,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/esp-idf/components/esp_adc/adc_filter.c" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj" "gcc" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_filter.c.obj.d"
   "/tmp/esp-idf/components/esp_adc/adc_monitor.c" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj" "gcc" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_monitor.c.obj.d"
   "/tmp/esp-idf/components/esp_adc/adc_oneshot.c" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj" "gcc" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.obj.d"
-  "/tmp/esp-idf/components/esp_adc/deprecated/esp32s3/esp_adc_cal_legacy.c" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj" "gcc" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj.d"
-  "/tmp/esp-idf/components/esp_adc/deprecated/esp_adc_cal_common_legacy.c" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj" "gcc" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj.d"
   "/tmp/esp-idf/components/esp_adc/esp32s3/curve_fitting_coefficients.c" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj" "gcc" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32s3/curve_fitting_coefficients.c.obj.d"
   "/tmp/esp-idf/components/esp_adc/gdma/adc_dma.c" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj" "gcc" "esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma/adc_dma.c.obj.d"
   )

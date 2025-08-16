@@ -1,6 +1,3 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/partition-table-flash"
-)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )

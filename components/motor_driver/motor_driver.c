@@ -229,3 +229,135 @@ esp_err_t motor_test_sequence(void)
     
     return ESP_OK;
 }
+
+esp_err_t motor_turn_angle(int angle, int speed)
+{
+    if (!motor_initialized) {
+        ESP_LOGE(TAG, "电机驱动未初始化");
+        return ESP_FAIL;
+    }
+    
+    if (angle == 0) {
+        return ESP_OK; // 不需要转弯
+    }
+    
+    if (speed < 0) speed = 0;
+    if (speed > 100) speed = 100;
+    
+    // 限制角度范围
+    if (angle < -180) angle = -180;
+    if (angle > 180) angle = 180;
+    
+    ESP_LOGI(TAG, "按角度转弯: %d度, 速度: %d%%", angle, speed);
+    
+    // 计算转弯时间 (简化模型：1度约需要10ms，根据实际机器人调整)
+    int turn_time_ms = abs(angle) * 10 * (100.0 / speed); // 速度越慢，时间越长
+    
+    esp_err_t result;
+    if (angle < 0) {
+        // 左转
+        result = motor_left(speed);
+    } else {
+        // 右转
+        result = motor_right(speed);
+    }
+    
+    if (result == ESP_OK) {
+        // 等待转弯完成
+        vTaskDelay(pdMS_TO_TICKS(turn_time_ms));
+        motor_stop_all();
+        ESP_LOGI(TAG, "角度转弯完成");
+    }
+    
+    return result;
+}
+
+esp_err_t motor_differential_drive(int left_speed, int right_speed)
+{
+    if (!motor_initialized) {
+        ESP_LOGE(TAG, "电机驱动未初始化");
+        return ESP_FAIL;
+    }
+    
+    // 限制速度范围
+    if (left_speed < -100) left_speed = -100;
+    if (left_speed > 100) left_speed = 100;
+    if (right_speed < -100) right_speed = -100;
+    if (right_speed > 100) right_speed = 100;
+    
+    ESP_LOGI(TAG, "差速驱动: 左轮=%d%%, 右轮=%d%%", left_speed, right_speed);
+    
+    // 控制左轮 (IN1, IN2)
+    if (left_speed > 0) {
+        // 左轮前进
+        gpio_set_level(MOTOR_IN1_GPIO, 1);
+        gpio_set_level(MOTOR_IN2_GPIO, 0);
+    } else if (left_speed < 0) {
+        // 左轮后退
+        gpio_set_level(MOTOR_IN1_GPIO, 0);
+        gpio_set_level(MOTOR_IN2_GPIO, 1);
+    } else {
+        // 左轮停止
+        gpio_set_level(MOTOR_IN1_GPIO, 0);
+        gpio_set_level(MOTOR_IN2_GPIO, 0);
+    }
+    
+    // 控制右轮 (IN3, IN4)
+    if (right_speed > 0) {
+        // 右轮前进
+        gpio_set_level(MOTOR_IN3_GPIO, 1);
+        gpio_set_level(MOTOR_IN4_GPIO, 0);
+    } else if (right_speed < 0) {
+        // 右轮后退
+        gpio_set_level(MOTOR_IN3_GPIO, 0);
+        gpio_set_level(MOTOR_IN4_GPIO, 1);
+    } else {
+        // 右轮停止
+        gpio_set_level(MOTOR_IN3_GPIO, 0);
+        gpio_set_level(MOTOR_IN4_GPIO, 0);
+    }
+    
+    return ESP_OK;
+}
+
+esp_err_t motor_pivot_turn(int angle, int speed)
+{
+    if (!motor_initialized) {
+        ESP_LOGE(TAG, "电机驱动未初始化");
+        return ESP_FAIL;
+    }
+    
+    if (angle == 0) {
+        return ESP_OK; // 不需要转弯
+    }
+    
+    if (speed < 0) speed = 0;
+    if (speed > 100) speed = 100;
+    
+    // 限制角度范围
+    if (angle < -180) angle = -180;
+    if (angle > 180) angle = 180;
+    
+    ESP_LOGI(TAG, "原地转弯: %d度, 速度: %d%%", angle, speed);
+    
+    // 计算转弯时间 (原地转弯比移动转弯快一些)
+    int turn_time_ms = abs(angle) * 8 * (100.0 / speed);
+    
+    esp_err_t result;
+    if (angle < 0) {
+        // 左转：左轮后退，右轮前进
+        result = motor_differential_drive(-speed, speed);
+    } else {
+        // 右转：左轮前进，右轮后退
+        result = motor_differential_drive(speed, -speed);
+    }
+    
+    if (result == ESP_OK) {
+        // 等待转弯完成
+        vTaskDelay(pdMS_TO_TICKS(turn_time_ms));
+        motor_stop_all();
+        ESP_LOGI(TAG, "原地转弯完成");
+    }
+    
+    return result;
+}

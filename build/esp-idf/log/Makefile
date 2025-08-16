@@ -199,6 +199,54 @@ src/buffer/log_buffers.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer/log_buffers.c.s
 .PHONY : src/buffer/log_buffers.c.s
 
+src/log.obj: src/log.c.obj
+.PHONY : src/log.obj
+
+# target to build an object file
+src/log.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.obj
+.PHONY : src/log.c.obj
+
+src/log.i: src/log.c.i
+.PHONY : src/log.i
+
+# target to preprocess a source file
+src/log.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.i
+.PHONY : src/log.c.i
+
+src/log.s: src/log.c.s
+.PHONY : src/log.s
+
+# target to generate assembly for a file
+src/log.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log.c.s
+.PHONY : src/log.c.s
+
+src/log_format_text.obj: src/log_format_text.c.obj
+.PHONY : src/log_format_text.obj
+
+# target to build an object file
+src/log_format_text.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.obj
+.PHONY : src/log_format_text.c.obj
+
+src/log_format_text.i: src/log_format_text.c.i
+.PHONY : src/log_format_text.i
+
+# target to preprocess a source file
+src/log_format_text.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.i
+.PHONY : src/log_format_text.c.i
+
+src/log_format_text.s: src/log_format_text.c.s
+.PHONY : src/log_format_text.s
+
+# target to generate assembly for a file
+src/log_format_text.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_format_text.c.s
+.PHONY : src/log_format_text.c.s
+
 src/log_level/log_level.obj: src/log_level/log_level.c.obj
 .PHONY : src/log_level/log_level.obj
 
@@ -294,6 +342,30 @@ src/log_level/tag_log_level/tag_log_level.s: src/log_level/tag_log_level/tag_log
 src/log_level/tag_log_level/tag_log_level.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/tag_log_level.c.s
 .PHONY : src/log_level/tag_log_level/tag_log_level.c.s
+
+src/log_print.obj: src/log_print.c.obj
+.PHONY : src/log_print.obj
+
+# target to build an object file
+src/log_print.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.obj
+.PHONY : src/log_print.c.obj
+
+src/log_print.i: src/log_print.c.i
+.PHONY : src/log_print.i
+
+# target to preprocess a source file
+src/log_print.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.i
+.PHONY : src/log_print.c.i
+
+src/log_print.s: src/log_print.c.s
+.PHONY : src/log_print.s
+
+# target to generate assembly for a file
+src/log_print.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/log_print.c.s
+.PHONY : src/log_print.c.s
 
 src/log_timestamp_common.obj: src/log_timestamp_common.c.obj
 .PHONY : src/log_timestamp_common.obj
@@ -391,6 +463,30 @@ src/os/log_write.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/os/log_write.c.s
 .PHONY : src/os/log_write.c.s
 
+src/os/util.obj: src/os/util.c.obj
+.PHONY : src/os/util.obj
+
+# target to build an object file
+src/os/util.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/os/util.c.obj
+.PHONY : src/os/util.c.obj
+
+src/os/util.i: src/os/util.c.i
+.PHONY : src/os/util.i
+
+# target to preprocess a source file
+src/os/util.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/os/util.c.i
+.PHONY : src/os/util.c.i
+
+src/os/util.s: src/os/util.c.s
+.PHONY : src/os/util.s
+
+# target to generate assembly for a file
+src/os/util.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/log/CMakeFiles/__idf_log.dir/build.make esp-idf/log/CMakeFiles/__idf_log.dir/src/os/util.c.s
+.PHONY : src/os/util.c.s
+
 src/util.obj: src/util.c.obj
 .PHONY : src/util.obj
 
@@ -431,6 +527,12 @@ help:
 	@echo "... src/buffer/log_buffers.obj"
 	@echo "... src/buffer/log_buffers.i"
 	@echo "... src/buffer/log_buffers.s"
+	@echo "... src/log.obj"
+	@echo "... src/log.i"
+	@echo "... src/log.s"
+	@echo "... src/log_format_text.obj"
+	@echo "... src/log_format_text.i"
+	@echo "... src/log_format_text.s"
 	@echo "... src/log_level/log_level.obj"
 	@echo "... src/log_level/log_level.i"
 	@echo "... src/log_level/log_level.s"
@@ -443,6 +545,9 @@ help:
 	@echo "... src/log_level/tag_log_level/tag_log_level.obj"
 	@echo "... src/log_level/tag_log_level/tag_log_level.i"
 	@echo "... src/log_level/tag_log_level/tag_log_level.s"
+	@echo "... src/log_print.obj"
+	@echo "... src/log_print.i"
+	@echo "... src/log_print.s"
 	@echo "... src/log_timestamp_common.obj"
 	@echo "... src/log_timestamp_common.i"
 	@echo "... src/log_timestamp_common.s"
@@ -455,6 +560,9 @@ help:
 	@echo "... src/os/log_write.obj"
 	@echo "... src/os/log_write.i"
 	@echo "... src/os/log_write.s"
+	@echo "... src/os/util.obj"
+	@echo "... src/os/util.i"
+	@echo "... src/os/util.s"
 	@echo "... src/util.obj"
 	@echo "... src/util.i"
 	@echo "... src/util.s"

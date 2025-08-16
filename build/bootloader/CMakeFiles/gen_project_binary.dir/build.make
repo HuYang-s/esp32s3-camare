@@ -66,18 +66,11 @@ include CMakeFiles/gen_project_binary.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/gen_project_binary.dir/progress.make
 
-CMakeFiles/gen_project_binary: .bin_timestamp
-
-.bin_timestamp: bootloader.elf
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating binary image from built executable"
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/components/esptool_py/esptool/esptool.py --chip esp32s3 elf2image --flash_mode dio --flash_freq 80m --flash_size 2MB --min-rev-full 0 --max-rev-full 99 -o /workspace/build/bootloader/bootloader.bin /workspace/build/bootloader/bootloader.elf
-	/usr/bin/cmake -E echo "Generated /workspace/build/bootloader/bootloader.bin"
-	/usr/bin/cmake -E md5sum /workspace/build/bootloader/bootloader.bin > /workspace/build/bootloader/.bin_timestamp
+CMakeFiles/gen_project_binary:
 
 CMakeFiles/gen_project_binary.dir/codegen:
 .PHONY : CMakeFiles/gen_project_binary.dir/codegen
 
-gen_project_binary: .bin_timestamp
 gen_project_binary: CMakeFiles/gen_project_binary
 gen_project_binary: CMakeFiles/gen_project_binary.dir/build.make
 .PHONY : gen_project_binary

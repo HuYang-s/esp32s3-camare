@@ -156,71 +156,6 @@ save-defconfig/fast:
 .PHONY : save-defconfig/fast
 
 #=============================================================================
-# Target rules for targets named gen_project_binary
-
-# Build rule for target.
-gen_project_binary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gen_project_binary
-.PHONY : gen_project_binary
-
-# fast build rule for target.
-gen_project_binary/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/gen_project_binary.dir/build.make CMakeFiles/gen_project_binary.dir/build
-.PHONY : gen_project_binary/fast
-
-#=============================================================================
-# Target rules for targets named app
-
-# Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
-.PHONY : app
-
-# fast build rule for target.
-app/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
-.PHONY : app/fast
-
-#=============================================================================
-# Target rules for targets named erase_flash
-
-# Build rule for target.
-erase_flash: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 erase_flash
-.PHONY : erase_flash
-
-# fast build rule for target.
-erase_flash/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/erase_flash.dir/build.make CMakeFiles/erase_flash.dir/build
-.PHONY : erase_flash/fast
-
-#=============================================================================
-# Target rules for targets named merge-bin
-
-# Build rule for target.
-merge-bin: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 merge-bin
-.PHONY : merge-bin
-
-# fast build rule for target.
-merge-bin/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/merge-bin.dir/build.make CMakeFiles/merge-bin.dir/build
-.PHONY : merge-bin/fast
-
-#=============================================================================
-# Target rules for targets named monitor
-
-# Build rule for target.
-monitor: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 monitor
-.PHONY : monitor
-
-# fast build rule for target.
-monitor/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/monitor.dir/build.make CMakeFiles/monitor.dir/build
-.PHONY : monitor/fast
-
-#=============================================================================
 # Target rules for targets named _project_elf_src
 
 # Build rule for target.
@@ -349,6 +284,58 @@ uf2-app: cmake_check_build_system
 uf2-app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/uf2-app.dir/build.make CMakeFiles/uf2-app.dir/build
 .PHONY : uf2-app/fast
+
+#=============================================================================
+# Target rules for targets named gen_bootloader_binary
+
+# Build rule for target.
+gen_bootloader_binary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gen_bootloader_binary
+.PHONY : gen_bootloader_binary
+
+# fast build rule for target.
+gen_bootloader_binary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gen_bootloader_binary.dir/build.make CMakeFiles/gen_bootloader_binary.dir/build
+.PHONY : gen_bootloader_binary/fast
+
+#=============================================================================
+# Target rules for targets named gen_project_binary
+
+# Build rule for target.
+gen_project_binary: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gen_project_binary
+.PHONY : gen_project_binary
+
+# fast build rule for target.
+gen_project_binary/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/gen_project_binary.dir/build.make CMakeFiles/gen_project_binary.dir/build
+.PHONY : gen_project_binary/fast
+
+#=============================================================================
+# Target rules for targets named app
+
+# Build rule for target.
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
+
+# fast build rule for target.
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
+
+#=============================================================================
+# Target rules for targets named bootloader_check_size
+
+# Build rule for target.
+bootloader_check_size: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bootloader_check_size
+.PHONY : bootloader_check_size
+
+# fast build rule for target.
+bootloader_check_size/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/bootloader_check_size.dir/build.make CMakeFiles/bootloader_check_size.dir/build
+.PHONY : bootloader_check_size/fast
 
 #=============================================================================
 # Target rules for targets named __idf_xtensa
@@ -611,19 +598,6 @@ __idf_log/fast:
 .PHONY : __idf_log/fast
 
 #=============================================================================
-# Target rules for targets named bootloader_check_size
-
-# Build rule for target.
-bootloader_check_size: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bootloader_check_size
-.PHONY : bootloader_check_size
-
-# fast build rule for target.
-bootloader_check_size/fast:
-	$(MAKE) $(MAKESILENT) -f esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/build.make esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir/build
-.PHONY : bootloader_check_size/fast
-
-#=============================================================================
 # Target rules for targets named __idf_main
 
 # Build rule for target.
@@ -680,11 +654,9 @@ help:
 	@echo "... efuse_common_table"
 	@echo "... efuse_custom_table"
 	@echo "... efuse_test_table"
-	@echo "... erase_flash"
+	@echo "... gen_bootloader_binary"
 	@echo "... gen_project_binary"
 	@echo "... menuconfig"
-	@echo "... merge-bin"
-	@echo "... monitor"
 	@echo "... save-defconfig"
 	@echo "... show-efuse-table"
 	@echo "... show_efuse_table"

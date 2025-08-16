@@ -30,13 +30,7 @@ esp_err_t ai_service_analyze_image(camera_fb_t *fb, const char* filename);
  */
 esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename);
 
-/**
- * @brief 根据用户命令执行AI图像分析任务
- *
- * @param command 用户输入的命令字符串
- * @return esp_err_t
- */
-esp_err_t ai_service_command_analyze(const char* command);
+
 
 /**
  * @brief 获取当前网络请求失败的计数值
@@ -61,5 +55,37 @@ esp_err_t parse_text_motor_command(const char* text, const char* filename);
  * @return esp_err_t
  */
 esp_err_t ai_service_command_analyze(const char* command);
+
+/**
+ * @brief 启动AI物体搜索任务
+ * 
+ * @param target_object 目标物体名称
+ * @param timeout_seconds 搜索超时时间（秒）
+ * @param use_navigation 是否使用主动导航搜索
+ * @return esp_err_t
+ */
+esp_err_t ai_service_start_object_search(const char* target_object, int timeout_seconds, bool use_navigation);
+
+/**
+ * @brief 停止当前AI物体搜索任务
+ * 
+ * @return esp_err_t
+ */
+esp_err_t ai_service_stop_object_search(void);
+
+/**
+ * @brief 获取AI物体搜索任务状态
+ * 
+ * @return const ai_task_t* 任务状态结构体指针
+ */
+const ai_task_t* ai_service_get_search_status(void);
+
+/**
+ * @brief 处理AI物体搜索任务（在主循环中调用）
+ * 
+ * @param fb 当前摄像头图像
+ * @return esp_err_t
+ */
+esp_err_t ai_service_process_search_task(camera_fb_t *fb);
 
 #endif // AI_SERVICE_H

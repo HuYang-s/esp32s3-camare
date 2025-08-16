@@ -2761,6 +2761,54 @@ tmp/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.s
 .PHONY : tmp/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.c.s
 
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.obj: tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.obj
+
+# target to build an object file
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.obj
+
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.i: tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.i
+
+# target to preprocess a source file
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.i
+
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.s: tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.s
+
+# target to generate assembly for a file
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.c.s
+
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.obj: tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.obj
+
+# target to build an object file
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.obj
+
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.i: tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.i
+
+# target to preprocess a source file
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.i
+
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.s: tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.s
+
+# target to generate assembly for a file
+tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.c.s
+
 tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.obj: tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.c.obj
 .PHONY : tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.obj
 
@@ -2953,125 +3001,125 @@ tmp/esp-idf/components/mbedtls/port/net_sockets.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/tmp/esp-idf/components/mbedtls/port/net_sockets.c.s
 .PHONY : tmp/esp-idf/components/mbedtls/port/net_sockets.c.s
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.obj: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.obj: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.obj
 
 # target to build an object file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.obj
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.i: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.i
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.i: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.i
 
 # target to preprocess a source file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.i
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.i
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.s: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.s
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.s: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.s
 
 # target to generate assembly for a file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.c.s
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.c.s
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.obj: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.obj: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.obj
 
 # target to build an object file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.obj
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.i: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.i
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.i: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.i
 
 # target to preprocess a source file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.i
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.i
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.s: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.s
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.s: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.s
 
 # target to generate assembly for a file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.c.s
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.c.s
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.obj: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.obj: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.obj
 
 # target to build an object file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.obj
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.i: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.i
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.i: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.i
 
 # target to preprocess a source file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.i
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.i
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.s: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.s
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.s: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.s
 
 # target to generate assembly for a file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.c.s
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.c.s
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.obj: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.obj: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.obj
 
 # target to build an object file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.obj
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.i: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.i
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.i: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.i
 
 # target to preprocess a source file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.i
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.i
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.s: tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.s
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.s: tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.s
 
 # target to generate assembly for a file
-tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.c.s
+tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.c.s
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/sha.obj: tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/sha.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/sha.obj: tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/sha.obj
 
 # target to build an object file
-tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.obj
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.obj
+tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.obj
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.obj
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/sha.i: tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/sha.i
+tmp/esp-idf/components/mbedtls/port/sha/core/sha.i: tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/sha.i
 
 # target to preprocess a source file
-tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.i
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.i
+tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.i
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.i
 
-tmp/esp-idf/components/mbedtls/port/sha/dma/sha.s: tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/sha.s
+tmp/esp-idf/components/mbedtls/port/sha/core/sha.s: tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/sha.s
 
 # target to generate assembly for a file
-tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.s
-.PHONY : tmp/esp-idf/components/mbedtls/port/sha/dma/sha.c.s
+tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/build.make esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.s
+.PHONY : tmp/esp-idf/components/mbedtls/port/sha/core/sha.c.s
 
 tmp/esp-idf/components/mbedtls/port/sha/esp_sha.obj: tmp/esp-idf/components/mbedtls/port/sha/esp_sha.c.obj
 .PHONY : tmp/esp-idf/components/mbedtls/port/sha/esp_sha.obj
@@ -3671,6 +3719,12 @@ help:
 	@echo "... tmp/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.obj"
 	@echo "... tmp/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.i"
 	@echo "... tmp/esp-idf/components/mbedtls/port/crypto_shared_gdma/esp_crypto_shared_gdma.s"
+	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.obj"
+	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.i"
+	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_ds_common.s"
+	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.obj"
+	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.i"
+	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_dec_alt.s"
 	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.obj"
 	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.i"
 	@echo "... tmp/esp-idf/components/mbedtls/port/esp_ds/esp_rsa_sign_alt.s"
@@ -3695,21 +3749,21 @@ help:
 	@echo "... tmp/esp-idf/components/mbedtls/port/net_sockets.obj"
 	@echo "... tmp/esp-idf/components/mbedtls/port/net_sockets.i"
 	@echo "... tmp/esp-idf/components/mbedtls/port/net_sockets.s"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.obj"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.i"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha1.s"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.obj"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.i"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha256.s"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.obj"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.i"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha512.s"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.obj"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.i"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/esp_sha_gdma_impl.s"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/sha.obj"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/sha.i"
-	@echo "... tmp/esp-idf/components/mbedtls/port/sha/dma/sha.s"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.obj"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.i"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha1.s"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.obj"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.i"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha256.s"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.obj"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.i"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha512.s"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.obj"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.i"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/esp_sha_gdma_impl.s"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/sha.obj"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/sha.i"
+	@echo "... tmp/esp-idf/components/mbedtls/port/sha/core/sha.s"
 	@echo "... tmp/esp-idf/components/mbedtls/port/sha/esp_sha.obj"
 	@echo "... tmp/esp-idf/components/mbedtls/port/sha/esp_sha.i"
 	@echo "... tmp/esp-idf/components/mbedtls/port/sha/esp_sha.s"

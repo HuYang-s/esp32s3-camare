@@ -343,54 +343,6 @@ adc_oneshot.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/build.make esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/adc_oneshot.c.s
 .PHONY : adc_oneshot.c.s
 
-deprecated/esp32s3/esp_adc_cal_legacy.obj: deprecated/esp32s3/esp_adc_cal_legacy.c.obj
-.PHONY : deprecated/esp32s3/esp_adc_cal_legacy.obj
-
-# target to build an object file
-deprecated/esp32s3/esp_adc_cal_legacy.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/build.make esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.obj
-.PHONY : deprecated/esp32s3/esp_adc_cal_legacy.c.obj
-
-deprecated/esp32s3/esp_adc_cal_legacy.i: deprecated/esp32s3/esp_adc_cal_legacy.c.i
-.PHONY : deprecated/esp32s3/esp_adc_cal_legacy.i
-
-# target to preprocess a source file
-deprecated/esp32s3/esp_adc_cal_legacy.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/build.make esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.i
-.PHONY : deprecated/esp32s3/esp_adc_cal_legacy.c.i
-
-deprecated/esp32s3/esp_adc_cal_legacy.s: deprecated/esp32s3/esp_adc_cal_legacy.c.s
-.PHONY : deprecated/esp32s3/esp_adc_cal_legacy.s
-
-# target to generate assembly for a file
-deprecated/esp32s3/esp_adc_cal_legacy.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/build.make esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp32s3/esp_adc_cal_legacy.c.s
-.PHONY : deprecated/esp32s3/esp_adc_cal_legacy.c.s
-
-deprecated/esp_adc_cal_common_legacy.obj: deprecated/esp_adc_cal_common_legacy.c.obj
-.PHONY : deprecated/esp_adc_cal_common_legacy.obj
-
-# target to build an object file
-deprecated/esp_adc_cal_common_legacy.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/build.make esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.obj
-.PHONY : deprecated/esp_adc_cal_common_legacy.c.obj
-
-deprecated/esp_adc_cal_common_legacy.i: deprecated/esp_adc_cal_common_legacy.c.i
-.PHONY : deprecated/esp_adc_cal_common_legacy.i
-
-# target to preprocess a source file
-deprecated/esp_adc_cal_common_legacy.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/build.make esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.i
-.PHONY : deprecated/esp_adc_cal_common_legacy.c.i
-
-deprecated/esp_adc_cal_common_legacy.s: deprecated/esp_adc_cal_common_legacy.c.s
-.PHONY : deprecated/esp_adc_cal_common_legacy.s
-
-# target to generate assembly for a file
-deprecated/esp_adc_cal_common_legacy.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/build.make esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated/esp_adc_cal_common_legacy.c.s
-.PHONY : deprecated/esp_adc_cal_common_legacy.c.s
-
 esp32s3/curve_fitting_coefficients.obj: esp32s3/curve_fitting_coefficients.c.obj
 .PHONY : esp32s3/curve_fitting_coefficients.obj
 
@@ -473,12 +425,6 @@ help:
 	@echo "... adc_oneshot.obj"
 	@echo "... adc_oneshot.i"
 	@echo "... adc_oneshot.s"
-	@echo "... deprecated/esp32s3/esp_adc_cal_legacy.obj"
-	@echo "... deprecated/esp32s3/esp_adc_cal_legacy.i"
-	@echo "... deprecated/esp32s3/esp_adc_cal_legacy.s"
-	@echo "... deprecated/esp_adc_cal_common_legacy.obj"
-	@echo "... deprecated/esp_adc_cal_common_legacy.i"
-	@echo "... deprecated/esp_adc_cal_common_legacy.s"
 	@echo "... esp32s3/curve_fitting_coefficients.obj"
 	@echo "... esp32s3/curve_fitting_coefficients.i"
 	@echo "... esp32s3/curve_fitting_coefficients.s"

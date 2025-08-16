@@ -49,6 +49,8 @@ xtensa/config/system.h
 -
 xtensa/hal.h
 -
+sdkconfig.h
+/tmp/esp-idf/components/esp_system/port/arch/xtensa/sdkconfig.h
 
 /tmp/esp-idf/components/esp_system/port/arch/xtensa/expression_with_stack_asm.S
 xtensa_context.h
@@ -127,6 +129,8 @@ stdint.h
 -
 
 /tmp/esp-idf/components/newlib/platform_include/sys/reent.h
+sdkconfig.h
+/tmp/esp-idf/components/newlib/platform_include/sys/sdkconfig.h
 
 /tmp/esp-idf/components/soc/esp32s3/include/soc/dport_access.h
 stdint.h
@@ -152,8 +156,6 @@ soc/interrupt_core1_reg.h
 soc.h
 /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h
 
-/tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h
-
 /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h
 stdint.h
 -
@@ -165,8 +167,8 @@ soc/reg_base.h
 /tmp/esp-idf/components/soc/esp32s3/include/soc/soc/reg_base.h
 
 /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h
-mpu_caps.h
-/tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h
+soc/soc_caps_eval.h
+/tmp/esp-idf/components/soc/esp32s3/include/soc/soc/soc_caps_eval.h
 
 /tmp/esp-idf/components/soc/esp32s3/register/soc/interrupt_core0_reg.h
 soc/soc.h
@@ -185,6 +187,8 @@ soc/soc.h
 /tmp/esp-idf/components/soc/esp32s3/register/soc/system_reg.h
 soc/soc.h
 /tmp/esp-idf/components/soc/esp32s3/register/soc/soc/soc.h
+
+/tmp/esp-idf/components/soc/include/soc/soc_caps_eval.h
 
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h
 
@@ -216,22 +220,22 @@ xtensa/config/tie-asm.h
 tie-asm.h
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h
 
-/tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h
-xtensa/corebits.h
--
-
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h
 
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h
 
 /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h
 
+/tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/xt_specreg.h
+xtensa/corebits.h
+-
+
 /tmp/esp-idf/components/xtensa/include/esp_private/panic_reason.h
 
 /tmp/esp-idf/components/xtensa/include/xtensa/coreasm.h
 xtensa/config/core.h
 -
-xtensa/config/specreg.h
+xtensa/config/xt_specreg.h
 -
 xtensa/config/system.h
 -

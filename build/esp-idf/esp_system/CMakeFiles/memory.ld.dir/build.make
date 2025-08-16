@@ -71,7 +71,7 @@ esp-idf/esp_system/CMakeFiles/memory.ld: esp-idf/esp_system/ld/memory.ld
 esp-idf/esp_system/ld/memory.ld: /tmp/esp-idf/components/esp_system/ld/esp32s3/memory.ld.in
 esp-idf/esp_system/ld/memory.ld: config/sdkconfig.h
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating /workspace/build/esp-idf/esp_system/ld/memory.ld linker script..."
-	cd /workspace/build/esp-idf/esp_system && /usr/bin/cmake -DCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DSOURCE=/tmp/esp-idf/components/esp_system/ld/esp32s3/memory.ld.in -DTARGET=/workspace/build/esp-idf/esp_system/ld/memory.ld -DCONFIG_DIR=/workspace/build/config -DLD_DIR=/tmp/esp-idf/components/esp_system/ld -P /workspace/build/esp-idf/esp_system/ld/linker_script_generator.cmake
+	cd /workspace/build/esp-idf/esp_system && /usr/bin/cmake -DCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DSOURCE=/tmp/esp-idf/components/esp_system/ld/esp32s3/memory.ld.in -DTARGET=/workspace/build/esp-idf/esp_system/ld/memory.ld -DCONFIG_DIR=/workspace/build/config -DLD_DIR=/tmp/esp-idf/components/esp_system/ld -P /workspace/build/esp-idf/esp_system/ld/linker_script_generator.cmake
 
 esp-idf/esp_system/CMakeFiles/memory.ld.dir/codegen:
 .PHONY : esp-idf/esp_system/CMakeFiles/memory.ld.dir/codegen

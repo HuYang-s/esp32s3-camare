@@ -80,15 +80,15 @@ CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj: CMakeFiles/bootload
 CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj: project_elf_src_esp32s3.c
 CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj: CMakeFiles/bootloader.elf.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj"
-	/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj -MF CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj.d -o CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj -c /workspace/build/bootloader/project_elf_src_esp32s3.c
+	/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj -MF CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj.d -o CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.obj -c /workspace/build/bootloader/project_elf_src_esp32s3.c
 
 CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.i"
-	/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/build/bootloader/project_elf_src_esp32s3.c > CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.i
+	/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /workspace/build/bootloader/project_elf_src_esp32s3.c > CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.i
 
 CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.s"
-	/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/build/bootloader/project_elf_src_esp32s3.c -o CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.s
+	/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /workspace/build/bootloader/project_elf_src_esp32s3.c -o CMakeFiles/bootloader.elf.dir/project_elf_src_esp32s3.c.s
 
 # Object files for target bootloader.elf
 bootloader_elf_OBJECTS = \
@@ -173,8 +173,8 @@ bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.bt_funcs.
 bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
 bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.wdt.ld
 bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libc.ld
 bootloader.elf: /tmp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
-bootloader.elf: /tmp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.ld
 bootloader.elf: /tmp/esp-idf/components/bootloader/subproject/main/ld/esp32s3/bootloader.rom.ld
 bootloader.elf: CMakeFiles/bootloader.elf.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/workspace/build/bootloader/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C executable bootloader.elf"

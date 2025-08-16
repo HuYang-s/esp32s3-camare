@@ -199,6 +199,30 @@ src/esp_crypto_lock.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build.make esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_lock.c.s
 .PHONY : src/esp_crypto_lock.c.s
 
+src/esp_crypto_periph_clk.obj: src/esp_crypto_periph_clk.c.obj
+.PHONY : src/esp_crypto_periph_clk.obj
+
+# target to build an object file
+src/esp_crypto_periph_clk.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build.make esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk.c.obj
+.PHONY : src/esp_crypto_periph_clk.c.obj
+
+src/esp_crypto_periph_clk.i: src/esp_crypto_periph_clk.c.i
+.PHONY : src/esp_crypto_periph_clk.i
+
+# target to preprocess a source file
+src/esp_crypto_periph_clk.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build.make esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk.c.i
+.PHONY : src/esp_crypto_periph_clk.c.i
+
+src/esp_crypto_periph_clk.s: src/esp_crypto_periph_clk.c.s
+.PHONY : src/esp_crypto_periph_clk.s
+
+# target to generate assembly for a file
+src/esp_crypto_periph_clk.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/build.make esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src/esp_crypto_periph_clk.c.s
+.PHONY : src/esp_crypto_periph_clk.c.s
+
 src/esp_ds.obj: src/esp_ds.c.obj
 .PHONY : src/esp_ds.obj
 
@@ -287,6 +311,9 @@ help:
 	@echo "... src/esp_crypto_lock.obj"
 	@echo "... src/esp_crypto_lock.i"
 	@echo "... src/esp_crypto_lock.s"
+	@echo "... src/esp_crypto_periph_clk.obj"
+	@echo "... src/esp_crypto_periph_clk.i"
+	@echo "... src/esp_crypto_periph_clk.s"
 	@echo "... src/esp_ds.obj"
 	@echo "... src/esp_ds.i"
 	@echo "... src/esp_ds.s"

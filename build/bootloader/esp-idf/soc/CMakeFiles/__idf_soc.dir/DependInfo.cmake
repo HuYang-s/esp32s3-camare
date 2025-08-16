@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/esp-idf/components/soc/dport_access_common.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/dport_access_common.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/adc_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.obj.d"
+  "/tmp/esp-idf/components/soc/esp32s3/cam_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/dedic_gpio_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/dedic_gpio_periph.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/gdma_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gdma_periph.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/gpio_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/gpio_periph.c.obj.d"
@@ -21,6 +22,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/tmp/esp-idf/components/soc/esp32s3/mcpwm_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mcpwm_periph.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/mpi_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/mpi_periph.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/pcnt_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.obj.d"
+  "/tmp/esp-idf/components/soc/esp32s3/power_supply_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/rmt_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rmt_periph.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/rtc_io_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/rtc_io_periph.c.obj.d"
   "/tmp/esp-idf/components/soc/esp32s3/sdm_periph.c" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj" "gcc" "esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/sdm_periph.c.obj.d"

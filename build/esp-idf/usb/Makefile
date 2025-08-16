@@ -295,30 +295,6 @@ usb_host.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/usb/CMakeFiles/__idf_usb.dir/build.make esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_host.c.s
 .PHONY : usb_host.c.s
 
-usb_phy.obj: usb_phy.c.obj
-.PHONY : usb_phy.obj
-
-# target to build an object file
-usb_phy.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/usb/CMakeFiles/__idf_usb.dir/build.make esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.obj
-.PHONY : usb_phy.c.obj
-
-usb_phy.i: usb_phy.c.i
-.PHONY : usb_phy.i
-
-# target to preprocess a source file
-usb_phy.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/usb/CMakeFiles/__idf_usb.dir/build.make esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.i
-.PHONY : usb_phy.c.i
-
-usb_phy.s: usb_phy.c.s
-.PHONY : usb_phy.s
-
-# target to generate assembly for a file
-usb_phy.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/usb/CMakeFiles/__idf_usb.dir/build.make esp-idf/usb/CMakeFiles/__idf_usb.dir/usb_phy.c.s
-.PHONY : usb_phy.c.s
-
 usb_private.obj: usb_private.c.obj
 .PHONY : usb_private.obj
 
@@ -395,9 +371,6 @@ help:
 	@echo "... usb_host.obj"
 	@echo "... usb_host.i"
 	@echo "... usb_host.s"
-	@echo "... usb_phy.obj"
-	@echo "... usb_phy.i"
-	@echo "... usb_phy.s"
 	@echo "... usb_private.obj"
 	@echo "... usb_private.i"
 	@echo "... usb_private.s"

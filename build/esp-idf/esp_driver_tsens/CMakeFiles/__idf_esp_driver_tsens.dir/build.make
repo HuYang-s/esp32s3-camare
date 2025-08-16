@@ -76,15 +76,15 @@ esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_s
 esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj: /tmp/esp-idf/components/esp_driver_tsens/src/temperature_sensor.c
 esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj: esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/workspace/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj"
-	cd /workspace/build/esp-idf/esp_driver_tsens && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj -MF CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj.d -o CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj -c /tmp/esp-idf/components/esp_driver_tsens/src/temperature_sensor.c
+	cd /workspace/build/esp-idf/esp_driver_tsens && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj -MF CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj.d -o CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.obj -c /tmp/esp-idf/components/esp_driver_tsens/src/temperature_sensor.c
 
 esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.i"
-	cd /workspace/build/esp-idf/esp_driver_tsens && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_driver_tsens/src/temperature_sensor.c > CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.i
+	cd /workspace/build/esp-idf/esp_driver_tsens && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /tmp/esp-idf/components/esp_driver_tsens/src/temperature_sensor.c > CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.i
 
 esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.s"
-	cd /workspace/build/esp-idf/esp_driver_tsens && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_driver_tsens/src/temperature_sensor.c -o CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.s
+	cd /workspace/build/esp-idf/esp_driver_tsens && /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /tmp/esp-idf/components/esp_driver_tsens/src/temperature_sensor.c -o CMakeFiles/__idf_esp_driver_tsens.dir/src/temperature_sensor.c.s
 
 # Object files for target __idf_esp_driver_tsens
 __idf_esp_driver_tsens_OBJECTS = \

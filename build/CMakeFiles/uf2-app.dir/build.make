@@ -67,7 +67,7 @@ include CMakeFiles/uf2-app.dir/compiler_depend.make
 include CMakeFiles/uf2-app.dir/progress.make
 
 CMakeFiles/uf2-app:
-	/usr/bin/cmake -D IDF_PATH=/tmp/esp-idf -D "UF2_CMD=/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python;/tmp/esp-idf/tools/mkuf2.py;write;--chip;esp32s3" -D "UF2_ARGS=--json;/workspace/build/flasher_args.json;-o;/workspace/build/uf2-app.bin;--bin;app" -P /tmp/esp-idf/tools/cmake/run_uf2_cmds.cmake
+	/usr/bin/cmake -D IDF_PATH=/tmp/esp-idf -D "UF2_CMD=/home/ubuntu/.espressif/python_env/idf6.0_py3.13_env/bin/python;/tmp/esp-idf/tools/mkuf2.py;write;--chip;esp32s3" -D "UF2_ARGS=--json;/workspace/build/flasher_args.json;-o;/workspace/build/uf2-app.bin;--bin;app" -P /tmp/esp-idf/tools/cmake/run_uf2_cmds.cmake
 
 CMakeFiles/uf2-app.dir/codegen:
 .PHONY : CMakeFiles/uf2-app.dir/codegen

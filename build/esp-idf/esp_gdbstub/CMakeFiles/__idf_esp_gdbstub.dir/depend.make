@@ -11,10 +11,10 @@ esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/gdbstub-ent
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
- /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/xt_specreg.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/coreasm.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/hal.h \
@@ -29,10 +29,10 @@ esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/xtensa/xt_debugexc
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
- /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/xt_specreg.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/coreasm.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/hal.h \

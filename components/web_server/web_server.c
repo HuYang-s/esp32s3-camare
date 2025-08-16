@@ -316,69 +316,7 @@ static esp_err_t auto_drive_api_handler(httpd_req_t *req)
     return ESP_FAIL;
 }
 
-// AI命令处理API函数
-static esp_err_t ai_command_handler(httpd_req_t *req)
-{
-    ESP_LOGI(TAG, "收到AI命令API请求");
-    
-    // 获取请求内容
-    char content[512];
-    size_t recv_size = MIN(req->content_len, sizeof(content) - 1);
-    
-    int ret = httpd_req_recv(req, content, recv_size);
-    if (ret <= 0) {
-        ESP_LOGE(TAG, "接收AI命令HTTP请求数据失败");
-        httpd_resp_send_500(req);
-        return ESP_FAIL;
-    }
-    content[ret] = '\0';
-    ESP_LOGI(TAG, "接收到的AI命令JSON: %s", content);
-    
-    // 解析JSON
-    cJSON *json = cJSON_Parse(content);
-    if (json == NULL) {
-        ESP_LOGE(TAG, "AI命令JSON解析失败");
-        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Invalid JSON");
-        return ESP_FAIL;
-    }
-    
-    cJSON *command_obj = cJSON_GetObjectItem(json, "command");
-    if (!cJSON_IsString(command_obj)) {
-        ESP_LOGE(TAG, "command字段不是字符串或不存在");
-        cJSON_Delete(json);
-        httpd_resp_send_err(req, HTTPD_400_BAD_REQUEST, "Missing command field");
-        return ESP_FAIL;
-    }
-    
-    const char *command = cJSON_GetStringValue(command_obj);
-    ESP_LOGI(TAG, "🗣️ 接收到AI命令: %s", command);
-    
-    // 触发AI命令分析
-    esp_err_t ai_result = ai_service_command_analyze(command);
-    
-    // 返回响应
-    cJSON *response = cJSON_CreateObject();
-    if (ai_result == ESP_OK) {
-        cJSON_AddBoolToObject(response, "success", true);
-        cJSON_AddStringToObject(response, "response", "AI正在分析当前图像并执行您的指令...");
-        ESP_LOGI(TAG, "✅ AI命令执行成功");
-    } else {
-        cJSON_AddBoolToObject(response, "success", false);
-        cJSON_AddStringToObject(response, "error", "AI命令处理失败，请检查网络连接");
-        ESP_LOGI(TAG, "❌ AI命令执行失败");
-    }
-    
-    char *response_str = cJSON_Print(response);
-    httpd_resp_set_type(req, "application/json");
-    httpd_resp_set_hdr(req, "Access-Control-Allow-Origin", "*");
-    httpd_resp_send(req, response_str, strlen(response_str));
-    
-    free(response_str);
-    cJSON_Delete(response);
-    cJSON_Delete(json);
-    
-    return ESP_OK;
-}
+
 
 static esp_err_t index_handler(httpd_req_t *req)
 {
@@ -388,34 +326,35 @@ static esp_err_t index_handler(httpd_req_t *req)
         "<meta charset='UTF-8'>"
         "<meta name='viewport' content='width=device-width, initial-scale=1.0'>"
         "<style>"
-        "body{font-family:Arial,sans-serif;margin:8px;background-color:#f5f5f5;font-size:13px}"
-        ".container{max-width:1400px;margin:0 auto;background-color:white;padding:10px;border-radius:6px;box-shadow:0 1px 4px rgba(0,0,0,0.1)}"
-        ".header{text-align:center;margin-bottom:15px}"
-        ".status{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px;margin:10px 0}"
-        ".status-item{background:#f8f9fa;padding:5px 8px;border-radius:4px;font-size:11px;text-align:center}"
-        ".controls{text-align:center;margin:8px 0}"
-        ".btn{background:#007bff;color:white;border:none;padding:5px 10px;border-radius:4px;cursor:pointer;margin:3px;font-size:11px}"
-        ".btn:hover{background:#0056b3}"
-        ".btn:disabled{background:#ccc;cursor:not-allowed}"
-        ".motor-controls{background:#f8f9fa;padding:10px;border-radius:6px;margin:10px 0;text-align:center;max-width:280px;margin-left:auto;margin-right:auto}"
-        ".motor-btn{background:#28a745;color:white;border:none;padding:6px;border-radius:4px;cursor:pointer;font-size:11px;font-weight:bold;width:50px;height:30px;transition:all 0.2s}"
-        ".motor-btn:hover{background:#218838}"
-        ".motor-btn:active{background:#1e7e34;transform:translateY(1px)}"
-        ".motor-btn.stop{background:#dc3545;width:50px;grid-column:2;grid-row:2}"
-        ".motor-btn.stop:hover{background:#c82333}"
-        ".speed-control{margin:8px 0}"
-        ".speed-slider{width:120px;margin:0 5px}"
-        ".motor-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:5px;max-width:180px;margin:0 auto}"
+        "body{font-family:Arial,sans-serif;margin:4px;background-color:#f5f5f5;font-size:12px;overflow-x:hidden}"
+        ".container{max-width:100%;margin:0;background-color:white;padding:8px;border-radius:4px;box-shadow:0 1px 3px rgba(0,0,0,0.1)}"
+        ".header{text-align:center;margin-bottom:10px;background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;padding:10px;border-radius:6px;margin:-8px -8px 10px -8px}"
+        ".status{display:flex;flex-wrap:wrap;gap:4px;margin:8px 0;justify-content:center}"
+        ".status-item{background:#f8f9fa;padding:4px 6px;border-radius:3px;font-size:10px;text-align:center;min-width:120px;flex:1}"
+        ".controls{text-align:center;margin:6px 0;background:#f9f9f9;padding:6px;border-radius:4px}"
+        ".btn{background:#007bff;color:white;border:none;padding:4px 8px;border-radius:3px;cursor:pointer;margin:2px;font-size:10px;transition:all 0.2s}"
+        ".btn:hover{background:#0056b3;transform:translateY(-1px)}"
+        ".btn:disabled{background:#ccc;cursor:not-allowed;transform:none}"
+        ".motor-controls{background:linear-gradient(135deg,#e8f5e9,#c8e6c9);padding:8px;border-radius:6px;margin:6px 0;text-align:center;color:#2e7d32;box-shadow:0 2px 4px rgba(0,0,0,0.1);border:1px solid #a5d6a7;max-width:200px;margin-left:auto;margin-right:auto}"
+        ".motor-btn{background:#4caf50;color:white;border:1px solid #45a049;padding:4px;border-radius:4px;cursor:pointer;font-size:10px;font-weight:bold;width:40px;height:22px;transition:all 0.2s;text-shadow:1px 1px 2px rgba(0,0,0,0.3)}"
+        ".motor-btn:hover{background:#45a049;transform:translateY(-1px);box-shadow:0 2px 6px rgba(76,175,80,0.4)}"
+        ".motor-btn:active{background:#388e3c;transform:translateY(0px)}"
+        ".motor-btn.stop{background:#f44336;width:40px;grid-column:2;grid-row:2;border-color:#d32f2f}"
+        ".motor-btn.stop:hover{background:#d32f2f;box-shadow:0 2px 6px rgba(244,67,54,0.4)}"
+        ".speed-control{margin:6px 0;color:#2e7d32;font-weight:bold}"
+        ".speed-slider{width:100px;margin:0 4px}"
+        ".motor-grid{display:grid;grid-template-columns:1fr 1fr 1fr;grid-template-rows:1fr 1fr 1fr;gap:4px;max-width:140px;margin:0 auto;justify-items:center;align-items:center}"
         ".motor-btn.forward{grid-column:2;grid-row:1}"
         ".motor-btn.left{grid-column:1;grid-row:2}"
         ".motor-btn.right{grid-column:3;grid-row:2}"
         ".motor-btn.backward{grid-column:2;grid-row:3}"
-        ".grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:8px;margin-top:10px}"
-        ".card{border:1px solid #ddd;border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(0,0,0,0.1)}"
-        ".card img{width:100%;height:140px;object-fit:cover}"
-        ".card-content{padding:8px}"
-        ".timestamp{color:#666;font-size:10px;margin-bottom:5px}"
-        ".ai-result{background:#e3f2fd;padding:5px;border-radius:3px;margin:3px 0;font-size:11px;line-height:1.3;white-space:pre-wrap}"
+        ".grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:6px;margin-top:6px}"
+        ".card{border:1px solid #e0e0e0;border-radius:6px;overflow:hidden;box-shadow:0 2px 4px rgba(0,0,0,0.1);transition:transform 0.2s;background:white}"
+        ".card:hover{transform:translateY(-2px);box-shadow:0 4px 8px rgba(0,0,0,0.15)}"
+        ".card img{width:100%;height:120px;object-fit:cover}"
+        ".card-content{padding:6px}"
+        ".timestamp{color:#888;font-size:9px;margin-bottom:3px}"
+        ".ai-result{background:linear-gradient(135deg,#e3f2fd,#bbdefb);padding:4px;border-radius:3px;margin:2px 0;font-size:10px;line-height:1.3;white-space:pre-wrap;border-left:3px solid #2196f3}"
         ".ai-motor-control{background:#fff3cd;padding:8px;border-radius:3px;margin:3px 0;font-size:11px;line-height:1.4;border-left:3px solid #f0ad4e;white-space:pre-wrap}"
         ".ai-thinking{background:#f8f9fa;border-left:3px solid #6f42c1;padding:6px;margin:2px 0;font-size:10px;line-height:1.3;color:#5a5a5a;white-space:pre-wrap}"
         ".ai-decision{background:#d1ecf1;border-left:3px solid #17a2b8;padding:5px;margin:2px 0;font-size:11px;line-height:1.3;font-weight:bold}"
@@ -423,44 +362,38 @@ static esp_err_t index_handler(httpd_req_t *req)
         ".error{color:red;text-align:center;padding:15px;font-size:12px}"
         ".sync-status{display:inline-block;margin-left:10px;font-size:10px}"
         ".sync-ok{color:green}.sync-error{color:red}"
-        ".motor-status{margin:5px 0;font-size:10px;color:#666;text-align:center;min-height:12px}"
-        ".main-content{display:grid;grid-template-columns:300px 1fr;gap:15px;margin:10px 0}"
-        ".sidebar{display:flex;flex-direction:column;gap:10px}"
-        ".images-section{min-height:300px}"
-        "h1{font-size:18px;margin:5px 0}"
-        "h3{font-size:14px;margin:5px 0}"
-        ".ai-auto-drive{background:#e8f5e8;padding:10px;border-radius:6px;margin-top:10px}"
-        ".auto-drive-toggle{display:flex;align-items:center;cursor:pointer;font-size:11px;margin:5px 0}"
+        ".motor-status{margin:5px 0;font-size:10px;color:#2e7d32;text-align:center;min-height:12px;font-weight:bold}"
+        ".main-content{display:grid;grid-template-columns:1fr;gap:8px;margin:6px 0}"
+        ".controls-row{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;margin-bottom:8px}"
+        ".images-section{min-height:200px}"
+        "h1{font-size:16px;margin:3px 0;text-shadow:1px 1px 2px rgba(0,0,0,0.3)}"
+        "h3{font-size:12px;margin:3px 0;color:#333;font-weight:bold}"
+        ".ai-auto-drive{background:linear-gradient(135deg,#e3f2fd,#bbdefb);padding:8px;border-radius:6px;margin:4px 0;color:#0d47a1;box-shadow:0 2px 4px rgba(0,0,0,0.1);border:1px solid #90caf9}"
+        ".auto-drive-toggle{display:flex;align-items:center;cursor:pointer;font-size:10px;margin:4px 0;font-weight:bold}"
         ".auto-drive-toggle input[type=checkbox]{display:none}"
-        ".toggle-slider{width:30px;height:15px;background:#ccc;border-radius:15px;position:relative;transition:0.3s;margin-right:8px}"
-        ".toggle-slider:before{content:'';position:absolute;width:11px;height:11px;border-radius:50%;background:white;top:2px;left:2px;transition:0.3s}"
-        ".auto-drive-toggle input:checked + .toggle-slider{background:#4CAF50}"
-        ".auto-drive-toggle input:checked + .toggle-slider:before{transform:translateX(15px)}"
-        ".auto-drive-status{font-size:10px;color:#666;margin:3px 0;font-weight:bold}"
-        ".auto-drive-info{font-size:9px;color:#888;margin-top:5px;line-height:1.3}"
-        ".ai-command-control{background:#f0f8ff;padding:10px;border-radius:6px;margin-top:10px}"
-        ".command-input-area{margin:8px 0}"
-        ".command-textarea{width:100%;min-height:80px;padding:6px;border:1px solid #ccc;border-radius:4px;font-size:11px;resize:vertical;font-family:Arial,sans-serif}"
-        ".command-controls{display:flex;gap:5px;margin-top:5px;justify-content:center}"
-        ".command-btn{background:#17a2b8;padding:4px 8px;font-size:10px}"
-        ".command-btn:hover{background:#138496}"
-        ".command-status{font-size:10px;color:#666;margin:5px 0;text-align:center;font-weight:bold}"
+        ".toggle-slider{width:26px;height:12px;background:#ccc;border-radius:12px;position:relative;transition:0.3s;margin-right:6px}"
+        ".toggle-slider:before{content:'';position:absolute;width:8px;height:8px;border-radius:50%;background:white;top:2px;left:2px;transition:0.3s;box-shadow:0 1px 2px rgba(0,0,0,0.3)}"
+        ".auto-drive-toggle input:checked + .toggle-slider{background:#4caf50}"
+        ".auto-drive-toggle input:checked + .toggle-slider:before{transform:translateX(14px)}"
+        ".auto-drive-status{font-size:9px;color:#0d47a1;margin:2px 0;font-weight:bold}"
+        ".auto-drive-info{font-size:8px;color:#1565c0;margin-top:3px;line-height:1.3}"
+
         ".command-response{background:#ffffff;border:1px solid #e0e0e0;border-radius:4px;padding:8px;margin:5px 0;font-size:11px;line-height:1.4;min-height:20px;max-height:150px;overflow-y:auto}"
         ".command-response.loading{color:#666;font-style:italic}"
         ".command-response.success{border-left:3px solid #28a745}"
         ".command-response.error{border-left:3px solid #dc3545;color:#721c24}"
-        ".ai-task-control{background:#f0fff0;padding:10px;border-radius:6px;margin-top:10px}"
-        ".task-input-area{margin:8px 0}"
-        ".task-input{width:100%;padding:6px;border:1px solid #ccc;border-radius:4px;font-size:11px;margin:3px 0}"
-        ".task-controls{display:flex;gap:5px;margin-top:5px;justify-content:center}"
-        ".task-btn{background:#ff6b35;padding:4px 8px;font-size:10px}"
-        ".task-btn:hover{background:#e55a2b}"
-        ".task-status{font-size:10px;color:#666;margin:5px 0;text-align:center;font-weight:bold}"
+        ".ai-task-control{background:linear-gradient(135deg,#fce4ec,#f8bbd9);padding:8px;border-radius:6px;margin:4px 0;color:#ad1457;box-shadow:0 2px 4px rgba(0,0,0,0.1);border:1px solid #f48fb1}"
+        ".task-input-area{margin:6px 0}"
+        ".task-input{width:calc(100% - 8px);padding:4px;border:1px solid #f48fb1;border-radius:3px;font-size:10px;margin:2px 0;background:white;color:#333}"
+        ".task-controls{display:flex;gap:3px;margin-top:4px;justify-content:center;flex-wrap:wrap}"
+        ".task-btn{background:#e91e63;color:white;padding:3px 6px;font-size:9px;border-radius:3px;text-shadow:1px 1px 2px rgba(0,0,0,0.3)}"
+        ".task-btn:hover{background:#c2185b;transform:translateY(-1px)}"
+        ".task-status{font-size:9px;color:#ad1457;margin:4px 0;text-align:center;font-weight:bold}"
         ".task-result{background:#ffffff;border:1px solid #e0e0e0;border-radius:4px;padding:8px;margin:5px 0;font-size:11px;line-height:1.4;min-height:20px;max-height:150px;overflow-y:auto}"
         ".task-result.searching{border-left:3px solid #ffc107;color:#856404}"
         ".task-result.completed{border-left:3px solid #28a745;color:#155724}"
         ".task-result.failed{border-left:3px solid #dc3545;color:#721c24}"
-        ".checkbox-label{display:block;margin:8px 0;font-size:12px;color:#666}"
+        ".checkbox-label{display:block;margin:8px 0;font-size:11px;color:#ad1457;font-weight:bold}"
         ".checkbox-label input{margin-right:5px}"
         ".task-progress{margin:8px 0;padding:8px;background:#f5f5f5;border-radius:4px}"
         ".progress-bar{width:100%;height:20px;background:#e0e0e0;border-radius:10px;overflow:hidden;margin-bottom:5px}"
@@ -470,8 +403,8 @@ static esp_err_t index_handler(httpd_req_t *req)
         ".log-content{font-family:monospace;font-size:10px;line-height:1.4;white-space:pre-wrap;color:#333;margin-bottom:8px}"
         ".btn.info{background:#17a2b8;border-color:#17a2b8}"
         ".btn.info:hover{background:#138496;border-color:#117a8b}"
-        "@media (max-width:900px){.main-content{grid-template-columns:1fr;gap:10px}.motor-controls{max-width:280px;margin:0 auto}}"
-        "@media (max-width:600px){.status{grid-template-columns:1fr 1fr}.grid{grid-template-columns:1fr}.motor-grid{max-width:160px}.motor-btn{width:45px;height:25px;font-size:10px}}"
+        "@media (max-width:768px){.controls-row{grid-template-columns:1fr;gap:6px}.grid{grid-template-columns:repeat(auto-fill,minmax(180px,1fr))}.card img{height:100px}.motor-controls{max-width:180px}}"
+        "@media (max-width:480px){.status{flex-direction:column;gap:3px}.grid{grid-template-columns:1fr}.motor-grid{max-width:120px}.motor-btn{width:35px;height:20px;font-size:8px}.card img{height:90px}.motor-controls{max-width:150px}}"
         "</style>"
         "</head><body>"
         "<div class='container'>"
@@ -486,9 +419,9 @@ static esp_err_t index_handler(httpd_req_t *req)
         "<label><input type='checkbox' id='auto-refresh' checked> 自动刷新 <span id='refresh-interval'>(6秒)</span></label>"
         "</div>"
         "<div class='main-content'>"
-        "<div class='sidebar'>"
+        "<div class='controls-row'>"
         "<div class='motor-controls'>"
-        "<h3>🚗 L298N电机控制</h3>"
+        "<h3>🚗 电机控制</h3>"
         "<div class='motor-grid'>"
         "<button class='motor-btn forward' onmousedown='startMotor(\"forward\")' onmouseup='stopMotor()' ontouchstart='startMotor(\"forward\")' ontouchend='stopMotor()'>▲<br>前进</button>"
         "<button class='motor-btn left' onmousedown='startMotor(\"left\")' onmouseup='stopMotor()' ontouchstart='startMotor(\"left\")' ontouchend='stopMotor()'>◄<br>左转</button>"
@@ -509,34 +442,20 @@ static esp_err_t index_handler(httpd_req_t *req)
         "启用AI自动驾驶"
         "</label>"
         "<div class='auto-drive-status' id='auto-drive-status'>AI自动驾驶: 关闭</div>"
-        "<div class='auto-drive-info'>AI将根据摄像头图像自动控制电机移动</div>"
-        "</div>"
-        "<div class='ai-command-control'>"
-        "<h3>🗣️ AI命令控制</h3>"
-        "<div class='command-input-area'>"
-        "<textarea id='command-input' class='command-textarea' placeholder='输入AI任务指令，例如：\\n- 找到房间里的瓶子\\n- 告诉我你看到了什么\\n- 寻找红色的物体\\n- 检查前方是否有障碍物'></textarea>"
-        "<div class='command-controls'>"
-        "<button class='btn command-btn' onclick='sendAICommand()'>🚀 发送指令</button>"
-        "<button class='btn command-btn' onclick='clearCommand()'>🗑️ 清空</button>"
-        "</div>"
-        "</div>"
-        "<div class='command-status' id='command-status'>等待指令...</div>"
-        "<div class='command-response' id='command-response'></div>"
+        "<div class='auto-drive-info'>AI根据摄像头图像自动控制电机移动</div>"
         "</div>"
         "<div class='ai-task-control'>"
-        "<h3>🎯 AI物体搜索任务</h3>"
+        "<h3>🎯 AI物体搜索</h3>"
         "<div class='task-input-area'>"
-        "<label>目标物品:</label>"
-        "<input type='text' id='target-object' class='task-input' placeholder='例如: 杯子, 苹果, 手机...' />"
-        "<label>任务超时时间 (秒):</label>"
-        "<input type='number' id='task-timeout' class='task-input' value='30' min='10' max='300' />"
+        "<input type='text' id='target-object' class='task-input' placeholder='目标物品 (例如: 杯子, 手机...)' />"
+        "<input type='number' id='task-timeout' class='task-input' value='30' min='10' max='300' placeholder='超时时间(秒)' />"
         "<label class='checkbox-label'>"
-        "<input type='checkbox' id='use-navigation' checked> 启用主动搜索导航"
+        "<input type='checkbox' id='use-navigation' checked> 启用主动导航"
         "</label>"
         "<div class='task-controls'>"
-        "<button class='btn task-btn' onclick='startAINavigationTask()'>🚀 开始搜索</button>"
-        "<button class='btn task-btn' onclick='stopAITask()'>⏹️ 停止任务</button>"
-        "<button class='btn task-btn info' onclick='showTaskLog()'>📋 查看日志</button>"
+        "<button class='btn task-btn' onclick='startAINavigationTask()'>🚀 搜索</button>"
+        "<button class='btn task-btn' onclick='stopAITask()'>⏹ 停止</button>"
+        "<button class='btn task-btn info' onclick='showTaskLog()'>📋 日志</button>"
         "</div>"
         "</div>"
         "<div class='task-status' id='task-status'>等待任务...</div>"
@@ -555,7 +474,7 @@ static esp_err_t index_handler(httpd_req_t *req)
         "</div>"
         "</div>"
         "<div class='images-section'>"
-        "<h3>📸 图片历史</h3>"
+        "<h3>📸 图片历史 <span style='font-size:10px;color:#888;font-weight:normal'>(最新图片)</span></h3>"
         "<div id='images' class='grid'>加载中...</div>"
         "</div>"
         "</div>"
@@ -658,51 +577,7 @@ static esp_err_t index_handler(httpd_req_t *req)
         "checkbox.checked=!checkbox.checked;"
         "})"
         "}"
-        "function sendAICommand(){"
-        "const commandInput=document.getElementById('command-input');"
-        "const command=commandInput.value.trim();"
-        "if(!command){"
-        "alert('请输入AI指令');"
-        "return"
-        "}"
-        "const statusDiv=document.getElementById('command-status');"
-        "const responseDiv=document.getElementById('command-response');"
-        "statusDiv.textContent='🔄 AI正在执行指令...';"
-        "statusDiv.style.color='#007bff';"
-        "responseDiv.textContent='处理中，请稍候...';"
-        "responseDiv.className='command-response loading';"
-        "fetch('/api/ai-command',{"
-        "method:'POST',"
-        "headers:{'Content-Type':'application/json'},"
-        "body:JSON.stringify({command:command})"
-        "}).then(r=>r.json()).then(data=>{"
-        "if(data.success){"
-        "statusDiv.textContent='✅ 指令执行完成';"
-        "statusDiv.style.color='#28a745';"
-        "responseDiv.textContent=data.response||'AI执行成功';"
-        "responseDiv.className='command-response success';"
-        "loadImages();"
-        "}else{"
-        "statusDiv.textContent='❌ 指令执行失败';"
-        "statusDiv.style.color='#dc3545';"
-        "responseDiv.textContent=data.error||'未知错误';"
-        "responseDiv.className='command-response error';"
-        "}"
-        "}).catch(e=>{"
-        "console.error('AI命令API错误:',e);"
-        "statusDiv.textContent='❌ 网络错误';"
-        "statusDiv.style.color='#dc3545';"
-        "responseDiv.textContent='网络连接失败，请检查ESP32连接状态';"
-        "responseDiv.className='command-response error';"
-        "})"
-        "}"
-        "function clearCommand(){"
-        "document.getElementById('command-input').value='';"
-        "document.getElementById('command-status').textContent='等待指令...';"
-        "document.getElementById('command-status').style.color='#666';"
-        "document.getElementById('command-response').textContent='';"
-        "document.getElementById('command-response').className='command-response';"
-        "}"
+
         "function startAITask(){"
         "const targetObject=document.getElementById('target-object').value.trim();"
         "const timeout=parseInt(document.getElementById('task-timeout').value);"
@@ -1047,7 +922,7 @@ static esp_err_t ai_task_handler(httpd_req_t *req)
 // AI任务状态查询API处理函数
 static esp_err_t ai_task_status_handler(httpd_req_t *req)
 {
-    const ai_task_t* task_status = local_ai_get_task_status();
+    const ai_task_t* task_status = ai_service_get_search_status();
     
     cJSON *response = cJSON_CreateObject();
     
@@ -1161,7 +1036,7 @@ static esp_err_t ai_navigation_task_handler(httpd_req_t *req)
             int timeout_seconds = (timeout_obj && cJSON_IsNumber(timeout_obj)) ? timeout_obj->valueint : 60;
             bool use_navigation = (navigation_obj && cJSON_IsTrue(navigation_obj)) ? true : false;
             
-            esp_err_t result = local_ai_start_navigation_task(target_object, timeout_seconds, use_navigation);
+            esp_err_t result = ai_service_start_object_search(target_object, timeout_seconds, use_navigation);
             
             if (result == ESP_OK) {
                 cJSON_AddStringToObject(response_json, "status", "success");
@@ -1177,7 +1052,7 @@ static esp_err_t ai_navigation_task_handler(httpd_req_t *req)
             }
         }
     } else if (strcmp(action, "stop") == 0) {
-        esp_err_t result = local_ai_stop_task();
+        esp_err_t result = ai_service_stop_object_search();
         
         if (result == ESP_OK) {
             cJSON_AddStringToObject(response_json, "status", "success");
@@ -1242,7 +1117,7 @@ esp_err_t web_server_start(void)
     httpd_config_t config = HTTPD_DEFAULT_CONFIG();
     config.server_port = 80;
     config.max_uri_handlers = 14;
-    config.stack_size = 4096;
+    config.stack_size = 16384;  // Increased from 4096 to 16KB for AI processing
 
     ESP_LOGI(TAG, "Starting server on port: '%d'", config.server_port);
     if (httpd_start(&server, &config) == ESP_OK) {
@@ -1272,8 +1147,7 @@ esp_err_t web_server_start(void)
         httpd_uri_t auto_drive_post_uri = { .uri = "/api/auto-drive", .method = HTTP_POST, .handler = auto_drive_api_handler };
         httpd_register_uri_handler(server, &auto_drive_post_uri);
 
-        httpd_uri_t ai_command_uri = { .uri = "/api/ai-command", .method = HTTP_POST, .handler = ai_command_handler };
-        httpd_register_uri_handler(server, &ai_command_uri);
+
 
         httpd_uri_t ai_task_uri = { .uri = "/api/ai-task", .method = HTTP_POST, .handler = ai_task_handler };
         httpd_register_uri_handler(server, &ai_task_uri);

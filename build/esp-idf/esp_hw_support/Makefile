@@ -223,6 +223,30 @@ clk_ctrl_os.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_ctrl_os.c.s
 .PHONY : clk_ctrl_os.c.s
 
+clk_utils.obj: clk_utils.c.obj
+.PHONY : clk_utils.obj
+
+# target to build an object file
+clk_utils.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_utils.c.obj
+.PHONY : clk_utils.c.obj
+
+clk_utils.i: clk_utils.c.i
+.PHONY : clk_utils.i
+
+# target to preprocess a source file
+clk_utils.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_utils.c.i
+.PHONY : clk_utils.c.i
+
+clk_utils.s: clk_utils.c.s
+.PHONY : clk_utils.s
+
+# target to generate assembly for a file
+clk_utils.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/clk_utils.c.s
+.PHONY : clk_utils.c.s
+
 cpu.obj: cpu.c.obj
 .PHONY : cpu.obj
 
@@ -246,30 +270,6 @@ cpu.s: cpu.c.s
 cpu.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/cpu.c.s
 .PHONY : cpu.c.s
-
-deprecated/gdma_legacy.obj: deprecated/gdma_legacy.c.obj
-.PHONY : deprecated/gdma_legacy.obj
-
-# target to build an object file
-deprecated/gdma_legacy.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.obj
-.PHONY : deprecated/gdma_legacy.c.obj
-
-deprecated/gdma_legacy.i: deprecated/gdma_legacy.c.i
-.PHONY : deprecated/gdma_legacy.i
-
-# target to preprocess a source file
-deprecated/gdma_legacy.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.i
-.PHONY : deprecated/gdma_legacy.c.i
-
-deprecated/gdma_legacy.s: deprecated/gdma_legacy.c.s
-.PHONY : deprecated/gdma_legacy.s
-
-# target to generate assembly for a file
-deprecated/gdma_legacy.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated/gdma_legacy.c.s
-.PHONY : deprecated/gdma_legacy.c.s
 
 dma/async_memcpy_gdma.obj: dma/async_memcpy_gdma.c.obj
 .PHONY : dma/async_memcpy_gdma.obj
@@ -583,53 +583,77 @@ mac_addr.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mac_addr.c.s
 .PHONY : mac_addr.c.s
 
-mspi_timing_by_mspi_delay.obj: mspi_timing_by_mspi_delay.c.obj
-.PHONY : mspi_timing_by_mspi_delay.obj
+mspi_timing_tuning/mspi_timing_tuning.obj: mspi_timing_tuning/mspi_timing_tuning.c.obj
+.PHONY : mspi_timing_tuning/mspi_timing_tuning.obj
 
 # target to build an object file
-mspi_timing_by_mspi_delay.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_by_mspi_delay.c.obj
-.PHONY : mspi_timing_by_mspi_delay.c.obj
+mspi_timing_tuning/mspi_timing_tuning.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/mspi_timing_tuning.c.obj
+.PHONY : mspi_timing_tuning/mspi_timing_tuning.c.obj
 
-mspi_timing_by_mspi_delay.i: mspi_timing_by_mspi_delay.c.i
-.PHONY : mspi_timing_by_mspi_delay.i
+mspi_timing_tuning/mspi_timing_tuning.i: mspi_timing_tuning/mspi_timing_tuning.c.i
+.PHONY : mspi_timing_tuning/mspi_timing_tuning.i
 
 # target to preprocess a source file
-mspi_timing_by_mspi_delay.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_by_mspi_delay.c.i
-.PHONY : mspi_timing_by_mspi_delay.c.i
+mspi_timing_tuning/mspi_timing_tuning.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/mspi_timing_tuning.c.i
+.PHONY : mspi_timing_tuning/mspi_timing_tuning.c.i
 
-mspi_timing_by_mspi_delay.s: mspi_timing_by_mspi_delay.c.s
-.PHONY : mspi_timing_by_mspi_delay.s
+mspi_timing_tuning/mspi_timing_tuning.s: mspi_timing_tuning/mspi_timing_tuning.c.s
+.PHONY : mspi_timing_tuning/mspi_timing_tuning.s
 
 # target to generate assembly for a file
-mspi_timing_by_mspi_delay.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_by_mspi_delay.c.s
-.PHONY : mspi_timing_by_mspi_delay.c.s
+mspi_timing_tuning/mspi_timing_tuning.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/mspi_timing_tuning.c.s
+.PHONY : mspi_timing_tuning/mspi_timing_tuning.c.s
 
-mspi_timing_tuning.obj: mspi_timing_tuning.c.obj
-.PHONY : mspi_timing_tuning.obj
+mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.obj: mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.obj
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.obj
 
 # target to build an object file
-mspi_timing_tuning.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning.c.obj
-.PHONY : mspi_timing_tuning.c.obj
+mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.obj
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.obj
 
-mspi_timing_tuning.i: mspi_timing_tuning.c.i
-.PHONY : mspi_timing_tuning.i
+mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.i: mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.i
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.i
 
 # target to preprocess a source file
-mspi_timing_tuning.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning.c.i
-.PHONY : mspi_timing_tuning.c.i
+mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.i
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.i
 
-mspi_timing_tuning.s: mspi_timing_tuning.c.s
-.PHONY : mspi_timing_tuning.s
+mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.s: mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.s
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.s
 
 # target to generate assembly for a file
-mspi_timing_tuning.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning.c.s
-.PHONY : mspi_timing_tuning.c.s
+mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.s
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.c.s
+
+mspi_timing_tuning/port/esp32s3/mspi_timing_config.obj: mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.obj
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_config.obj
+
+# target to build an object file
+mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.obj
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.obj
+
+mspi_timing_tuning/port/esp32s3/mspi_timing_config.i: mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.i
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_config.i
+
+# target to preprocess a source file
+mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.i
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.i
+
+mspi_timing_tuning/port/esp32s3/mspi_timing_config.s: mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.s
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_config.s
+
+# target to generate assembly for a file
+mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.s
+.PHONY : mspi_timing_tuning/port/esp32s3/mspi_timing_config.c.s
 
 periph_ctrl.obj: periph_ctrl.c.obj
 .PHONY : periph_ctrl.obj
@@ -798,30 +822,6 @@ port/esp32s3/io_mux.s: port/esp32s3/io_mux.c.s
 port/esp32s3/io_mux.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/io_mux.c.s
 .PHONY : port/esp32s3/io_mux.c.s
-
-port/esp32s3/mspi_timing_config.obj: port/esp32s3/mspi_timing_config.c.obj
-.PHONY : port/esp32s3/mspi_timing_config.obj
-
-# target to build an object file
-port/esp32s3/mspi_timing_config.c.obj:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/mspi_timing_config.c.obj
-.PHONY : port/esp32s3/mspi_timing_config.c.obj
-
-port/esp32s3/mspi_timing_config.i: port/esp32s3/mspi_timing_config.c.i
-.PHONY : port/esp32s3/mspi_timing_config.i
-
-# target to preprocess a source file
-port/esp32s3/mspi_timing_config.c.i:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/mspi_timing_config.c.i
-.PHONY : port/esp32s3/mspi_timing_config.c.i
-
-port/esp32s3/mspi_timing_config.s: port/esp32s3/mspi_timing_config.c.s
-.PHONY : port/esp32s3/mspi_timing_config.s
-
-# target to generate assembly for a file
-port/esp32s3/mspi_timing_config.c.s:
-	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32s3/mspi_timing_config.c.s
-.PHONY : port/esp32s3/mspi_timing_config.c.s
 
 port/esp32s3/rtc_clk.obj: port/esp32s3/rtc_clk.c.obj
 .PHONY : port/esp32s3/rtc_clk.obj
@@ -1039,6 +1039,30 @@ port/esp_memprot_conv.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp_memprot_conv.c.s
 .PHONY : port/esp_memprot_conv.c.s
 
+power_supply/brownout.obj: power_supply/brownout.c.obj
+.PHONY : power_supply/brownout.obj
+
+# target to build an object file
+power_supply/brownout.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/power_supply/brownout.c.obj
+.PHONY : power_supply/brownout.c.obj
+
+power_supply/brownout.i: power_supply/brownout.c.i
+.PHONY : power_supply/brownout.i
+
+# target to preprocess a source file
+power_supply/brownout.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/power_supply/brownout.c.i
+.PHONY : power_supply/brownout.c.i
+
+power_supply/brownout.s: power_supply/brownout.c.s
+.PHONY : power_supply/brownout.s
+
+# target to generate assembly for a file
+power_supply/brownout.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/power_supply/brownout.c.s
+.PHONY : power_supply/brownout.c.s
+
 regi2c_ctrl.obj: regi2c_ctrl.c.obj
 .PHONY : regi2c_ctrl.obj
 
@@ -1255,6 +1279,30 @@ sleep_modes.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_modes.c.s
 .PHONY : sleep_modes.c.s
 
+sleep_usb.obj: sleep_usb.c.obj
+.PHONY : sleep_usb.obj
+
+# target to build an object file
+sleep_usb.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_usb.c.obj
+.PHONY : sleep_usb.c.obj
+
+sleep_usb.i: sleep_usb.c.i
+.PHONY : sleep_usb.i
+
+# target to preprocess a source file
+sleep_usb.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_usb.c.i
+.PHONY : sleep_usb.c.i
+
+sleep_usb.s: sleep_usb.c.s
+.PHONY : sleep_usb.s
+
+# target to generate assembly for a file
+sleep_usb.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/sleep_usb.c.s
+.PHONY : sleep_usb.c.s
+
 sleep_wake_stub.obj: sleep_wake_stub.c.obj
 .PHONY : sleep_wake_stub.obj
 
@@ -1327,6 +1375,30 @@ spi_share_hw_ctrl.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/spi_share_hw_ctrl.c.s
 .PHONY : spi_share_hw_ctrl.c.s
 
+usb_phy/usb_phy.obj: usb_phy/usb_phy.c.obj
+.PHONY : usb_phy/usb_phy.obj
+
+# target to build an object file
+usb_phy/usb_phy.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/usb_phy/usb_phy.c.obj
+.PHONY : usb_phy/usb_phy.c.obj
+
+usb_phy/usb_phy.i: usb_phy/usb_phy.c.i
+.PHONY : usb_phy/usb_phy.i
+
+# target to preprocess a source file
+usb_phy/usb_phy.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/usb_phy/usb_phy.c.i
+.PHONY : usb_phy/usb_phy.c.i
+
+usb_phy/usb_phy.s: usb_phy/usb_phy.c.s
+.PHONY : usb_phy/usb_phy.s
+
+# target to generate assembly for a file
+usb_phy/usb_phy.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/build.make esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/usb_phy/usb_phy.c.s
+.PHONY : usb_phy/usb_phy.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1346,12 +1418,12 @@ help:
 	@echo "... clk_ctrl_os.obj"
 	@echo "... clk_ctrl_os.i"
 	@echo "... clk_ctrl_os.s"
+	@echo "... clk_utils.obj"
+	@echo "... clk_utils.i"
+	@echo "... clk_utils.s"
 	@echo "... cpu.obj"
 	@echo "... cpu.i"
 	@echo "... cpu.s"
-	@echo "... deprecated/gdma_legacy.obj"
-	@echo "... deprecated/gdma_legacy.i"
-	@echo "... deprecated/gdma_legacy.s"
 	@echo "... dma/async_memcpy_gdma.obj"
 	@echo "... dma/async_memcpy_gdma.i"
 	@echo "... dma/async_memcpy_gdma.s"
@@ -1391,12 +1463,15 @@ help:
 	@echo "... mac_addr.obj"
 	@echo "... mac_addr.i"
 	@echo "... mac_addr.s"
-	@echo "... mspi_timing_by_mspi_delay.obj"
-	@echo "... mspi_timing_by_mspi_delay.i"
-	@echo "... mspi_timing_by_mspi_delay.s"
-	@echo "... mspi_timing_tuning.obj"
-	@echo "... mspi_timing_tuning.i"
-	@echo "... mspi_timing_tuning.s"
+	@echo "... mspi_timing_tuning/mspi_timing_tuning.obj"
+	@echo "... mspi_timing_tuning/mspi_timing_tuning.i"
+	@echo "... mspi_timing_tuning/mspi_timing_tuning.s"
+	@echo "... mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.obj"
+	@echo "... mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.i"
+	@echo "... mspi_timing_tuning/port/esp32s3/mspi_timing_by_mspi_delay.s"
+	@echo "... mspi_timing_tuning/port/esp32s3/mspi_timing_config.obj"
+	@echo "... mspi_timing_tuning/port/esp32s3/mspi_timing_config.i"
+	@echo "... mspi_timing_tuning/port/esp32s3/mspi_timing_config.s"
 	@echo "... periph_ctrl.obj"
 	@echo "... periph_ctrl.i"
 	@echo "... periph_ctrl.s"
@@ -1418,9 +1493,6 @@ help:
 	@echo "... port/esp32s3/io_mux.obj"
 	@echo "... port/esp32s3/io_mux.i"
 	@echo "... port/esp32s3/io_mux.s"
-	@echo "... port/esp32s3/mspi_timing_config.obj"
-	@echo "... port/esp32s3/mspi_timing_config.i"
-	@echo "... port/esp32s3/mspi_timing_config.s"
 	@echo "... port/esp32s3/rtc_clk.obj"
 	@echo "... port/esp32s3/rtc_clk.i"
 	@echo "... port/esp32s3/rtc_clk.s"
@@ -1448,6 +1520,9 @@ help:
 	@echo "... port/esp_memprot_conv.obj"
 	@echo "... port/esp_memprot_conv.i"
 	@echo "... port/esp_memprot_conv.s"
+	@echo "... power_supply/brownout.obj"
+	@echo "... power_supply/brownout.i"
+	@echo "... power_supply/brownout.s"
 	@echo "... regi2c_ctrl.obj"
 	@echo "... regi2c_ctrl.i"
 	@echo "... regi2c_ctrl.s"
@@ -1475,6 +1550,9 @@ help:
 	@echo "... sleep_modes.obj"
 	@echo "... sleep_modes.i"
 	@echo "... sleep_modes.s"
+	@echo "... sleep_usb.obj"
+	@echo "... sleep_usb.i"
+	@echo "... sleep_usb.s"
 	@echo "... sleep_wake_stub.obj"
 	@echo "... sleep_wake_stub.i"
 	@echo "... sleep_wake_stub.s"
@@ -1484,6 +1562,9 @@ help:
 	@echo "... spi_share_hw_ctrl.obj"
 	@echo "... spi_share_hw_ctrl.i"
 	@echo "... spi_share_hw_ctrl.s"
+	@echo "... usb_phy/usb_phy.obj"
+	@echo "... usb_phy/usb_phy.i"
+	@echo "... usb_phy/usb_phy.s"
 .PHONY : help
 
 

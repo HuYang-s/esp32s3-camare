@@ -1,37 +1,37 @@
 esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj: \
  /tmp/esp-idf/components/esp_phy/src/phy_init.c \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stddef.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stddef.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdlib.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/ieeefp.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/newlib.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/_newlib_version.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/config.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/features.h \
  /tmp/esp-idf/components/newlib/platform_include/sys/reent.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
- /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
  /workspace/build/config/sdkconfig.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/reent.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/_ansi.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_default_types.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_types.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_types.h \
+ /tmp/esp-idf/components/newlib/platform_include/sys/lock.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/lock.h \
  /tmp/esp-idf/components/newlib/platform_include/assert.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdint.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/cdefs.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdbool.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdint.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdint.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_intsup.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_stdint.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/assert.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/stdlib.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/alloca.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/_locale.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/string.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/strings.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/string.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/inttypes.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdbool.h \
  /tmp/esp-idf/components/esp_hw_support/port/esp32s3/include/soc/rtc.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/soc.h \
  /tmp/esp-idf/components/esp_common/include/esp_assert.h \
@@ -39,33 +39,42 @@ esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj: \
  /tmp/esp-idf/components/soc/esp32s3/register/soc/reg_base.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
  /tmp/esp-idf/components/esp_common/include/esp_err.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/stdarg.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
+ /tmp/esp-idf/components/newlib/platform_include/stdio.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/stdio.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/stdarg.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/stdio.h \
  /tmp/esp-idf/components/esp_common/include/esp_compiler.h \
  /tmp/esp-idf/components/esp_phy/include/esp_phy_init.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_mac.h \
  /tmp/esp-idf/components/log/include/esp_log.h \
  /tmp/esp-idf/components/esp_rom/include/esp_rom_sys.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/reset_reasons.h \
+ /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
+ /tmp/esp-idf/components/soc/include/soc/soc_caps_eval.h \
+ /tmp/esp-idf/components/log/include/esp_log_config.h \
  /tmp/esp-idf/components/log/include/esp_log_level.h \
  /tmp/esp-idf/components/log/include/esp_log_color.h \
  /tmp/esp-idf/components/log/include/esp_log_buffer.h \
  /tmp/esp-idf/components/log/include/esp_log_timestamp.h \
- /tmp/esp-idf/components/nvs_flash/include/nvs.h \
+ /tmp/esp-idf/components/log/include/esp_log_write.h \
+ /tmp/esp-idf/components/log/include/esp_log_format.h \
+ /tmp/esp-idf/components/log/include/esp_log_args.h \
+ /tmp/esp-idf/components/esp_common/include/esp_macros.h \
+ /tmp/esp-idf/components/esp_common/include/esp_assert.h \
+ /tmp/esp-idf/components/log/include/esp_log_attr.h \
  /tmp/esp-idf/components/esp_common/include/esp_attr.h \
+ /tmp/esp-idf/components/log/include/esp_private/log_attr.h \
+ /tmp/esp-idf/components/nvs_flash/include/nvs.h \
  /tmp/esp-idf/components/nvs_flash/include/nvs_flash.h \
  /tmp/esp-idf/components/nvs_flash/include/nvs.h \
  /tmp/esp-idf/components/esp_partition/include/esp_partition.h \
  /tmp/esp-idf/components/efuse/include/esp_efuse.h \
- /tmp/esp-idf/components/soc/esp32s3/include/soc/soc_caps.h \
- /tmp/esp-idf/components/soc/esp32s3/include/soc/mpu_caps.h \
  /tmp/esp-idf/components/efuse/esp32s3/include/esp_efuse_chip.h \
  /tmp/esp-idf/components/esp_timer/include/esp_timer.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_etm.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_private/esp_sleep_internal.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_sleep.h \
- /tmp/esp-idf/components/hal/include/hal/touch_sensor_types.h \
+ /tmp/esp-idf/components/hal/include/hal/touch_sensor_legacy_types.h \
  /tmp/esp-idf/components/hal/include/hal/gpio_types.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/gpio_num.h \
  /tmp/esp-idf/components/esp_common/include/esp_check.h \
@@ -88,7 +97,7 @@ esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj: \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/deprecated_definitions.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
- /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/xt_specreg.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/xtruntime-core-state.h \
  /tmp/esp-idf/components/xtensa/include/xt_instr_macros.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/xtruntime.h \
@@ -100,8 +109,6 @@ esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj: \
  /tmp/esp-idf/components/esp_hw_support/include/esp_intr_alloc.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_intr_types.h \
  /tmp/esp-idf/components/esp_system/include/esp_private/crosscore_int.h \
- /tmp/esp-idf/components/esp_common/include/esp_macros.h \
- /tmp/esp-idf/components/esp_common/include/esp_assert.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_memory_utils.h \
  /tmp/esp-idf/components/newlib/platform_include/esp_newlib.h \
  /tmp/esp-idf/components/heap/include/esp_heap_caps.h \
@@ -109,12 +116,12 @@ esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj: \
  /tmp/esp-idf/components/esp_system/include/esp_system.h \
  /tmp/esp-idf/components/esp_common/include/esp_idf_version.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portbenchmark.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/limits.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/14.2.0/include/syslimits.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/limits.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/include/syslimits.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/limits.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/syslimits.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/mpu_wrappers.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/reent.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/reent.h \
  /tmp/esp-idf/components/freertos/esp_additions/include/freertos/idf_additions.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h \
@@ -129,15 +136,15 @@ esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj: \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h \
  /tmp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h \
  /tmp/esp-idf/components/newlib/platform_include/endian.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_endian.h \
  /tmp/esp-idf/components/esp_phy/include/esp_private/phy.h \
  /tmp/esp-idf/components/esp_phy/esp32s3/include/phy_init_data.h \
  /tmp/esp-idf/components/esp_hw_support/include/esp_private/periph_ctrl.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/periph_defs.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/interrupts.h \
  /tmp/esp-idf/components/esp_wifi/include/esp_private/wifi.h \
- /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/xtensa-esp-elf/include/sys/queue.h \
+ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/queue.h \
  /tmp/esp-idf/components/esp_wifi/include/esp_wifi_types.h \
  /tmp/esp-idf/components/esp_wifi/include/esp_wifi_types_generic.h \
  /tmp/esp-idf/components/esp_event/include/esp_event_base.h \
@@ -172,4 +179,5 @@ esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src/phy_init.c.obj: \
  /tmp/esp-idf/components/hal/platform_port/include/hal/misc.h \
  /tmp/esp-idf/components/hal/platform_port/include/hal/assert.h \
  /tmp/esp-idf/components/esp_rom/esp32s3/include/esp32s3/rom/efuse.h \
- /tmp/esp-idf/components/hal/include/hal/efuse_hal.h
+ /tmp/esp-idf/components/hal/include/hal/efuse_hal.h \
+ /tmp/esp-idf/components/hal/include/hal/ecdsa_types.h

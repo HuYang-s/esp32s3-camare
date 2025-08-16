@@ -2359,6 +2359,30 @@ port/hooks/tcp_isn_default.c.s:
 	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/hooks/tcp_isn_default.c.s
 .PHONY : port/hooks/tcp_isn_default.c.s
 
+port/if_index.obj: port/if_index.c.obj
+.PHONY : port/if_index.obj
+
+# target to build an object file
+port/if_index.c.obj:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/if_index.c.obj
+.PHONY : port/if_index.c.obj
+
+port/if_index.i: port/if_index.c.i
+.PHONY : port/if_index.i
+
+# target to preprocess a source file
+port/if_index.c.i:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/if_index.c.i
+.PHONY : port/if_index.c.i
+
+port/if_index.s: port/if_index.c.s
+.PHONY : port/if_index.s
+
+# target to generate assembly for a file
+port/if_index.c.s:
+	cd /workspace/build && $(MAKE) $(MAKESILENT) -f esp-idf/lwip/CMakeFiles/__idf_lwip.dir/build.make esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/if_index.c.s
+.PHONY : port/if_index.c.s
+
 port/sockets_ext.obj: port/sockets_ext.c.obj
 .PHONY : port/sockets_ext.obj
 
@@ -2669,6 +2693,9 @@ help:
 	@echo "... port/hooks/tcp_isn_default.obj"
 	@echo "... port/hooks/tcp_isn_default.i"
 	@echo "... port/hooks/tcp_isn_default.s"
+	@echo "... port/if_index.obj"
+	@echo "... port/if_index.i"
+	@echo "... port/if_index.s"
 	@echo "... port/sockets_ext.obj"
 	@echo "... port/sockets_ext.i"
 	@echo "... port/sockets_ext.s"

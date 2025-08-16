@@ -178,6 +178,30 @@ esp32s3/adc_periph.c.s:
 	cd /workspace/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/adc_periph.c.s
 .PHONY : esp32s3/adc_periph.c.s
 
+esp32s3/cam_periph.obj: esp32s3/cam_periph.c.obj
+.PHONY : esp32s3/cam_periph.obj
+
+# target to build an object file
+esp32s3/cam_periph.c.obj:
+	cd /workspace/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.obj
+.PHONY : esp32s3/cam_periph.c.obj
+
+esp32s3/cam_periph.i: esp32s3/cam_periph.c.i
+.PHONY : esp32s3/cam_periph.i
+
+# target to preprocess a source file
+esp32s3/cam_periph.c.i:
+	cd /workspace/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.i
+.PHONY : esp32s3/cam_periph.c.i
+
+esp32s3/cam_periph.s: esp32s3/cam_periph.c.s
+.PHONY : esp32s3/cam_periph.s
+
+# target to generate assembly for a file
+esp32s3/cam_periph.c.s:
+	cd /workspace/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/cam_periph.c.s
+.PHONY : esp32s3/cam_periph.c.s
+
 esp32s3/dedic_gpio_periph.obj: esp32s3/dedic_gpio_periph.c.obj
 .PHONY : esp32s3/dedic_gpio_periph.obj
 
@@ -441,6 +465,30 @@ esp32s3/pcnt_periph.s: esp32s3/pcnt_periph.c.s
 esp32s3/pcnt_periph.c.s:
 	cd /workspace/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/pcnt_periph.c.s
 .PHONY : esp32s3/pcnt_periph.c.s
+
+esp32s3/power_supply_periph.obj: esp32s3/power_supply_periph.c.obj
+.PHONY : esp32s3/power_supply_periph.obj
+
+# target to build an object file
+esp32s3/power_supply_periph.c.obj:
+	cd /workspace/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.obj
+.PHONY : esp32s3/power_supply_periph.c.obj
+
+esp32s3/power_supply_periph.i: esp32s3/power_supply_periph.c.i
+.PHONY : esp32s3/power_supply_periph.i
+
+# target to preprocess a source file
+esp32s3/power_supply_periph.c.i:
+	cd /workspace/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.i
+.PHONY : esp32s3/power_supply_periph.c.i
+
+esp32s3/power_supply_periph.s: esp32s3/power_supply_periph.c.s
+.PHONY : esp32s3/power_supply_periph.s
+
+# target to generate assembly for a file
+esp32s3/power_supply_periph.c.s:
+	cd /workspace/build/bootloader && $(MAKE) $(MAKESILENT) -f esp-idf/soc/CMakeFiles/__idf_soc.dir/build.make esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32s3/power_supply_periph.c.s
+.PHONY : esp32s3/power_supply_periph.c.s
 
 esp32s3/rmt_periph.obj: esp32s3/rmt_periph.c.obj
 .PHONY : esp32s3/rmt_periph.obj
@@ -769,6 +817,9 @@ help:
 	@echo "... esp32s3/adc_periph.obj"
 	@echo "... esp32s3/adc_periph.i"
 	@echo "... esp32s3/adc_periph.s"
+	@echo "... esp32s3/cam_periph.obj"
+	@echo "... esp32s3/cam_periph.i"
+	@echo "... esp32s3/cam_periph.s"
 	@echo "... esp32s3/dedic_gpio_periph.obj"
 	@echo "... esp32s3/dedic_gpio_periph.i"
 	@echo "... esp32s3/dedic_gpio_periph.s"
@@ -802,6 +853,9 @@ help:
 	@echo "... esp32s3/pcnt_periph.obj"
 	@echo "... esp32s3/pcnt_periph.i"
 	@echo "... esp32s3/pcnt_periph.s"
+	@echo "... esp32s3/power_supply_periph.obj"
+	@echo "... esp32s3/power_supply_periph.i"
+	@echo "... esp32s3/power_supply_periph.s"
 	@echo "... esp32s3/rmt_periph.obj"
 	@echo "... esp32s3/rmt_periph.i"
 	@echo "... esp32s3/rmt_periph.s"

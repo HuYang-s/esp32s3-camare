@@ -1,5 +1,4 @@
 file(REMOVE_RECURSE
-  ".bin_timestamp"
   "CMakeFiles/gen_project_binary"
 )
 

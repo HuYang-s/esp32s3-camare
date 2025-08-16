@@ -1,6 +1,3 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/flash"
-)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )

@@ -10,10 +10,10 @@ esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_context.S.obj: \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
- /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/xt_specreg.h \
  /tmp/esp-idf/components/xtensa/include/xt_asm_utils.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/coreasm.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/corebits.h \
@@ -33,10 +33,10 @@ esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_intr_asm.S.obj: \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
- /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/xt_specreg.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/coreasm.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/corebits.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/hal.h \
@@ -59,10 +59,10 @@ esp-idf/xtensa/CMakeFiles/__idf_xtensa.dir/xtensa_vectors.S.obj: \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-isa.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core-matmap.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/core.h \
- /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/specreg.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/system.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie-asm.h \
  /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/tie.h \
+ /tmp/esp-idf/components/xtensa/esp32s3/include/xtensa/config/xt_specreg.h \
  /tmp/esp-idf/components/xtensa/include/esp_private/panic_reason.h \
  /tmp/esp-idf/components/xtensa/include/xt_asm_utils.h \
  /tmp/esp-idf/components/xtensa/include/xtensa/coreasm.h \

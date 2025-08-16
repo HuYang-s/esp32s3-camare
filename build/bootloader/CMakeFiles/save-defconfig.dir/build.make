@@ -67,8 +67,8 @@ include CMakeFiles/save-defconfig.dir/compiler_depend.make
 include CMakeFiles/save-defconfig.dir/progress.make
 
 CMakeFiles/save-defconfig:
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/bootloader/config.env
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env-file /workspace/build/bootloader/config.env --dont-write-deprecated --output savedefconfig /tmp/esp-idf/components/bootloader/subproject/sdkconfig.defaults
+	/home/ubuntu/.espressif/python_env/idf6.0_py3.13_env/bin/python /tmp/esp-idf/tools/kconfig_new/prepare_kconfig_files.py --list-separator=semicolon --env-file /workspace/build/bootloader/config.env
+	/home/ubuntu/.espressif/python_env/idf6.0_py3.13_env/bin/python -m kconfgen --list-separator=semicolon --kconfig /tmp/esp-idf/Kconfig --sdkconfig-rename /tmp/esp-idf/sdkconfig.rename --config /workspace/sdkconfig --env IDF_MINIMAL_BUILD=n --env-file /workspace/build/bootloader/config.env --dont-write-deprecated --output savedefconfig /tmp/esp-idf/components/bootloader/subproject/sdkconfig.defaults
 
 CMakeFiles/save-defconfig.dir/codegen:
 .PHONY : CMakeFiles/save-defconfig.dir/codegen

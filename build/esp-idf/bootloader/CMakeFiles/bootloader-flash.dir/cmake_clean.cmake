@@ -1,6 +1,3 @@
-file(REMOVE_RECURSE
-  "CMakeFiles/bootloader-flash"
-)
 
 # Per-language clean rules from dependency scanning.
 foreach(lang )

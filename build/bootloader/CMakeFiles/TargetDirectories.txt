@@ -1,11 +1,6 @@
 /workspace/build/bootloader/CMakeFiles/menuconfig.dir
 /workspace/build/bootloader/CMakeFiles/confserver.dir
 /workspace/build/bootloader/CMakeFiles/save-defconfig.dir
-/workspace/build/bootloader/CMakeFiles/gen_project_binary.dir
-/workspace/build/bootloader/CMakeFiles/app.dir
-/workspace/build/bootloader/CMakeFiles/erase_flash.dir
-/workspace/build/bootloader/CMakeFiles/merge-bin.dir
-/workspace/build/bootloader/CMakeFiles/monitor.dir
 /workspace/build/bootloader/CMakeFiles/_project_elf_src.dir
 /workspace/build/bootloader/CMakeFiles/bootloader.elf.dir
 /workspace/build/bootloader/CMakeFiles/size.dir
@@ -16,6 +11,10 @@
 /workspace/build/bootloader/CMakeFiles/dfu-flash.dir
 /workspace/build/bootloader/CMakeFiles/uf2.dir
 /workspace/build/bootloader/CMakeFiles/uf2-app.dir
+/workspace/build/bootloader/CMakeFiles/gen_bootloader_binary.dir
+/workspace/build/bootloader/CMakeFiles/gen_project_binary.dir
+/workspace/build/bootloader/CMakeFiles/app.dir
+/workspace/build/bootloader/CMakeFiles/bootloader_check_size.dir
 /workspace/build/bootloader/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/CMakeFiles/edit_cache.dir
@@ -42,6 +41,10 @@
 /workspace/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/esp_app_format/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/esp-idf/esp_app_format/CMakeFiles/rebuild_cache.dir
+/workspace/build/bootloader/esp-idf/partition_table/CMakeFiles/edit_cache.dir
+/workspace/build/bootloader/esp-idf/partition_table/CMakeFiles/rebuild_cache.dir
+/workspace/build/bootloader/esp-idf/esptool_py/CMakeFiles/edit_cache.dir
+/workspace/build/bootloader/esp-idf/esptool_py/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir
 /workspace/build/bootloader/esp-idf/bootloader_support/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/esp-idf/bootloader_support/CMakeFiles/rebuild_cache.dir
@@ -65,6 +68,8 @@
 /workspace/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/rebuild_cache.dir
+/workspace/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/CMakeFiles/edit_cache.dir
+/workspace/build/bootloader/esp-idf/esp_hw_support/mspi_timing_tuning/port/esp32s3/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir
@@ -76,11 +81,6 @@
 /workspace/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir
 /workspace/build/bootloader/esp-idf/log/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/esp-idf/log/CMakeFiles/rebuild_cache.dir
-/workspace/build/bootloader/esp-idf/esptool_py/CMakeFiles/bootloader_check_size.dir
-/workspace/build/bootloader/esp-idf/esptool_py/CMakeFiles/edit_cache.dir
-/workspace/build/bootloader/esp-idf/esptool_py/CMakeFiles/rebuild_cache.dir
-/workspace/build/bootloader/esp-idf/partition_table/CMakeFiles/edit_cache.dir
-/workspace/build/bootloader/esp-idf/partition_table/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/bootloader/CMakeFiles/edit_cache.dir
 /workspace/build/bootloader/esp-idf/bootloader/CMakeFiles/rebuild_cache.dir
 /workspace/build/bootloader/esp-idf/freertos/CMakeFiles/edit_cache.dir

@@ -67,7 +67,7 @@ include CMakeFiles/dfu.dir/compiler_depend.make
 include CMakeFiles/dfu.dir/progress.make
 
 CMakeFiles/dfu:
-	/home/ubuntu/.espressif/python_env/idf5.4_py3.13_env/bin/python /tmp/esp-idf/tools/mkdfu.py write -o /workspace/build/dfu.bin --json /workspace/build/flasher_args.json --pid 9 --flash-size 2MB
+	/home/ubuntu/.espressif/python_env/idf6.0_py3.13_env/bin/python /tmp/esp-idf/tools/mkdfu.py write -o /workspace/build/dfu.bin --json /workspace/build/flasher_args.json --pid 9 --flash-size 2MB
 
 CMakeFiles/dfu.dir/codegen:
 .PHONY : CMakeFiles/dfu.dir/codegen
