@@ -344,7 +344,7 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
     
     cJSON *function = cJSON_CreateObject();
     cJSON_AddStringToObject(function, "name", "control_motor");
-    cJSON_AddStringToObject(function, "description", "根据视觉分析控制机器人移动。必须先提供思考过程再决定动作。");
+    cJSON_AddStringToObject(function, "description", "根据视觉分析控制机器人移动。支持精确角度控制和多种移动模式。必须先提供思考过程再决定动作。");
     
     cJSON *parameters = cJSON_CreateObject();
     cJSON_AddStringToObject(parameters, "type", "object");
@@ -358,12 +358,15 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
 
     cJSON *action_param = cJSON_CreateObject();
     cJSON_AddStringToObject(action_param, "type", "string");
-    cJSON_AddStringToObject(action_param, "description", "Motor action: forward, backward, left, right, or stop");
+    cJSON_AddStringToObject(action_param, "description", "Motor action: forward, backward, left, right, turn_angle, pivot_turn, differential_drive, or stop");
     cJSON *enum_values = cJSON_CreateArray();
     cJSON_AddItemToArray(enum_values, cJSON_CreateString("forward"));
     cJSON_AddItemToArray(enum_values, cJSON_CreateString("backward")); 
     cJSON_AddItemToArray(enum_values, cJSON_CreateString("left"));
     cJSON_AddItemToArray(enum_values, cJSON_CreateString("right"));
+    cJSON_AddItemToArray(enum_values, cJSON_CreateString("turn_angle"));
+    cJSON_AddItemToArray(enum_values, cJSON_CreateString("pivot_turn"));
+    cJSON_AddItemToArray(enum_values, cJSON_CreateString("differential_drive"));
     cJSON_AddItemToArray(enum_values, cJSON_CreateString("stop"));
     cJSON_AddItemToObject(action_param, "enum", enum_values);
     cJSON_AddItemToObject(properties, "action", action_param);
@@ -381,6 +384,30 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
     cJSON_AddNumberToObject(speed_param, "minimum", 30);
     cJSON_AddNumberToObject(speed_param, "maximum", 100);
     cJSON_AddItemToObject(properties, "speed", speed_param);
+    
+    // 新增角度参数
+    cJSON *angle_param = cJSON_CreateObject();
+    cJSON_AddStringToObject(angle_param, "type", "integer");
+    cJSON_AddStringToObject(angle_param, "description", "Turn angle in degrees (-180 to 180, negative for left, positive for right). Used with turn_angle and pivot_turn actions.");
+    cJSON_AddNumberToObject(angle_param, "minimum", -180);
+    cJSON_AddNumberToObject(angle_param, "maximum", 180);
+    cJSON_AddItemToObject(properties, "angle", angle_param);
+    
+    // 新增左轮速度参数（用于差速驱动）
+    cJSON *left_speed_param = cJSON_CreateObject();
+    cJSON_AddStringToObject(left_speed_param, "type", "integer");
+    cJSON_AddStringToObject(left_speed_param, "description", "Left wheel speed (-100 to 100, negative for reverse). Used with differential_drive action.");
+    cJSON_AddNumberToObject(left_speed_param, "minimum", -100);
+    cJSON_AddNumberToObject(left_speed_param, "maximum", 100);
+    cJSON_AddItemToObject(properties, "left_speed", left_speed_param);
+    
+    // 新增右轮速度参数（用于差速驱动）
+    cJSON *right_speed_param = cJSON_CreateObject();
+    cJSON_AddStringToObject(right_speed_param, "type", "integer");
+    cJSON_AddStringToObject(right_speed_param, "description", "Right wheel speed (-100 to 100, negative for reverse). Used with differential_drive action.");
+    cJSON_AddNumberToObject(right_speed_param, "minimum", -100);
+    cJSON_AddNumberToObject(right_speed_param, "maximum", 100);
+    cJSON_AddItemToObject(properties, "right_speed", right_speed_param);
     
     cJSON *required = cJSON_CreateArray();
     // **将reasoning设为必需**
@@ -405,17 +432,24 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
     cJSON *content = cJSON_CreateArray();
     cJSON *text_content = cJSON_CreateObject();
     cJSON_AddStringToObject(text_content, "type", "text");
-    // 3. 更新Prompt，强制要求AI填充reasoning字段
+    // 3. 更新Prompt，强制要求AI填充reasoning字段，并介绍新的控制能力
     cJSON_AddStringToObject(text_content, "text", 
         "你是一个智能驾驶AI，控制一个机器人。你的任务是分析摄像头看到的实时画面，并决定下一步的动作。\n\n" 
         "**决策流程:**\n" 
         "1.  **观察 (Observe):** 详细描述你看到的关键事物、障碍物、空间布局和潜在的探索路径。\n" 
         "2.  **思考 (Think):** 基于你的观察，分析当前情况。如果前方有路，就前进。如果被挡住，就思考向左还是向右更开阔。如果看到有趣的东西，就说明为什么它有趣。\n" 
         "3.  **决策 (Decide):** 根据你的思考，选择一个最合适的动作 (action)。\n\n" 
-        "**重要指令:** 你必须使用 `control_motor` 工具来执行你的决策。在调用工具时，**必须**在 `reasoning` 参数中完整地填写你的观察和思考过程，然后再确定 `action`, `duration`, 和 `speed`。\n\n" 
+        "**可用的控制模式:**\n"
+        "- **基础动作**: forward, backward, left, right, stop\n"
+        "- **精确角度控制**: turn_angle (需要angle参数，-180到180度)\n"
+        "- **原地转弯**: pivot_turn (需要angle参数，更快的转弯)\n"
+        "- **差速驱动**: differential_drive (需要left_speed和right_speed参数，可实现曲线移动)\n\n"
+        "**重要指令:** 你必须使用 `control_motor` 工具来执行你的决策。在调用工具时，**必须**在 `reasoning` 参数中完整地填写你的观察和思考过程，然后再确定 `action`, `duration`, 和其他必要参数。\n\n" 
         "**示例:**\n" 
-        "- reasoning: '我看到前方是一堵白墙，完全挡住了去路。左边看起来空间更大，所以我决定向左转来绕过障碍。' action: 'left'\n" 
-        "- reasoning: '前方道路通畅，远处好像有一个红色的物体，我打算前进看清楚一点。' action: 'forward'\n\n" 
+        "- reasoning: '我看到前方是一堵白墙，需要向左转约45度来绕过障碍。' action: 'turn_angle', angle: -45\n" 
+        "- reasoning: '前方道路通畅，我需要直线前进探索。' action: 'forward'\n"
+        "- reasoning: '我需要在这个狭窄空间中原地转弯90度向右。' action: 'pivot_turn', angle: 90\n"
+        "- reasoning: '我想要缓慢向左曲线移动来更好地观察右侧。' action: 'differential_drive', left_speed: 40, right_speed: 70\n\n" 
         "现在，请分析你看到的画面，并使用 `control_motor` 工具做出你的决策。"
     );
     cJSON_AddItemToArray(content, text_content);
@@ -479,29 +513,59 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
                             
                             cJSON *args_json = cJSON_Parse(args_str);
                             if (args_json) {
-                                // 4. 解析新的reasoning字段和原有字段
+                                // 4. 解析新的reasoning字段和原有字段，以及新增的角度和差速参数
                                 cJSON *reasoning = cJSON_GetObjectItem(args_json, "reasoning");
                                 cJSON *action = cJSON_GetObjectItem(args_json, "action");
                                 cJSON *duration = cJSON_GetObjectItem(args_json, "duration");
                                 cJSON *speed = cJSON_GetObjectItem(args_json, "speed");
+                                cJSON *angle = cJSON_GetObjectItem(args_json, "angle");
+                                cJSON *left_speed = cJSON_GetObjectItem(args_json, "left_speed");
+                                cJSON *right_speed = cJSON_GetObjectItem(args_json, "right_speed");
                                 
                                 if (cJSON_IsString(reasoning) && cJSON_IsString(action) && cJSON_IsNumber(duration) && cJSON_IsNumber(speed)) {
                                     const char *reasoning_str = cJSON_GetStringValue(reasoning);
                                     const char *action_str = cJSON_GetStringValue(action);
                                     double duration_val = cJSON_GetNumberValue(duration);
                                     int speed_val = (int)cJSON_GetNumberValue(speed);
+                                    int angle_val = angle && cJSON_IsNumber(angle) ? (int)cJSON_GetNumberValue(angle) : 0;
+                                    int left_speed_val = left_speed && cJSON_IsNumber(left_speed) ? (int)cJSON_GetNumberValue(left_speed) : 0;
+                                    int right_speed_val = right_speed && cJSON_IsNumber(right_speed) ? (int)cJSON_GetNumberValue(right_speed) : 0;
                                     
                                     ESP_LOGI(TAG, "🧠 AI思考: %s", reasoning_str);
                                     ESP_LOGI(TAG, "🚗 AI驾驶决策: 动作=%s, 持续时间=%.1f秒, 速度=%d%%", 
                                         action_str, duration_val, speed_val);
                                     
+                                    // 如果有角度参数，显示角度信息
+                                    if (angle_val != 0) {
+                                        ESP_LOGI(TAG, "🔄 转弯角度: %d度", angle_val);
+                                    }
+                                    
+                                    // 如果是差速驱动，显示左右轮速度
+                                    if (strcmp(action_str, "differential_drive") == 0) {
+                                        ESP_LOGI(TAG, "⚙️ 差速驱动: 左轮=%d%%, 右轮=%d%%", left_speed_val, right_speed_val);
+                                    }
+                                    
                                     // 执行电机控制
                                     esp_err_t motor_result = ESP_FAIL;
-                                    if (strcmp(action_str, "forward") == 0) motor_result = motor_forward(speed_val);
-                                    else if (strcmp(action_str, "backward") == 0) motor_result = motor_backward(speed_val);
-                                    else if (strcmp(action_str, "left") == 0) motor_result = motor_left(speed_val);
-                                    else if (strcmp(action_str, "right") == 0) motor_result = motor_right(speed_val);
-                                    else if (strcmp(action_str, "stop") == 0) motor_result = motor_stop_all();
+                                    if (strcmp(action_str, "forward") == 0) {
+                                        motor_result = motor_forward(speed_val);
+                                    } else if (strcmp(action_str, "backward") == 0) {
+                                        motor_result = motor_backward(speed_val);
+                                    } else if (strcmp(action_str, "left") == 0) {
+                                        motor_result = motor_left(speed_val);
+                                    } else if (strcmp(action_str, "right") == 0) {
+                                        motor_result = motor_right(speed_val);
+                                    } else if (strcmp(action_str, "turn_angle") == 0) {
+                                        motor_result = motor_turn_angle(angle_val, speed_val);
+                                        duration_val = 0; // 角度转弯函数内部已处理时间
+                                    } else if (strcmp(action_str, "pivot_turn") == 0) {
+                                        motor_result = motor_pivot_turn(angle_val, speed_val);
+                                        duration_val = 0; // 原地转弯函数内部已处理时间
+                                    } else if (strcmp(action_str, "differential_drive") == 0) {
+                                        motor_result = motor_differential_drive(left_speed_val, right_speed_val);
+                                    } else if (strcmp(action_str, "stop") == 0) {
+                                        motor_result = motor_stop_all();
+                                    }
                                     
                                     if (motor_result == ESP_OK && duration_val > 0) {
                                         vTaskDelay(pdMS_TO_TICKS((int)(duration_val * 1000)));
@@ -511,9 +575,19 @@ esp_err_t ai_service_auto_drive_analyze(camera_fb_t *fb, const char* filename)
                                     
                                     // 5. 使用解析出的reasoning_str更新最终结果
                                     char full_ai_result[1024];
-                                    snprintf(full_ai_result, sizeof(full_ai_result), 
-                                        "🧠 AI思考过程:\n%s\n\n🚗 驾驶决策: %s (%.1f秒, 速度%d%%)", 
-                                        reasoning_str, action_str, duration_val, speed_val);
+                                    if (strcmp(action_str, "turn_angle") == 0 || strcmp(action_str, "pivot_turn") == 0) {
+                                        snprintf(full_ai_result, sizeof(full_ai_result), 
+                                            "🧠 AI思考过程:\n%s\n\n🚗 驾驶决策: %s (角度%d度, 速度%d%%)", 
+                                            reasoning_str, action_str, angle_val, speed_val);
+                                    } else if (strcmp(action_str, "differential_drive") == 0) {
+                                        snprintf(full_ai_result, sizeof(full_ai_result), 
+                                            "🧠 AI思考过程:\n%s\n\n🚗 驾驶决策: %s (左轮%d%%, 右轮%d%%, %.1f秒)", 
+                                            reasoning_str, action_str, left_speed_val, right_speed_val, duration_val);
+                                    } else {
+                                        snprintf(full_ai_result, sizeof(full_ai_result), 
+                                            "🧠 AI思考过程:\n%s\n\n🚗 驾驶决策: %s (%.1f秒, 速度%d%%)", 
+                                            reasoning_str, action_str, duration_val, speed_val);
+                                    }
                                     storage_manager_update_ai_result(filename, full_ai_result);
                                     
                                 } else {

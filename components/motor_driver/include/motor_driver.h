@@ -87,6 +87,30 @@ esp_err_t motor_right(int speed);
  */
 esp_err_t motor_test_sequence(void);
 
+/**
+ * @brief 按指定角度转弯
+ * @param angle 转弯角度 (-180 到 180 度，负数为左转，正数为右转)
+ * @param speed 转弯速度 (0-100)
+ * @return ESP_OK 成功, ESP_FAIL 失败
+ */
+esp_err_t motor_turn_angle(int angle, int speed);
+
+/**
+ * @brief 差速转弯 (左右轮不同速度)
+ * @param left_speed 左轮速度 (-100 到 100，负数为反转)
+ * @param right_speed 右轮速度 (-100 到 100，负数为反转)
+ * @return ESP_OK 成功, ESP_FAIL 失败
+ */
+esp_err_t motor_differential_drive(int left_speed, int right_speed);
+
+/**
+ * @brief 原地转弯
+ * @param angle 转弯角度 (-180 到 180 度，负数为左转，正数为右转)
+ * @param speed 转弯速度 (0-100)
+ * @return ESP_OK 成功, ESP_FAIL 失败
+ */
+esp_err_t motor_pivot_turn(int angle, int speed);
+
 #ifdef __cplusplus
 }
 #endif
