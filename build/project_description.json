@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "esp32s3_camera_web",
-    "project_version":    "9f2d684d-dirty",
+    "project_version":    "ddf0960d-dirty",
     "project_path":       "/workspace",
     "idf_path":           "/tmp/esp-idf",
     "build_dir":          "/workspace/build",
@@ -1311,9 +1311,9 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [ "freertos", "nvs_flash", "idf::log", "camera_driver", "wifi_manager", "time_service", "storage_manager", "ai_service", "web_server", "motor_driver" ],
-            "priv_reqs": [ "esp32-camera" ],
+            "priv_reqs": [],
             "managed_reqs": [],
-            "managed_priv_reqs": [ "esp32-camera" ],
+            "managed_priv_reqs": [],
             "file": "/workspace/build/esp-idf/main/libmain.a",
             "sources": [ "/workspace/main/esp32s3_camera_web.c" ],
             "include_dirs": [ "." ]
@@ -3127,9 +3127,9 @@
             "dir": "/workspace/main",
             "lib": "__idf_main",
             "reqs": [ "freertos", "nvs_flash", "idf::log", "camera_driver", "wifi_manager", "time_service", "storage_manager", "ai_service", "web_server", "motor_driver" ],
-            "priv_reqs": [ "esp32-camera" ],
+            "priv_reqs": [],
             "managed_reqs": [],
-            "managed_priv_reqs": [ "esp32-camera" ],
+            "managed_priv_reqs": [],
             "include_dirs": [ "." ]
         },
         "ai_service": {

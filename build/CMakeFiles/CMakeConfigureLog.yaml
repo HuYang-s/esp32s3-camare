@@ -80,8 +80,8 @@ events:
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xiYriQ"
-      binary: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xiYriQ"
+      source: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-A0oKU8"
+      binary: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-A0oKU8"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero "
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -91,13 +91,13 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xiYriQ'
+        Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-A0oKU8'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e1e21/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_e1e21.dir/build.make CMakeFiles/cmTC_e1e21.dir/build
-        gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xiYriQ'
-        Building C object CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero     -v -o CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_19418/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_19418.dir/build.make CMakeFiles/cmTC_19418.dir/build
+        gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-A0oKU8'
+        Building C object CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero     -v -o CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c
         Using built-in specs.
         COLLECT_GCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
         Target: xtensa-esp-elf
@@ -105,8 +105,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.1.0 (crosstool-NG esp-15.1.0_20250607) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_e1e21.dir/'
-         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/ -isysroot /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e1e21.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o /tmp/ccXmWljJ.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_19418.dir/'
+         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/ -isysroot /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_19418.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o /tmp/cc3pL01m.s
         GNU C23 (crosstool-NG esp-15.1.0_20250607) version 15.1.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -123,13 +123,13 @@ events:
          /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: b8af796b165ddbed35358e5506fa35de
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_e1e21.dir/'
-         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj /tmp/ccXmWljJ.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_19418.dir/'
+         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj /tmp/cc3pL01m.s
         COMPILER_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.'
-        Linking C executable cmTC_e1e21
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1e21.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.'
+        Linking C executable cmTC_19418
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19418.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp-elf-gcc
         COLLECT_LTO_WRAPPER=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper
@@ -140,12 +140,12 @@ events:
         gcc version 15.1.0 (crosstool-NG esp-15.1.0_20250607) 
         COMPILER_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_e1e21' '-dumpdir' 'cmTC_e1e21.'
-         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2 -plugin /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so -plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMxgCUH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_e1e21 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_19418' '-dumpdir' 'cmTC_19418.'
+         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2 -plugin /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so -plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwNgVUv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_19418 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc
         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00400054
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_e1e21' '-dumpdir' 'cmTC_e1e21.'
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles  -v CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj -o cmTC_e1e21
-        gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xiYriQ'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_19418' '-dumpdir' 'cmTC_19418.'
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles  -v CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj -o cmTC_19418
+        gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-A0oKU8'
         
       exitCode: 0
   -
@@ -180,13 +180,13 @@ events:
       Parsed C implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xiYriQ']
+        ignore line: [Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-A0oKU8']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e1e21/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_e1e21.dir/build.make CMakeFiles/cmTC_e1e21.dir/build]
-        ignore line: [gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xiYriQ']
-        ignore line: [Building C object CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj]
-        ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero     -v -o CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_19418/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_19418.dir/build.make CMakeFiles/cmTC_19418.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-A0oKU8']
+        ignore line: [Building C object CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj]
+        ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc   -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero     -v -o CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj -c /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
         ignore line: [Target: xtensa-esp-elf]
@@ -194,8 +194,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.1.0 (crosstool-NG esp-15.1.0_20250607) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_e1e21.dir/']
-        ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/ -isysroot /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_e1e21.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o /tmp/ccXmWljJ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_19418.dir/']
+        ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/cc1 -quiet -v -imultilib esp32s3 -iprefix /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/ -isysroot /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.31/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_19418.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o /tmp/cc3pL01m.s]
         ignore line: [GNU C23 (crosstool-NG esp-15.1.0_20250607) version 15.1.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -212,13 +212,13 @@ events:
         ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b8af796b165ddbed35358e5506fa35de]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_e1e21.dir/']
-        ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj /tmp/ccXmWljJ.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_19418.dir/']
+        ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj /tmp/cc3pL01m.s]
         ignore line: [COMPILER_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.']
-        ignore line: [Linking C executable cmTC_e1e21]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e1e21.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.']
+        ignore line: [Linking C executable cmTC_19418]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19418.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp-elf-gcc]
         ignore line: [COLLECT_LTO_WRAPPER=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper]
@@ -229,13 +229,13 @@ events:
         ignore line: [gcc version 15.1.0 (crosstool-NG esp-15.1.0_20250607) ]
         ignore line: [COMPILER_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_e1e21' '-dumpdir' 'cmTC_e1e21.']
-        link line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2 -plugin /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so -plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccMxgCUH.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_e1e21 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_19418' '-dumpdir' 'cmTC_19418.']
+        link line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2 -plugin /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so -plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwNgVUv.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_19418 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc]
           arg [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccMxgCUH.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccwNgVUv.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -244,7 +244,7 @@ events:
           arg [--sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_e1e21] ==> ignore
+          arg [cmTC_19418] ==> ignore
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3]
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3]
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3]
@@ -253,7 +253,7 @@ events:
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib]
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj] ==> ignore
+          arg [CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj] ==> ignore
           arg [-lgcc] ==> lib [gcc]
           arg [-lc] ==> lib [c]
           arg [-lnosys] ==> lib [nosys]
@@ -261,9 +261,9 @@ events:
           arg [-lgcc] ==> lib [gcc]
         ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00400054]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_e1e21' '-dumpdir' 'cmTC_e1e21.']
-        ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles  -v CMakeFiles/cmTC_e1e21.dir/CMakeCCompilerABI.c.obj -o cmTC_e1e21]
-        ignore line: [gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xiYriQ']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_19418' '-dumpdir' 'cmTC_19418.']
+        ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles  -v CMakeFiles/cmTC_19418.dir/CMakeCCompilerABI.c.obj -o cmTC_19418]
+        ignore line: [gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-A0oKU8']
         ignore line: []
         ignore line: []
         collapse library dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3] ==> [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/esp32s3]
@@ -290,8 +290,8 @@ events:
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xhEdFD"
-      binary: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xhEdFD"
+      source: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-7a5gOo"
+      binary: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-7a5gOo"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "-mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero "
       CMAKE_CXX_FLAGS_DEBUG: "-g"
@@ -302,13 +302,13 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xhEdFD'
+        Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-7a5gOo'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_18255/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_18255.dir/build.make CMakeFiles/cmTC_18255.dir/build
-        gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xhEdFD'
-        Building CXX object CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero     -v -o CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ec9f/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_3ec9f.dir/build.make CMakeFiles/cmTC_3ec9f.dir/build
+        gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-7a5gOo'
+        Building CXX object CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero     -v -o CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp
         Using built-in specs.
         COLLECT_GCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp-elf-g++
         Target: xtensa-esp-elf
@@ -316,8 +316,8 @@ events:
         Thread model: posix
         Supported LTO compression algorithms: zlib zstd
         gcc version 15.1.0 (crosstool-NG esp-15.1.0_20250607) 
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_18255.dir/'
-         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/ -isysroot /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_18255.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o /tmp/ccaISqDy.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_3ec9f.dir/'
+         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/ -isysroot /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3ec9f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o /tmp/ccOq52FI.s
         GNU C++17 (crosstool-NG esp-15.1.0_20250607) version 15.1.0 (xtensa-esp-elf)
         	compiled by GNU C version 6.3.0, GMP version 6.3.0, MPFR version 4.2.1, MPC version 1.3.1, isl version isl-0.26-GMP
         
@@ -340,13 +340,13 @@ events:
          /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/include
         End of search list.
         Compiler executable checksum: b46bbfed52bc55587dc25f5acedaf452
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_18255.dir/'
-         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccaISqDy.s
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_3ec9f.dir/'
+         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccOq52FI.s
         COMPILER_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.'
-        Linking CXX executable cmTC_18255
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18255.dir/link.txt --verbose=1
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.'
+        Linking CXX executable cmTC_3ec9f
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ec9f.dir/link.txt --verbose=1
         Using built-in specs.
         COLLECT_GCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp-elf-g++
         COLLECT_LTO_WRAPPER=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper
@@ -357,12 +357,12 @@ events:
         gcc version 15.1.0 (crosstool-NG esp-15.1.0_20250607) 
         COMPILER_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/
         LIBRARY_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_18255' '-dumpdir' 'cmTC_18255.'
-         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2 -plugin /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so -plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccP2X2C0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_18255 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_3ec9f' '-dumpdir' 'cmTC_3ec9f.'
+         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2 -plugin /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so -plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwgvVrI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_3ec9f -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc
         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00400054
-        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_18255' '-dumpdir' 'cmTC_18255.'
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles  -v CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_18255
-        gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xhEdFD'
+        COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_3ec9f' '-dumpdir' 'cmTC_3ec9f.'
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles  -v CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_3ec9f
+        gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-7a5gOo'
         
       exitCode: 0
   -
@@ -403,13 +403,13 @@ events:
       Parsed CXX implicit link information:
         link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
         linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?))("|,| |$)]
-        ignore line: [Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xhEdFD']
+        ignore line: [Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-7a5gOo']
         ignore line: []
-        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_18255/fast]
-        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_18255.dir/build.make CMakeFiles/cmTC_18255.dir/build]
-        ignore line: [gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xhEdFD']
-        ignore line: [Building CXX object CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj]
-        ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero     -v -o CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
+        ignore line: [Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_3ec9f/fast]
+        ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_3ec9f.dir/build.make CMakeFiles/cmTC_3ec9f.dir/build]
+        ignore line: [gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-7a5gOo']
+        ignore line: [Building CXX object CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj]
+        ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++   -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero     -v -o CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
         ignore line: [Target: xtensa-esp-elf]
@@ -417,8 +417,8 @@ events:
         ignore line: [Thread model: posix]
         ignore line: [Supported LTO compression algorithms: zlib zstd]
         ignore line: [gcc version 15.1.0 (crosstool-NG esp-15.1.0_20250607) ]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_18255.dir/']
-        ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/ -isysroot /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_18255.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o /tmp/ccaISqDy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_3ec9f.dir/']
+        ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/cc1plus -quiet -v -imultilib esp32s3 -iprefix /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/ -isysroot /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf /usr/share/cmake-3.31/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_3ec9f.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mdynconfig=xtensa_esp32s3.so -mlongcalls -version -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -o /tmp/ccOq52FI.s]
         ignore line: [GNU C++17 (crosstool-NG esp-15.1.0_20250607) version 15.1.0 (xtensa-esp-elf)]
         ignore line: [	compiled by GNU C version 6.3.0  GMP version 6.3.0  MPFR version 4.2.1  MPC version 1.3.1  isl version isl-0.26-GMP]
         ignore line: []
@@ -441,13 +441,13 @@ events:
         ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/include]
         ignore line: [End of search list.]
         ignore line: [Compiler executable checksum: b46bbfed52bc55587dc25f5acedaf452]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_18255.dir/']
-        ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccaISqDy.s]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_3ec9f.dir/']
+        ignore line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/as --traditional-format --longcalls --dynconfig=xtensa_esp32s3.so -o CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj /tmp/ccOq52FI.s]
         ignore line: [COMPILER_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.']
-        ignore line: [Linking CXX executable cmTC_18255]
-        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_18255.dir/link.txt --verbose=1]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-v' '-o' 'CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj' '-c' '-dumpdir' 'CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.']
+        ignore line: [Linking CXX executable cmTC_3ec9f]
+        ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3ec9f.dir/link.txt --verbose=1]
         ignore line: [Using built-in specs.]
         ignore line: [COLLECT_GCC=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp-elf-g++]
         ignore line: [COLLECT_LTO_WRAPPER=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper]
@@ -458,13 +458,13 @@ events:
         ignore line: [gcc version 15.1.0 (crosstool-NG esp-15.1.0_20250607) ]
         ignore line: [COMPILER_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/]
         ignore line: [LIBRARY_PATH=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/:/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib/]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_18255' '-dumpdir' 'cmTC_18255.']
-        link line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2 -plugin /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so -plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccP2X2C0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_18255 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc]
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_3ec9f' '-dumpdir' 'cmTC_3ec9f.']
+        link line: [ /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2 -plugin /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so -plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccwgvVrI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc --sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf --dynconfig=xtensa_esp32s3.so -o cmTC_3ec9f -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0 -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib -L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc]
           arg [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/collect2] ==> ignore
           arg [-plugin] ==> ignore
           arg [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/liblto_plugin.so] ==> ignore
           arg [-plugin-opt=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../libexec/gcc/xtensa-esp-elf/15.1.0/lto-wrapper] ==> ignore
-          arg [-plugin-opt=-fresolution=/tmp/ccP2X2C0.res] ==> ignore
+          arg [-plugin-opt=-fresolution=/tmp/ccwgvVrI.res] ==> ignore
           arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
           arg [-plugin-opt=-pass-through=-lc] ==> ignore
           arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
@@ -473,7 +473,7 @@ events:
           arg [--sysroot=/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf] ==> ignore
           arg [--dynconfig=xtensa_esp32s3.so] ==> ignore
           arg [-o] ==> ignore
-          arg [cmTC_18255] ==> ignore
+          arg [cmTC_3ec9f] ==> ignore
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3]
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib/esp32s3]
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib/esp32s3]
@@ -482,7 +482,7 @@ events:
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/lib]
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/lib]
           arg [-L/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib] ==> dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../xtensa-esp-elf/usr/lib]
-          arg [CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+          arg [CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
           arg [-lstdc++] ==> lib [stdc++]
           arg [-lm] ==> lib [m]
           arg [-lgcc] ==> lib [gcc]
@@ -492,9 +492,9 @@ events:
           arg [-lgcc] ==> lib [gcc]
         ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start]
         ignore line: [ defaulting to 00400054]
-        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_18255' '-dumpdir' 'cmTC_18255.']
-        ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles  -v CMakeFiles/cmTC_18255.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_18255]
-        ignore line: [gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-xhEdFD']
+        ignore line: [COLLECT_GCC_OPTIONS='-mdynconfig=xtensa_esp32s3.so' '-mlongcalls' '-fno-builtin-memcpy' '-fno-builtin-memset' '-fno-builtin-bzero' '-nostartfiles' '-v' '-o' 'cmTC_3ec9f' '-dumpdir' 'cmTC_3ec9f.']
+        ignore line: [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-g++ -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles  -v CMakeFiles/cmTC_3ec9f.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_3ec9f]
+        ignore line: [gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-7a5gOo']
         ignore line: []
         ignore line: []
         collapse library dir [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/esp32s3] ==> [/home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/lib/gcc/xtensa-esp-elf/15.1.0/esp32s3]
@@ -522,8 +522,8 @@ events:
     checks:
       - "Performing Test CMAKE_HAVE_LIBC_PTHREAD"
     directories:
-      source: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-lZJE0s"
-      binary: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-lZJE0s"
+      source: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-PvQHMR"
+      binary: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-PvQHMR"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero "
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -533,24 +533,24 @@ events:
       variable: "CMAKE_HAVE_LIBC_PTHREAD"
       cached: true
       stdout: |
-        Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-lZJE0s'
+        Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-PvQHMR'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_ff723/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_ff723.dir/build.make CMakeFiles/cmTC_ff723.dir/build
-        gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-lZJE0s'
-        Building C object CMakeFiles/cmTC_ff723.dir/src.c.obj
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DCMAKE_HAVE_LIBC_PTHREAD  -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -o CMakeFiles/cmTC_ff723.dir/src.c.obj -c /workspace/build/CMakeFiles/CMakeScratch/TryCompile-lZJE0s/src.c
-        Linking C executable cmTC_ff723
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ff723.dir/link.txt --verbose=1
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_ff723.dir/src.c.obj:(.literal+0x14): warning: pthread_atfork is not implemented and will always fail
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_ff723.dir/src.c.obj:(.literal+0xc): warning: pthread_cancel is not implemented and will always fail
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_ff723.dir/src.c.obj:(.literal+0x4): warning: pthread_create is not implemented and will always fail
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_ff723.dir/src.c.obj:(.literal+0x8): warning: pthread_detach is not implemented and will always fail
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_ff723.dir/src.c.obj:(.literal+0x18): warning: pthread_exit is not implemented and will always fail
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_ff723.dir/src.c.obj:(.literal+0x10): warning: pthread_join is not implemented and will always fail
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_62656/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_62656.dir/build.make CMakeFiles/cmTC_62656.dir/build
+        gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-PvQHMR'
+        Building C object CMakeFiles/cmTC_62656.dir/src.c.obj
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DCMAKE_HAVE_LIBC_PTHREAD  -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -o CMakeFiles/cmTC_62656.dir/src.c.obj -c /workspace/build/CMakeFiles/CMakeScratch/TryCompile-PvQHMR/src.c
+        Linking C executable cmTC_62656
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62656.dir/link.txt --verbose=1
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_62656.dir/src.c.obj:(.literal+0x14): warning: pthread_atfork is not implemented and will always fail
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_62656.dir/src.c.obj:(.literal+0xc): warning: pthread_cancel is not implemented and will always fail
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_62656.dir/src.c.obj:(.literal+0x4): warning: pthread_create is not implemented and will always fail
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_62656.dir/src.c.obj:(.literal+0x8): warning: pthread_detach is not implemented and will always fail
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_62656.dir/src.c.obj:(.literal+0x18): warning: pthread_exit is not implemented and will always fail
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: CMakeFiles/cmTC_62656.dir/src.c.obj:(.literal+0x10): warning: pthread_join is not implemented and will always fail
         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00400054
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles   CMakeFiles/cmTC_ff723.dir/src.c.obj -o cmTC_ff723
-        gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-lZJE0s'
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero   -nostartfiles   CMakeFiles/cmTC_62656.dir/src.c.obj -o cmTC_62656
+        gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-PvQHMR'
         
       exitCode: 0
   -
@@ -563,8 +563,8 @@ events:
     checks:
       - "Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
     directories:
-      source: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-KTa6X9"
-      binary: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-KTa6X9"
+      source: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-QKqmX1"
+      binary: "/workspace/build/CMakeFiles/CMakeScratch/TryCompile-QKqmX1"
     cmakeVariables:
       CMAKE_C_FLAGS: "-mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero  -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow"
       CMAKE_C_FLAGS_DEBUG: "-g"
@@ -574,18 +574,18 @@ events:
       variable: "C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS"
       cached: true
       stdout: |
-        Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-KTa6X9'
+        Change Dir: '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-QKqmX1'
         
-        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_e58db/fast
-        /usr/bin/gmake  -f CMakeFiles/cmTC_e58db.dir/build.make CMakeFiles/cmTC_e58db.dir/build
-        gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-KTa6X9'
-        Building C object CMakeFiles/cmTC_e58db.dir/src.c.obj
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero  -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow    -Wformat-signedness -o CMakeFiles/cmTC_e58db.dir/src.c.obj -c /workspace/build/CMakeFiles/CMakeScratch/TryCompile-KTa6X9/src.c
-        Linking C executable cmTC_e58db
-        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e58db.dir/link.txt --verbose=1
+        Run Build Command(s): /usr/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_b03f4/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_b03f4.dir/build.make CMakeFiles/cmTC_b03f4.dir/build
+        gmake[1]: Entering directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-QKqmX1'
+        Building C object CMakeFiles/cmTC_b03f4.dir/src.c.obj
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DC_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS  -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero  -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow    -Wformat-signedness -o CMakeFiles/cmTC_b03f4.dir/src.c.obj -c /workspace/build/CMakeFiles/CMakeScratch/TryCompile-QKqmX1/src.c
+        Linking C executable cmTC_b03f4
+        /usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_b03f4.dir/link.txt --verbose=1
         /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/../lib/gcc/xtensa-esp-elf/15.1.0/../../../../xtensa-esp-elf/bin/ld: warning: cannot find entry symbol _start; defaulting to 00400054
-        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero  -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow  -nostartfiles   CMakeFiles/cmTC_e58db.dir/src.c.obj -o cmTC_e58db
-        gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-KTa6X9'
+        /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -mlongcalls -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero  -Wall -Wextra -Wwrite-strings -Wmissing-prototypes -Wformat=2 -Wno-format-nonliteral -Wvla -Wlogical-op -Wshadow  -nostartfiles   CMakeFiles/cmTC_b03f4.dir/src.c.obj -o cmTC_b03f4
+        gmake[1]: Leaving directory '/workspace/build/CMakeFiles/CMakeScratch/TryCompile-QKqmX1'
         
       exitCode: 0
 ...
