@@ -1,108 +1,210 @@
-#include <stdio.h>
-#include <string.h>
-#include <math.h>
-#include <time.h>
-#include "freertos/FreeRTOS.h"
-#include "freertos/task.h"
-#include "esp_log.h"
-#include "esp_http_client.h"
-#include "esp_tls.h"
-#include "esp_crt_bundle.h"
-#include "mbedtls/base64.h"
-#include "cJSON.h"
+/**
+ * @file ai_service.c
+ * @brief AI分析服务实现
+ * 
+ * 这个模块负责处理AI相关的功能，包括：
+ * - 云端AI API调用（Mistral AI）
+ * - 图像Base64编码
+ * - HTTP客户端管理
+ * - AI自动驾驶分析
+ * - AI搜索任务处理
+ * - Tool Call功能（AI控制电机）
+ * 
+ * 支持的功能：
+ * 1. 图像分析和物体识别
+ * 2. 自动驾驶决策
+ * 3. 电机控制指令生成
+ * 4. 本地AI服务集成
+ * 
+ * @author ESP32-S3 Camera AI Project
+ * @version 1.0
+ */
 
-#include "ai_service.h"
-#include "local_ai_service.h"
-#include "storage_manager.h"
-#include "wifi_manager.h"
-#include "motor_driver.h"
-#include "camera_driver.h"
+// 标准C库头文件
+#include <stdio.h>          // 标准输入输出
+#include <string.h>         // 字符串处理
+#include <math.h>           // 数学函数（用于计算）
+#include <time.h>           // 时间处理
 
+// FreeRTOS头文件
+#include "freertos/FreeRTOS.h"  // FreeRTOS核心
+#include "freertos/task.h"      // 任务管理
+
+// ESP-IDF网络和安全头文件
+#include "esp_log.h"            // 日志系统
+#include "esp_http_client.h"    // HTTP客户端
+#include "esp_tls.h"            // TLS/SSL支持
+#include "esp_crt_bundle.h"     // 证书束（用于HTTPS验证）
+#include "mbedtls/base64.h"     // Base64编码/解码
+#include "cJSON.h"              // JSON解析库
+
+// 项目组件头文件
+#include "ai_service.h"         // AI服务接口
+#include "local_ai_service.h"   // 本地AI服务
+#include "storage_manager.h"    // 存储管理
+#include "wifi_manager.h"       // WiFi管理
+#include "motor_driver.h"       // 电机驱动
+#include "camera_driver.h"      // 摄像头驱动
+
+// 日志标签
 static const char *TAG = "ai_service";
 
-// 临时禁用HTTPS证书验证以解决连接问题
+// AI API配置常量
+// 使用Mistral AI作为云端AI服务提供商
+#define AI_API_KEY "cNKVad6nyJ3vyK4U9mkADJD1hAe102o4"  // API密钥
+#define AI_BASE_URL "https://api.mistral.ai"              // API基础URL
+#define AI_MODEL "mistral-small-latest"                   // 使用的AI模型
 
-// AI API配置 - 使用Mistral API进行图片分析
-#define AI_API_KEY "cNKVad6nyJ3vyK4U9mkADJD1hAe102o4"
-#define AI_BASE_URL "https://api.mistral.ai"
-#define AI_MODEL "mistral-small-latest"
-
-// 测试用HTTP端点（如果HTTPS失败）
+// 测试用HTTP端点（用于调试HTTPS连接问题）
 #define TEST_HTTP_URL "http://httpbin.org/post"
 
-#define MAX_HTTP_RECV_BUFFER 8192
-#define MAX_HTTP_OUTPUT_BUFFER 8192
+// HTTP缓冲区大小定义
+// 这些缓冲区用于接收和发送HTTP数据
+#define MAX_HTTP_RECV_BUFFER 8192   // HTTP接收缓冲区大小（8KB）
+#define MAX_HTTP_OUTPUT_BUFFER 8192 // HTTP输出缓冲区大小（8KB）
 
+// 网络连接失败计数器，用于错误恢复策略
 static int socket_failure_count = 0;
 
-// 前向声明
-
+/**
+ * @brief 初始化AI服务
+ * 
+ * 这个函数负责初始化AI服务的所有组件，包括：
+ * - 本地AI服务初始化
+ * - 网络连接配置
+ * - 错误计数器重置
+ * 
+ * @return esp_err_t 初始化结果
+ *         - ESP_OK: 初始化成功
+ *         - ESP_FAIL: 初始化失败
+ */
 esp_err_t ai_service_init(void)
 {
     ESP_LOGI(TAG, "初始化AI服务...");
     
-    // 初始化本地AI服务
+    // 初始化本地AI服务组件
+    // 本地AI服务提供离线物体检测能力
     esp_err_t ret = local_ai_service_init();
     if (ret != ESP_OK) {
         ESP_LOGE(TAG, "本地AI服务初始化失败");
         return ret;
     }
     
+    // 重置网络失败计数器
+    socket_failure_count = 0;
+    
     ESP_LOGI(TAG, "AI服务初始化完成");
     return ESP_OK;
 }
 
-// Base64编码函数
+/**
+ * @brief 将摄像头图像编码为Base64格式
+ * 
+ * 这个函数将摄像头捕获的JPEG图像数据转换为Base64编码的字符串，
+ * 以便通过HTTP API发送给云端AI服务。
+ * 
+ * Base64编码过程：
+ * 1. 计算编码后的数据长度
+ * 2. 分配内存缓冲区
+ * 3. 执行Base64编码
+ * 4. 添加字符串结束符
+ * 
+ * @param fb 摄像头帧缓冲区指针，包含JPEG图像数据
+ * @return char* Base64编码的字符串指针，使用完毕后需要free()
+ *         - 成功: 返回Base64字符串指针
+ *         - 失败: 返回NULL
+ */
 static char* encode_image_to_base64(camera_fb_t *fb)
 {
     size_t out_len = 0;
+    
+    // 第一次调用：计算编码后的数据长度
+    // 传入NULL缓冲区和0长度，函数会在out_len中返回所需长度
     mbedtls_base64_encode(NULL, 0, &out_len, fb->buf, fb->len);
     
+    // 根据计算的长度分配内存缓冲区
+    // +1是为了存储字符串结束符'\0'
     char* base64_buffer = malloc(out_len + 1);
     if (!base64_buffer) {
         ESP_LOGE(TAG, "Failed to allocate memory for base64 encoding");
         return NULL;
     }
     
+    // 第二次调用：执行实际的Base64编码
     int ret = mbedtls_base64_encode((unsigned char*)base64_buffer, out_len, &out_len, fb->buf, fb->len);
     if (ret != 0) {
         ESP_LOGE(TAG, "Base64 encoding failed");
-        free(base64_buffer);
+        free(base64_buffer);  // 编码失败时释放内存
         return NULL;
     }
     
+    // 添加字符串结束符，确保返回的是有效的C字符串
     base64_buffer[out_len] = '\0';
     return base64_buffer;
 }
 
-// HTTP响应处理函数
+/**
+ * @brief HTTP事件处理回调函数
+ * 
+ * 这个函数处理HTTP客户端的各种事件，包括：
+ * - 连接建立/断开
+ * - 数据接收
+ * - 错误处理
+ * - 响应头处理
+ * 
+ * 事件处理流程：
+ * 1. 根据事件类型执行相应操作
+ * 2. 对于数据接收事件，将数据复制到用户缓冲区
+ * 3. 记录调试信息
+ * 4. 处理连接错误和断开
+ * 
+ * @param evt HTTP客户端事件结构体指针
+ * @return esp_err_t 事件处理结果
+ */
 static esp_err_t _http_event_handler(esp_http_client_event_t *evt)
 {
-    static int output_len;
+    static int output_len;  // 静态变量，保存已接收数据的长度
     
     switch(evt->event_id) {
         case HTTP_EVENT_ERROR:
+            // HTTP错误事件：连接失败、超时等
             ESP_LOGD(TAG, "HTTP_EVENT_ERROR");
             break;
+            
         case HTTP_EVENT_ON_CONNECTED:
+            // HTTP连接建立事件
             ESP_LOGD(TAG, "HTTP_EVENT_ON_CONNECTED");
+            output_len = 0;  // 重置输出长度计数器
             break;
+            
         case HTTP_EVENT_HEADER_SENT:
+            // HTTP请求头发送完成事件
             ESP_LOGD(TAG, "HTTP_EVENT_HEADER_SENT");
             break;
+            
         case HTTP_EVENT_ON_HEADER:
-            ESP_LOGD(TAG, "HTTP_EVENT_ON_HEADER, key=%s, value=%s", evt->header_key, evt->header_value);
+            // 接收到HTTP响应头事件
+            ESP_LOGD(TAG, "HTTP_EVENT_ON_HEADER, key=%s, value=%s", 
+                     evt->header_key, evt->header_value);
             break;
+            
         case HTTP_EVENT_ON_DATA:
+            // 接收到HTTP响应数据事件
             ESP_LOGD(TAG, "HTTP_EVENT_ON_DATA, len=%d", evt->data_len);
+            
+            // 检查是否为分块传输响应
             if (!esp_http_client_is_chunked_response(evt->client)) {
+                // 检查用户数据缓冲区是否存在，且不会溢出
                 if (evt->user_data && (output_len + evt->data_len) < MAX_HTTP_OUTPUT_BUFFER) {
+                    // 将接收到的数据复制到用户缓冲区
                     memcpy(evt->user_data + output_len, evt->data, evt->data_len);
-                    output_len += evt->data_len;
-                    // 确保字符串以null结尾
+                    output_len += evt->data_len;  // 更新已接收数据长度
+                    
+                    // 在缓冲区末尾添加字符串结束符
                     ((char*)evt->user_data)[output_len] = '\0';
-                } else if (evt->user_data && output_len + evt->data_len >= MAX_HTTP_OUTPUT_BUFFER) {
-                    ESP_LOGW(TAG, "HTTP响应缓冲区即将溢出，当前长度: %d, 新数据: %d", output_len, evt->data_len);
+                } else if (evt->user_data) {
+                    // 缓冲区溢出警告
+                    ESP_LOGW(TAG, "HTTP响应数据过大，可能被截断");
                 }
             }
             break;
