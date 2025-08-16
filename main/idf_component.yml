@@ -3,6 +3,9 @@ dependencies:
   ## Required IDF version
   idf:
     version: '>=4.1.0'
+  # Using local esp32-camera component explicitly
+  espressif/esp32-camera:
+    path: ../components/espressif__esp32-camera
   # # Put list of dependencies here
   # # For components maintained by Espressif:
   # component: "~1.0.0"
@@ -14,5 +17,3 @@ dependencies:
   #   # `public` flag doesn't have an effect dependencies of the `main` component.
   #   # All dependencies of `main` are public by default.
   #   public: true
-  # Using local esp32-camera component instead of remote dependency
-  # espressif/esp32-camera: '*'

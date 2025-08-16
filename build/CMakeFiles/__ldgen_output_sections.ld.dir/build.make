@@ -292,10 +292,10 @@ esp-idf/esp_system/ld/sections.ld: esp-idf/usb/libusb.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/wifi_provisioning/libwifi_provisioning.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/json/libjson.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/esp32-camera/libesp32-camera.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/camera_driver/libcamera_driver.a
-esp-idf/esp_system/ld/sections.ld: esp-idf/esp32-camera/libesp32-camera.a
+esp-idf/esp_system/ld/sections.ld: esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/wifi_manager/libwifi_manager.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/time_service/libtime_service.a
 esp-idf/esp_system/ld/sections.ld: esp-idf/storage_manager/libstorage_manager.a

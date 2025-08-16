@@ -162,10 +162,10 @@
 /workspace/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /workspace/build/esp-idf/json/libjson.a
 /workspace/build/esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
-/workspace/build/esp-idf/esp32-camera/libesp32-camera.a
+/workspace/build/esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
 /workspace/build/esp-idf/espressif__esp_jpeg/libespressif__esp_jpeg.a
 /workspace/build/esp-idf/camera_driver/libcamera_driver.a
-/workspace/build/esp-idf/esp32-camera/libesp32-camera.a
+/workspace/build/esp-idf/espressif__esp32-camera/libespressif__esp32-camera.a
 /workspace/build/esp-idf/wifi_manager/libwifi_manager.a
 /workspace/build/esp-idf/time_service/libtime_service.a
 /workspace/build/esp-idf/storage_manager/libstorage_manager.a

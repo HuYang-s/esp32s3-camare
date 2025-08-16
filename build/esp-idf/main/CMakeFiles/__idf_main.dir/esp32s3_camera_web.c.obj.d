@@ -120,11 +120,11 @@ esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj: \
  /tmp/esp-idf/components/nvs_flash/include/nvs.h \
  /tmp/esp-idf/components/esp_partition/include/esp_partition.h \
  /workspace/components/camera_driver/include/camera_driver.h \
- /workspace/components/esp32-camera/driver/include/esp_camera.h \
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
  /tmp/esp-idf/components/esp_driver_ledc/include/driver/ledc.h \
  /tmp/esp-idf/components/hal/include/hal/ledc_types.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
- /workspace/components/esp32-camera/driver/include/sensor.h \
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
  /tmp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/types.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/endian.h \
@@ -145,7 +145,7 @@ esp-idf/main/CMakeFiles/__idf_main.dir/esp32s3_camera_web.c.obj: \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/signal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/signal.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h \
- /workspace/components/esp32-camera/conversions/include/img_converters.h \
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h \
  /workspace/components/wifi_manager/wifi_manager.h \
  /workspace/components/time_service/time_service.h \

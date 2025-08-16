@@ -139,14 +139,14 @@ esp-idf/navigation_service/CMakeFiles/__idf_navigation_service.dir/navigation_se
  /workspace/components/navigation_service/navigation_service.h \
  /workspace/components/ai_service/local_ai_service.h \
  /workspace/components/camera_driver/include/camera_driver.h \
- /workspace/components/esp32-camera/driver/include/esp_camera.h \
+ /workspace/components/espressif__esp32-camera/driver/include/esp_camera.h \
  /tmp/esp-idf/components/esp_driver_ledc/include/driver/ledc.h \
  /tmp/esp-idf/components/hal/include/hal/ledc_types.h \
  /tmp/esp-idf/components/soc/esp32s3/include/soc/clk_tree_defs.h \
- /workspace/components/esp32-camera/driver/include/sensor.h \
+ /workspace/components/espressif__esp32-camera/driver/include/sensor.h \
  /tmp/esp-idf/components/newlib/platform_include/sys/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/sys/time.h \
  /home/ubuntu/.espressif/tools/xtensa-esp-elf/esp-15.1.0_20250607/xtensa-esp-elf/xtensa-esp-elf/include/machine/_time.h \
- /workspace/components/esp32-camera/conversions/include/img_converters.h \
+ /workspace/components/espressif__esp32-camera/conversions/include/img_converters.h \
  /workspace/managed_components/espressif__esp_jpeg/include/jpeg_decoder.h \
  /workspace/components/motor_driver/include/motor_driver.h
